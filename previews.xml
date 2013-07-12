@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Galaxy Nexus"
+        activity="com.example.cbt_i.DashActivity"
+        config="layout-sw320dp-w320dp-h576dp-normal-long-port-notnight-ldpi-finger-keyssoft-nokeys-navhidden-nonav-432x240-v17"
+        device="3.4in WQVGA"
+        devicestate="Portrait"
+        target="Android 4.2.2"
+        theme="@style/AppTheme" >
+    </preview>
+
+</previews>

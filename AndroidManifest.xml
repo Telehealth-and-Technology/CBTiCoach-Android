@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.t2.cbt_i"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cbti_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.t2.cbt_i.splash.SplashActivity10a"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        
+        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.splash.SplashActivity10b" > </activity>
+        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.splash.SplashActivity10d" > </activity>
+        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.dashboard.DashActivity" > </activity>
+        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.dashboard.ThoughtActivity" > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.dashboard.CBTi_Activity10f" > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity20a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity20b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21a" > </activity>
+
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21c" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21j" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity22a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity22b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity22f" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity23a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity23b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity23c" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31b" > </activity>  
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31bhelp" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31c" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31e" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31e2" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31g" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32a" > </activity> 
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32d" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32e" > </activity> 
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32f" > </activity> 
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32f1" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity33a" > </activity> 
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity30a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity30b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity32a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity33a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34c" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34c1" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34c2" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34e" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34e1" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34e2" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34f" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34h" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34i" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a1" > </activity> 
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a10" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a10help" ></activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a11" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a11help" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a12" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a12help" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a13" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a13help" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a14" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a14help" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a15" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a15help" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a16" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a16help" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a25" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a26" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35d" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35dhelp" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35e" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35e1" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35e2" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity36a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity36b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity36c" > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity40a"   > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity40b"   > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a"   > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a01" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a02" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a03" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a04" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a05" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a06" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a07" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a08" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a09" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a10" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a11" > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a01"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a02"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a03"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a04"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a05"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a06"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a07"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a08"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a09"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a10"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a11"  > </activity>
+     
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity43a"   > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity50a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity50b" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity51a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity52a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity53a" > </activity>
+        
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.reminders.CBTi_Activity60a" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.reminders.CBTi_Activity60d" > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.reminders.CBTi_ActivityRem2" 
+            									android:theme="@android:style/Theme.Translucent.NoTitleBar"> </activity>
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRWindDown" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRSleepDiary" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRPrescribedWakeTime" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRPrescribedBedTime" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRStopCaffeine" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRTakeAssessment" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRUpdateSleepPrescription" />
+        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRWorryTime" />
+        
+		<receiver android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRBootLoader"
+        	android:enabled="true"
+        	android:exported="true"
+        	android:label="@string/app_name">
+        <intent-filter> <action android:name="android.intent.action.BOOT_COMPLETED"></action> </intent-filter>
+    	</receiver>         
+
+        <meta-data android:name="bForceSplash" android:value="false" /> 
+        <meta-data android:name="iSplashTime"  android:value="3000" />  
+    </application>
+
+</manifest>
