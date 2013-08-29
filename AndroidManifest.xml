@@ -4,14 +4,13 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+    <uses-sdk android:minSdkVersion="8"  android:targetSdkVersion="17" />
     
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     
     
     <application
@@ -111,7 +110,7 @@
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity40a"   > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity40b"   > </activity>
         
-        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a"   > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity41a"   > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a01" > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a02" > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a03" > </activity>
@@ -124,7 +123,7 @@
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a10" > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a11" > </activity>
         
-        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a"  > </activity>
+        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity42a"  > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a01"  > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a02"  > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a03"  > </activity>
@@ -147,8 +146,7 @@
         
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.reminders.CBTi_Activity60a" > </activity>
         <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.reminders.CBTi_Activity60d" > </activity>
-        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.reminders.CBTi_ActivityRem2" 
-            									android:theme="@android:style/Theme.Translucent.NoTitleBar"> </activity>
+        
         <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRWindDown" />
         <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRSleepDiary" />
         <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.CBTi_ActivityRemBRPrescribedWakeTime" />
@@ -163,7 +161,9 @@
         	android:exported="true"
         	android:label="@string/app_name">
         <intent-filter> <action android:name="android.intent.action.BOOT_COMPLETED"></action> </intent-filter>
-    	</receiver>         
+    	</receiver>   
+    	
+		<activity android:label="@string/app_name"  android:name="com.t2.cbt_i.classes.CBTi_Help"   > </activity>
 
         <meta-data android:name="bForceSplash" android:value="false" /> 
         <meta-data android:name="iSplashTime"  android:value="3000" />  
