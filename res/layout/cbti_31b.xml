@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_mysleepcreambackground"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bggraystriped"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_whitetextbox"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/s_ISI1"
+                    android:textColor="#1c2739"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_whitetextbox" 
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:text="@string/s_ISI2"
+                            android:textColor="#1c2739"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bProvider"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textOff="@string/s_No"
+                            android:textOn="@string/s_Yes"
+                            android:textSize="15dp" />
+                    
+                </LinearLayout>
+                <!-- End UpdateSleepPrescription -->
+
+                <Button
+                    android:id="@+id/bTakeNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/s_TakeAssessmentNow" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- middle buttons -->
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/topbar"/>
+   
+   	<!--   middle buttons -->
+  <LinearLayout 
+       	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@drawable/bg_bggraystriped"
+    	android:layout_below="@+id/rl1" >
+    
+   	            
+    	        <LinearLayout
+    	            android:id="@+id/lBamboo"
+    	            android:layout_width="match_parent"
+    	            android:layout_height="0dp"
+    	            android:layout_weight="5"
+    	            android:layout_margin="10dp"
+    	            android:background="@drawable/bamboo"
+    	            android:gravity="center"
+    	            android:orientation="vertical" >
+
+    	            <TextView
+    	                android:layout_width="match_parent"
+    	                android:layout_height="0dp"
+    	            	android:layout_weight="2"
+    	                android:padding="10dp"
+    	                android:textSize="15dp"
+    	                android:gravity="center"
+    	                android:text="@string/s_ChangeYourPerspectivetext" />
+    	            
+    	            <TextView
+    	                android:id="@+id/tThought"
+    	                android:layout_width="match_parent"
+    	                android:layout_height="0dp"
+    	            	android:layout_weight="3"
+    	            	android:textStyle="bold"
+    	                android:textSize="20dp"
+    	                android:padding="10dp" 
+    	                android:gravity="center"
+    	                 />
+    	            
+    	        </LinearLayout>
+    	        
+    	        <Button
+                    android:id="@+id/bTryAnother"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+    	            android:layout_weight="1"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/s_TryAnother" />
+		
+    	    
+
+    	
+   	</LinearLayout>
+   	<!--   middle buttons -->
+
+</RelativeLayout>
+

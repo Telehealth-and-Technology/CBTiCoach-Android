@@ -1,0 +1,540 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_mysleepcreambackground"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bggraystriped"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_whitetextbox"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#008ac2"
+                        android:text="@string/s_36c1" />
+
+					<!-- top item1 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent01"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item1 -->
+                    
+                    <!-- top item2 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent02"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item2 -->
+                    
+                    <!-- top item3 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent03"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item3 -->
+                    
+                    <!-- top item4 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent04"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item4 -->
+                    
+                    <!-- top item5 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent05"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item5 -->
+                    
+                    <!-- top item6 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent06"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item6 -->
+                    
+                    <!-- top item7 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent07"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item7 -->
+                    
+                    <!-- top item8 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="@string/s_Prevent08"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- end top item8 -->
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_whitetextbox"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#008ac2"
+                        android:text="@string/s_36c2" />
+
+                    <!-- mid item1 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR01"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item1 -->
+                    
+                    <!-- mid item2 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR02"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item2 -->
+                    
+                    <!-- mid item3 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR03"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item3 -->
+                    
+                    <!-- mid item4 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR04"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item4 -->
+                    
+                    <!-- mid item5 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR05"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item5 -->
+                    
+                    <!-- mid item6 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR06"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item6 -->
+                    
+                    <!-- mid item7 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR07"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item7 -->
+                    
+                    <!-- mid item8 -->
+                    <LinearLayout
+                        android:id="@+id/llToolR08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <TextView
+                            android:id="@+id/tToolR08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:text="@string/s_ToolR08"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <!-- mid item8 -->
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_whitetextbox"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:textSize="20dp"
+                        android:textColor="#008ac2"
+                        android:text="@string/s_36c3" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

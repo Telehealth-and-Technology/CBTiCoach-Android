@@ -1,0 +1,501 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlpb"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- each button 1 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bWhatIsCBTi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learn101whatiscbti" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_1t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 1 -->
+
+
+                <!-- each button 2 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bWhyDoWeSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learn101whydowesleep" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_2t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 2 -->
+
+
+                <!-- each button 3 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bStagesOfSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learn101stagesofsleep" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_3t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 3 -->
+                
+                <!-- each button 4 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bSleepRegulators"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learn101sleepregulators" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_4t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 4 -->
+                
+                <!-- each button 5 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bSleepinessvsTiredness"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101sleepinessvstiredness" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_5t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 5 -->
+                
+                <!-- each button 6 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bPTSDandSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101ptsdandsleep" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_6t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 6 -->
+                
+                <!-- each button 7 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bNightmares"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101nightmares" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_7t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 7 -->
+                
+                <!-- each button 8 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bWeaponsandSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="6dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101weaponsandsleep" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_8t"  />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 8 -->
+                
+                <!-- each button 9 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bDepressionandSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101depressionandsleep" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_9t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 9 -->
+                
+                <!-- each button 10 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bSleepApnea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101sleepapnea" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_10t"  />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 10 -->
+                
+                <!-- each button 11 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bMedications"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2" 
+                            android:src="@drawable/buddy_learn101medications" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learn101_11t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 11 -->
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/topbar"/>
+   
+   	<!--   middle buttons -->
+   <LinearLayout 
+       	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@drawable/bg_mysleepcreambackground"
+    	android:layout_below="@+id/rl1"
+    	>
+   	    
+   		<ScrollView
+   			android:layout_width="match_parent"
+    	    android:layout_height="match_parent" 
+    	    android:fillViewport="true"
+   		    >
+    
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content" 
+	    		android:orientation="vertical"
+	    		android:background="@drawable/bg_bggraystriped"
+	    		>
+   	            
+    	        <LinearLayout
+    	            android:layout_width="match_parent"
+    	            android:layout_height="wrap_content"
+    	            android:layout_margin="20dp"
+    	            android:background="@drawable/bg_whitetextbox"
+    	            android:gravity="center"
+    	            android:orientation="vertical" >
+
+    	            <ImageView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="120dp"
+    	                android:paddingTop="10dp"
+    	                android:src="@drawable/buddy_learnglossary" />
+
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary01t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary01" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary02t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary02" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary03t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary03" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary04t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary04" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary05t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary05" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary06t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary06" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary07t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary07" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingTop="15dp"
+    	                android:paddingLeft="15dp"
+    	                android:textStyle="bold"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary08t" />
+    	            
+    	            <TextView
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:paddingLeft="15dp"
+    	                android:layout_gravity="left"
+    	                android:text="@string/s_glossary08" />
+    	        </LinearLayout>
+			</LinearLayout>
+    	    
+       	</ScrollView>
+    	
+   	</LinearLayout>
+   	<!--   middle buttons -->
+
+</RelativeLayout>

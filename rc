@@ -1,0 +1,156 @@
+[33mcommit cbdf04c311ab3fd28afef540cef4cf7b960d7e96[m
+Author: unknown <jack.cook@nb62548-cook.t2.local>
+Date:   Fri Jul 12 11:01:51 2013 -0700
+
+    initial version
+
+[1mdiff --git a/AndroidManifest.xml b/AndroidManifest.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d4cbfcd[m
+[1m--- /dev/null[m
+[1m+++ b/AndroidManifest.xml[m
+[36m@@ -0,0 +1,172 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<manifest xmlns:android="http://schemas.android.com/apk/res/android"[m
+[32m+[m[32m    package="com.t2.cbt_i"[m
+[32m+[m[32m    android:versionCode="1"[m
+[32m+[m[32m    android:versionName="1.0" >[m
+[32m+[m
+[32m+[m[32m    <uses-sdk[m
+[32m+[m[32m        android:minSdkVersion="8"[m
+[32m+[m[32m        android:targetSdkVersion="17" />[m
+[32m+[m[41m    [m
+[32m+[m[32m    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>[m
+[32m+[m[32m    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>[m
+[32m+[m[32m    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>[m
+[32m+[m[32m    <uses-permission android:name="android.permission.INTERNET"/>[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m    <application[m
+[32m+[m[32m        android:allowBackup="true"[m
+[32m+[m[32m        android:icon="@drawable/cbti_icon"[m
+[32m+[m[32m        android:label="@string/app_name"[m
+[32m+[m[32m        android:theme="@style/AppTheme" >[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name="com.t2.cbt_i.splash.SplashActivity10a"[m
+[32m+[m[32m            android:label="@string/app_name" >[m
+[32m+[m[32m            <intent-filter>[m
+[32m+[m[32m                <action android:name="android.intent.action.MAIN" />[m
+[32m+[m
+[32m+[m[32m                <category android:name="android.intent.category.LAUNCHER" />[m
+[32m+[m[32m            </intent-filter>[m
+[32m+[m[32m        </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:name="org.achartengine.GraphicalActivity" />[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.splash.SplashActivity10b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.splash.SplashActivity10d" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.dashboard.DashActivity" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.dashboard.ThoughtActivity" > </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.dashboard.CBTi_Activity10f" > </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity20a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity20b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21a" > </activity>[m
+[32m+[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21c" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity21j" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity22a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity22b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity22f" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity23a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity23b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity23c" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31b" > </activity>[m[41m  [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31bhelp" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31c" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31e" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31e2" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity31g" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32a" > </activity>[m[41m [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32d" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32e" > </activity>[m[41m [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32f" > </activity>[m[41m [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity32f1" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.mysleep.CBTi_Activity33a" > </activity>[m[41m [m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity30a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity30b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity32a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity33a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34c" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34c1" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34c2" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34e" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34e1" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34e2" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34f" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34h" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity34i" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a1" > </activity>[m[41m [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a10" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a10help" ></activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a11" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a11help" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a12" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a12help" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a13" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a13help" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a14" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a14help" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a15" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a15help" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a16" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a16help" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a25" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35a26" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35d" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35dhelp" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35e" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35e1" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity35e2" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity36a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity36b" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.tools.CBTi_Activity36c" > </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity40a"   > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity40b"   > </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a"   > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a01" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a02" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a03" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a04" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a05" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a06" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a07" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a08" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a09" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a10" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a11" > </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a01"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a02"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a03"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a04"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a05"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a06"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a07"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a08"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a09"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a10"  > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a11"  > </activity>[m
+[32m+[m[41m     [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.learn.CBTi_Activity43a"   > </activity>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity50a" > </activity>[m
+[32m+[m[32m        <activity android:label="@string/app_name"  android:name="com.t2.cbt_i.about.CBTi_Activity50b" > </activity>[m
+[32m+[m[32m    

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar"/>
+   
+   	<!--   middle buttons -->
+   <LinearLayout 
+       	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@drawable/bg_bggraystriped"
+    	android:layout_below="@+id/rl1"
+    	android:layout_above="@+id/rlpb"
+    	>
+    	
+       <ScrollView
+   			android:layout_width="match_parent"
+    	    android:layout_height="match_parent" 
+    	    android:fillViewport="true"
+   		    >
+    
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content" 
+	    		android:orientation="vertical"
+	    		>
+   	            
+    	        <!-- each button 1 -->
+    	        <LinearLayout
+    	            android:layout_width="match_parent"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginBottom="10dp"
+    	            android:layout_marginLeft="20dp"
+    	            android:layout_marginRight="20dp"
+    	            android:layout_marginTop="20dp"
+    	            android:orientation="vertical"
+    	            >
+    	            
+    	            <Button
+    	                android:id="@+id/bResetData"
+    	                android:layout_width="match_parent"
+    	                android:layout_height="wrap_content"
+    	                android:background="@drawable/bg_whitebutton"
+    	                android:gravity="center"
+    	                android:textSize="20dp"
+    	                android:textStyle="bold"
+    	                android:text="@string/s_ResetAllUserData" />
+    	            
+    	            <TextView
+    	                android:layout_width="match_parent"
+    	                android:layout_height="wrap_content"
+    	                android:layout_marginTop="20dp"
+    	                android:gravity="center"
+    	                android:textSize="20dp"
+    	                android:text="@string/s_50b" 
+    	                android:visibility="gone" />
+    	            
+    	            <RelativeLayout
+    	                android:layout_width="match_parent"
+    	                android:layout_height="wrap_content"
+    	                android:layout_marginTop="10dp"
+    	                android:paddingTop="10dp"
+    	                android:orientation="horizontal" 
+    	                android:visibility="gone" >
+    	                
+    	            	<TextView
+    	            	    android:layout_width="match_parent"
+    	            	    android:layout_height="wrap_content"
+    	            	    android:layout_alignParentLeft="true"
+    	            	    android:background="@drawable/bg_whitebutton"
+    	            	    android:paddingBottom="10dp"
+    	            	    android:paddingLeft="10dp"
+    	            	    android:paddingTop="10dp"
+    	            	    android:text="@string/s_ProvideAUD"
+    	            	    android:textSize="18dp" 
+    	            	    android:textStyle="bold" />
+    	            
+    	            	<CheckBox
+    	            	    android:id="@+id/bHelpImprove"
+    	            	    android:layout_width="wrap_content"
+    	            	    android:layout_height="wrap_content"
+    	            	    android:layout_alignParentRight="true"
+    	            	    android:paddingBottom="10dp"
+    	            	    android:paddingRight="10dp"
+    	            	    android:paddingTop="10dp" />
+
+    	            </RelativeLayout>
+
+   	        	</LinearLayout>
+   	        	<!-- end each button 1 -->
+   	        	
+   	        	
+   	        	 	        
+	    	</LinearLayout>
+    	    
+       	</ScrollView>
+    	
+   	</LinearLayout>
+   	<!--   middle buttons -->
+
+</RelativeLayout>

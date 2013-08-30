@@ -1,0 +1,234 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/topbar"/>
+   
+   	<!--   middle buttons -->
+   <LinearLayout 
+       	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@drawable/bg_bggraystriped"
+    	android:layout_below="@+id/rl1"
+    	android:layout_above="@+id/rlpb"
+    	>
+    	
+       <ScrollView
+   			android:layout_width="match_parent"
+    	    android:layout_height="match_parent" 
+    	    android:fillViewport="true"
+   		    >
+    
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content" 
+	    		android:orientation="vertical"
+	    		>
+   	            
+    	        <!-- each button 1 -->
+
+    	        <LinearLayout
+    	            android:layout_width="match_parent"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginBottom="10dp"
+    	            android:layout_marginLeft="20dp"
+    	            android:layout_marginRight="20dp"
+    	            android:layout_marginTop="20dp"
+    	            android:background="@drawable/bg_whitetextbox"
+    	            android:gravity="center_vertical"
+    	            android:orientation="horizontal" >
+
+    	            <LinearLayout 
+    	                android:layout_width="0dp"
+    					android:layout_height="wrap_content"
+    					android:orientation="vertical"
+    					android:paddingTop="30dp"
+    					android:paddingBottom="30dp"
+    					android:gravity="left"
+    					android:paddingLeft="15dp"
+    					android:layout_weight="4"
+    	                >
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:text="@string/s_MySleep"
+    	                    android:textStyle="bold" 
+    	                    android:textSize="15dp" />
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:text="@string/s_MySleepHelp" />
+
+    	            </LinearLayout>
+   	        		
+   	        		<ImageView
+    	               android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="2"
+					    android:scaleType="fitCenter"
+    	                android:src="@drawable/buddy_homemysleep" />
+
+   	        	</LinearLayout>
+   	        	<!-- end each button 1 -->
+   	        	
+   	        	<!-- each button 2 -->
+    	        <LinearLayout 
+   	        		android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_marginTop="10dp"
+    				android:layout_marginBottom="10dp"
+    				android:layout_marginLeft="20dp"
+    				android:layout_marginRight="20dp"
+    				android:gravity="center_vertical"
+    				android:background="@drawable/bg_whitetextbox"
+   	        		>
+
+					<ImageView
+					    android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="2"
+					    android:scaleType="fitCenter"
+					    android:src="@drawable/buddy_hometools" />
+					
+    	            <LinearLayout 
+    	                android:layout_width="0dp"
+    					android:layout_height="wrap_content"
+    					android:orientation="vertical"
+    					android:paddingTop="30dp"
+    					android:paddingBottom="30dp"
+    					android:paddingRight="15dp"
+    					android:layout_weight="4"
+    	                >
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:gravity="right"
+    	                    android:text="@string/s_Tools"
+    	                    android:textStyle="bold" 
+    	                    android:textSize="15dp"/>
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:text="@string/s_ToolsHelp" 
+    	                    android:gravity="right"
+    	                    />
+
+    	            </LinearLayout>
+   	        		
+   	        	</LinearLayout>
+   	        	<!-- end each button 2 -->   
+   	        	
+   	        	<!-- each button 3 -->
+    	        <LinearLayout 
+   	        		android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_marginTop="10dp"
+    				android:layout_marginBottom="10dp"
+    				android:layout_marginLeft="20dp"
+    				android:layout_marginRight="20dp"
+    				android:gravity="center_vertical"
+    				android:background="@drawable/bg_whitetextbox"
+   	        		>
+
+    	            <LinearLayout 
+    	                android:layout_width="0dp"
+    					android:layout_height="wrap_content"
+    					android:orientation="vertical"
+    					android:paddingTop="30dp"
+    					android:paddingBottom="30dp"
+    					android:gravity="left"
+    					android:paddingLeft="15dp"
+    					android:layout_weight="4"
+    	                >
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:text="@string/s_Learn"
+    	                    android:textStyle="bold" 
+    	                    android:textSize="15dp" />
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:text="@string/s_LearnHelp" />
+
+    	            </LinearLayout>
+   	        		
+   	        		<ImageView
+    	                android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="2"
+					    android:scaleType="fitCenter"
+    	                android:src="@drawable/buddy_homelearn" />
+
+   	        	</LinearLayout>
+   	        	<!-- end each button 3 -->
+   	        	
+   	        	<!-- each button 4 -->
+    	        <LinearLayout 
+   	        		android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_marginTop="10dp"
+    				android:layout_marginBottom="10dp"
+    				android:layout_marginLeft="20dp"
+    				android:layout_marginRight="20dp"
+    				android:gravity="center_vertical"
+    				android:background="@drawable/bg_whitetextbox"
+   	        		>
+					<ImageView
+    	                android:layout_width="0dp"
+					    android:layout_height="match_parent"
+					    android:layout_weight="2"
+					    android:scaleType="fitCenter"
+    	                android:src="@drawable/buddy_homereminder" />
+					
+    	            <LinearLayout 
+    	                android:layout_width="0dp"
+    					android:layout_height="wrap_content"
+    					android:orientation="vertical"
+    					android:paddingTop="30dp"
+    					android:paddingBottom="30dp"
+    					android:paddingRight="15dp"
+    					android:layout_weight="4"
+    	                >
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:gravity="right"
+    	                    android:text="@string/s_Reminders"
+    	                    android:textStyle="bold" 
+    	                    android:textSize="15dp"/>
+
+    	                <TextView
+    	                    android:layout_width="match_parent"
+    	                    android:layout_height="wrap_content"
+    	                    android:text="@string/s_RemindersHelp" 
+    	                    android:gravity="right"
+    	                    />
+
+    	            </LinearLayout>
+   	        		
+   	        	</LinearLayout>
+   	        	<!-- end each button 4 -->   	        
+	    	</LinearLayout>
+    	    
+       	</ScrollView>
+    	
+   	</LinearLayout>
+   	<!--   middle buttons -->
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_whitetextbox"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+            	android:layout_height="0dp"
+            	android:layout_weight="2"
+                android:paddingTop="10dp"
+                android:src="@drawable/buddy_mysleepineedmoresleep" />
+
+            <TextView
+                android:layout_width="match_parent"
+            	android:layout_height="0dp"
+            	android:layout_weight="5"
+            	android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/s_23a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bStartQuestionaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_whitebutton"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/s_StartQuestionaire" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

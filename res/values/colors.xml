@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tbBack">#008080</color>
+    <color name="tbText">#ffffff</color>
+    
+    <color name="manoff">#bdbdbd</color>
+    <color name="manon">#0066cc</color>
+    
+    <color name="bluetext">#1d2739</color>
+    
+    
+</resources>

@@ -1,0 +1,893 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlpb"
+        android:layout_below="@+id/rl1"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:layout_margin="20dp"
+                    android:text="@string/s_34e1"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_topbar"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/s_ActivitiesfortheMiddleoftheNight"
+                    android:textColor="@color/tbText"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:measureWithLargestChild="true"  >
+
+                    <!-- start #1 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep01"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep01"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/s_CantSleep01"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep01"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #1 -->
+
+
+                    <!-- start #2 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep02"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep02"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/s_CantSleep02"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep02"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #2 -->
+
+
+                    <!-- start #3 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep03"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep03"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep03"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep03"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #3 -->
+
+
+                    <!-- start #4 -->
+					<LinearLayout
+                        android:id="@+id/llCantSleep04"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+						<TextView
+						    android:id="@+id/tCantSleep04"
+						    android:layout_width="0dp"
+						    android:layout_height="match_parent"
+						    android:gravity="left|center_vertical"
+						    android:layout_weight="5"
+						    android:text="@string/s_CantSleep04"
+						    android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep04"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #4 -->
+
+
+                    <!-- start #5 -->
+					<LinearLayout
+                        android:id="@+id/llCantSleep05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep05"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep05"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep05"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #5 -->
+
+
+                    <!-- start #6 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep06"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep06"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep06"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep06"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #6 -->
+
+
+                    <!-- start #7 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep07"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep07"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep07"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep07"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #7 -->
+
+
+                    <!-- start #8 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep08"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep08"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep08"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep08"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #8 -->
+
+
+                    <!-- start #9 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep09"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep09"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep09"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep09"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #9 -->
+
+
+                    <!-- start #10 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep10"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep10"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #10 -->
+
+
+                    <!-- start #11 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep11"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep11"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #11 -->
+
+
+                    <!-- start #12 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep12"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep12"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #12 -->
+
+
+                    <!-- start #13 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep13"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep13"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #13 -->
+
+
+                    <!-- start #14 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep14"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep14"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #14 -->
+
+
+                    <!-- start #15 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep15"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep15"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #15 -->
+
+
+                    <!-- start #16 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep16"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep16"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep16"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep16"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #16 -->
+
+
+                    <!-- start #17 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep17"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep17"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #17 -->
+
+
+                    <!-- start #18 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep18"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep18"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep18"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep18"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #18 -->
+
+
+                    <!-- start #19 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep19"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep19"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep19"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep19"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #19 -->
+
+
+                    <!-- start #20 -->
+                    <LinearLayout
+                        android:id="@+id/llCantSleep20"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tCantSleep20"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_weight="5"
+                            android:text="@string/s_CantSleep20"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCantSleep20"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/starbutton2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bg_line" />
+                    <!-- end #20 -->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

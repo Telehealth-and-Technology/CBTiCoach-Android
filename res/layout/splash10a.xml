@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bggraystriped" >
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="0dp"
+        android:paddingTop="20dp"
+        android:text="@string/s_CBTi"
+        android:textColor="#9ddbdc"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title1"
+        android:gravity="center_horizontal"
+        android:padding="0dp"
+        android:text="@string/s_coach"
+        android:textColor="#9ddbdc"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title2"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:src="@drawable/cbti_moon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/iv1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/ivlogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingRight="5dp"
+            android:src="@drawable/logo_scierrapacificlogo" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/logo_stanfordlogo" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingLeft="5dp"
+            android:src="@drawable/logo_t2logo" />
+    </LinearLayout>
+
+</RelativeLayout>

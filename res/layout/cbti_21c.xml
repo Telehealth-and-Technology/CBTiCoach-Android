@@ -1,0 +1,873 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlpb"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- each button 1 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bSleepDiaryEntryTime"
+                        android:contentDescription="@string/s_EnterDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="7"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:text="@string/s_EnterDate" />
+
+                    <ImageButton
+                        android:id="@+id/bSleepDiaryEntryTimeInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_menu_info_details" />
+
+                </LinearLayout>
+                <!-- end each button 1 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/bg_line" />
+ 
+ 				<!-- Total Nap Time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_TNTQuestion"
+                            android:textSize="15dp" />
+                        
+                        <ToggleButton
+                            android:id="@+id/bTNT"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textOff="No"
+                            android:textOn="Yes" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTNT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" 
+                        android:visibility="gone" >
+                        
+                        <TextView
+                            android:id="@+id/tTNT"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+                        
+                        <ImageButton
+                            android:id="@+id/bTNTInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End Total Nap Time -->
+                 
+                 <!-- Total Bed Time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_BTQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                            android:id="@+id/tBT"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bBTInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End Bed Time -->
+                 
+                 <!-- SIAT -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_SIATQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSIAT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                            android:id="@+id/tSIAT"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bSIATInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End SIAT -->
+                 
+                 <!-- TTS -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_TTSQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTTS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                            android:id="@+id/tTTS"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bTTSInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End TTS -->
+                 
+                 <!-- Times Awake -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_TimesAwakeQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTimesAwake"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <Spinner
+                            android:id="@+id/sTimesAwake"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:drawSelectorOnTop="true"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="0dp"
+                            android:prompt="@string/numpicker_prompt"
+                            android:textSize="15dp" />
+                        
+                        <ImageButton
+                            android:id="@+id/bTimesAwakeInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End Times Awake -->
+                 
+                 <!-- TA -->
+                 <LinearLayout
+                    android:id="@+id/llTA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_TAQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                            android:id="@+id/tTA"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"  
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bTAInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End TA -->
+                 
+                 <!-- WUT -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_WUTQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWUT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                            android:id="@+id/tWUT"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bWUTInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End WUT -->
+                 
+                 <!-- Earlier -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_EarlierQuestion"
+                            android:textSize="15dp" />
+                        
+                        <ToggleButton
+                            android:id="@+id/bEarlier"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textOff="No"
+                            android:textOn="Yes" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llEarlier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" 
+                        android:visibility="gone" >
+                        
+                        <TextView
+                            android:id="@+id/tEarlier"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bEarlierInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End Earlier -->
+                 
+                 <!-- WT -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_WTQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <TextView
+                            android:id="@+id/tWT"
+                            android:textIsSelectable="true"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bWTInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End WT -->
+                 
+                 <!-- Sleep Quality -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_SQQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSleepQuality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <Spinner
+                            android:id="@+id/sSleepQuality"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:drawSelectorOnTop="true"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="0dp"
+                            android:prompt="@string/sleepquality_prompt"
+                            android:textSize="15dp" />
+                        
+                        <ImageButton
+                            android:id="@+id/bSleepQualityInfo" 
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End Sleep Quality -->
+                 
+                 <!-- Comment -->
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/s_CommentQuestion"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        
+                        <EditText
+                            android:id="@+id/tComment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/bg_whitebutton"
+                            android:hint="@string/s_CommentHint"
+                            android:gravity="left"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/bCommentInfo"
+                            android:layout_width="0dp"
+                        	android:layout_height="match_parent"
+                        	android:layout_weight="2"
+                        	android:background="@android:color/transparent"
+                        	android:gravity="center"
+                        	android:orientation="horizontal"
+                        	android:padding="5dp"
+                        	android:scaleType="fitCenter"
+                        	android:src="@drawable/ic_menu_info_details" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+                 <!-- End WT -->
+
+                <Button
+                    android:id="@+id/bSaveEntry"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:text="@string/s_SaveEntry" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

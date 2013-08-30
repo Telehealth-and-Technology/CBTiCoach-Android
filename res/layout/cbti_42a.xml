@@ -1,0 +1,507 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlpb"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- each button 1 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bWorryinginBed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshworryinginbed" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_01t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 1 -->
+
+
+                <!-- each button 2 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bWatchingtheClock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshwatchingtheclock" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_02t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 2 -->
+
+
+                <!-- each button 3 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bNapping"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshnapping" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_03t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 3 -->
+
+
+                <!-- each button 4 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bWindingDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshwindingdown" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_04t"  />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 4 -->
+
+
+                <!-- each button 5 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bUsingtheBedroom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshusingthebedroom" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_05t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 5 -->
+
+
+                <!-- each button 6 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bEating"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnsheating" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_06t"  />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 6 -->
+
+
+                <!-- each button 7 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bCaffeineUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshcaffeineuse" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_07t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 7 -->
+
+
+                <!-- each button 8 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bExercise"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshexercise" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_08t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 8 -->
+
+
+                <!-- each button 9 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bAlcoholUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshalcoholuse" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_09t"  />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 9 -->
+
+
+                <!-- each button 10 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bNicotineUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshnicotineuse" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_10t"  />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 10 -->
+
+
+                <!-- each button 11 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/bGettingComfortable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_learnshgettingcomfortable" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="3"
+                            android:textStyle="bold" 
+                    		android:textSize="20dp" 
+                            android:text="@string/s_learnsh_11t" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 11 -->
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
+
+        <!-- each button 1 -->
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_margin="15dp"
+		    android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/bCreateNewSleepHabits"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_whitebutton"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/buddy_toolscreatenewsleephabits" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:padding="15dp"
+                    android:text="@string/s_CreateNewSleepHabits"
+                    android:textStyle="bold" 
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- end each button -->
+
+
+        <!-- each button 2 -->
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_margin="15dp"
+		    android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/bQuietYourMind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_whitebutton"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/buddy_toolsquietyourmind" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:padding="15dp"
+                    android:text="@string/s_QuietYourMind"
+                    android:textStyle="bold" 
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- end each button -->
+
+
+        <!-- each button 3 -->
+		<RelativeLayout
+           	android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="15dp" >
+
+            <Button
+                android:id="@+id/bPreventInsomniaintheFuture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_whitebutton"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/buddy_toolspreventinsomniainthefuture" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:padding="15dp"
+                    android:text="@string/s_PreventInsomniaintheFuture"
+                    android:textStyle="bold" 
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- end each button -->
+
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar"/>
+   
+   	<!--   middle buttons -->
+   <LinearLayout 
+       	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@drawable/bg_bggraystriped"
+    	android:layout_below="@+id/rl1"
+    	android:layout_above="@+id/rlpb"
+    	>
+    	
+       <ScrollView
+   			android:layout_width="match_parent"
+    	    android:layout_height="match_parent" 
+    	    android:fillViewport="true"
+   		    >
+    
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content" 
+	    		android:orientation="vertical"
+	    		>
+	    		
+    	        <TextView
+    	            android:layout_width="match_parent"
+    	            android:layout_height="wrap_content"
+    	            android:layout_gravity="center_vertical"
+    	            android:layout_marginLeft="20dp"
+    	            android:layout_marginRight="20dp"
+    	            android:layout_marginTop="20dp"
+    	            android:text="@string/s_WindingDowntext"
+    	            android:textSize="15dp" />
+   	            
+    	        <!-- Worry Time Reminder -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/bg_whitetextbox"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="@string/s_remWorryTime"
+                                android:textColor="#1c2739"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        
+                        <ToggleButton
+                            android:id="@+id/bWorryTimeReminder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textOff="Off"
+                            android:textOn="On" />
+                        
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlWorryTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <View
+                            android:id="@+id/mMarker"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+
+                        <RelativeLayout 
+                            android:layout_width="match_parent"
+                        	android:layout_height="wrap_content"
+                        	android:gravity="center_vertical"
+                        	android:orientation="horizontal"
+                            >
+                        	<Spinner 
+        						android:id="@+id/sWorryTimeDay"
+        						android:layout_height="wrap_content"
+        						android:layout_width="wrap_content"
+        						android:drawSelectorOnTop = "true"
+        						android:prompt = "@string/dow_prompt"
+        						android:orientation="horizontal"
+        						/>
+        					
+        					<TextView
+        				    	android:id="@+id/tWorryTimeReminderTime"
+        				    	android:layout_width="wrap_content"
+        				    	android:layout_height="wrap_content"
+        				    	android:layout_alignParentRight="true"
+        				    	android:gravity="center_vertical"
+        				    	android:paddingBottom="10dp"
+        				    	android:paddingTop="10dp"
+        				    	android:text="10:15AM"
+        				    	android:textColor="#1c2739"
+        				    	android:textSize="15dp" />
+        				
+        				</RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- End Worry Time Reminder -->
+   	        	
+   	        	
+   	        	 	        
+	    	</LinearLayout>
+    	    
+       	</ScrollView>
+    	
+   	</LinearLayout>
+   	<!--   middle buttons -->
+
+</RelativeLayout>
