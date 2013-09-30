@@ -1,6 +1,7 @@
 package com.t2.cbt_i.splash;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
@@ -40,7 +41,7 @@ public class SplashActivity10a extends Activity {
 		}
 
 		// see if we need to splash or not
-		SharedPreferences prefs = this.getSharedPreferences( "CBTiPrefs", SplashActivity10a.this.MODE_PRIVATE);
+		SharedPreferences prefs = this.getSharedPreferences( "CBTiPrefs", Context.MODE_PRIVATE);
 		Boolean bSplashedAlready = prefs.getBoolean("bSplashedAlready", false);
 		if( bSplashedAlready && !bForceSplash )
 			jumpTo( DashActivity.class );

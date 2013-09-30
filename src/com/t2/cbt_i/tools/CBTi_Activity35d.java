@@ -11,23 +11,21 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 import com.t2.cbt_i.reminders.CBTi_ActivityRemBRWorryTime;
 import com.t2.cbt_i.reminders.CBTi_Data60a;
 import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
 
 
 
-public class CBTi_Activity35d extends CBTi_BaseActivity {	
+public class CBTi_Activity35d extends BaseABSActivity {	
 
 	CBTi_Data60a cData60a;
 
@@ -37,33 +35,6 @@ public class CBTi_Activity35d extends CBTi_BaseActivity {
 		setContentView(R.layout.cbti_35d);
 
 		cData60a = new CBTi_Data60a(this);
-
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_WorryTime);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity35d.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity35d.this.startActivity(i);
-				CBTi_Activity35d.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
-		// topRight Button HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity35d.this, CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_toolsworrytime);
-				i.putExtra("RID_Text", R.string.s_35dhelp);
-				CBTi_Activity35d.this.startActivity(i);
-				CBTi_Activity35d.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		});
 
 		// Worry Time Reminder
 		((Button)findViewById(R.id.bWorryTimeReminder)).setOnClickListener(new View.OnClickListener() {
@@ -217,4 +188,13 @@ public class CBTi_Activity35d extends CBTi_BaseActivity {
 			}
 		}
 	};
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(CBTi_Activity35d.this, CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_toolsworrytime);
+		i.putExtra("RID_Text", R.string.s_35dhelp);
+		CBTi_Activity35d.this.startActivity(i);
+		CBTi_Activity35d.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
+	}
 }

@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 import android.app.Activity;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -74,30 +75,31 @@ public class CBTi_Data35a1 {
 	}
 	
 	public void renderData() {
+		CharSequence csDesc;
 		reOrderMap();
-		
-		((ImageButton)c.findViewById(R.id.bWind01)).setSelected( bWind[iMap[0]] );
-		((ImageButton)c.findViewById(R.id.bWind02)).setSelected( bWind[iMap[1]] );
-		((ImageButton)c.findViewById(R.id.bWind03)).setSelected( bWind[iMap[2]] );
-		((ImageButton)c.findViewById(R.id.bWind04)).setSelected( bWind[iMap[3]] );
-		((ImageButton)c.findViewById(R.id.bWind05)).setSelected( bWind[iMap[4]] );
-		((ImageButton)c.findViewById(R.id.bWind06)).setSelected( bWind[iMap[5]] );
-		((ImageButton)c.findViewById(R.id.bWind07)).setSelected( bWind[iMap[6]] );
-		((ImageButton)c.findViewById(R.id.bWind08)).setSelected( bWind[iMap[7]] );
-		((ImageButton)c.findViewById(R.id.bWind09)).setSelected( bWind[iMap[8]] );
-		((ImageButton)c.findViewById(R.id.bWind10)).setSelected( bWind[iMap[9]] );
-		((ImageButton)c.findViewById(R.id.bWind11)).setSelected( bWind[iMap[10]] );
-		((ImageButton)c.findViewById(R.id.bWind12)).setSelected( bWind[iMap[11]] );
-		((ImageButton)c.findViewById(R.id.bWind13)).setSelected( bWind[iMap[12]] );
-		((ImageButton)c.findViewById(R.id.bWind14)).setSelected( bWind[iMap[13]] );
-		((ImageButton)c.findViewById(R.id.bWind15)).setSelected( bWind[iMap[14]] );
-		((ImageButton)c.findViewById(R.id.bWind16)).setSelected( bWind[iMap[15]] );
-		((ImageButton)c.findViewById(R.id.bWind17)).setSelected( bWind[iMap[16]] );
-		((ImageButton)c.findViewById(R.id.bWind18)).setSelected( bWind[iMap[17]] );
-		((ImageButton)c.findViewById(R.id.bWind19)).setSelected( bWind[iMap[18]] );
-		((ImageButton)c.findViewById(R.id.bWind20)).setSelected( bWind[iMap[19]] );
-		((ImageButton)c.findViewById(R.id.bWind21)).setSelected( bWind[iMap[20]] );
-		((ImageButton)c.findViewById(R.id.bWind22)).setSelected( bWind[iMap[21]] );
+
+		((CheckBox)c.findViewById(R.id.cbWind01)).setChecked( bWind[iMap[0]] );
+		((CheckBox)c.findViewById(R.id.cbWind02)).setChecked( bWind[iMap[1]] );
+		((CheckBox)c.findViewById(R.id.cbWind03)).setChecked( bWind[iMap[2]] );
+		((CheckBox)c.findViewById(R.id.cbWind04)).setChecked( bWind[iMap[3]] );
+		((CheckBox)c.findViewById(R.id.cbWind05)).setChecked( bWind[iMap[4]] );
+		((CheckBox)c.findViewById(R.id.cbWind06)).setChecked( bWind[iMap[5]] );
+		((CheckBox)c.findViewById(R.id.cbWind07)).setChecked( bWind[iMap[6]] );
+		((CheckBox)c.findViewById(R.id.cbWind08)).setChecked( bWind[iMap[7]] );
+		((CheckBox)c.findViewById(R.id.cbWind09)).setChecked( bWind[iMap[8]] );
+		((CheckBox)c.findViewById(R.id.cbWind10)).setChecked( bWind[iMap[9]] );
+		((CheckBox)c.findViewById(R.id.cbWind11)).setChecked( bWind[iMap[10]] );
+		((CheckBox)c.findViewById(R.id.cbWind12)).setChecked( bWind[iMap[11]] );
+		((CheckBox)c.findViewById(R.id.cbWind13)).setChecked( bWind[iMap[12]] );
+		((CheckBox)c.findViewById(R.id.cbWind14)).setChecked( bWind[iMap[13]] );
+		((CheckBox)c.findViewById(R.id.cbWind15)).setChecked( bWind[iMap[14]] );
+		((CheckBox)c.findViewById(R.id.cbWind16)).setChecked( bWind[iMap[15]] );
+		((CheckBox)c.findViewById(R.id.cbWind17)).setChecked( bWind[iMap[16]] );
+		((CheckBox)c.findViewById(R.id.cbWind18)).setChecked( bWind[iMap[17]] );
+		((CheckBox)c.findViewById(R.id.cbWind19)).setChecked( bWind[iMap[18]] );
+		((CheckBox)c.findViewById(R.id.cbWind20)).setChecked( bWind[iMap[19]] );
+		((CheckBox)c.findViewById(R.id.cbWind21)).setChecked( bWind[iMap[20]] );
+		((CheckBox)c.findViewById(R.id.cbWind22)).setChecked( bWind[iMap[21]] );
 				
 		((TextView)c.findViewById(R.id.tWind01)).setText( iID[iMap[0]] );
 		((TextView)c.findViewById(R.id.tWind02)).setText( iID[iMap[1]] );
@@ -121,6 +123,28 @@ public class CBTi_Data35a1 {
 		((TextView)c.findViewById(R.id.tWind20)).setText( iID[iMap[19]] );
 		((TextView)c.findViewById(R.id.tWind21)).setText( iID[iMap[20]] );
 		((TextView)c.findViewById(R.id.tWind22)).setText( iID[iMap[21]] );
+		
+		((CheckBox)c.findViewById(R.id.cbWind01)).setContentDescription( c.getString(iID[iMap[0]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind02)).setContentDescription( c.getString(iID[iMap[1]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind03)).setContentDescription( c.getString(iID[iMap[2]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind04)).setContentDescription( c.getString(iID[iMap[3]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind05)).setContentDescription( c.getString(iID[iMap[4]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind06)).setContentDescription( c.getString(iID[iMap[5]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind07)).setContentDescription( c.getString(iID[iMap[6]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind08)).setContentDescription( c.getString(iID[iMap[7]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind09)).setContentDescription( c.getString(iID[iMap[8]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind10)).setContentDescription( c.getString(iID[iMap[9]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind11)).setContentDescription( c.getString(iID[iMap[10]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind12)).setContentDescription( c.getString(iID[iMap[11]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind13)).setContentDescription( c.getString(iID[iMap[12]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind14)).setContentDescription( c.getString(iID[iMap[13]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind15)).setContentDescription( c.getString(iID[iMap[14]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind16)).setContentDescription( c.getString(iID[iMap[15]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind17)).setContentDescription( c.getString(iID[iMap[17]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind18)).setContentDescription( c.getString(iID[iMap[18]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind19)).setContentDescription( c.getString(iID[iMap[19]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind20)).setContentDescription( c.getString(iID[iMap[20]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbWind21)).setContentDescription( c.getString(iID[iMap[21]])+" checkbox)" );
 		
 	}
 	

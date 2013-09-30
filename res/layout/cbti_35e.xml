@@ -4,10 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -54,7 +51,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:text="@string/s_WorriedAboutSleep" />
+            android:text="@string/s_WorriedAboutSleep"
+            android:contentDescription="@string/s_WorriedAboutSleepButton" />
 
         <Button
             android:id="@+id/bWorriedAboutTrauma"
@@ -71,7 +69,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:text="@string/s_WorriedAboutTrauma" />
+            android:text="@string/s_WorriedAboutTrauma"
+            android:contentDescription="@string/s_WorriedAboutTraumaButton" />
     </LinearLayout>
 
     <!-- middle buttons -->

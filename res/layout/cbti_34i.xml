@@ -4,138 +4,133 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar"/>
-   
-   		<!--   middle buttons -->
-    	<ScrollView
-   			android:layout_width="match_parent"
-    	    android:layout_height="match_parent" 
-    	    android:orientation="vertical"
-    		android:background="@drawable/bg_bggraystriped"
-    		android:layout_below="@+id/rl1"
-    	    android:fillViewport="true"
-   		    >
-    
-    	    <LinearLayout
-    	        android:layout_width="match_parent"
-    	        android:layout_height="wrap_content" 
-	    		android:orientation="vertical"
-	    		>
-	    		
-    	        <TextView
-    	            android:layout_width="match_parent"
-    	            android:layout_height="wrap_content"
-    	            android:layout_gravity="center_vertical"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="20dp"
-    	            android:gravity="center_vertical"
-    	            android:text="@string/s_34i"
-    	            android:textSize="15dp" />
-   	            
-    	          <!-- Daily Caffeine Drink Limit -->
-                <LinearLayout
+    <!-- middle buttons -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bggraystriped"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/s_34i"
+                android:textSize="15dp" />
+
+            <!-- Daily Caffeine Drink Limit -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_whitetextbox"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/tdcdl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/s_DailyCaffeineDrinkLimit"
+                        android:textColor="#1c2739"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/sDailyCaffeineDrinkLimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:drawSelectorOnTop="true"
+                        android:orientation="horizontal" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- End Daily Caffeine Drink Limit -->
+
+
+            <!-- Stop Caffeine -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_whitetextbox"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/bg_whitetextbox"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp" >
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="5dp" >
-
-                        <TextView
-                            android:id="@+id/tdcdl"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_gravity="center_vertical"
-                            android:paddingBottom="10dp"
-                            android:paddingTop="10dp"
-                            android:text="@string/s_DailyCaffeineDrinkLimit"
-                            android:textColor="#1c2739"
-                            android:textSize="15dp" />
-
-                        <Spinner
-                            android:id="@+id/sDailyCaffeineDrinkLimit"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:drawSelectorOnTop="true"
-                            android:layout_gravity="right"
-                            android:orientation="horizontal"
-                            />
-
-                    </RelativeLayout>
-
-    	        </LinearLayout>
-    	        <!-- End Daily Caffeine Drink Limit -->
-    	        
-    	        <!-- Stop Caffeine -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/bg_whitetextbox"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp" >
-
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="5dp" >
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical" >
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:orientation="vertical" >
+                            android:gravity="center_vertical"
+                            android:text="@string/s_remStopCaffeine"
+                            android:textColor="#1c2739"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_vertical"
-                                android:text="@string/s_remStopCaffeine"
-                                android:textColor="#1c2739"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tStopCaffeineReminder"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="10:15"
-                                android:textColor="#1c2739"
-                                android:textSize="15dp" />
-                        </LinearLayout>
-
-                        <ToggleButton
-                            android:id="@+id/bStopCaffeineReminder"
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:id="@+id/tStopCaffeineReminder"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:gravity="center"
-                            android:textOff="Off"
-                            android:textOn="On" />
+                            android:text="10:15"
+                            android:textColor="#1c2739"
+                            android:textSize="15dp" />
+                    </LinearLayout>
 
-                    </RelativeLayout>
-                </LinearLayout>
-                <!-- End Stop Caffeine -->
+                    <ToggleButton
+                        android:id="@+id/bStopCaffeineReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/s_StopCaffeineReminderCheckbox"
+                        android:gravity="center"
+                        android:textOff="Off"
+                        android:textOn="On" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- End Stop Caffeine -->
 
-			</LinearLayout>
-    	    
-       	</ScrollView>
-   		<!--   middle buttons -->
+        </LinearLayout>
+    </ScrollView>
+    <!-- middle buttons -->
 
 </RelativeLayout>

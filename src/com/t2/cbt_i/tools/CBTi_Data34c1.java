@@ -7,7 +7,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 import android.app.Activity;
-import android.widget.ImageButton;
+import android.widget.CheckBox;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;
@@ -76,26 +77,26 @@ public class CBTi_Data34c1 {
 	public void renderData() {
 		reOrderMap();
 		
-		((ImageButton)c.findViewById(R.id.bCantSleep01)).setSelected( bCantSleep[iMap[0]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep02)).setSelected( bCantSleep[iMap[1]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep03)).setSelected( bCantSleep[iMap[2]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep04)).setSelected( bCantSleep[iMap[3]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep05)).setSelected( bCantSleep[iMap[4]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep06)).setSelected( bCantSleep[iMap[5]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep07)).setSelected( bCantSleep[iMap[6]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep08)).setSelected( bCantSleep[iMap[7]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep09)).setSelected( bCantSleep[iMap[8]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep10)).setSelected( bCantSleep[iMap[9]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep11)).setSelected( bCantSleep[iMap[10]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep12)).setSelected( bCantSleep[iMap[11]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep13)).setSelected( bCantSleep[iMap[12]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep14)).setSelected( bCantSleep[iMap[13]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep15)).setSelected( bCantSleep[iMap[14]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep16)).setSelected( bCantSleep[iMap[15]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep17)).setSelected( bCantSleep[iMap[16]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep18)).setSelected( bCantSleep[iMap[17]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep19)).setSelected( bCantSleep[iMap[18]] );
-		((ImageButton)c.findViewById(R.id.bCantSleep20)).setSelected( bCantSleep[iMap[19]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep01)).setChecked( bCantSleep[iMap[0]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep02)).setChecked( bCantSleep[iMap[1]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep03)).setChecked( bCantSleep[iMap[2]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep04)).setChecked( bCantSleep[iMap[3]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep05)).setChecked( bCantSleep[iMap[4]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep06)).setChecked( bCantSleep[iMap[5]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep07)).setChecked( bCantSleep[iMap[6]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep08)).setChecked( bCantSleep[iMap[7]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep09)).setChecked( bCantSleep[iMap[8]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep10)).setChecked( bCantSleep[iMap[9]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep11)).setChecked( bCantSleep[iMap[10]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep12)).setChecked( bCantSleep[iMap[11]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep13)).setChecked( bCantSleep[iMap[12]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep14)).setChecked( bCantSleep[iMap[13]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep15)).setChecked( bCantSleep[iMap[14]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep16)).setChecked( bCantSleep[iMap[15]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep17)).setChecked( bCantSleep[iMap[16]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep18)).setChecked( bCantSleep[iMap[17]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep19)).setChecked( bCantSleep[iMap[18]] );
+		((CheckBox)c.findViewById(R.id.cbCantSleep20)).setChecked( bCantSleep[iMap[19]] );
 		
 		
 		((TextView)c.findViewById(R.id.tCantSleep01)).setText( iID[iMap[0]] );
@@ -118,13 +119,34 @@ public class CBTi_Data34c1 {
 		((TextView)c.findViewById(R.id.tCantSleep18)).setText( iID[iMap[17]] );
 		((TextView)c.findViewById(R.id.tCantSleep19)).setText( iID[iMap[18]] );
 		((TextView)c.findViewById(R.id.tCantSleep20)).setText( iID[iMap[19]] );
+		
+		((CheckBox)c.findViewById(R.id.cbCantSleep01)).setContentDescription( c.getString(iID[iMap[0]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep02)).setContentDescription( c.getString(iID[iMap[1]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep03)).setContentDescription( c.getString(iID[iMap[2]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep04)).setContentDescription( c.getString(iID[iMap[3]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep05)).setContentDescription( c.getString(iID[iMap[4]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep06)).setContentDescription( c.getString(iID[iMap[5]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep07)).setContentDescription( c.getString(iID[iMap[6]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep08)).setContentDescription( c.getString(iID[iMap[7]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep09)).setContentDescription( c.getString(iID[iMap[8]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep10)).setContentDescription( c.getString(iID[iMap[9]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep11)).setContentDescription( c.getString(iID[iMap[10]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep12)).setContentDescription( c.getString(iID[iMap[11]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep13)).setContentDescription( c.getString(iID[iMap[12]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep14)).setContentDescription( c.getString(iID[iMap[13]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep15)).setContentDescription( c.getString(iID[iMap[14]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep16)).setContentDescription( c.getString(iID[iMap[15]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep17)).setContentDescription( c.getString(iID[iMap[16]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep18)).setContentDescription( c.getString(iID[iMap[17]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep19)).setContentDescription( c.getString(iID[iMap[18]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbCantSleep20)).setContentDescription( c.getString(iID[iMap[19]])+" checkbox)" );
 	}
 	
-	private void reOrderMap() {					// move checked items to top of list
+	private void reOrderMap() {						// move checked items to top of list
 		int i, j;
 		for( i=0 ; i<19 ; i++ ) {
 			if( bCantSleep[iMap[i]] == false ) {	// when you find an unchecked item
-				for( j=i+1 ; j<20 ; j++ ) { 	// look for another checked item
+				for( j=i+1 ; j<20 ; j++ ) { 	    // look for another checked item
 					if( bCantSleep[iMap[j]] ) {		// found one
 						int iHold = iMap[i];
 						iMap[i] = iMap[j];

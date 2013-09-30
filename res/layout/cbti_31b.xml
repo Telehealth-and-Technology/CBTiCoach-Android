@@ -5,14 +5,11 @@
     android:layout_marginBottom="5dp"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
 
@@ -48,15 +45,15 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp" >
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="7"
-                            android:gravity="center_vertical"
-                            android:padding="10dp"
-                            android:text="@string/s_ISI2"
-                            android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/s_ISI2"
+                        android:textColor="#1c2739"
+                        android:textSize="15dp" />
 
                         <ToggleButton
                             android:id="@+id/bProvider"
@@ -67,7 +64,8 @@
                             android:gravity="center"
                             android:textOff="@string/s_No"
                             android:textOn="@string/s_Yes"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_HealthcareProviderCheckbox"  />
                     
                 </LinearLayout>
                 <!-- End UpdateSleepPrescription -->
@@ -86,7 +84,8 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_TakeAssessmentNow" />
+                    android:text="@string/s_TakeAssessmentNow"
+                    android:contentDescription="@string/s_TakeAssessmentNowButton"  />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

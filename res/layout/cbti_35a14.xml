@@ -4,12 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -36,7 +33,9 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
-                android:textSize="20dp" />
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:contentDescription=" " />
 
             <Button
                 android:id="@+id/bPlayMe"
@@ -53,7 +52,8 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:text="@string/s_Play" />
+                android:text="@string/s_Play"
+                android:contentDescription="@string/s_PlayButton" />
 
             <VideoView
                 android:id="@+id/video"

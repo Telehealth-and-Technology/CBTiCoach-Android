@@ -6,7 +6,6 @@
     android:orientation="vertical"
     >
 
-    <include layout="@layout/topbar"/>
     <include layout="@layout/prescriptionbar"/>
        	
    	<!--   middle buttons -->
@@ -15,7 +14,6 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:layout_above="@+id/rlpb"
-       android:layout_below="@+id/rl1"
       
        android:background="@drawable/bg_bggraystriped"
        android:orientation="vertical" >
@@ -40,7 +38,7 @@
 			            	android:layout_width="match_parent"
 			            	android:layout_marginRight="5dp"
 			            	android:background="@drawable/bg_whitebutton"
-			            	/>
+			            	android:contentDescription="@string/s_MySleepButton" />
 
 			        	<ImageView
 			        	    android:id="@+id/ivmysleep"
@@ -51,12 +49,13 @@
 			        	    android:src="@drawable/buddy_homemysleep" />
 			        	    
 			        	<TextView
+			        	    android:id="@+id/t10mysleep"
 			        	    android:layout_width="match_parent"
 			        	    android:layout_height="match_parent"
 			        	    android:layout_marginBottom="10dp"
 			        	    android:gravity="bottom|center_horizontal"
 			        	    android:text="@string/s_MySleep"
-			        	    android:textSize="20dp" 
+			        	    android:textSize="20sp" 
 			        	    android:textStyle="bold"/>
 			        	
 			        </RelativeLayout>
@@ -74,7 +73,7 @@
 			            	android:layout_width="match_parent"
 			            	android:layout_marginRight="5dp"
 			            	android:background="@drawable/bg_whitebutton"
-			            	/>
+			            	android:contentDescription="@string/s_ToolsButton"/>
 
 			        	<ImageView
 			        	    android:id="@+id/ivtools"
@@ -85,12 +84,13 @@
 			        	    android:src="@drawable/buddy_hometools" />
 			        	    
 			        	<TextView
+			        	    android:id="@+id/t10tools"
 			        	    android:layout_width="match_parent"
 			        	    android:layout_height="match_parent"
 			        	    android:layout_marginBottom="10dp"
 			        	    android:gravity="bottom|center_horizontal"
 			        	    android:text="@string/s_Tools"
-			        	    android:textSize="20dp"
+			        	    android:textSize="20sp"
 			        	    android:textStyle="bold" />
 			        	
 			        </RelativeLayout>				        
@@ -116,7 +116,7 @@
 			            	android:layout_width="match_parent"
 			            	android:layout_marginRight="5dp"
 			            	android:background="@drawable/bg_whitebutton"
-			            	/>
+			            	android:contentDescription="@string/s_LearnButton"/>
 
 			        	<ImageView
 			        	    android:id="@+id/ivmysleep"
@@ -127,12 +127,13 @@
 			        	    android:src="@drawable/buddy_homelearn" />
 			        	    
 			        	<TextView
+			        	    android:id="@+id/t10learn"
 			        	    android:layout_width="match_parent"
 			        	    android:layout_height="match_parent"
 			        	    android:layout_marginBottom="10dp"
 			        	    android:gravity="bottom|center_horizontal"
 			        	    android:text="@string/s_Learn"
-			        	    android:textSize="20dp" 
+			        	    android:textSize="20sp" 
 			        	    android:textStyle="bold" />
 			        	
 			        </RelativeLayout>
@@ -150,10 +151,10 @@
 			            	android:layout_width="match_parent"
 			            	android:layout_marginRight="5dp"
 			            	android:background="@drawable/bg_whitebutton"
-			            	/>
+			            	android:contentDescription="@string/s_RemindersButton"/>
 
 			        	<ImageView
-			        	    android:id="@+id/ivtools"
+			        	    android:id="@+id/ivreminders"
 			        	    android:layout_width="match_parent"
 			        	    android:layout_height="match_parent"
 			        	    android:gravity="center"
@@ -161,6 +162,7 @@
 			        	    android:src="@drawable/buddy_homereminder" />
 			        	    
 			        	<TextView
+			        	    android:id="@+id/t10reminders"
 			        	    android:layout_width="match_parent"
 			        	    android:layout_height="match_parent"
 			        	    android:layout_marginBottom="10dp"

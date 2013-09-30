@@ -4,14 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
-    <!-- middle buttons -->
+   	<!-- middle buttons -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
 
@@ -60,7 +57,8 @@
                         android:background="@drawable/manbutton"
                         android:textOff="@string/s_Manually"
                         android:textOn="@string/s_Manually"
-                        android:textSize="15dp" />
+                        android:textSize="15dp" 
+                        android:contentDescription="@string/s_SelectManually" />
 
                     <ToggleButton
                         android:id="@+id/bManAut"
@@ -70,7 +68,8 @@
                         android:background="@drawable/manbutton"
                         android:textOff="@string/s_Automatically"
                         android:textOn="@string/s_Automatically"
-                        android:textSize="15dp" />
+                        android:textSize="15dp" 
+                        android:contentDescription="@string/s_SelectAutomatically" />
                 </LinearLayout>
 
                 <View
@@ -144,7 +143,8 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/ic_menu_info_details" />
+                                android:src="@drawable/ic_menu_info_details"
+                                android:contentDescription="@string/s_InfoButton"  />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -214,7 +214,8 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/ic_menu_info_details" />
+                                android:src="@drawable/ic_menu_info_details"
+                                android:contentDescription="@string/s_InfoButton" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -278,7 +279,8 @@
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
                                 android:textIsSelectable="true"
-                                android:textSize="15dp" />
+                                android:textSize="15dp" 
+                                android:contentDescription="@string/s_WakeTimeButton" />
 
                             <ImageButton
                                 android:id="@+id/bAutoWakeInfo"
@@ -290,7 +292,8 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/ic_menu_info_details" />
+                                android:src="@drawable/ic_menu_info_details"
+                                android:contentDescription="@string/s_InfoButton"  />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -330,7 +333,7 @@
                             android:orientation="horizontal"
                             android:background="@drawable/bg_whitebutton"
                             android:prompt="@string/dow_prompt"
-                            android:textSize="15dp"  /> 
+                            android:textSize="15dp"  android:contentDescription="@string/dow_prompt" /> 
                     </LinearLayout>
 
                     <!-- End UpdateSleepPrescription -->
@@ -349,7 +352,8 @@
 				    android:gravity="center"
 				    android:orientation="horizontal"
 				    android:padding="10dp"
-				    android:text="@string/s_UpdatePrescription" />
+				    android:text="@string/s_UpdatePrescription"
+				    android:contentDescription="@string/s_UpdatePrescriptionButton" />
 
             </LinearLayout>
         </ScrollView>

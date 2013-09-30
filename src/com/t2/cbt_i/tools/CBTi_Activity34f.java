@@ -9,17 +9,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 
 
-public class CBTi_Activity34f extends CBTi_BaseActivity {
+public class CBTi_Activity34f extends BaseABSActivity {
 	
 	CBTi_Data34f cData34f;
 
@@ -30,36 +27,6 @@ public class CBTi_Activity34f extends CBTi_BaseActivity {
 		
 		cData34f = new CBTi_Data34f(this);
 	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-		((TextView)findViewById(R.id.tvTopTitle)).setText(R.string.s_SleepEnvironment);
-		
-		// Top Left HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				// Perform action on click
-				finish();		// make sure we close the splash screen so the user won't come back when it presses back key
-				Intent i = new Intent(getApplicationContext(), DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(i);
-				CBTi_Activity34f.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		}); 
-
-		// Top Right HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_toolssetupyoursleepenvironment);
-				i.putExtra("RID_Text", R.string.s_34h);
-				startActivity(i);
-				CBTi_Activity34f.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		}); 
-		
-		
 		((Button)findViewById(R.id.bLownoiselevel)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if( !((ToggleButton)findViewById(R.id.bLownoiselevel)).isChecked() )
@@ -164,13 +131,18 @@ public class CBTi_Activity34f extends CBTi_BaseActivity {
 			builder.setMessage(getString(R.string.s_Reservemybedforsleepsextext));
 			break;
 		}
-		builder.setPositiveButton("OK", new OkOnClickListener());
-		builder.create().show();
+		builder.setPositiveButton("OK", null).create().show();
 		return null;
 	}
+
 	
-	private final class OkOnClickListener implements DialogInterface.OnClickListener {
-		public void onClick(DialogInterface dialog, int which) {
-		}
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_homelearn);
+		i.putExtra("RID_Text", R.string.s_40b);
+		startActivity( i ); 
+		overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
 	}
 }

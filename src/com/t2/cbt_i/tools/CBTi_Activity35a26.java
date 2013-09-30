@@ -5,15 +5,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.method.ScrollingMovementMethod;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 
-public class CBTi_Activity35a26 extends CBTi_BaseActivity {
+public class CBTi_Activity35a26 extends BaseABSNHActivity {
 
 	private int[] iCaptionId = 		{ 	R.string.s_bScan01, R.string.s_bScan02, R.string.s_bScan03, R.string.s_bScan04, R.string.s_bScan05,
 								R.string.s_bScan06, R.string.s_bScan07, R.string.s_bScan08, R.string.s_bScan09, R.string.s_bScan10,
@@ -46,16 +44,9 @@ public class CBTi_Activity35a26 extends CBTi_BaseActivity {
 		int iRid = b.getInt("RID");
 		if( iRid == R.id.bSelfGuided ) {
 			setContentView(R.layout.cbti_35a26);
-			((ImageButton)findViewById(R.id.ibTopLeft)).setVisibility(View.INVISIBLE);
-			((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-			((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_SelfGuided);
 			((TextView)findViewById(R.id.tvSelf)).setMovementMethod(new ScrollingMovementMethod());
 		} else {
 			setContentView(R.layout.cbti_35a262);
-			((ImageButton)findViewById(R.id.ibTopLeft)).setVisibility(View.INVISIBLE);
-			((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-			((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_AudioGuided);
-
 			Uri uUri = Uri.parse( "android.resource://" + getPackageName() + "/" + R.raw.mp3_observe_sensations_new );
 
 			((VideoView) findViewById( R.id.video )).setVideoURI(uUri);

@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -22,12 +21,11 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 
 
-public class CBTi_Activity22a extends CBTi_BaseActivity {
+public class CBTi_Activity22a extends BaseABSActivity {
 
 	CBTi_Data22a cData22a;
 	
@@ -36,33 +34,6 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_22a);
 	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText(R.string.s_UpdateSleep);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity22a.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity22a.this.startActivity(i);
-				CBTi_Activity22a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
-		// topRight Button
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity22a.this, CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_mysleepupdatesleepprescription);
-				i.putExtra("RID_Text", R.string.s_22b);
-				CBTi_Activity22a.this.startActivity(i);
-				CBTi_Activity22a.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		});
-		
 		// Manual Button
 		((ToggleButton)findViewById(R.id.bManMan)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {		// handle the about button
@@ -218,8 +189,9 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
 	@Override
 	protected void onPause() {
 		cData22a.bManUpdate = ((ToggleButton)findViewById(R.id.bManMan)).isChecked();
-		cData22a.iUSPDayofWeek = ((Spinner)findViewById(R.id.sAutoDay)).getSelectedItemPosition();
-		cData22a.saveData();
+		if( (Spinner)findViewById(R.id.sAutoDay) != null )
+			cData22a.iUSPDayofWeek = ((Spinner)findViewById(R.id.sAutoDay)).getSelectedItemPosition();
+		//cData22a.saveData();
 		
 		super.onPause();
 	}
@@ -248,9 +220,9 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
 			if( cData21a.iPastWeek < 5 )
 				showDialog(DIALOG_UPDATEERROR);
 		}
-
 		super.onResume();
 	}
+
 	
 	private static final int DIALOG_UPDATEERROR      = 41;
 	private static final int DIALOG_UPDATEERROR2     = 42;
@@ -272,43 +244,43 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
 
 		case DIALOG_UPDATEERROR:
 			builder.setMessage(getString(R.string.s_UpdateError));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_UPDATEERROR2:
 			builder.setMessage(getString(R.string.s_UpdateError2));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_UPDATEERROR3:
 			builder.setMessage(getString(R.string.s_UpdateError3));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_MANWAKEINFO:
 			builder.setMessage(getString(R.string.s_ManWakeInfo));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_MANBEDINFO:
 			builder.setMessage(getString(R.string.s_ManBedInfo));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_WTERROR:
 			builder.setMessage(getString(R.string.s_WTError));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_AUTOWAKETIMEINFO:
 			builder.setMessage(getString(R.string.s_AWTInfo));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
@@ -326,13 +298,13 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
 			
 		case DIALOG_USP1:
 			builder.setMessage(getString(R.string.s_USP1));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 			
 		case DIALOG_USP2:
 			builder.setMessage(getString(R.string.s_USP2));
-			builder.setPositiveButton("OK", new OkOnClickListener());
+			builder.setPositiveButton("OK", null);
 			builder.create().show();
 			break;
 		}
@@ -365,13 +337,7 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
 		}
 	};
 
-	private final class OkOnClickListener implements DialogInterface.OnClickListener {
-		public void onClick(DialogInterface dialog, int which) {
-		}
-	}
 
-	
-	
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
@@ -421,4 +387,14 @@ public class CBTi_Activity22a extends CBTi_BaseActivity {
         public void onNothingSelected(AdapterView<?> parent) {
         }
     }
+    
+    
+    @Override
+	public void getHelp() {			// called to render help screen
+    	Intent i = new Intent(CBTi_Activity22a.this, CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_mysleepupdatesleepprescription);
+		i.putExtra("RID_Text", R.string.s_22b);
+		CBTi_Activity22a.this.startActivity(i);
+		CBTi_Activity22a.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
+	}
 }

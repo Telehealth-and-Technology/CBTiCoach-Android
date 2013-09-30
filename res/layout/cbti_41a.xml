@@ -4,15 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
-    <!-- middle buttons -->
-
+   	<!-- middle buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rlpb"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -42,7 +37,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_WhatIsCBTIButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -87,7 +83,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_WhyDoWeSleepButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -130,7 +127,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_TheStagesOfSleepButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -172,7 +170,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_SleepRegulatorsButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -214,7 +213,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_SleepinessVSTirednessButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -256,7 +256,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_PTSDAndSleepButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -298,7 +299,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_NightmaresButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -340,7 +342,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_WeaponsAndSleepButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -382,7 +385,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_DepressionAndSleepButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -424,7 +428,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_SleepApneaButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -466,7 +471,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_MedicationsButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

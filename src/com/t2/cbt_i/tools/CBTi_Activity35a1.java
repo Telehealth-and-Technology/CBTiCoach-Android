@@ -9,21 +9,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 import com.t2.cbt_i.reminders.CBTi_ActivityRemBRWindDown;
 import com.t2.cbt_i.reminders.CBTi_Data60a;
 import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
 
 
-public class CBTi_Activity35a1 extends CBTi_BaseActivity {
+public class CBTi_Activity35a1 extends BaseABSActivity {
 	
 	CBTi_Data35a1 cData35a1;
 	CBTi_Data60a  cData60a;
@@ -32,35 +30,6 @@ public class CBTi_Activity35a1 extends CBTi_BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_35a1);
-		
-		//alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-		
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_WindingDown);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity35a1.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity35a1.this.startActivity(i);
-				CBTi_Activity35a1.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
-		// topRight Button HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity35a1.this, CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_toolshelpwindingdown);
-				i.putExtra("RID_Text", R.string.s_35e1);
-				CBTi_Activity35a1.this.startActivity(i);
-				CBTi_Activity35a1.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		});
 		
 		// Wind Down Time Reminder Toggle Button 
 		((Button)findViewById(R.id.bWindDownTimeReminder)).setOnClickListener(new View.OnClickListener() {
@@ -86,48 +55,28 @@ public class CBTi_Activity35a1 extends CBTi_BaseActivity {
 			}	
 		});
 		
-		((LinearLayout)findViewById(R.id.llWind01)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind02)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind03)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind04)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind05)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind06)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind07)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind08)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind09)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind10)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind11)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind12)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind13)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind14)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind15)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind16)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind17)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind18)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind19)).setOnClickListener( WindOCL );
-		((LinearLayout)findViewById(R.id.llWind20)).setOnClickListener( WindOCL );
-		
-		((ImageButton)findViewById(R.id.bWind01)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind02)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind03)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind04)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind05)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind06)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind07)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind08)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind09)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind10)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind11)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind12)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind13)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind14)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind15)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind16)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind17)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind18)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind19)).setOnClickListener( WindOCL );
-		((ImageButton)findViewById(R.id.bWind20)).setOnClickListener( WindOCL );
-		
+		((CheckBox)findViewById(R.id.cbWind01)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind02)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind03)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind04)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind05)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind06)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind07)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind08)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind09)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind10)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind11)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind12)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind13)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind14)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind15)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind16)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind17)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind18)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind19)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind20)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind21)).setOnClickListener( WindOCL );
+		((CheckBox)findViewById(R.id.cbWind22)).setOnClickListener( WindOCL );
 	}	
 	
 	//On click listener for button1
@@ -139,105 +88,105 @@ public class CBTi_Activity35a1 extends CBTi_BaseActivity {
         	int iButton = 0;
         	
         	int iStart=0;
-        	if( id==R.id.llWind01 || id==R.id.bWind01 ) {
+        	if( id==R.id.llWind01 || id==R.id.cbWind01 ) {
         		iStart = 0;
-        		iButton = R.id.bWind01;
+        		iButton = R.id.cbWind01;
         	}
-        	else if( id==R.id.llWind02 || id==R.id.bWind02 ) {
+        	else if( id==R.id.llWind02 || id==R.id.cbWind02 ) {
         		iStart = 1;
-        		iButton = R.id.bWind02;
+        		iButton = R.id.cbWind02;
         	}
-        	else if( id == R.id.llWind03 || id==R.id.bWind03 ) {
+        	else if( id == R.id.llWind03 || id==R.id.cbWind03 ) {
         		iStart = 2;
-        		iButton = R.id.bWind03;
+        		iButton = R.id.cbWind03;
         	}
-        	else if( id == R.id.llWind04 || id==R.id.bWind04 ) {
+        	else if( id == R.id.llWind04 || id==R.id.cbWind04 ) {
         		iStart = 3;
-        		iButton = R.id.bWind04;
+        		iButton = R.id.cbWind04;
         	}
-        	else if( id == R.id.llWind05 || id==R.id.bWind05 ) {
+        	else if( id == R.id.llWind05 || id==R.id.cbWind05 ) {
         		iStart = 4;
-        		iButton = R.id.bWind05;
+        		iButton = R.id.cbWind05;
         	}
-        	else if( id == R.id.llWind06 || id==R.id.bWind06 ) {
+        	else if( id == R.id.llWind06 || id==R.id.cbWind06 ) {
         		iStart = 5;
-        		iButton = R.id.bWind06;
+        		iButton = R.id.cbWind06;
         	}
-        	else if( id == R.id.llWind07 || id==R.id.bWind07 ) {
+        	else if( id == R.id.llWind07 || id==R.id.cbWind07 ) {
         		iStart = 6;
-        		iButton = R.id.bWind07;
+        		iButton = R.id.cbWind07;
         	}
-        	else if( id == R.id.llWind08 || id==R.id.bWind08 ) {
+        	else if( id == R.id.llWind08 || id==R.id.cbWind08 ) {
         		iStart = 7;
-        		iButton = R.id.bWind08;
+        		iButton = R.id.cbWind08;
         	}
-        	else if( id == R.id.llWind09 || id==R.id.bWind09 ) {
+        	else if( id == R.id.llWind09 || id==R.id.cbWind09 ) {
         		iStart = 8;
-        		iButton = R.id.bWind09;
+        		iButton = R.id.cbWind09;
         	}
-        	else if( id == R.id.llWind10 || id==R.id.bWind10 ) {
+        	else if( id == R.id.llWind10 || id==R.id.cbWind10 ) {
         		iStart = 9;
-        		iButton = R.id.bWind10;
+        		iButton = R.id.cbWind10;
         	}
-        	else if( id == R.id.llWind11 || id==R.id.bWind11 ) {
+        	else if( id == R.id.llWind11 || id==R.id.cbWind11 ) {
         		iStart = 10;
-        		iButton = R.id.bWind11;
+        		iButton = R.id.cbWind11;
         	}
-        	else if( id == R.id.llWind12 || id==R.id.bWind12 ) {
+        	else if( id == R.id.llWind12 || id==R.id.cbWind12 ) {
         		iStart = 11;
-        		iButton = R.id.bWind12;
+        		iButton = R.id.cbWind12;
         	}
-        	else if( id == R.id.llWind13 || id==R.id.bWind13 ) {
+        	else if( id == R.id.llWind13 || id==R.id.cbWind13 ) {
         		iStart = 12;
-        		iButton = R.id.bWind13;
+        		iButton = R.id.cbWind13;
         	}
-        	else if( id == R.id.llWind14 || id==R.id.bWind14 ) {
+        	else if( id == R.id.llWind14 || id==R.id.cbWind14 ) {
         		iStart = 13;
-        		iButton = R.id.bWind14;
+        		iButton = R.id.cbWind14;
         	}
-        	else if( id == R.id.llWind15 || id==R.id.bWind15 ) {
+        	else if( id == R.id.llWind15 || id==R.id.cbWind15 ) {
         		iStart = 14;
-        		iButton = R.id.bWind15;
+        		iButton = R.id.cbWind15;
         	}
-        	else if( id == R.id.llWind16 || id==R.id.bWind16 ) {
+        	else if( id == R.id.llWind16 || id==R.id.cbWind16 ) {
         		iStart = 15;
-        		iButton = R.id.bWind16;
+        		iButton = R.id.cbWind16;
         	}
-        	else if( id == R.id.llWind17 || id==R.id.bWind17 ) {
+        	else if( id == R.id.llWind17 || id==R.id.cbWind17 ) {
         		iStart = 16;
-        		iButton = R.id.bWind17;
+        		iButton = R.id.cbWind17;
         	}
-        	else if( id == R.id.llWind18 || id==R.id.bWind18 ) {
+        	else if( id == R.id.llWind18 || id==R.id.cbWind18 ) {
         		iStart = 17;
-        		iButton = R.id.bWind18;
+        		iButton = R.id.cbWind18;
         	}
-        	else if( id == R.id.llWind19 || id==R.id.bWind19 ) {
+        	else if( id == R.id.llWind19 || id==R.id.cbWind19 ) {
         		iStart = 18;
-        		iButton = R.id.bWind19;
+        		iButton = R.id.cbWind19;
         	}
-        	else if( id == R.id.llWind20 || id==R.id.bWind20 ) {
+        	else if( id == R.id.llWind20 || id==R.id.cbWind20 ) {
         		iStart = 19;
-        		iButton = R.id.bWind20;
+        		iButton = R.id.cbWind20;
         	}
-        	else if( id == R.id.llWind21 || id==R.id.bWind21 ) {
+        	else if( id == R.id.llWind21 || id==R.id.cbWind21 ) {
         		iStart = 20;
-        		iButton = R.id.bWind21;
+        		iButton = R.id.cbWind21;
         	}
-        	else if( id == R.id.llWind22 || id==R.id.bWind22 ) {
+        	else if( id == R.id.llWind22 || id==R.id.cbWind22 ) {
         		iStart = 21;
-        		iButton = R.id.bWind22;
+        		iButton = R.id.cbWind22;
         	}
         	
         	if( v.getClass().getSimpleName().equalsIgnoreCase("LinearLayout") ) {
-        		bState = !((ImageButton)findViewById(iButton)).isSelected();
-        	   	((ImageButton)findViewById(iButton)).setSelected(bState);
+        		bState = !((CheckBox)findViewById(iButton)).isChecked();
+        	   	((CheckBox)findViewById(iButton)).setChecked(bState);
         	}
         	else {
         		if (v.isSelected())
         			v.setSelected(false);
         		else 
         			v.setSelected(true);
-        		bState = ((ImageButton)findViewById(iButton)).isSelected();
+        		bState = ((CheckBox)findViewById(iButton)).isChecked();
         	}
         	cData35a1.bWind[cData35a1.iMap[iStart]] = bState;		// scrape new state to data store
 
@@ -326,4 +275,13 @@ public class CBTi_Activity35a1 extends CBTi_BaseActivity {
 
 	private Class<CBTi_ActivityRemBRWindDown> iNextClass;					// tells the alarm where to wake up
 	
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(CBTi_Activity35a1.this, CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_toolshelpwindingdown);
+		i.putExtra("RID_Text", R.string.s_35e1);
+		CBTi_Activity35a1.this.startActivity(i);
+		CBTi_Activity35a1.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
+	}
 }

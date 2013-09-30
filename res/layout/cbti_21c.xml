@@ -4,15 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rlpb"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -38,7 +34,6 @@
 
                     <Button
                         android:id="@+id/bSleepDiaryEntryTime"
-                        android:contentDescription="@string/s_EnterDate"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
@@ -46,7 +41,7 @@
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:text="@string/s_EnterDate" />
+                        android:contentDescription="@string/s_EnterDate" />
 
                     <ImageButton
                         android:id="@+id/bSleepDiaryEntryTimeInfo"
@@ -58,7 +53,8 @@
                         android:orientation="horizontal"
                         android:padding="5dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_menu_info_details" />
+                        android:src="@drawable/ic_menu_info_details" 
+                        android:contentDescription="@string/s_InfoButton" />
 
                 </LinearLayout>
                 <!-- end each button 1 -->
@@ -104,7 +100,8 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes" />
+                            android:textOn="Yes" 
+                            android:contentDescription="@string/s_NapOrDozeCheckbox" />
 
                     </LinearLayout>
 
@@ -128,7 +125,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_TotalNapTimeButton" />
                         
                         <ImageButton
                             android:id="@+id/bTNTInfo"
@@ -140,7 +138,8 @@
                             android:orientation="horizontal"
                             android:padding="5dp"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_menu_info_details" />
+                            android:src="@drawable/ic_menu_info_details" 
+                            android:contentDescription="@string/s_InfoButton"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -198,7 +197,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_BedtimeButton"/>
 
                         <ImageButton
                             android:id="@+id/bBTInfo"
@@ -210,7 +210,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -267,7 +268,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_SIATButton" />
 
                         <ImageButton
                             android:id="@+id/bSIATInfo"
@@ -279,7 +281,8 @@
                             android:orientation="horizontal"
                             android:padding="5dp"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_menu_info_details" />
+                            android:src="@drawable/ic_menu_info_details" 
+                            android:contentDescription="@string/s_InfoButton"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -337,7 +340,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_FallAsleepTimeButton" />
 
                         <ImageButton
                             android:id="@+id/bTTSInfo"
@@ -349,7 +353,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -406,7 +411,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="0dp"
                             android:prompt="@string/numpicker_prompt"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_AwakeningsButton" />
                         
                         <ImageButton
                             android:id="@+id/bTimesAwakeInfo"
@@ -418,7 +424,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -475,7 +482,8 @@
                             android:paddingBottom="10dp"  
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_TAButton" />
 
                         <ImageButton
                             android:id="@+id/bTAInfo"
@@ -487,7 +495,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -544,7 +553,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_WUTButton"/>
 
                         <ImageButton
                             android:id="@+id/bWUTInfo"
@@ -556,7 +566,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -601,7 +612,8 @@
                             android:layout_weight="2"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes" />
+                            android:textOn="Yes" 
+                            android:contentDescription="@string/s_EarlierCheckbox" />
 
                     </LinearLayout>
 
@@ -625,7 +637,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_EarlierButton" />
 
                         <ImageButton
                             android:id="@+id/bEarlierInfo"
@@ -637,7 +650,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -694,7 +708,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_WTButton" />
 
                         <ImageButton
                             android:id="@+id/bWTInfo"
@@ -706,7 +721,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -763,7 +779,8 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="0dp"
                             android:prompt="@string/sleepquality_prompt"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_SleepQualityButton" />
                         
                         <ImageButton
                             android:id="@+id/bSleepQualityInfo" 
@@ -775,7 +792,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -832,7 +850,8 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_CommentsButton" />
 
                         <ImageButton
                             android:id="@+id/bCommentInfo"
@@ -844,7 +863,8 @@
                         	android:orientation="horizontal"
                         	android:padding="5dp"
                         	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" />
+                        	android:src="@drawable/ic_menu_info_details" 
+                        	android:contentDescription="@string/s_InfoButton"/>
                     </LinearLayout>
                 </LinearLayout>
                 <View
@@ -863,7 +883,8 @@
                     android:background="@drawable/bg_whitebutton"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:text="@string/s_SaveEntry" />
+                    android:text="@string/s_SaveEntry" 
+                    android:contentDescription="@string/s_SaveEntryButton" />
 
             </LinearLayout>
         </ScrollView>

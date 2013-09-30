@@ -8,16 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 
 
-public class CBTi_Activity23c extends CBTi_BaseActivity {
+public class CBTi_Activity23c extends BaseABSNHActivity {
 
 	CBTi_Data23c cData23c;
 	
@@ -25,27 +23,11 @@ public class CBTi_Activity23c extends CBTi_BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_23c);
-	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity23c.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity23c.this.startActivity(i);
-				CBTi_Activity23c.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
 		
 
 		// Provider Button 
 		((Button)findViewById(R.id.bNextQuestion)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {		// handle the about button
-
-				
 			}
 		});
 		
@@ -337,8 +319,7 @@ public class CBTi_Activity23c extends CBTi_BaseActivity {
 			((TextView)findViewById(R.id.tISIQ)).setText( R.string.s_snq4 );
 		}
 		
-		//String sTitle = String.format(getResources().getString(R.string.s_ISITitle), cData31c.iQuestion+2);
-		//((TextView)findViewById(R.id.topTitle)).setText( sTitle);
+		getSupportActionBar().setTitle( String.format(getString(R.string.s_ISITitle), cData23c.iQuestion+2) );
 		((CheckBox)findViewById(R.id.cbISIQ0)).setChecked( cData23c.b0 );
 		((CheckBox)findViewById(R.id.cbISIQ1)).setChecked( cData23c.b1 );
 		((CheckBox)findViewById(R.id.cbISIQ2)).setChecked( cData23c.b2 );

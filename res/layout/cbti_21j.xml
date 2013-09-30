@@ -6,16 +6,12 @@
     android:orientation="vertical"
     >
 
-    <include layout="@layout/topbar"/>
-   
-   	<!--   middle buttons -->
+   <!--   middle buttons -->
    <LinearLayout 
        	android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:orientation="vertical"
-    	android:background="@drawable/bg_mysleepcreambackground"
-    	android:layout_below="@+id/rl1"
-    	>
+    	android:background="@drawable/bg_mysleepcreambackground" >
    	    
    		<ScrollView
    			android:layout_width="match_parent"
@@ -101,7 +97,8 @@
     	            android:paddingRight="10dp"
     	            android:paddingTop="5dp"
     	            android:text="@string/s_Done"
-    	            android:textSize="15dp" />
+    	            android:textSize="15dp" 
+    	            android:contentDescription="@string/s_DoneButton" />
     	         </LinearLayout>
 
 			</LinearLayout>

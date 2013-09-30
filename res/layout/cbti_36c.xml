@@ -4,10 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -298,7 +295,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR01"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_GetOutOfBedAtYourPrescribedTimeButton" />
                     </LinearLayout>
                     <!-- mid item1 -->
                     
@@ -328,7 +326,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR02"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_GoToBedOnlyWhenSleepyButton" />
                     </LinearLayout>
                     <!-- mid item2 -->
                     
@@ -358,7 +357,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR03"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_GetOutOfBedWhenYouCantSleepButton" />
                     </LinearLayout>
                     <!-- mid item3 -->
                     
@@ -388,7 +388,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR04"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_WindingDownButton" />
                     </LinearLayout>
                     <!-- mid item4 -->
                     
@@ -418,7 +419,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR05"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_ScheduleWorryTimeButton" />
                     </LinearLayout>
                     <!-- mid item5 -->
                     
@@ -448,7 +450,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR06"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_SetCaffeineGoalsButton" />
                     </LinearLayout>
                     <!-- mid item6 -->
                     
@@ -478,7 +481,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR07"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_SetUpYourSleepEnvironmentButton" />
                     </LinearLayout>
                     <!-- mid item7 -->
                     
@@ -508,7 +512,8 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR08"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_QuietYourMindButton" />
                     </LinearLayout>
                     <!-- mid item8 -->
                     

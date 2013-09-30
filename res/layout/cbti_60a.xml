@@ -5,13 +5,10 @@
     android:layout_marginBottom="5dp"
     android:orientation="vertical" >
 
-     <include layout="@layout/topbar" />
-     
     <!-- middle buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
         
@@ -75,7 +72,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_SleepDiaryReminderCheckbox" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -182,7 +180,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_WindDownTimeReminderCheckbox" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Wind Down Time -->
@@ -236,7 +235,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_PrescribedBedtimeReminderCheckbox" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Prescribed Bed Time -->
@@ -290,7 +290,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_PrescribedWakeTimeReminderCheckbox" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Prescribed Wake Time -->
@@ -337,7 +338,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_UpdateSleepPrescriptionReminderCheckbox" />
                         
                     </RelativeLayout>
 
@@ -429,7 +431,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_TakeAssessmentReminderCheckbox" />
                         
                     </RelativeLayout>
 
@@ -538,7 +541,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_StopCaffeineReminderCheckbox" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Stop Caffeine -->
@@ -585,7 +589,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_WorryTimeReminderCheckbox" />
                         
                     </RelativeLayout>
 
@@ -648,7 +653,8 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_ResetAllReminders" />
+                    android:text="@string/s_ResetAllReminders"
+                    android:contentDescription="@string/s_ResetAllRemindersButton" />
                 
             </LinearLayout>
         </ScrollView>

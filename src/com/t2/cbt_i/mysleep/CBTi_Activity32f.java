@@ -9,16 +9,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 
 
-public class CBTi_Activity32f extends CBTi_BaseActivity {
+public class CBTi_Activity32f extends BaseABSNHActivity {
 
 	CBTi_Data31b cData31b;
 	ArrayAdapter<CBTi_Data31c> aa;
@@ -27,21 +24,6 @@ public class CBTi_Activity32f extends CBTi_BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_32f);
-	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_SleepDiary);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity32f.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity32f.this.startActivity(i);
-				CBTi_Activity32f.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
 	}
 	
 	

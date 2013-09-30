@@ -4,17 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar"/>
-   
-   	<!--   middle buttons -->
+   <!--   middle buttons -->
    <LinearLayout 
        	android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:orientation="vertical"
-    	android:background="@drawable/bg_bggraystriped"
-    	android:layout_below="@+id/rl1"
-    	android:layout_above="@+id/rlpb"
-    	>
+    	android:background="@drawable/bg_bggraystriped" >
     	
        <ScrollView
    			android:layout_width="match_parent"
@@ -47,7 +42,8 @@
     	                android:gravity="center"
     	                android:textSize="20dp"
     	                android:textStyle="bold"
-    	                android:text="@string/s_ResetAllUserData" />
+    	                android:text="@string/s_ResetAllUserData"
+    	                android:contentDescription="@string/s_ResetAllUserDataButton" />
     	            
     	            <TextView
     	                android:layout_width="match_parent"

@@ -28,10 +28,10 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 
 
-public class CBTi_Activity21c extends CBTi_BaseActivity {
+public class CBTi_Activity21c extends BaseABSNHActivity {
 	CBTi_Data21c cData21c; 
 	CBTi_Data21a cData21a;
 	Boolean bNew;
@@ -45,14 +45,6 @@ public class CBTi_Activity21c extends CBTi_BaseActivity {
 		bNew  = getIntent().getExtras().getBoolean("NEW");
 		iPos  = getIntent().getExtras().getInt("POS");
 	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setVisibility(View.INVISIBLE);
-		if( bNew )
-			((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_NewEntry);
-		else
-			((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_SleepData);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-		
 		((Button)findViewById(R.id.bSleepDiaryEntryTime)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				bProcessed = false;
@@ -466,135 +458,97 @@ public class CBTi_Activity21c extends CBTi_BaseActivity {
 			
 		case DIALOG_SDETimeInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SDEDateHint);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SDEDateHint).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_SDETimeWarn:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SDEDateWarn);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SDEDateWarn).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_SDETimeError:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SDEDateError);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SDEDateError).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_SDETimeError2:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SDEDateError2);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SDEDateError2).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TNTInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_TNTInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_TNTInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_BTInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_BTInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_BTInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_SIATInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SIATInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SIATInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TTSInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_TTSInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_TTSInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TimesAwakeInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_TimesAwakeInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_TimesAwakeInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TAInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_TAInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_TAInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_WUTInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_WUT_Info);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_WUT_Info).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_EarlierInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_EarlierInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_EarlierInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_WTInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_WT_Info);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_WT_Info).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_SQInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SQInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SQInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_CommentInfo:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_CommentInfo);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_CommentInfo).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_SIATERROR:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_SIATError);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_SIATError).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_WUTERROR:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_WUTError);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_WUTError).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TSTERROR:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_TSTError);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_TSTError).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TIBERROR:
 			builder = new AlertDialog.Builder(this);
-			builder.setMessage(R.string.s_TIBError);
-			builder.setPositiveButton(R.string.s_OK, new OkOnClickListener());
-			builder.create().show();
+			builder.setMessage(R.string.s_TIBError).setPositiveButton(R.string.s_OK, null).create().show();
 			break;
 			
 		case DIALOG_TSTWARN:
@@ -787,10 +741,7 @@ public class CBTi_Activity21c extends CBTi_BaseActivity {
 	};
 
 
-	private final class OkOnClickListener implements DialogInterface.OnClickListener {
-		public void onClick(DialogInterface dialog, int which) {
-		}
-	}
+	
 	
 	private final class OkOnClickListener2 implements DialogInterface.OnClickListener {
 		public void onClick(DialogInterface dialog, int which) {

@@ -5,39 +5,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 
 
-public class CBTi_Activity41a extends CBTi_BaseActivity {
+public class CBTi_Activity41a extends BaseABSNHActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_41a);
 
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_Sleep101 );
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility( View.INVISIBLE );
-		
-		// top left HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Perform action on click
-            	finish();		// make sure we close the splash screen so the user won't come back when it presses back key
-            	Intent i = new Intent(getApplicationContext(), DashActivity.class );
-            	i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            	startActivity(i);
-            	CBTi_Activity41a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-            }
-        }); 
-		
 		// middle button 1
 		((Button)findViewById(R.id.bWhatIsCBTi)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {

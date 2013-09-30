@@ -5,10 +5,9 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
 import android.app.Activity;
 import android.util.Log;
-import android.widget.ImageButton;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;
@@ -76,26 +75,26 @@ public class CBTi_Data34c {
 	public void renderData() {
 		reOrderMap();
 		
-		((ImageButton)c.findViewById(R.id.bAwake01)).setSelected( bAwake[iMap[0]] );
-		((ImageButton)c.findViewById(R.id.bAwake02)).setSelected( bAwake[iMap[1]] );
-		((ImageButton)c.findViewById(R.id.bAwake03)).setSelected( bAwake[iMap[2]] );
-		((ImageButton)c.findViewById(R.id.bAwake04)).setSelected( bAwake[iMap[3]] );
-		((ImageButton)c.findViewById(R.id.bAwake05)).setSelected( bAwake[iMap[4]] );
-		((ImageButton)c.findViewById(R.id.bAwake06)).setSelected( bAwake[iMap[5]] );
-		((ImageButton)c.findViewById(R.id.bAwake07)).setSelected( bAwake[iMap[6]] );
-		((ImageButton)c.findViewById(R.id.bAwake08)).setSelected( bAwake[iMap[7]] );
-		((ImageButton)c.findViewById(R.id.bAwake09)).setSelected( bAwake[iMap[8]] );
-		((ImageButton)c.findViewById(R.id.bAwake10)).setSelected( bAwake[iMap[9]] );
-		((ImageButton)c.findViewById(R.id.bAwake11)).setSelected( bAwake[iMap[10]] );
-		((ImageButton)c.findViewById(R.id.bAwake12)).setSelected( bAwake[iMap[11]] );
-		((ImageButton)c.findViewById(R.id.bAwake13)).setSelected( bAwake[iMap[12]] );
-		((ImageButton)c.findViewById(R.id.bAwake14)).setSelected( bAwake[iMap[13]] );
-		((ImageButton)c.findViewById(R.id.bAwake15)).setSelected( bAwake[iMap[14]] );
-		((ImageButton)c.findViewById(R.id.bAwake16)).setSelected( bAwake[iMap[15]] );
-		((ImageButton)c.findViewById(R.id.bAwake17)).setSelected( bAwake[iMap[16]] );
-		((ImageButton)c.findViewById(R.id.bAwake18)).setSelected( bAwake[iMap[17]] );
-		((ImageButton)c.findViewById(R.id.bAwake19)).setSelected( bAwake[iMap[18]] );
-		((ImageButton)c.findViewById(R.id.bAwake20)).setSelected( bAwake[iMap[19]] );
+		((CheckBox)c.findViewById(R.id.cbAwake01)).setChecked( bAwake[iMap[0]] );
+		((CheckBox)c.findViewById(R.id.cbAwake02)).setChecked( bAwake[iMap[1]] );
+		((CheckBox)c.findViewById(R.id.cbAwake03)).setChecked( bAwake[iMap[2]] );
+		((CheckBox)c.findViewById(R.id.cbAwake04)).setChecked( bAwake[iMap[3]] );
+		((CheckBox)c.findViewById(R.id.cbAwake05)).setChecked( bAwake[iMap[4]] );
+		((CheckBox)c.findViewById(R.id.cbAwake06)).setChecked( bAwake[iMap[5]] );
+		((CheckBox)c.findViewById(R.id.cbAwake07)).setChecked( bAwake[iMap[6]] );
+		((CheckBox)c.findViewById(R.id.cbAwake08)).setChecked( bAwake[iMap[7]] );
+		((CheckBox)c.findViewById(R.id.cbAwake09)).setChecked( bAwake[iMap[8]] );
+		((CheckBox)c.findViewById(R.id.cbAwake10)).setChecked( bAwake[iMap[9]] );
+		((CheckBox)c.findViewById(R.id.cbAwake11)).setChecked( bAwake[iMap[10]] );
+		((CheckBox)c.findViewById(R.id.cbAwake12)).setChecked( bAwake[iMap[11]] );
+		((CheckBox)c.findViewById(R.id.cbAwake13)).setChecked( bAwake[iMap[12]] );
+		((CheckBox)c.findViewById(R.id.cbAwake14)).setChecked( bAwake[iMap[13]] );
+		((CheckBox)c.findViewById(R.id.cbAwake15)).setChecked( bAwake[iMap[14]] );
+		((CheckBox)c.findViewById(R.id.cbAwake16)).setChecked( bAwake[iMap[15]] );
+		((CheckBox)c.findViewById(R.id.cbAwake17)).setChecked( bAwake[iMap[16]] );
+		((CheckBox)c.findViewById(R.id.cbAwake18)).setChecked( bAwake[iMap[17]] );
+		((CheckBox)c.findViewById(R.id.cbAwake19)).setChecked( bAwake[iMap[18]] );
+		((CheckBox)c.findViewById(R.id.cbAwake20)).setChecked( bAwake[iMap[19]] );
 		
 		
 		((TextView)c.findViewById(R.id.tAwake01)).setText( iID[iMap[0]] );
@@ -118,6 +117,27 @@ public class CBTi_Data34c {
 		((TextView)c.findViewById(R.id.tAwake18)).setText( iID[iMap[17]] );
 		((TextView)c.findViewById(R.id.tAwake19)).setText( iID[iMap[18]] );
 		((TextView)c.findViewById(R.id.tAwake20)).setText( iID[iMap[19]] );
+		
+		((CheckBox)c.findViewById(R.id.cbAwake01)).setContentDescription( c.getString(iID[iMap[0]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake02)).setContentDescription( c.getString(iID[iMap[1]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake03)).setContentDescription( c.getString(iID[iMap[2]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake04)).setContentDescription( c.getString(iID[iMap[3]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake05)).setContentDescription( c.getString(iID[iMap[4]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake06)).setContentDescription( c.getString(iID[iMap[5]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake07)).setContentDescription( c.getString(iID[iMap[6]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake08)).setContentDescription( c.getString(iID[iMap[7]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake09)).setContentDescription( c.getString(iID[iMap[8]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake10)).setContentDescription( c.getString(iID[iMap[9]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake11)).setContentDescription( c.getString(iID[iMap[10]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake12)).setContentDescription( c.getString(iID[iMap[11]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake13)).setContentDescription( c.getString(iID[iMap[12]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake14)).setContentDescription( c.getString(iID[iMap[13]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake15)).setContentDescription( c.getString(iID[iMap[14]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake16)).setContentDescription( c.getString(iID[iMap[15]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake17)).setContentDescription( c.getString(iID[iMap[16]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake18)).setContentDescription( c.getString(iID[iMap[17]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake19)).setContentDescription( c.getString(iID[iMap[18]])+" checkbox)" );
+		((CheckBox)c.findViewById(R.id.cbAwake20)).setContentDescription( c.getString(iID[iMap[19]])+" checkbox)" );
 	}
 	
 	private void reOrderMap() {					// move checked items to top of list

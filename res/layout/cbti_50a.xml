@@ -4,19 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
-    <!-- middle buttons -->
-
+   	<!-- middle buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
         <!-- each button 1 -->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -32,7 +27,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                android:contentDescription="@string/s_CBTICoachButton" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,7 +57,6 @@
 
 
         <!-- each button 2 -->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -77,7 +72,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                android:contentDescription="@string/s_ProjectTeam" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -106,7 +102,6 @@
 
 
         <!-- each button 3 -->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -122,7 +117,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                android:contentDescription="@string/s_ProjectPartnersButton" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -151,7 +147,6 @@
 
 
         <!-- each button 4 -->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -167,7 +162,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                android:contentDescription="@string/s_SettingsButton" />
 
             <LinearLayout
                 android:layout_width="match_parent"

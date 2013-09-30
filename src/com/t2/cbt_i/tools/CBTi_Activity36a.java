@@ -4,49 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 
-public class CBTi_Activity36a extends CBTi_BaseActivity {
+public class CBTi_Activity36a extends BaseABSActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_36a);
 	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_PreventInsomnia);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity36a.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity36a.this.startActivity(i);
-				CBTi_Activity36a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
-		// topRight Button HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity36a.this, CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_toolspreventinsomniainthefuture);
-				i.putExtra("RID_Text", R.string.s_36b);
-				CBTi_Activity36a.this.startActivity(i);
-				CBTi_Activity36a.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		});
-
 		// SUBMIT
 		((Button)findViewById(R.id.bSubmit)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {		// handle the about button
@@ -75,5 +45,15 @@ public class CBTi_Activity36a extends CBTi_BaseActivity {
 	public void onBackPressed() {
 		super.onBackPressed();
 		CBTi_Activity36a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
+	}
+	
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(CBTi_Activity36a.this, CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_toolspreventinsomniainthefuture);
+		i.putExtra("RID_Text", R.string.s_36b);
+		CBTi_Activity36a.this.startActivity(i);
+		CBTi_Activity36a.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
 	}
 }

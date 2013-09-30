@@ -4,17 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar"/>
-   
-   	<!--   middle buttons -->
-   <LinearLayout 
+    <!--   middle buttons -->
+    <LinearLayout 
        	android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:orientation="vertical"
-    	android:background="@drawable/bg_bggraystriped"
-    	android:layout_below="@+id/rl1"
-    	android:layout_above="@+id/rlpb"
-    	>
+    	android:background="@drawable/bg_bggraystriped" >
     	
        <ScrollView
    			android:layout_width="match_parent"
@@ -56,7 +51,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_WindingDownButton"/>
     	                	        
     	        	<LinearLayout
     	        	    android:layout_width="match_parent"
@@ -102,7 +97,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_ScheduleWorryTimeButton"/>
 
     	        	<LinearLayout
     	            	android:layout_width="match_parent"
@@ -147,7 +142,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_ChangeYourPerspectiveButton"/>
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -193,7 +188,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_BreathingToolButton"/>
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -239,7 +234,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_ProgressiveMuscleRelaxationButton" />
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -285,7 +280,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_GuidedImageryForestButton" />
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -331,7 +326,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_GuidedImageryCountryRoadButton" />
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -377,7 +372,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_GuidedImageryBeachButton" />
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -423,7 +418,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_ObserveThoughtsCloudsButton" />
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"
@@ -469,7 +464,7 @@
     	                android:background="@drawable/bg_whitebutton" 
     	                android:gravity="center_vertical"
     	            	android:orientation="horizontal" 
-    	            	/>
+    	            	android:contentDescription="@string/s_ObserveThoughtsBodyButton" />
    	        	
     	        	<LinearLayout 
    	        			android:layout_width="match_parent"

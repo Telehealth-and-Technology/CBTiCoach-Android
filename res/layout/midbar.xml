@@ -40,7 +40,8 @@
     	    android:background="@drawable/bg_topbarbuttons"
     	    android:paddingLeft="5dp"
     	    android:paddingRight="5dp"
-    	    android:textColor="@color/tbText" />
+    	    android:textColor="@color/tbText" 
+    	    android:contentDescription="@string/s_NewEntryButton" />
        
    </RelativeLayout>
    <!--   end of top bar defintiion -->

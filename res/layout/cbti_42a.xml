@@ -4,10 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +38,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_WorryingInBedButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -85,7 +83,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_WatchingTheClockButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -128,7 +127,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_NappingButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -171,7 +171,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_WindingDownButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -214,7 +215,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_UsingTheBedroomForTwoActivitiesOnlyButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -257,7 +259,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_EatingButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -300,7 +303,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_CaffeineUseButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -343,7 +347,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_ExerciseButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -386,7 +391,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_AlcoholUseButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -429,7 +435,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_NicotineUseButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -472,7 +479,8 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal" />
+                        android:orientation="horizontal"
+                        android:contentDescription="@string/s_GettingComfortableButton" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

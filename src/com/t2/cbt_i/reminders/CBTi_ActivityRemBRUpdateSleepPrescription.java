@@ -20,7 +20,7 @@ public class CBTi_ActivityRemBRUpdateSleepPrescription extends BroadcastReceiver
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		WakeLocker.acquire(context);
-		CharSequence cMsg = context.getResources().getString(R.string.s_updatesleepprescription);
+		CharSequence cMsg = context.getResources().getString(R.string.s_UpdateSleepPrescription);
 		Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 		
 		Intent iTgt = new Intent(context, CBTi_Activity22a.class);	// prepare target intent

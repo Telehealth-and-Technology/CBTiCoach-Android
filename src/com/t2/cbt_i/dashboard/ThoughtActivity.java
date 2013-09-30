@@ -5,7 +5,6 @@ import java.util.Random;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;
@@ -30,10 +29,6 @@ public class ThoughtActivity extends CBTi_BaseActivity {
 		Bundle b = getIntent().getExtras();
 		bIsSleep = b.getBoolean("THINKABOUT");
 
-		((ImageButton)findViewById(R.id.ibTopLeft)).setVisibility(View.INVISIBLE);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_Thought);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-		
 		View v = findViewById(R.id.lBamboo);
 		v.getBackground().setAlpha(45);
 		

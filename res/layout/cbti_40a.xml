@@ -4,151 +4,151 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
-        <!-- each button 1 -->
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp" >
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/bSleep101"
+            <!-- each button 1 -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_whitebutton"
-                android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:layout_height="0dp"
+                android:layout_weight="10" >
 
-            <LinearLayout
+                <Button
+                    android:id="@+id/bSleep101"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_Sleep101Button"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/buddy_learnsleep101" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="3"
+                        android:text="@string/s_Sleep101"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- end each button 1 -->
+
+			<RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:layout_weight="2"
-                    android:src="@drawable/buddy_learnsleep101" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="15dp"
-                    android:layout_weight="3"
-                    android:textStyle="bold" 
-                    android:textSize="20dp" 
-                    android:text="@string/s_Sleep101" />
-            </LinearLayout>
-        </RelativeLayout>
-        <!-- end each button 1 -->
-
-
-        <!-- each button 2 -->
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp" >
-
-            <Button
-                android:id="@+id/bHealthySleepHabits"
+            <!-- each button 2 -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_whitebutton"
-                android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:layout_height="0dp"
+                android:layout_weight="10" >
 
-            <LinearLayout
+                <Button
+                    android:id="@+id/bHealthySleepHabits"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_HealthySleepHabitsButton"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/buddy_learnhealthysleephabits" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="3"
+                        android:text="@string/s_HealthySleepHabits"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- end each button 2 -->
+
+			<RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_weight="2"
-                    android:src="@drawable/buddy_learnhealthysleephabits" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="15dp"
-                    android:layout_weight="3"
-                    android:textStyle="bold" 
-                    android:textSize="20dp" 
-                    android:text="@string/s_HealthySleepHabits" />
-            </LinearLayout>
-        </RelativeLayout>
-        <!-- end each button 2 -->
-
-
-        <!-- each button 3 -->
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp" >
-
-            <Button
-                android:id="@+id/bCBTiGlossary"
+            <!-- each button 3 -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_whitebutton"
-                android:gravity="center_vertical"
-                android:orientation="horizontal" />
+                android:layout_height="0dp"
+                android:layout_weight="10" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/bCBTiGlossary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_CBTIGlossaryButton"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
 
-                <ImageView
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_weight="2"
-                    android:src="@drawable/buddy_learnglossary" />
+                    android:orientation="horizontal" >
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="15dp"
-                    android:layout_weight="3"
-                    android:textStyle="bold" 
-                    android:textSize="20dp" 
-                    android:text="@string/s_CBTiGlossary"  />
-            </LinearLayout>
-        </RelativeLayout>
-        <!-- end each button 3 -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/buddy_learnglossary" />
 
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="3"
+                        android:text="@string/s_CBTiGlossary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- end each button 3 -->
+        </LinearLayout>
     </LinearLayout>
     <!-- middle buttons -->
 

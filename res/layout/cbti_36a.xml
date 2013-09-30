@@ -4,10 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -86,7 +83,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True" 
+                            android:contentDescription="@string/s_PI1Checkbox"/>
                     </LinearLayout>
                     <!-- end #1 -->
                     
@@ -127,7 +125,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI2Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #2 -->
@@ -169,7 +168,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI3Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #3 -->
@@ -211,7 +211,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI4Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #4 -->
@@ -253,7 +254,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI5Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #5 -->
@@ -295,7 +297,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI6Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #6 -->
@@ -337,7 +340,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI7Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #7 -->
@@ -379,7 +383,8 @@
                             android:layout_weight="2"
                             android:focusable="true"
                             android:textOff="False"
-                            android:textOn="True" />
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI8Checkbox" />
                         </LinearLayout>
                     </LinearLayout>
                     <!-- end #8 -->
@@ -410,7 +415,8 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_Submit" />
+                    android:text="@string/s_Submit"
+                    android:contentDescription="@string/s_SubmitButton" />
                 
             </LinearLayout>
         </ScrollView>

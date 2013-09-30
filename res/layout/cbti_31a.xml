@@ -4,15 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rlpb"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -35,7 +30,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_whitebutton"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" />
+                    android:orientation="horizontal" 
+                    android:contentDescription="@string/s_TakeAssessmentButton" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -46,6 +42,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
+                        android:layout_margin="10dp"
                         android:src="@drawable/buddy_toolstakeassessment" />
 
                     <TextView
@@ -76,7 +73,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_whitebutton"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" />
+                    android:orientation="horizontal"
+                    android:contentDescription="@string/s_ResultsHistoryButton"  />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,6 +84,7 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_margin="10dp"
                         android:layout_weight="2"
                         android:src="@drawable/buddy_toolsresultshistory" />
 
@@ -115,7 +114,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_whitebutton"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" />
+                    android:orientation="horizontal"
+                    android:contentDescription="@string/s_ScheduleAssessmentsButton"  />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,6 +125,7 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_margin="10dp"
                         android:layout_weight="2"
                         android:src="@drawable/buddy_toolsscheduleassessments" />
 

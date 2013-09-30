@@ -4,16 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include
-        android:layout_height="match_parent"
-        layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
 
@@ -90,7 +84,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On" />
+                            android:textOn="@string/s_On"
+                            android:contentDescription="@string/s_TakeAssessmentReminderCheckbox"  />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -128,7 +123,7 @@
                                 android:layout_toRightOf="@+id/sTakeAssessmentDay"
                                 android:drawSelectorOnTop="true"
                                 android:orientation="horizontal"
-                                android:prompt="@string/dow_prompt" />
+                                android:prompt="@string/repeat_prompt" />
 
                             <TextView
                                 android:id="@+id/tTakeAssessmentTime"
@@ -141,7 +136,8 @@
                                 android:paddingTop="10dp"
                                 android:text="10:15AM"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15dp" 
+                                android:contentDescription="@string/s_TakeAssessmentTimeButton" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>

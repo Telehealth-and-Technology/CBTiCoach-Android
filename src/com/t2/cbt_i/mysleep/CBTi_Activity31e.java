@@ -5,15 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 
 
-public class CBTi_Activity31e extends CBTi_BaseActivity {
+public class CBTi_Activity31e extends BaseABSNHActivity {
 
 	CBTi_Data31b cData31b;
 	CBTi_Data31c cData31c;
@@ -23,21 +21,6 @@ public class CBTi_Activity31e extends CBTi_BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_31e);
 
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_Feedback);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity31e.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity31e.this.startActivity(i);
-				CBTi_Activity31e.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-		
 		// done Button
 		((Button)findViewById(R.id.bDone)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {		// handle the about button

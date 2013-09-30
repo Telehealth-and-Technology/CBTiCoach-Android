@@ -1,9 +1,9 @@
 package com.t2.cbt_i.dashboard;
 
-import android.app.Activity;
+import com.actionbarsherlock.app.SherlockActivity;
 //import com.flurry.android.FlurryAgent;
 
-public class CBTi_BaseActivity extends Activity{
+public class CBTi_BaseActivity extends SherlockActivity{
 	//private static Boolean bFlurryEnabled = false;
 
 	//private static Boolean bProvideUsageData;

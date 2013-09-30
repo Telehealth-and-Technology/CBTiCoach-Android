@@ -4,17 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.CheckBox;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 
 
-public class CBTi_Activity34c1 extends CBTi_BaseActivity {
+public class CBTi_Activity34c1 extends BaseABSActivity {
 	
 	CBTi_Data34c1 cData34c1;
 
@@ -25,74 +22,26 @@ public class CBTi_Activity34c1 extends CBTi_BaseActivity {
 		
 		cData34c1 = new CBTi_Data34c1( this );
 		
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_GetoutofBed);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity34c1.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity34c1.this.startActivity(i);
-				CBTi_Activity34c1.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
-		// topRight Button HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity34c1.this, CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_toolsgetoutofbedwhenyoucantsleep);
-				i.putExtra("RID_Text", R.string.s_34e1);
-				CBTi_Activity34c1.this.startActivity(i);
-				CBTi_Activity34c1.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		});
-		
-		((LinearLayout)findViewById(R.id.llCantSleep01)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep02)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep03)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep04)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep05)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep06)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep07)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep08)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep09)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep10)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep11)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep12)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep13)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep14)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep15)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep16)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep17)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep18)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep19)).setOnClickListener( CantSleepOCL );
-		((LinearLayout)findViewById(R.id.llCantSleep20)).setOnClickListener( CantSleepOCL );
-		
-		((ImageButton)findViewById(R.id.bCantSleep01)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep02)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep03)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep04)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep05)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep06)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep07)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep08)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep09)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep10)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep11)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep12)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep13)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep14)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep15)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep16)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep17)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep18)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep19)).setOnClickListener( CantSleepOCL );
-		((ImageButton)findViewById(R.id.bCantSleep20)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep01)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep02)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep03)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep04)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep05)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep06)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep07)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep08)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep09)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep10)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep11)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep12)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep13)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep14)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep15)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep16)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep17)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep18)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep19)).setOnClickListener( CantSleepOCL );
+		((CheckBox)findViewById(R.id.cbCantSleep20)).setOnClickListener( CantSleepOCL );
 		
 	}	
 	
@@ -105,109 +54,108 @@ public class CBTi_Activity34c1 extends CBTi_BaseActivity {
         	int iButton = 0;
         	
         	int iStart=0;
-        	if( id==R.id.llCantSleep01 || id==R.id.bCantSleep01 ) {
+        	if( id==R.id.llCantSleep01 || id==R.id.cbCantSleep01 ) {
         		iStart = 0;
-        		iButton = R.id.bCantSleep01;
+        		iButton = R.id.cbCantSleep01;
         	}
-        	else if( id==R.id.llCantSleep02 || id==R.id.bCantSleep02 ) {
+        	else if( id==R.id.llCantSleep02 || id==R.id.cbCantSleep02 ) {
         		iStart = 1;
-        		iButton = R.id.bCantSleep02;
+        		iButton = R.id.cbCantSleep02;
         	}
-        	else if( id == R.id.llCantSleep03 || id==R.id.bCantSleep03 ) {
+        	else if( id == R.id.llCantSleep03 || id==R.id.cbCantSleep03 ) {
         		iStart = 2;
-        		iButton = R.id.bCantSleep03;
+        		iButton = R.id.cbCantSleep03;
         	}
-        	else if( id == R.id.llCantSleep04 || id==R.id.bCantSleep04 ) {
+        	else if( id == R.id.llCantSleep04 || id==R.id.cbCantSleep04 ) {
         		iStart = 3;
-        		iButton = R.id.bCantSleep04;
+        		iButton = R.id.cbCantSleep04;
         	}
-        	else if( id == R.id.llCantSleep05 || id==R.id.bCantSleep05 ) {
+        	else if( id == R.id.llCantSleep05 || id==R.id.cbCantSleep05 ) {
         		iStart = 4;
-        		iButton = R.id.bCantSleep05;
+        		iButton = R.id.cbCantSleep05;
         	}
-        	else if( id == R.id.llCantSleep06 || id==R.id.bCantSleep06 ) {
+        	else if( id == R.id.llCantSleep06 || id==R.id.cbCantSleep06 ) {
         		iStart = 5;
-        		iButton = R.id.bCantSleep06;
+        		iButton = R.id.cbCantSleep06;
         	}
-        	else if( id == R.id.llCantSleep07 || id==R.id.bCantSleep07 ) {
+        	else if( id == R.id.llCantSleep07 || id==R.id.cbCantSleep07 ) {
         		iStart = 6;
-        		iButton = R.id.bCantSleep07;
+        		iButton = R.id.cbCantSleep07;
         	}
-        	else if( id == R.id.llCantSleep08 || id==R.id.bCantSleep08 ) {
+        	else if( id == R.id.llCantSleep08 || id==R.id.cbCantSleep08 ) {
         		iStart = 7;
-        		iButton = R.id.bCantSleep08;
+        		iButton = R.id.cbCantSleep08;
         	}
-        	else if( id == R.id.llCantSleep09 || id==R.id.bCantSleep09 ) {
+        	else if( id == R.id.llCantSleep09 || id==R.id.cbCantSleep09 ) {
         		iStart = 8;
-        		iButton = R.id.bCantSleep09;
+        		iButton = R.id.cbCantSleep09;
         	}
-        	else if( id == R.id.llCantSleep10 || id==R.id.bCantSleep10 ) {
+        	else if( id == R.id.llCantSleep10 || id==R.id.cbCantSleep10 ) {
         		iStart = 9;
-        		iButton = R.id.bCantSleep10;
+        		iButton = R.id.cbCantSleep10;
         	}
-        	else if( id == R.id.llCantSleep11 || id==R.id.bCantSleep11 ) {
+        	else if( id == R.id.llCantSleep11 || id==R.id.cbCantSleep11 ) {
         		iStart = 10;
-        		iButton = R.id.bCantSleep11;
+        		iButton = R.id.cbCantSleep11;
         	}
-        	else if( id == R.id.llCantSleep12 || id==R.id.bCantSleep12 ) {
+        	else if( id == R.id.llCantSleep12 || id==R.id.cbCantSleep12 ) {
         		iStart = 11;
-        		iButton = R.id.bCantSleep12;
+        		iButton = R.id.cbCantSleep12;
         	}
-        	else if( id == R.id.llCantSleep13 || id==R.id.bCantSleep13 ) {
+        	else if( id == R.id.llCantSleep13 || id==R.id.cbCantSleep13 ) {
         		iStart = 12;
-        		iButton = R.id.bCantSleep13;
+        		iButton = R.id.cbCantSleep13;
         	}
-        	else if( id == R.id.llCantSleep14 || id==R.id.bCantSleep14 ) {
+        	else if( id == R.id.llCantSleep14 || id==R.id.cbCantSleep14 ) {
         		iStart = 13;
-        		iButton = R.id.bCantSleep14;
+        		iButton = R.id.cbCantSleep14;
         	}
-        	else if( id == R.id.llCantSleep15 || id==R.id.bCantSleep15 ) {
+        	else if( id == R.id.llCantSleep15 || id==R.id.cbCantSleep15 ) {
         		iStart = 14;
-        		iButton = R.id.bCantSleep15;
+        		iButton = R.id.cbCantSleep15;
         	}
-        	else if( id == R.id.llCantSleep16 || id==R.id.bCantSleep16 ) {
+        	else if( id == R.id.llCantSleep16 || id==R.id.cbCantSleep16 ) {
         		iStart = 15;
-        		iButton = R.id.bCantSleep16;
+        		iButton = R.id.cbCantSleep16;
         	}
-        	else if( id == R.id.llCantSleep17 || id==R.id.bCantSleep17 ) {
+        	else if( id == R.id.llCantSleep17 || id==R.id.cbCantSleep17 ) {
         		iStart = 16;
-        		iButton = R.id.bCantSleep17;
+        		iButton = R.id.cbCantSleep17;
         	}
-        	else if( id == R.id.llCantSleep18 || id==R.id.bCantSleep18 ) {
+        	else if( id == R.id.llCantSleep18 || id==R.id.cbCantSleep18 ) {
         		iStart = 17;
-        		iButton = R.id.bCantSleep18;
+        		iButton = R.id.cbCantSleep18;
         	}
-        	else if( id == R.id.llCantSleep19 || id==R.id.bCantSleep19 ) {
+        	else if( id == R.id.llCantSleep19 || id==R.id.cbCantSleep19 ) {
         		iStart = 18;
-        		iButton = R.id.bCantSleep19;
+        		iButton = R.id.cbCantSleep19;
         	}
-        	else if( id == R.id.llCantSleep20 || id==R.id.bCantSleep20 ) {
+        	else if( id == R.id.llCantSleep20 || id==R.id.cbCantSleep20 ) {
         		iStart = 19;
-        		iButton = R.id.bCantSleep20;
+        		iButton = R.id.cbCantSleep20;
         	}
         	
         	if( v.getClass().getSimpleName().equalsIgnoreCase("LinearLayout") ) {
-        	   	bState = !((ImageButton)findViewById(iButton)).isSelected();
-        	   	((ImageButton)findViewById(iButton)).setSelected(bState);
+        	   	bState = !((CheckBox)findViewById(iButton)).isChecked();
+        	   	((CheckBox)findViewById(iButton)).setChecked(bState);
         	}
         	else {
         		if (v.isSelected())
         			v.setSelected(false);
         		else 
         			v.setSelected(true);
-        		bState = ((ImageButton)findViewById(iButton)).isSelected();
+        		bState = ((CheckBox)findViewById(iButton)).isChecked();
         	}
         	cData34c1.bCantSleep[cData34c1.iMap[iStart]] = bState;		// scrape new state to data store
 
-        	if( bState ) {		// if checked then re order display
-        		if( iStart > 0 ) {
-        			int iHold = cData34c1.iMap[iStart];
-        			for( ; iStart>0 ; iStart-- ) 
-        				cData34c1.iMap[iStart] = cData34c1.iMap[iStart-1];
-        			cData34c1.iMap[0] = iHold;
-        		}
-        	}
-        	cData34c1.renderData();
+        	//if( bState ) {				// if checked then place at top
+        	//	if( iStart > 0 ) {
+        	//		int iHold = cData34c1.iMap[iStart];
+        	//		for( ; iStart>0 ; iStart-- ) 
+        	//			cData34c1.iMap[iStart] = cData34c1.iMap[iStart-1];
+        	//		cData34c1.iMap[0] = iHold;
+        	//	}
+        	//}cData34c1.renderData();
         }
     };
 	
@@ -240,5 +188,15 @@ public class CBTi_Activity34c1 extends CBTi_BaseActivity {
 		cData34c1 = new CBTi_Data34c1( this );
 		cData34c1.renderData();
 		super.onResume();
+	}
+	
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(CBTi_Activity34c1.this, CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_toolsgetoutofbedwhenyoucantsleep);
+		i.putExtra("RID_Text", R.string.s_34e1);
+		CBTi_Activity34c1.this.startActivity(i);
+		CBTi_Activity34c1.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
 	}
 }

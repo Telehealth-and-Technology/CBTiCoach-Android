@@ -4,14 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -44,7 +40,9 @@
                         android:background="@android:color/transparent"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:textSize="15dp" />
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:contentDescription=" " />
                 	
                 </RelativeLayout>
           

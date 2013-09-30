@@ -18,13 +18,14 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
 import com.t2.cbt_i.dashboard.DashActivity;
 import com.t2.cbt_i.reminders.CBTi_ActivityRemBRStopCaffeine;
 import com.t2.cbt_i.reminders.CBTi_Data60a;
 import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
 
-public class CBTi_Activity34i extends CBTi_BaseActivity {
+public class CBTi_Activity34i extends BaseABSNHActivity {
 	
 	CBTi_Data34i cData34i;
 	CBTi_Data60a cData60a;
@@ -39,28 +40,11 @@ public class CBTi_Activity34i extends CBTi_BaseActivity {
 		cData60a = new CBTi_Data60a(this);
 		alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
 	
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_ReducingCaffeine);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity34i.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity34i.this.startActivity(i);
-				CBTi_Activity34i.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
 		enableDCDLPicker();
 		
 		// Stop Caffeine Reminder
 		((Button)findViewById(R.id.bStopCaffeineReminder)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {		// handle the about button
-
 				cData60a.bStopCaffeineReminder = ((ToggleButton)findViewById(R.id.bStopCaffeineReminder)).isChecked();
 				if ( !cData60a.bStopCaffeineReminder ) {
 					((TextView)findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.INVISIBLE);

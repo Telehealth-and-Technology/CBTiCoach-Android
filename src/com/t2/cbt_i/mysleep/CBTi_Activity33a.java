@@ -17,12 +17,13 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
 import com.t2.cbt_i.dashboard.DashActivity;
 import com.t2.cbt_i.reminders.CBTi_Data60a;
 import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
 
-public class CBTi_Activity33a extends CBTi_BaseActivity {
+public class CBTi_Activity33a extends BaseABSNHActivity {
 	private int iInitialHourOfDay;
 	private int iInitialMin;
 	CBTi_Data60a cData60a;
@@ -31,22 +32,6 @@ public class CBTi_Activity33a extends CBTi_BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_33a);
-
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_ScheduleAssessments);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity33a.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity33a.this.startActivity(i);
-				CBTi_Activity33a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
 
 		// Take Assessment Reminder
 		((Button)findViewById(R.id.bTakeAssessmentReminder)).setOnClickListener(new View.OnClickListener() {

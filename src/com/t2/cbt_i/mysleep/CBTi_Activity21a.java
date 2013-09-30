@@ -13,20 +13,18 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.reminders.CBTi_Data60a;
 import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
 
 
-public class CBTi_Activity21a extends CBTi_BaseActivity {
+public class CBTi_Activity21a extends BaseABSActivity {
 
 	CBTi_Data60a cData60a;
 	CBTi_Data21a cData21a;
@@ -38,30 +36,6 @@ public class CBTi_Activity21a extends CBTi_BaseActivity {
 		setContentView(R.layout.cbti_21a);
 		
 		cData60a = new CBTi_Data60a( this );
-
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_SleepDiary);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity21a.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity21a.this.startActivity(i);
-				CBTi_Activity21a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-		
-		// topRight Button HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity21a.this, CBTi_Activity21b.class );
-				CBTi_Activity21a.this.startActivity(i);
-				CBTi_Activity21a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
 
 		// Reminder Toggle Button 
 		((Button)findViewById(R.id.bSleepDiaryReminder)).setOnClickListener(new View.OnClickListener() {
@@ -210,4 +184,11 @@ public class CBTi_Activity21a extends CBTi_BaseActivity {
 		super.onResume();
 	}
 	
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(CBTi_Activity21a.this, CBTi_Activity21b.class );
+		CBTi_Activity21a.this.startActivity(i);
+		CBTi_Activity21a.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
+	}
 }

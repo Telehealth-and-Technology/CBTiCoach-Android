@@ -9,18 +9,16 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
 
-public class CBTi_Activity35a11 extends CBTi_BaseActivity {
+public class CBTi_Activity35a11 extends BaseABSActivity {
 
 	private int[] iCaptionId = { 
 			R.string.s_muscle01, R.string.s_muscle02, R.string.s_muscle03, R.string.s_muscle04, R.string.s_muscle05,
@@ -50,32 +48,6 @@ public class CBTi_Activity35a11 extends CBTi_BaseActivity {
 	private Handler sHandler;
 
 	private void setup() {
-		// set up top bar
-		((ImageButton)findViewById(R.id.ibTopLeft)).setImageResource(R.drawable.ic_menu_home);
-		((TextView)findViewById(R.id.tvTopTitle)).setText( R.string.s_ProgressiveMuscleRelaxation);
-		((ImageButton)findViewById(R.id.ibTopRight)).setImageResource(R.drawable.ic_menu_help);
-
-		// topLeft Button HOME
-		((ImageButton)findViewById(R.id.ibTopLeft)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-
-				Intent i = new Intent(CBTi_Activity35a11.this, DashActivity.class );
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				CBTi_Activity35a11.this.startActivity(i);
-				CBTi_Activity35a11.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
-			}
-		});
-
-		// topRight Button HELP
-		((ImageButton)findViewById(R.id.ibTopRight)).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {		// handle the about button
-				Intent i = new Intent(CBTi_Activity35a11.this, CBTi_Help.class );
-				i.putExtra("RID_Img",  R.drawable.buddy_toolsprogressivemusclerelaxation);
-				i.putExtra("RID_Text", R.string.s_35a11help);
-				CBTi_Activity35a11.this.startActivity(i);
-				CBTi_Activity35a11.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
-			}
-		});
 
 		// PLAY
 		((Button)findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener() {
@@ -215,6 +187,15 @@ public class CBTi_Activity35a11 extends CBTi_BaseActivity {
 		}
 	};
 
+	
+	@Override
+	public void getHelp() {			// called to render help screen
+		Intent i = new Intent(CBTi_Activity35a11.this, CBTi_Help.class );
+		i.putExtra("RID_Img",  R.drawable.buddy_toolsprogressivemusclerelaxation);
+		i.putExtra("RID_Text", R.string.s_35a11help);
+		CBTi_Activity35a11.this.startActivity(i);
+		CBTi_Activity35a11.this.overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
+	}
 }
 
 

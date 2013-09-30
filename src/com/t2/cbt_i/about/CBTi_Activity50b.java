@@ -6,19 +6,16 @@ import java.io.File;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
+import com.t2.cbt_i.classes.BaseABSNHActivity;
 
 
-public class CBTi_Activity50b extends CBTi_BaseActivity {
+public class CBTi_Activity50b extends BaseABSNHActivity {
 	CBTi_Data50b cData50b;
 	
 	@Override
@@ -26,10 +23,6 @@ public class CBTi_Activity50b extends CBTi_BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_50b);
 
-		((ImageButton)findViewById(R.id.ibTopLeft)).setVisibility(View.INVISIBLE);
-		((ImageButton)findViewById(R.id.ibTopRight)).setVisibility(View.INVISIBLE);
-		((TextView)findViewById(R.id.tvTopTitle)).setText(R.string.s_Settings);
-		
 		// middle buttons
 		((Button)findViewById(R.id.bResetData)).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {		// handle the about button
@@ -50,12 +43,7 @@ public class CBTi_Activity50b extends CBTi_BaseActivity {
 		});
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
+	
 
 	@Override
 	public void onBackPressed() {

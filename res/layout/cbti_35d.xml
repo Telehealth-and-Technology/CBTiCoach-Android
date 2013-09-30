@@ -4,10 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar"/>
-   
-   	<!--   middle buttons -->
-   <LinearLayout 
+    <!--   middle buttons -->
+    <LinearLayout 
        	android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:orientation="vertical"
@@ -80,7 +78,8 @@
                             android:layout_alignParentRight="true"
                             android:gravity="center"
                             android:textOff="Off"
-                            android:textOn="On" />
+                            android:textOn="On"
+                            android:contentDescription="@string/s_WorryTimeReminderButton" />
                         
                     </RelativeLayout>
 

@@ -5,14 +5,9 @@
     android:layout_marginBottom="5dp"
     android:orientation="vertical" >
 
-    <include
-        android:layout_width="match_parent"
-        layout="@layout/topbar" />
-
-    <LinearLayout
+   <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
 
@@ -43,7 +38,7 @@
                         android:layout_marginTop="10dp"
                         android:background="@drawable/bg_whitetextbox"
                         android:gravity="center_horizontal"
-                        android:padding="10dp"
+                        android:padding="0dp"
                         android:text="@string/s_snq1"
                         android:textColor="#1c2739"
                         android:textSize="15dp" />
@@ -54,7 +49,7 @@
                         android:layout_marginBottom="1dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="0dp"
                         android:orientation="vertical"
                         android:padding="10dp" >
 
@@ -70,7 +65,8 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_Never"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                        	android:contentDescription="@string/s_NeverCheckbox" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ1"
@@ -84,7 +80,8 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_Rarely"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15dp" 
+                            android:contentDescription="@string/s_RarelyCheckbox"/>
 
                         <CheckBox
                             android:id="@+id/cbISIQ2"
@@ -98,7 +95,8 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_Sometimes"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_SometimesCheckbox" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ3"
@@ -112,7 +110,8 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_Frequently"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_FrequentlyCheckbox" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ4"
@@ -125,7 +124,8 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_Always"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15dp"
+                            android:contentDescription="@string/s_AlwaysCheckbox" />
                     </LinearLayout>
                     <!-- end ISI screen 1 -->
                 </LinearLayout>
@@ -151,8 +151,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="0dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_NextQuestionButton"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"
@@ -168,8 +169,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginTop="30dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_SubmitButton"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"
@@ -185,8 +186,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_DoneButton"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"
@@ -211,7 +213,8 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="@string/s_Add15"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:contentDescription="@string/s_Add15MinutesButton"  />
                 
                 <Button
                     android:id="@+id/bAdd30"
@@ -228,7 +231,8 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="@string/s_Add30"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:contentDescription="@string/s_Add30MinutesButton"  />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

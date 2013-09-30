@@ -4,14 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@android:color/white"
         android:fillViewport="true"
         android:orientation="vertical" >
@@ -79,7 +75,8 @@
                         android:layout_alignParentRight="true"
                         android:gravity="center_vertical|center"
                         android:textOff="Off"
-                        android:textOn="On" />
+                        android:textOn="On" 
+                        android:contentDescription="@string/s_WindDownTimeReminderCheckbox"/>
                 </RelativeLayout>
             </LinearLayout>
             <!-- End Wind Down Time -->
@@ -103,8 +100,8 @@
                 android:layout_marginRight="20dp"
                 android:measureWithLargestChild="true"
                 android:orientation="vertical" >
-
-                <!-- start #1 -->
+                
+               <!-- start #1 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -128,19 +125,14 @@
                             android:text="@string/s_Wind01"  
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind01"
+                        <CheckBox
+                            android:id="@+id/cbWind01"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -177,19 +169,14 @@
                             android:text="@string/s_Wind02"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind02"
+                        <CheckBox
+                            android:id="@+id/cbWind02"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -225,19 +212,14 @@
                             android:text="@string/s_Wind03"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind03"
+                        <CheckBox
+                            android:id="@+id/cbWind03"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -273,19 +255,14 @@
                             android:text="@string/s_Wind04"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind04"
+                        <CheckBox
+                            android:id="@+id/cbWind04"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -321,19 +298,14 @@
                             android:text="@string/s_Wind05"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind05"
+                        <CheckBox
+                            android:id="@+id/cbWind05"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -369,19 +341,14 @@
                             android:text="@string/s_Wind06"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind06"
+                        <CheckBox
+                            android:id="@+id/cbWind06"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -417,19 +384,14 @@
                             android:text="@string/s_Wind07"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind07"
+                        <CheckBox
+                            android:id="@+id/cbWind07"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -465,19 +427,14 @@
                             android:text="@string/s_Wind08"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind08"
+                        <CheckBox
+                            android:id="@+id/cbWind08"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -513,19 +470,14 @@
                             android:text="@string/s_Wind09"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind09"
+                        <CheckBox
+                            android:id="@+id/cbWind09"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -561,19 +513,14 @@
                             android:text="@string/s_Wind10"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind10"
+                        <CheckBox
+                            android:id="@+id/cbWind10"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -609,19 +556,14 @@
                             android:text="@string/s_Wind11"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind11"
+                        <CheckBox
+                            android:id="@+id/cbWind11"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -657,19 +599,14 @@
                             android:text="@string/s_Wind12"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind12"
+                        <CheckBox
+                            android:id="@+id/cbWind12"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -705,19 +642,14 @@
                             android:text="@string/s_Wind13"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind13"
+                        <CheckBox
+                            android:id="@+id/cbWind13"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -753,19 +685,14 @@
                             android:text="@string/s_Wind14"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind14"
+                        <CheckBox
+                            android:id="@+id/cbWind14"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -801,19 +728,14 @@
                             android:text="@string/s_Wind15"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind15"
+                        <CheckBox
+                            android:id="@+id/cbWind15"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -849,19 +771,14 @@
                             android:text="@string/s_Wind16"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind16"
+                        <CheckBox
+                            android:id="@+id/cbWind16"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -897,19 +814,14 @@
                             android:text="@string/s_Wind17"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind17"
+                        <CheckBox
+                            android:id="@+id/cbWind17"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -945,19 +857,14 @@
                             android:text="@string/s_Wind18"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind18"
+                        <CheckBox
+                            android:id="@+id/cbWind18"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -993,19 +900,14 @@
                             android:text="@string/s_Wind19"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind19"
+                        <CheckBox
+                            android:id="@+id/cbWind19"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -1041,19 +943,14 @@
                             android:text="@string/s_Wind20"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind20"
+                        <CheckBox
+                            android:id="@+id/cbWind20"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -1089,19 +986,14 @@
                             android:text="@string/s_Wind21"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind21"
+                        <CheckBox
+                            android:id="@+id/cbWind21"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View
@@ -1137,19 +1029,14 @@
                             android:text="@string/s_Wind22"
                             android:textSize="15dp" />
 
-                        <ImageButton
-                            android:id="@+id/bWind22"
+                        <CheckBox
+                            android:id="@+id/cbWind22"
+                            android:button="@drawable/toolsstarcheckbox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/starbutton2" />
+                            android:layout_weight="1" />
                     </LinearLayout>
 
                     <View

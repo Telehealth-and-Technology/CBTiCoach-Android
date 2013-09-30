@@ -4,14 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <include layout="@layout/topbar" />
-
     <!-- middle buttons -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -41,6 +37,7 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:focusable="false"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="false"
                     android:layout_marginTop="20dp" >
@@ -59,7 +56,8 @@
                         android:background="@android:color/transparent"
                         android:gravity="center"
                         android:textSize="80dp"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:contentDescription=" " />
                     
                     
                     
@@ -73,7 +71,8 @@
                     android:layout_marginBottom="70dp"
                     android:background="@android:color/transparent"
                     android:gravity="bottom|center_horizontal"
-                    android:padding="15dp" />
+                    android:padding="18dp"
+                    android:contentDescription=" " />
 
                 <Button
                     android:id="@+id/bPlayMe"
@@ -91,7 +90,8 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_Play" />
+                    android:text="@string/s_Play" 
+                    android:contentDescription="@string/s_PlayButton" />
 
                 <VideoView
                     android:id="@+id/video"
