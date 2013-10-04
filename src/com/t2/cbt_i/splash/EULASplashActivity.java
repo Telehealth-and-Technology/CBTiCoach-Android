@@ -12,16 +12,12 @@ import android.widget.Button;
 import com.t2.cbt_i.R;
 
 
-public class SplashActivity10b extends Activity {
+public class EULASplashActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.splash10b);
-		
-		
-		
-		
+		setContentView(R.layout.splash_eula);
 	}
 
 
@@ -39,8 +35,8 @@ public class SplashActivity10b extends Activity {
             	pEdit.commit();
             	            	
             	finish();		// make sure we close the splash screen so the user won't come back when it presses back key
-            	Intent i = new Intent(SplashActivity10b.this, SplashActivity10d.class );
-            	SplashActivity10b.this.startActivity(i);
+            	Intent i = new Intent(EULASplashActivity.this, WelcomeToCBTiSplashActivity.class );
+            	EULASplashActivity.this.startActivity(i);
             }
         });
 	}

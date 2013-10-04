@@ -12,11 +12,11 @@ import android.util.Log;
 import android.view.MotionEvent;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.dashboard.DashboardActivity;
 
 
 
-public class SplashActivity10a extends Activity {
+public class LogoSplashActivity extends Activity {
 
 	//how long until we go to the next activity
 	protected int iSplashTime = 3000; 
@@ -44,13 +44,13 @@ public class SplashActivity10a extends Activity {
 		SharedPreferences prefs = this.getSharedPreferences( "CBTiPrefs", Context.MODE_PRIVATE);
 		Boolean bSplashedAlready = prefs.getBoolean("bSplashedAlready", false);
 		if( bSplashedAlready && !bForceSplash )
-			jumpTo( DashActivity.class );
+			jumpTo( DashboardActivity.class );
 		else {
-			setContentView(R.layout.splash10a);				// show splash screen
+			setContentView(R.layout.splash_logo);				// show splash screen
 			handler = new Handler();
 			myRunnable = new Runnable() {
 				public void run() {
-					jumpTo(SplashActivity10b.class);
+					jumpTo(EULASplashActivity.class);
 				}
 			};
 			handler.postDelayed( myRunnable, iSplashTime ); 
@@ -64,14 +64,14 @@ public class SplashActivity10a extends Activity {
 	public boolean onTouchEvent(MotionEvent event) {
 		if (event.getAction() == MotionEvent.ACTION_DOWN) {
 			handler.removeCallbacks(myRunnable);
-			jumpTo(SplashActivity10b.class);
+			jumpTo(EULASplashActivity.class);
 		}
 		return true;
 	}
 
 	private void jumpTo( Class<?> cTarget ) {
 		finish();		// make sure we close the splash screen so the user won't come back when it presses back key
-		Intent intent = new Intent(SplashActivity10a.this, cTarget );
-		SplashActivity10a.this.startActivity(intent);
+		Intent intent = new Intent(LogoSplashActivity.this, cTarget );
+		LogoSplashActivity.this.startActivity(intent);
 	}
 }

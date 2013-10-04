@@ -16,7 +16,7 @@ import com.t2.cbt_i.reminders.CBTi_Activity60a;
 import com.t2.cbt_i.tools.CBTi_Activity30a;
 
 
-public class DashActivity extends BaseABSActivity {
+public class DashboardActivity extends BaseABSActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,36 +27,36 @@ public class DashActivity extends BaseABSActivity {
 		((Button)findViewById(R.id.b10mysleep)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button   
 		    	
-		    	Intent i = new Intent(DashActivity.this, CBTi_Activity20a.class );
-		    	DashActivity.this.startActivity(i);
-		    	DashActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
+		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity20a.class );
+		    	DashboardActivity.this.startActivity(i);
+		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 		    }
 		});
 		
 		// Learn Button
 		((Button)findViewById(R.id.b10learn)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button			                 
-		    	Intent i = new Intent(DashActivity.this, CBTi_Activity40a.class );
-		    	DashActivity.this.startActivity(i);
-		    	DashActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
+		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity40a.class );
+		    	DashboardActivity.this.startActivity(i);
+		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 		    }
 		});
 		
 		// Tools Button
 		((Button)findViewById(R.id.b10tools)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button				                 
-		    	Intent i = new Intent(DashActivity.this, CBTi_Activity30a.class );
-		    	DashActivity.this.startActivity(i);
-		    	DashActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
+		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity30a.class );
+		    	DashboardActivity.this.startActivity(i);
+		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		});
 		
 		// Reminders Button
 		((Button)findViewById(R.id.b10reminders)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button		                 
-		    	Intent i = new Intent(DashActivity.this, CBTi_Activity60a.class );
-		    	DashActivity.this.startActivity(i);
-		    	DashActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
+		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity60a.class );
+		    	DashboardActivity.this.startActivity(i);
+		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 		    }
 		});
 	}
@@ -87,7 +87,7 @@ public class DashActivity extends BaseABSActivity {
 	
 	//@Override
 	public void getHelp() {			// called to render help screen
-		startActivity( new Intent(this, CBTi_Activity10f.class) ); 
+		startActivity( new Intent(this, DashboardHelpActivity.class) ); 
 		overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
 	}
 	

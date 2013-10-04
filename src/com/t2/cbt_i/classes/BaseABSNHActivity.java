@@ -13,7 +13,7 @@ import com.t2.cbt_i.R;
 import com.t2.cbt_i.about.CBTi_Activity50a;
 import com.t2.cbt_i.about.CBTi_Activity50b;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.dashboard.DashboardActivity;
 import com.t2.cbt_i.learn.CBTi_Activity40a;
 import com.t2.cbt_i.mysleep.CBTi_Activity20a;
 import com.t2.cbt_i.reminders.CBTi_Activity60a;
@@ -61,7 +61,7 @@ public class BaseABSNHActivity extends CBTi_BaseActivity {
 				Intent i=null;
 				int iSelected=-1;
 				if( arg0.getText().toString().equalsIgnoreCase(getString(R.string.action_home)) ) {
-					i = new Intent(getApplicationContext(), DashActivity.class ); 
+					i = new Intent(getApplicationContext(), DashboardActivity.class ); 
 					iSelected = 0;
 				}
 				else if ( arg0.getText().toString().equalsIgnoreCase(getString(R.string.s_MySleep)) ) {

@@ -11,7 +11,7 @@ import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.dashboard.DashboardActivity;
 
 public class CBTi_Activity34a extends BaseABSActivity {
 

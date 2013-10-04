@@ -8,12 +8,12 @@ import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSNHActivity;
 
 
-public class CBTi_Activity10f extends BaseABSNHActivity {
+public class DashboardHelpActivity extends BaseABSNHActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.cbti_10f);
+		setContentView(R.layout.dashboardhelp);
 	}
 
 

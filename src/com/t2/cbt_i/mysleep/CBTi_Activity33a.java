@@ -19,7 +19,7 @@ import android.widget.ToggleButton;
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSNHActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.dashboard.DashboardActivity;
 import com.t2.cbt_i.reminders.CBTi_Data60a;
 import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
 

@@ -8,22 +8,22 @@ import android.view.View;
 import android.widget.Button;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.dashboard.DashActivity;
+import com.t2.cbt_i.dashboard.DashboardActivity;
 
 
-public class SplashActivity10d extends Activity {
+public class WelcomeToCBTiSplashActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.splash10d);
+		setContentView(R.layout.splash_welcome);
 		
 		((Button)findViewById(R.id.iContinue)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
             	finish();		// make sure we close the splash screen so the user won't come back when it presses back key
-            	Intent i = new Intent(SplashActivity10d.this, DashActivity.class );
-            	SplashActivity10d.this.startActivity(i);
+            	Intent i = new Intent(WelcomeToCBTiSplashActivity.this, DashboardActivity.class );
+            	WelcomeToCBTiSplashActivity.this.startActivity(i);
             }
         });
 		
