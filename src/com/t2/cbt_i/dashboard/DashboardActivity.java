@@ -10,10 +10,10 @@ import android.widget.TextView;
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.learn.LearnMainActivity;
-import com.t2.cbt_i.mysleep.CBTi_Activity20a;
-import com.t2.cbt_i.mysleep.CBTi_Data22a;
+import com.t2.cbt_i.mysleep.MySleepMainActivity;
+import com.t2.cbt_i.mysleep.UpdateSleepPrescriptionData;
 import com.t2.cbt_i.reminders.RemindersMainActivity;
-import com.t2.cbt_i.tools.CBTi_Activity30a;
+import com.t2.cbt_i.tools.ToolsMainActivity;
 
 
 public class DashboardActivity extends BaseABSActivity {
@@ -27,7 +27,7 @@ public class DashboardActivity extends BaseABSActivity {
 		((Button)findViewById(R.id.b10mysleep)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button   
 		    	
-		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity20a.class );
+		    	Intent i = new Intent(DashboardActivity.this, MySleepMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 		    }
@@ -45,7 +45,7 @@ public class DashboardActivity extends BaseABSActivity {
 		// Tools Button
 		((Button)findViewById(R.id.b10tools)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button				                 
-		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity30a.class );
+		    	Intent i = new Intent(DashboardActivity.this, ToolsMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
@@ -66,7 +66,7 @@ public class DashboardActivity extends BaseABSActivity {
 		super.onResume();
 		
 		// fetch the data and display either the sleep prescription or the msg
-		CBTi_Data22a cData22a = new CBTi_Data22a( this );
+		UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData( this );
 		cData22a.displaySleepPrescription();
 		
 	}

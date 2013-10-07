@@ -14,7 +14,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.mysleep.CBTi_Data22a;
+import com.t2.cbt_i.mysleep.UpdateSleepPrescriptionData;
 
 public class RemindersData {
 
@@ -185,7 +185,7 @@ public class RemindersData {
 	}
 
 	public void resetData() {
-		CBTi_Data22a cData22a = new CBTi_Data22a(c);
+		UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData(c);
 		
 		bSleepDiaryReminder = false;
 		iSDRmin = 1200;		// 12pm
@@ -372,12 +372,12 @@ public class RemindersData {
 			break;
 
 		case PrescribedBedTime:
-			CBTi_Data22a cData22a = new CBTi_Data22a(c);
+			UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData(c);
 			setAlarm( cData22a.iSP_PBTimemin, Reminders_BR_PrescribedBedTime.class, DAILY );
 			break;
 
 		case PrescribedWakeTime:
-			cData22a = new CBTi_Data22a(c);
+			cData22a = new UpdateSleepPrescriptionData(c);
 			setAlarm( cData22a.iSP_PWTimemin, Reminders_BR_PrescribedWakeTime.class, DAILY );
 			break;
 

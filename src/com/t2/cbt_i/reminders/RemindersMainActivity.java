@@ -20,13 +20,13 @@ import android.widget.ToggleButton;
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.mysleep.CBTi_Data22a;
+import com.t2.cbt_i.mysleep.UpdateSleepPrescriptionData;
 
 
 public class RemindersMainActivity extends BaseABSActivity {
 	
 	RemindersData cData60a;
-	CBTi_Data22a cData22a;
+	UpdateSleepPrescriptionData cData22a;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) { 
@@ -319,7 +319,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 	@Override
 	protected void onResume() {
 		cData60a = new RemindersData(this);	// initialize data from stored object
-		cData22a = new CBTi_Data22a(this);
+		cData22a = new UpdateSleepPrescriptionData(this);
 		cData60a.cancelAllAlarms();
 		renderData();
 		super.onResume();

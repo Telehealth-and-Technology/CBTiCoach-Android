@@ -14,10 +14,10 @@ import com.t2.cbt_i.about.AboutMainActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
 import com.t2.cbt_i.dashboard.DashboardActivity;
 import com.t2.cbt_i.learn.LearnMainActivity;
-import com.t2.cbt_i.mysleep.CBTi_Activity20a;
+import com.t2.cbt_i.mysleep.MySleepMainActivity;
 import com.t2.cbt_i.reminders.RemindersMainActivity;
 import com.t2.cbt_i.settings.SettingsActivity;
-import com.t2.cbt_i.tools.CBTi_Activity30a;
+import com.t2.cbt_i.tools.ToolsMainActivity;
 
 
 public class BaseABSNHActivity extends CBTi_BaseActivity {
@@ -65,11 +65,11 @@ public class BaseABSNHActivity extends CBTi_BaseActivity {
 					iSelected = 0;
 				}
 				else if ( arg0.getText().toString().equalsIgnoreCase(getString(R.string.s_MySleep)) ) {
-					i = new Intent(getApplicationContext(), CBTi_Activity20a.class );
+					i = new Intent(getApplicationContext(), MySleepMainActivity.class );
 					iSelected = 1;
 				}
 				else if ( arg0.getText().toString().equalsIgnoreCase(getString(R.string.s_Tools)) ) {
-					i = new Intent(getApplicationContext(), CBTi_Activity30a.class );
+					i = new Intent(getApplicationContext(), ToolsMainActivity.class );
 					iSelected = 2;
 				}
 				else if ( arg0.getText().toString().equalsIgnoreCase(getString(R.string.s_Learn)) ) {
