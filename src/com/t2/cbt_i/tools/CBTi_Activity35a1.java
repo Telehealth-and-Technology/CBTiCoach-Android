@@ -16,15 +16,15 @@ import android.widget.ToggleButton;
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.reminders.CBTi_ActivityRemBRWindDown;
-import com.t2.cbt_i.reminders.CBTi_Data60a;
-import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
+import com.t2.cbt_i.reminders.Reminders_BR_WindDown;
+import com.t2.cbt_i.reminders.RemindersData;
+import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 
 public class CBTi_Activity35a1 extends BaseABSActivity {
 	
 	CBTi_Data35a1 cData35a1;
-	CBTi_Data60a  cData60a;
+	RemindersData  cData60a;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class CBTi_Activity35a1 extends BaseABSActivity {
 			public void onClick(View v) {
 				iInitialHourOfDay = 15;		// remember to initialize these
 				iInitialMin = 32;
-				iNextClass = CBTi_ActivityRemBRWindDown.class;
+				iNextClass = Reminders_BR_WindDown.class;
 				showDialog(TIME_DIALOG_ID);
 			}	
 		});
@@ -230,7 +230,7 @@ public class CBTi_Activity35a1 extends BaseABSActivity {
 		cData35a1 = new CBTi_Data35a1(this);
 		cData35a1.renderData();
 		
-		cData60a = new CBTi_Data60a(this);
+		cData60a = new RemindersData(this);
 		cData60a.cancelAnAlarm(ALARMS.WindDownTime);
 		// wind down time reminder
 		((ToggleButton)findViewById(R.id.bWindDownTimeReminder)).setChecked( cData60a.bWindDownTimeReminder );
@@ -265,7 +265,7 @@ public class CBTi_Activity35a1 extends BaseABSActivity {
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
 		@Override
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute) {
-			if( iNextClass == CBTi_ActivityRemBRWindDown.class) {
+			if( iNextClass == Reminders_BR_WindDown.class) {
 				cData60a.iWDTmin = cData60a.timeTo4pm( (hourOfDay*60) + minute );
 				((TextView)findViewById(R.id.tWindDownTimeReminder)).setText( cData60a.formattedTimeFrom4pm(cData60a.iWDTmin) );
 			}
@@ -273,7 +273,7 @@ public class CBTi_Activity35a1 extends BaseABSActivity {
 		}
 	};
 
-	private Class<CBTi_ActivityRemBRWindDown> iNextClass;					// tells the alarm where to wake up
+	private Class<Reminders_BR_WindDown> iNextClass;					// tells the alarm where to wake up
 	
 	
 	@Override

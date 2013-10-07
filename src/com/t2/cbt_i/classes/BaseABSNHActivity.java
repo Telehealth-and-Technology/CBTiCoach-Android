@@ -10,13 +10,13 @@ import com.actionbarsherlock.app.ActionBar.TabListener;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.about.CBTi_Activity50a;
-import com.t2.cbt_i.about.CBTi_Activity50b;
+import com.t2.cbt_i.about.AboutMainActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
 import com.t2.cbt_i.dashboard.DashboardActivity;
-import com.t2.cbt_i.learn.CBTi_Activity40a;
+import com.t2.cbt_i.learn.LearnMainActivity;
 import com.t2.cbt_i.mysleep.CBTi_Activity20a;
-import com.t2.cbt_i.reminders.CBTi_Activity60a;
+import com.t2.cbt_i.reminders.RemindersMainActivity;
+import com.t2.cbt_i.settings.SettingsActivity;
 import com.t2.cbt_i.tools.CBTi_Activity30a;
 
 
@@ -73,11 +73,11 @@ public class BaseABSNHActivity extends CBTi_BaseActivity {
 					iSelected = 2;
 				}
 				else if ( arg0.getText().toString().equalsIgnoreCase(getString(R.string.s_Learn)) ) {
-					i = new Intent(getApplicationContext(), CBTi_Activity40a.class );
+					i = new Intent(getApplicationContext(), LearnMainActivity.class );
 					iSelected = 3;
 				}
 				else if ( arg0.getText().toString().equalsIgnoreCase(getString(R.string.s_Reminders)) ) {
-					i = new Intent(getApplicationContext(), CBTi_Activity60a.class );
+					i = new Intent(getApplicationContext(), RemindersMainActivity.class );
 					iSelected = 4;
 				}
 				// dont replicate yourself
@@ -99,8 +99,8 @@ public class BaseABSNHActivity extends CBTi_BaseActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add("settings").setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-		menu.add("about").setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+		menu.add("settings").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+		menu.add("about").setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 		return true;
 	}
 
@@ -109,10 +109,10 @@ public class BaseABSNHActivity extends CBTi_BaseActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent i=null;
 		if( item.getTitle().toString().equalsIgnoreCase(getString(R.string.s_Settings)) ) {
-			i = new Intent(getApplicationContext(), CBTi_Activity50b.class );       	
+			i = new Intent(getApplicationContext(), SettingsActivity.class );       	
 		}
 		else if( item.getTitle().toString().equalsIgnoreCase(getString(R.string.s_About)) ) {
-			i = new Intent(getApplicationContext(), CBTi_Activity50a.class );   
+			i = new Intent(getApplicationContext(), AboutMainActivity.class );   
 		}
 		if( i!= null ) {
 			i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

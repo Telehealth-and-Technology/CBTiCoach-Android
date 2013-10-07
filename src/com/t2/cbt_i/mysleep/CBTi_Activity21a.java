@@ -20,13 +20,13 @@ import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
-import com.t2.cbt_i.reminders.CBTi_Data60a;
-import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
+import com.t2.cbt_i.reminders.RemindersData;
+import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 
 public class CBTi_Activity21a extends BaseABSActivity {
 
-	CBTi_Data60a cData60a;
+	RemindersData cData60a;
 	CBTi_Data21a cData21a;
 	ArrayAdapter<CBTi_Data21c> aa;
 	
@@ -35,7 +35,7 @@ public class CBTi_Activity21a extends BaseABSActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_21a);
 		
-		cData60a = new CBTi_Data60a( this );
+		cData60a = new RemindersData( this );
 
 		// Reminder Toggle Button 
 		((Button)findViewById(R.id.bSleepDiaryReminder)).setOnClickListener(new View.OnClickListener() {
@@ -149,7 +149,7 @@ public class CBTi_Activity21a extends BaseABSActivity {
 	protected void onResume() {
 		cData21a = new CBTi_Data21a(this);
 		
-		cData60a = new CBTi_Data60a(this);	// initialize data from stored object
+		cData60a = new RemindersData(this);	// initialize data from stored object
 		cData60a.cancelAnAlarm(ALARMS.SleepDiary);
 		
 		((ToggleButton)findViewById(R.id.bSleepDiaryReminder)).setChecked( cData60a.bSleepDiaryReminder );

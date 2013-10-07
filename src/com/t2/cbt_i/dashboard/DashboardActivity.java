@@ -9,10 +9,10 @@ import android.widget.TextView;
 
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
-import com.t2.cbt_i.learn.CBTi_Activity40a;
+import com.t2.cbt_i.learn.LearnMainActivity;
 import com.t2.cbt_i.mysleep.CBTi_Activity20a;
 import com.t2.cbt_i.mysleep.CBTi_Data22a;
-import com.t2.cbt_i.reminders.CBTi_Activity60a;
+import com.t2.cbt_i.reminders.RemindersMainActivity;
 import com.t2.cbt_i.tools.CBTi_Activity30a;
 
 
@@ -36,7 +36,7 @@ public class DashboardActivity extends BaseABSActivity {
 		// Learn Button
 		((Button)findViewById(R.id.b10learn)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button			                 
-		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity40a.class );
+		    	Intent i = new Intent(DashboardActivity.this, LearnMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 		    }
@@ -54,7 +54,7 @@ public class DashboardActivity extends BaseABSActivity {
 		// Reminders Button
 		((Button)findViewById(R.id.b10reminders)).setOnClickListener(new View.OnClickListener() {
 		    public void onClick(View v) {		// handle the about button		                 
-		    	Intent i = new Intent(DashboardActivity.this, CBTi_Activity60a.class );
+		    	Intent i = new Intent(DashboardActivity.this, RemindersMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 		    }

@@ -21,14 +21,14 @@ import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSNHActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
 import com.t2.cbt_i.dashboard.DashboardActivity;
-import com.t2.cbt_i.reminders.CBTi_ActivityRemBRStopCaffeine;
-import com.t2.cbt_i.reminders.CBTi_Data60a;
-import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
+import com.t2.cbt_i.reminders.Reminders_BR_StopCaffeine;
+import com.t2.cbt_i.reminders.RemindersData;
+import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 public class CBTi_Activity34i extends BaseABSNHActivity {
 	
 	CBTi_Data34i cData34i;
-	CBTi_Data60a cData60a;
+	RemindersData cData60a;
 	AlarmManager alarmManager;
 
 	@Override
@@ -37,7 +37,7 @@ public class CBTi_Activity34i extends BaseABSNHActivity {
 		setContentView(R.layout.cbti_34i);
 		
 		cData34i = new CBTi_Data34i(this);
-		cData60a = new CBTi_Data60a(this);
+		cData60a = new RemindersData(this);
 		alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
 	
 		enableDCDLPicker();
@@ -60,7 +60,7 @@ public class CBTi_Activity34i extends BaseABSNHActivity {
 			public void onClick(View v) {
 				iInitialHourOfDay = 15;		// remember to initialize these
 				iInitialMin = 32;
-				iNextClass = CBTi_ActivityRemBRStopCaffeine.class;
+				iNextClass = Reminders_BR_StopCaffeine.class;
 				showDialog(TIME_DIALOG_ID);
 			}	
 		});
@@ -84,12 +84,12 @@ public class CBTi_Activity34i extends BaseABSNHActivity {
 		return null;
 	}
 		
-	private Class<CBTi_ActivityRemBRStopCaffeine> iNextClass;
+	private Class<Reminders_BR_StopCaffeine> iNextClass;
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
 		@Override
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute) {
 
-			if( iNextClass == CBTi_ActivityRemBRStopCaffeine.class) {
+			if( iNextClass == Reminders_BR_StopCaffeine.class) {
 				cData60a.iSCmin = cData60a.timeTo4pm( (hourOfDay*60) + minute );
 				((TextView)findViewById(R.id.tStopCaffeineReminder)).setText( cData60a.formattedTimeFrom4pm(cData60a.iSCmin) );
 			}
@@ -176,7 +176,7 @@ public class CBTi_Activity34i extends BaseABSNHActivity {
 		cData34i = new CBTi_Data34i(this);
 		((Spinner)findViewById(R.id.sDailyCaffeineDrinkLimit)).setSelection(cData34i.iDailyCaffeineDrinkLimit, true);
 		
-		cData60a = new CBTi_Data60a(this);
+		cData60a = new RemindersData(this);
 		cData60a.cancelAnAlarm(ALARMS.StopCaffeine);
 		// stop caffeine reminder
 		((ToggleButton)findViewById(R.id.bStopCaffeineReminder)).setChecked( cData60a.bStopCaffeineReminder );

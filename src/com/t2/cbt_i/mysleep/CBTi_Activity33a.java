@@ -20,13 +20,13 @@ import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSNHActivity;
 import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
 import com.t2.cbt_i.dashboard.DashboardActivity;
-import com.t2.cbt_i.reminders.CBTi_Data60a;
-import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
+import com.t2.cbt_i.reminders.RemindersData;
+import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 public class CBTi_Activity33a extends BaseABSNHActivity {
 	private int iInitialHourOfDay;
 	private int iInitialMin;
-	CBTi_Data60a cData60a;
+	RemindersData cData60a;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -124,7 +124,7 @@ public class CBTi_Activity33a extends BaseABSNHActivity {
 
 	@Override
 	protected void onResume() {
-		cData60a = new CBTi_Data60a(this);	// initialize data from stored object
+		cData60a = new RemindersData(this);	// initialize data from stored object
 		cData60a.cancelAnAlarm(ALARMS.TakeAssessment);
 		// take assessment reminder
 		((ToggleButton)findViewById(R.id.bTakeAssessmentReminder)).setChecked( cData60a.bTakeAssessmentReminder );

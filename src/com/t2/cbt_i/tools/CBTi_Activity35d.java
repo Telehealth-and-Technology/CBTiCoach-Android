@@ -19,22 +19,22 @@ import android.widget.ToggleButton;
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.reminders.CBTi_ActivityRemBRWorryTime;
-import com.t2.cbt_i.reminders.CBTi_Data60a;
-import com.t2.cbt_i.reminders.CBTi_Data60a.ALARMS;
+import com.t2.cbt_i.reminders.Reminders_BR_WorryTime;
+import com.t2.cbt_i.reminders.RemindersData;
+import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 
 
 public class CBTi_Activity35d extends BaseABSActivity {	
 
-	CBTi_Data60a cData60a;
+	RemindersData cData60a;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.cbti_35d);
 
-		cData60a = new CBTi_Data60a(this);
+		cData60a = new RemindersData(this);
 
 		// Worry Time Reminder
 		((Button)findViewById(R.id.bWorryTimeReminder)).setOnClickListener(new View.OnClickListener() {
@@ -55,7 +55,7 @@ public class CBTi_Activity35d extends BaseABSActivity {
 			public void onClick(View v) {
 				iInitialHourOfDay = 15;		// remember to initialize these
 				iInitialMin = 32;
-				iNextClass = CBTi_ActivityRemBRWorryTime.class;
+				iNextClass = Reminders_BR_WorryTime.class;
 				showDialog(TIME_DIALOG_ID);
 			}	
 		});
@@ -139,7 +139,7 @@ public class CBTi_Activity35d extends BaseABSActivity {
 
 	@Override
 	protected void onResume() {
-		cData60a = new CBTi_Data60a(this);	// initialize data from stored object
+		cData60a = new RemindersData(this);	// initialize data from stored object
 		renderData();
 		cData60a.cancelAnAlarm(ALARMS.WorryTime);
 		super.onResume();
@@ -158,7 +158,7 @@ public class CBTi_Activity35d extends BaseABSActivity {
 
 	}
 
-	private Class<CBTi_ActivityRemBRWorryTime> iNextClass;					// tells the alarm where to wake up
+	private Class<Reminders_BR_WorryTime> iNextClass;					// tells the alarm where to wake up
 	
 
 	static final int TIME_DIALOG_ID = 1;
@@ -182,7 +182,7 @@ public class CBTi_Activity35d extends BaseABSActivity {
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
 		@Override
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute) {
-			if( iNextClass == CBTi_ActivityRemBRWorryTime.class) {
+			if( iNextClass == Reminders_BR_WorryTime.class) {
 				cData60a.iWTmin = cData60a.timeTo4pm( (hourOfDay*60) + minute );
 				((TextView)findViewById(R.id.tWorryTimeReminderTime)).setText( cData60a.formattedTimeFrom4pm(cData60a.iWTmin) );
 			}
