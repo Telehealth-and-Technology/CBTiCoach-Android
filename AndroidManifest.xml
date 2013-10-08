@@ -40,24 +40,24 @@
         <activity android:label="@string/s_SleepDiary"  		android:name="com.t2.cbt_i.mysleep.SleepDairyMainActivity" > </activity>
         <activity android:label="@string/s_Help"    			android:name="com.t2.cbt_i.mysleep.SleepDairyHelpActivity" > </activity>
         <activity android:label="@string/s_NewEntry"  			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryActivity" 
-            android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
+            	  android:screenOrientation="portrait" 			android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
         <activity android:label="@string/s_SleepData" 			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryResultsActivity" > </activity>
         <activity android:label="@string/s_UpdateSleep"  		android:name="com.t2.cbt_i.mysleep.UpdateSleepPrescriptionActivity" 
-            android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
-        <activity android:label="@string/s_SleepPrescription"  	android:name="com.t2.cbt_i.mysleep.CBTi_Activity22f" > </activity>
+            	  android:screenOrientation="portrait" 			android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
+       <!-- <activity android:label="@string/s_SleepPrescription"  	android:name="com.t2.cbt_i.mysleep.CBTi_Activity22f" > </activity>  -->
         <activity android:label="@string/s_NeedSleep"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepMainActivity" > </activity>
         <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepQuestionnaireActivity" > </activity>
         <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentMainActivity" > </activity>
-        <activity android:label="@string/s_Assessment"  		android:name="cocom.t2.cbt_i.tools.CBTi_Activity31b"> </activity>  
-        <activity android:label="@string/s_ISITitle"  			android:name="cocom.t2.cbt_i.tools.CBTi_Activity31c"> </activity>
-        <activity android:label="@string/s_Feedback"  			android:name="com.com.t2.cbt_i.tools.CBTi_Activity31e"> </activity>
-        <activity android:label="@string/s_Feedback"  			android:name="cocom.t2.cbt_i.tools.CBTi_Activity31e2"> </activity>
+        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentStartActivity"> </activity>  
+        <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.AssessmentQuestionnaireActivity"> </activity>
+        <activity android:label="@string/s_Feedback"  			android:name="com.t2.cbt_i.mysleep.AssessmentResultsActivity"> </activity>
+       <!-- <activity android:label="@string/s_Feedback"  			android:name="cocom.t2.cbt_i.tools.CBTi_Activity31e2"> </activity> -->
         <activity android:label="@string/s_TooEarly"  			android:name="com.t2.cbt_i.mysleep.AssessmentTakenTooSoonActivity" > </activity>
-        <activity android:label="@string/s_History"  			android:name="cocom.t2.cbt_i.tools.CBTi_Activity32a"> </activity> 
-        <activity android:label="@string/s_NoHistory"  			android:name="com.t2com.t2.cbt_i.tools.CBTi_Activity32d"> </activity>
-        <activity android:label="@string/s_AllAssessments"  	android:name="com.t2.cbt_i.mcom.t2.cbt_i.tools.CBTi_Activity32f"/> 
-        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_icom.t2.cbt_i.tools.CBTi_Activity32f1"/>
-        <activity android:label="@string/s_AddtomyCalendar"  	android:name="com.t2.cbt_icom.t2.cbt_i.tools.CBTi_Activity33a"/> 
+        <activity android:label="@string/s_History"  			android:name="com.t2.cbt_i.mysleep.AssessmentHistoryGraphActivity"> </activity> 
+        <activity android:label="@string/s_NoHistory"  			android:name="com.t2.cbt_i.mysleep.AssessmentBlankHistoryActivity"> </activity>
+        <activity android:label="@string/s_AllAssessments"  	android:name="com.t2.cbt_i.mysleep.AssessmentHistoryListActivity"/> 
+        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentViewScoresActivity"/>
+        <activity android:label="@string/s_AddtomyCalendar"  	android:name="com.t2.cbt_i.mysleep.AssessmentScheduleReminderActivity"/> 
         
         <activity android:label="@string/s_Tools"  				android:name="com.t2.cbt_i.tools.ToolsMainActivity" > </activity>
         <activity android:label="@string/s_NewSleepHabits"  	android:name="com.t2.cbt_i.tools.SleepHabitsMainActivity" > </activity>
@@ -89,7 +89,7 @@
         
         <activity android:label="@string/s_Learn"  				android:name="com.t2.cbt_i.learn.LearnMainActivity"   > </activity>
         <activity android:label="@string/s_Sleep101"  			android:name="com.t2.cbt_i.learn.LearnSleep101Activity"   > </activity>
-        <activity android:label="@string/s_learn101_1t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a01" > </activity>
+       <!-- <activity android:label="@string/s_learn101_1t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a01" > </activity>
         <activity android:label="@string/s_learn101_2t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a02" > </activity>
         <activity android:label="@string/s_learn101_3t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a03" > </activity>
         <activity android:label="@string/s_learn101_4t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a04" > </activity>
@@ -99,10 +99,10 @@
         <activity android:label="@string/s_learn101_8t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a08" > </activity>
         <activity android:label="@string/s_learn101_9t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a09" > </activity>
         <activity android:label="@string/s_learn101_10t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a10" > </activity>
-        <activity android:label="@string/s_learn101_11t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a11" > </activity>
+        <activity android:label="@string/s_learn101_11t"  		android:name="com.t2.cbt_i.learn.sleep101.CBTi_Activity41a11" > </activity>-->
         
         <activity android:label="@string/s_SleepHabits"  		android:name="com.t2.cbt_i.learn.LearnHealthySleepHabitsActivity"  > </activity>
-        <activity android:label="@string/s_learnsh_01t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a01"  > </activity>
+        <!-- <activity android:label="@string/s_learnsh_01t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a01"  > </activity>
         <activity android:label="@string/s_learnsh_02t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a02"  > </activity>
         <activity android:label="@string/s_learnsh_03t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a03"  > </activity>
         <activity android:label="@string/s_learnsh_04t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a04"  > </activity>
@@ -112,7 +112,7 @@
         <activity android:label="@string/s_learnsh_08t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a08"  > </activity>
         <activity android:label="@string/s_learnsh_09t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a09"  > </activity>
         <activity android:label="@string/s_learnsh_10t" 		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a10"  > </activity>
-        <activity android:label="@string/s_learnsh_11t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a11"  > </activity>
+        <activity android:label="@string/s_learnsh_11t"  		android:name="com.t2.cbt_i.learn.healthysh.CBTi_Activity42a11"  > </activity>-->
      
         <activity android:label="@string/s_CBTiGlossary"  		android:name="com.t2.cbt_i.learn.LearnCBTiGlossaryActivity"   > </activity>
         
