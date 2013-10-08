@@ -22,6 +22,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR01)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR01)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, SleepHabitsGetOutOfBedOnTimeActivity.class );
@@ -35,6 +36,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR02)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR02)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, SleepHabitsGoToBedOnlyWhenSleepyActivity.class );
@@ -48,6 +50,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR03)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR03)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, SleepHabitsGetOutOfBedWhenCantSleepActivity.class );
@@ -61,6 +64,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR04)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR04)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, QuiteMindWindingDownActivity.class );
@@ -74,6 +78,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR05)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR05)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, QuiteMindScheduleWorryTimeActivity.class );
@@ -87,6 +92,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR06)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR06)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, SleepHabitsCaffeineActivity.class );
@@ -100,6 +106,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR07)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR07)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, SleepHabitsSleepEnvironmentSetupActivity.class );
@@ -113,6 +120,7 @@ public class PreventInsomniaResultActivity extends BaseABSNHActivity {
 			((LinearLayout)findViewById(R.id.llToolR08)).setVisibility(View.GONE);
 		} else
 			((TextView)findViewById(R.id.tToolR08)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 
 					Intent i = new Intent(PreventInsomniaResultActivity.this, QuiteMindMainActivity.class );

@@ -44,6 +44,7 @@ public class QuiteMindBeachImageryActivity extends BaseABSActivity {
 
 		// PLAY
 		((Button)findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				iVideoPos = 0;
 				videoPlay();
@@ -68,6 +69,7 @@ public class QuiteMindBeachImageryActivity extends BaseABSActivity {
 
 
 	MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener() {
+		@Override
 		public void onCompletion(MediaPlayer arg0) {
 			((TextView)findViewById( R.id.caption )).setText(R.string.s_RoadText);
 			((Button)findViewById(R.id.bPlayMe)).setVisibility(View.VISIBLE);

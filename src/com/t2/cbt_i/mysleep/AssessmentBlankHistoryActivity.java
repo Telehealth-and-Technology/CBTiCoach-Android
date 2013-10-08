@@ -19,6 +19,7 @@ public class AssessmentBlankHistoryActivity extends BaseABSNHActivity {
 
 		// Middle take assess now 
 		((Button)findViewById(R.id.bTakeAssessmentNow)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), AssessmentStartActivity.class );

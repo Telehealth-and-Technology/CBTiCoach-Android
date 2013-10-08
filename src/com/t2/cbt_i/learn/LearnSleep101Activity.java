@@ -20,6 +20,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 1
 		((Button)findViewById(R.id.bWhatIsCBTi)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -33,6 +34,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 		
 		// middle button 2
 		((Button)findViewById(R.id.bWhyDoWeSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -46,6 +48,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 3
 		((Button)findViewById(R.id.bStagesOfSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -59,6 +62,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 		
 		// middle button 4
 		((Button)findViewById(R.id.bSleepRegulators)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -72,6 +76,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 5
 		((Button)findViewById(R.id.bSleepinessvsTiredness)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -85,6 +90,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 6
 		((Button)findViewById(R.id.bPTSDandSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -98,6 +104,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 7
 		((Button)findViewById(R.id.bNightmares)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -111,6 +118,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 8
 		((Button)findViewById(R.id.bWeaponsandSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -124,6 +132,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 9
 		((Button)findViewById(R.id.bDepressionandSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -137,6 +146,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 10
 		((Button)findViewById(R.id.bSleepApnea)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
@@ -150,6 +160,7 @@ public class LearnSleep101Activity extends BaseABSNHActivity {
 
 		// middle button 11
 		((Button)findViewById(R.id.bMedications)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );

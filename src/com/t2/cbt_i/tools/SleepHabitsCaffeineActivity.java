@@ -40,6 +40,7 @@ public class SleepHabitsCaffeineActivity extends BaseABSNHActivity {
 		
 		// Stop Caffeine Reminder
 		((Button)findViewById(R.id.bStopCaffeineReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				cData60a.bStopCaffeineReminder = ((ToggleButton)findViewById(R.id.bStopCaffeineReminder)).isChecked();
 				if ( !cData60a.bStopCaffeineReminder ) {
@@ -53,6 +54,7 @@ public class SleepHabitsCaffeineActivity extends BaseABSNHActivity {
 
 		// Stop Caffeine Reminder Time Picker
 		((TextView)findViewById(R.id.tStopCaffeineReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = 15;		// remember to initialize these
 				iInitialMin = 32;
@@ -140,7 +142,8 @@ public class SleepHabitsCaffeineActivity extends BaseABSNHActivity {
          * @param pos - the 0-based position of the selection in the mLocalAdapter
          * @param row - the 0-based row number of the selection in the View
          */
-        public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
+        @Override
+		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
         }
 
         /**
@@ -148,7 +151,8 @@ public class SleepHabitsCaffeineActivity extends BaseABSNHActivity {
          * of onNothingSelected(), even though this implementation does not use it.
          * @param parent - The View for this Listener
          */
-        public void onNothingSelected(AdapterView<?> parent) {
+        @Override
+		public void onNothingSelected(AdapterView<?> parent) {
         }
     }
 

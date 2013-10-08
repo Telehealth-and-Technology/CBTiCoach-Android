@@ -27,7 +27,8 @@ public class EULASplashActivity extends Activity {
 		super.onResume();
 		
 		((Button)findViewById(R.id.iAccept)).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {	// Perform action on click
+            @Override
+			public void onClick(View v) {	// Perform action on click
                 // do not splash again
             	SharedPreferences prefs = getSharedPreferences("CBTiPrefs", Context.MODE_PRIVATE);
             	SharedPreferences.Editor pEdit = prefs.edit();

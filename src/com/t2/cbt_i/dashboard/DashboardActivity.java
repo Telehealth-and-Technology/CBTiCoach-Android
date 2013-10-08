@@ -25,7 +25,8 @@ public class DashboardActivity extends BaseABSActivity {
 	
 		// MySleep Button
 		((Button)findViewById(R.id.b10mysleep)).setOnClickListener(new View.OnClickListener() {
-		    public void onClick(View v) {		// handle the about button   
+		    @Override
+			public void onClick(View v) {		// handle the about button   
 		    	
 		    	Intent i = new Intent(DashboardActivity.this, MySleepMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
@@ -35,7 +36,8 @@ public class DashboardActivity extends BaseABSActivity {
 		
 		// Learn Button
 		((Button)findViewById(R.id.b10learn)).setOnClickListener(new View.OnClickListener() {
-		    public void onClick(View v) {		// handle the about button			                 
+		    @Override
+			public void onClick(View v) {		// handle the about button			                 
 		    	Intent i = new Intent(DashboardActivity.this, LearnMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
@@ -44,7 +46,8 @@ public class DashboardActivity extends BaseABSActivity {
 		
 		// Tools Button
 		((Button)findViewById(R.id.b10tools)).setOnClickListener(new View.OnClickListener() {
-		    public void onClick(View v) {		// handle the about button				                 
+		    @Override
+			public void onClick(View v) {		// handle the about button				                 
 		    	Intent i = new Intent(DashboardActivity.this, ToolsMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
@@ -53,7 +56,8 @@ public class DashboardActivity extends BaseABSActivity {
 		
 		// Reminders Button
 		((Button)findViewById(R.id.b10reminders)).setOnClickListener(new View.OnClickListener() {
-		    public void onClick(View v) {		// handle the about button		                 
+		    @Override
+			public void onClick(View v) {		// handle the about button		                 
 		    	Intent i = new Intent(DashboardActivity.this, RemindersMainActivity.class );
 		    	DashboardActivity.this.startActivity(i);
 		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
@@ -86,6 +90,7 @@ public class DashboardActivity extends BaseABSActivity {
 
 	
 	//@Override
+	@Override
 	public void getHelp() {			// called to render help screen
 		startActivity( new Intent(this, DashboardHelpActivity.class) ); 
 		overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);

@@ -49,6 +49,7 @@ public class LogoSplashActivity extends Activity {
 			setContentView(R.layout.splash_logo);				// show splash screen
 			handler = new Handler();
 			myRunnable = new Runnable() {
+				@Override
 				public void run() {
 					jumpTo(EULASplashActivity.class);
 				}

@@ -17,6 +17,7 @@ public class AssessmentMainActivity extends BaseABSNHActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bTakeAssessment)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(AssessmentMainActivity.this, AssessmentStartActivity.class );
 				AssessmentMainActivity.this.startActivity(i);
@@ -25,6 +26,7 @@ public class AssessmentMainActivity extends BaseABSNHActivity {
 		});
 		
 		((Button)findViewById(R.id.bResultsHistory)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		
 				Intent i = new Intent(AssessmentMainActivity.this, AssessmentHistoryGraphActivity.class );
 				AssessmentMainActivity.this.startActivity(i);
@@ -33,6 +35,7 @@ public class AssessmentMainActivity extends BaseABSNHActivity {
 		});
 		
 		((Button)findViewById(R.id.bScheduleAssessments)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button 23a
 
 				Intent i = new Intent(AssessmentMainActivity.this, AssessmentScheduleReminderActivity.class );

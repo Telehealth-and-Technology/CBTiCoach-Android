@@ -51,6 +51,7 @@ public class QuiteMindProgressiveMuscleRelaxationActivity extends BaseABSActivit
 
 		// PLAY
 		((Button)findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				iVideoPos = 0;
 				videoPlay();
@@ -77,6 +78,7 @@ public class QuiteMindProgressiveMuscleRelaxationActivity extends BaseABSActivit
 
 		// PLAY
 		((Button)findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				iVideoPos = 0;
 				videoPlay();
@@ -108,12 +110,14 @@ public class QuiteMindProgressiveMuscleRelaxationActivity extends BaseABSActivit
 
 	MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener() {
 
+		@Override
 		public void onCompletion(MediaPlayer arg0) {
 			setContentView(R.layout.tools_quitemindprogressivemusclerelaxation);
 			setup();
 			((TextView)findViewById(R.id.caption)).setText( R.string.s_35a11 );
 			// PLAY
 			((Button)findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener() {
+				@Override
 				public void onClick(View v) {		// handle the about button
 					iVideoPos = 0;
 					videoPlay();

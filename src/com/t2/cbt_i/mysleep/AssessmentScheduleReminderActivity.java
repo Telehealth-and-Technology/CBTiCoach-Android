@@ -4,22 +4,18 @@ import java.util.Calendar;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSNHActivity;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashboardActivity;
 import com.t2.cbt_i.reminders.RemindersData;
 import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
@@ -35,6 +31,7 @@ public class AssessmentScheduleReminderActivity extends BaseABSNHActivity {
 
 		// Take Assessment Reminder
 		((Button)findViewById(R.id.bTakeAssessmentReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bTakeAssessmentReminder = ((ToggleButton)findViewById(R.id.bTakeAssessmentReminder)).isChecked();
@@ -49,6 +46,7 @@ public class AssessmentScheduleReminderActivity extends BaseABSNHActivity {
 
 		// Take Assessment Reminder Time Picker
 		((TextView)findViewById(R.id.tTakeAssessmentTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iTAmin/60;		
 				iInitialMin = cData60a.iTAmin%60;
@@ -146,10 +144,12 @@ public class AssessmentScheduleReminderActivity extends BaseABSNHActivity {
 		public myOnItemSelectedListener() {
 		}
 
+		@Override
 		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
 		}
 
-        public void onNothingSelected(AdapterView<?> parent) {
+        @Override
+		public void onNothingSelected(AdapterView<?> parent) {
         }
     }
 }

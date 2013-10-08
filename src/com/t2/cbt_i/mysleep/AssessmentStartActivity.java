@@ -2,9 +2,7 @@ package com.t2.cbt_i.mysleep;
 
 
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,12 +25,14 @@ public class AssessmentStartActivity extends BaseABSActivity {
 
 		// ProviderToggle Button 
 		((ToggleButton)findViewById(R.id.bProvider)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 			}
 		});
 		
 		// Take Assessment Button 
 		((Button)findViewById(R.id.bTakeNow)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 				Intent i = new Intent(AssessmentStartActivity.this, AssessmentQuestionnaireActivity.class );
 				AssessmentQuestionnaireData cData31c = new AssessmentQuestionnaireData(AssessmentStartActivity.this);

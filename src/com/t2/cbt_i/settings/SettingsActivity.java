@@ -25,6 +25,7 @@ public class SettingsActivity extends BaseABSNHActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bResetData)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				new AlertDialog.Builder( SettingsActivity.this )
 				.setTitle(R.string.app_name)
@@ -32,6 +33,7 @@ public class SettingsActivity extends BaseABSNHActivity {
 				.setMessage(R.string.s_ResetAllUserData)
 				.setCancelable(false)
 				.setPositiveButton(R.string.s_Continue,new DialogInterface.OnClickListener() {
+					@Override
 					public void onClick(DialogInterface dialog,int id) {
 						resetAllUserData();
 					}

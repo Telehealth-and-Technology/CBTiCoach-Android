@@ -30,6 +30,7 @@ public class AssessmentViewScoresActivity extends BaseABSNHActivity {
 
 		// done Button
 		((Button)findViewById(R.id.bDone)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(AssessmentViewScoresActivity.this, AssessmentHistoryListActivity.class );
 				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -40,6 +41,7 @@ public class AssessmentViewScoresActivity extends BaseABSNHActivity {
 
 		// schedule Button
 		((Button)findViewById(R.id.bScheduleNextAssessment)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(AssessmentViewScoresActivity.this, AssessmentScheduleReminderActivity.class );
 				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

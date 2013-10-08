@@ -58,6 +58,7 @@ public class AssessmentHistoryListActivity extends BaseABSNHActivity {
 	    lv.setAdapter(aa);
 		lv.setEmptyView(findViewById(R.id.tSleepDataEmpty));
 		lv.setOnItemClickListener(new OnItemClickListener() {
+			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				Intent i = new Intent(AssessmentHistoryListActivity.this, AssessmentViewScoresActivity.class );
 				i.putExtra("POS", position);

@@ -47,7 +47,8 @@ public class SleepHabitsGetOutOfBedWhenCantSleepActivity extends BaseABSActivity
 	
 	//On click listener for button1
     final OnClickListener CantSleepOCL = new OnClickListener() {
-        public void onClick(final View v) {
+        @Override
+		public void onClick(final View v) {
         	
         	Boolean bState = false;
         	int id = v.getId();

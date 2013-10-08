@@ -36,6 +36,7 @@ public class ThoughtActivity extends CBTi_BaseActivity {
 		
 		// Try Another
 		((Button)findViewById(R.id.bTryAnother)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {			// handle the button
 				getThought();
 			}

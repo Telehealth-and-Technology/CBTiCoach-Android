@@ -2,8 +2,6 @@ package com.t2.cbt_i.dashboard;
 
 
 import android.os.Bundle;
-import android.widget.TextView;
-
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSNHActivity;
 

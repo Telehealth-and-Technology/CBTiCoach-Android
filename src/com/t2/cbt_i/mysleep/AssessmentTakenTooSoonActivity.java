@@ -23,6 +23,7 @@ public class AssessmentTakenTooSoonActivity extends BaseABSNHActivity {
 	
 		// schedule Button
 		((Button)findViewById(R.id.bScheduleNextAssessment)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(AssessmentTakenTooSoonActivity.this, AssessmentScheduleReminderActivity.class );
 				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -33,6 +34,7 @@ public class AssessmentTakenTooSoonActivity extends BaseABSNHActivity {
 		
 		// take now Button
 		((Button)findViewById(R.id.bTakeAssessmentNow)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(AssessmentTakenTooSoonActivity.this, AssessmentQuestionnaireActivity.class );
 				AssessmentQuestionnaireData cData31c = new AssessmentQuestionnaireData(AssessmentTakenTooSoonActivity.this);

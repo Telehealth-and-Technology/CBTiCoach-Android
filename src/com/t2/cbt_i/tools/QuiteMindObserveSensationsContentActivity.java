@@ -71,6 +71,7 @@ public class QuiteMindObserveSensationsContentActivity extends BaseABSNHActivity
 	}
 	
 	MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener() {
+		@Override
 		public void onCompletion(MediaPlayer arg0) {
 			((TextView)findViewById( R.id.caption )).setText(R.string.s_35a16);
 		}

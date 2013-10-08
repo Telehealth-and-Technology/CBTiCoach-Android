@@ -46,6 +46,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		iPos  = getIntent().getExtras().getInt("POS");
 	
 		((Button)findViewById(R.id.bSleepDiaryEntryTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				bProcessed = false;
 				showDialog(DATE_DIALOG_ID);
@@ -53,6 +54,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bSleepDiaryEntryTimeInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_SDETimeInfo);
 				
@@ -60,6 +62,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((Button)findViewById(R.id.bTNT)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( ((ToggleButton)findViewById(R.id.bTNT)).isChecked() )  {
 					((LinearLayout)findViewById(R.id.llTNT)).setVisibility( View.VISIBLE);
@@ -71,6 +74,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((TextView)findViewById(R.id.tTNT)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_TNTTime);
 				return false;
@@ -78,12 +82,14 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bTNTInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_TNTInfo);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tBT)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_BTTime);
 				return false;
@@ -91,12 +97,14 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bBTInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_BTInfo);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tSIAT)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				bProcessed = false;
 				showDialog(DIALOG_SIATTime);
@@ -105,12 +113,14 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bSIATInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_SIATInfo);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tTTS)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_TTSTime);
 				return false;
@@ -118,18 +128,21 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bTTSInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_TTSInfo);
 			}	
 		});
 				
 		((ImageButton)findViewById(R.id.bTimesAwakeInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_TimesAwakeInfo);  
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tTA)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_TATime);
 				return false;
@@ -137,24 +150,28 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bTAInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_TAInfo);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tWUT)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_WUTTime);
 			}	
 		});
 		
 		((ImageButton)findViewById(R.id.bWUTInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_WUTInfo);
 			}	
 		});
 		
 		((Button)findViewById(R.id.bEarlier)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( ((ToggleButton)findViewById(R.id.bEarlier)).isChecked() )  {
 					((LinearLayout)findViewById(R.id.llEarlier)).setVisibility( View.VISIBLE);
@@ -167,6 +184,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((TextView)findViewById(R.id.tEarlier)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_EarlierTime);
 				return false;
@@ -174,12 +192,14 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bEarlierInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_EarlierInfo);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tWT)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				bProcessed = false;
 				showDialog(DIALOG_WTTime);
@@ -188,18 +208,21 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bWTInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_WTInfo);
 			}	
 		});
 						
 		((ImageButton)findViewById(R.id.bSleepQualityInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_SQInfo);
 			}	
 		});
 		
 		((ImageButton)findViewById(R.id.bCommentInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_CommentInfo);
 			}	
@@ -207,6 +230,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 		
 		
 		((Button)findViewById(R.id.bSaveEntry)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( (bNew==true) && cData21a.alreadyExists(cData21c.lSDETime))
 					showDialog(DIALOG_SDETimeError2);
@@ -294,7 +318,8 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
         public myOnItemSelectedListener() {
         }
 
-        public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
+        @Override
+		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
         	if (pos > 0) {
     			((LinearLayout)findViewById(R.id.llTA)).setVisibility( View.VISIBLE);
     			((TextView)(findViewById(R.id.tTA))).setText(  (String.format("%d hours: %d minutes", cData21c.iTAmin/60, cData21c.iTAmin%60 ) ) );
@@ -303,7 +328,8 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
     			((LinearLayout)findViewById(R.id.llTA)).setVisibility( View.GONE);	
         }
 
-        public void onNothingSelected(AdapterView<?> parent) {
+        @Override
+		public void onNothingSelected(AdapterView<?> parent) {
         }
     }
     
@@ -319,10 +345,12 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
         public myOnSQItemSelectedListener() {
         }
 
-        public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
+        @Override
+		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
         }
 
-        public void onNothingSelected(AdapterView<?> parent) {
+        @Override
+		public void onNothingSelected(AdapterView<?> parent) {
         }
     }
 
@@ -620,6 +648,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 
 	private Boolean bProcessed;		// if true the button has been handled
 	private DatePickerDialog.OnDateSetListener mDatePickerListener = new DatePickerDialog.OnDateSetListener() {
+		@Override
 		public void onDateSet(DatePicker view, int selectedYear, int selectedMonth, int selectedDay) {
 			if( !bProcessed ) {
 				bProcessed = true;
@@ -744,6 +773,7 @@ public class SleepDairyEntryActivity extends BaseABSNHActivity {
 	
 	
 	private final class OkOnClickListener2 implements DialogInterface.OnClickListener {
+		@Override
 		public void onClick(DialogInterface dialog, int which) {
 			cData21c.scrapeData();
 

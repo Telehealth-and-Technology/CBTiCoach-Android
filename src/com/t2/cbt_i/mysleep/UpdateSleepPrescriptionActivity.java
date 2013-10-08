@@ -36,6 +36,7 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 	
 		// Manual Button
 		((ToggleButton)findViewById(R.id.bManMan)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				((ToggleButton)findViewById(R.id.bManAut)).setChecked(false);
 				((ToggleButton)findViewById(R.id.bManMan)).setChecked(true);
@@ -47,6 +48,7 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 		
 		// Automatic Button
 		((ToggleButton)findViewById(R.id.bManAut)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				((ToggleButton)findViewById(R.id.bManMan)).setChecked(false);
 				((ToggleButton)findViewById(R.id.bManAut)).setChecked(true);
@@ -60,6 +62,7 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 		});
 		
 		((TextView)findViewById(R.id.tManBedtime)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_BEDTIME);
 				return false;
@@ -67,12 +70,14 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 		});
 		
 		((ImageButton)findViewById(R.id.bManBedInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_MANBEDINFO);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tManWaketime)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_WAKETIME);
 				return false;
@@ -80,12 +85,14 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 		});
 						
 		((ImageButton)findViewById(R.id.bManWakeInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_MANWAKEINFO);
 			}	
 		});
 		
 		((TextView)findViewById(R.id.tAutoWaketime)).setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				showDialog(DIALOG_AUTOWAKETIME);
 				return false;
@@ -93,6 +100,7 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 		});
 						
 		((ImageButton)findViewById(R.id.bAutoWakeInfo)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				showDialog(DIALOG_AUTOWAKETIMEINFO);
 			}	
@@ -100,6 +108,7 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
 		
 		// Update Button
 		((Button)findViewById(R.id.bUpdatePrescription)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the update button
 				SleepDairyData cData21a = new SleepDairyData(UpdateSleepPrescriptionActivity.this);
 				INeedMoreSleepQuestionnaireResultData cData23a = new INeedMoreSleepQuestionnaireResultData(UpdateSleepPrescriptionActivity.this);
@@ -376,7 +385,8 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
          * @param pos - the 0-based position of the selection in the mLocalAdapter
          * @param row - the 0-based row number of the selection in the View
          */
-        public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
+        @Override
+		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
         }
 
         /**
@@ -384,7 +394,8 @@ public class UpdateSleepPrescriptionActivity extends BaseABSActivity {
          * of onNothingSelected(), even though this implementation does not use it.
          * @param parent - The View for this Listener
          */
-        public void onNothingSelected(AdapterView<?> parent) {
+        @Override
+		public void onNothingSelected(AdapterView<?> parent) {
         }
     }
     

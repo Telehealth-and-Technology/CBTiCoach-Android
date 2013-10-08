@@ -4,14 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
-
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.classes.BaseABSActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
-import com.t2.cbt_i.dashboard.CBTi_BaseActivity;
-import com.t2.cbt_i.dashboard.DashboardActivity;
 
 public class SleepHabitsMainActivity extends BaseABSActivity {
 
@@ -22,6 +17,7 @@ public class SleepHabitsMainActivity extends BaseABSActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bSetCaffeineGoals)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(SleepHabitsMainActivity.this, SleepHabitsCaffeineActivity.class );
@@ -31,6 +27,7 @@ public class SleepHabitsMainActivity extends BaseABSActivity {
 		});
 		
 		((Button)findViewById(R.id.bSetUpYourSleepEnvironment)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(SleepHabitsMainActivity.this, SleepHabitsSleepEnvironmentSetupActivity.class );
@@ -40,6 +37,7 @@ public class SleepHabitsMainActivity extends BaseABSActivity {
 		});
 		
 		((Button)findViewById(R.id.bGotoBedOnlyWhenSleepy)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(SleepHabitsMainActivity.this, SleepHabitsGoToBedOnlyWhenSleepyActivity.class );
@@ -49,6 +47,7 @@ public class SleepHabitsMainActivity extends BaseABSActivity {
 		});  
 		
 		((Button)findViewById(R.id.bGetoutofBedWhenyoucantSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(SleepHabitsMainActivity.this, SleepHabitsGetOutOfBedWhenCantSleepActivity.class );
@@ -58,6 +57,7 @@ public class SleepHabitsMainActivity extends BaseABSActivity {
 		});  
 		
 		((Button)findViewById(R.id.bGetoutofBedatyourPrescribedTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(SleepHabitsMainActivity.this, SleepHabitsGetOutOfBedOnTimeActivity.class );

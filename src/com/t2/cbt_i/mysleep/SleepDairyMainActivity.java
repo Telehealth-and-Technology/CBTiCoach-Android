@@ -39,6 +39,7 @@ public class SleepDairyMainActivity extends BaseABSActivity {
 
 		// Reminder Toggle Button 
 		((Button)findViewById(R.id.bSleepDiaryReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bSleepDiaryReminder = ((ToggleButton)findViewById(R.id.bSleepDiaryReminder)).isChecked();
@@ -53,6 +54,7 @@ public class SleepDairyMainActivity extends BaseABSActivity {
 		});
 		
 		((TextView)findViewById(R.id.tSleepDiaryReminderTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iSDRmin;
 				if( iInitialHourOfDay != -1 )
@@ -68,6 +70,7 @@ public class SleepDairyMainActivity extends BaseABSActivity {
 
 		// New Entry Button 
 		((Button)findViewById(R.id.midRight)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(SleepDairyMainActivity.this, SleepDairyEntryActivity.class );
 				i.putExtra("NEW", true);
@@ -170,6 +173,7 @@ public class SleepDairyMainActivity extends BaseABSActivity {
 	    lv.setAdapter(aa);
 		lv.setEmptyView(findViewById(R.id.tSleepDataEmpty));
 		lv.setOnItemClickListener(new OnItemClickListener() {
+			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 				Intent i = new Intent(SleepDairyMainActivity.this, SleepDairyEntryActivity.class );

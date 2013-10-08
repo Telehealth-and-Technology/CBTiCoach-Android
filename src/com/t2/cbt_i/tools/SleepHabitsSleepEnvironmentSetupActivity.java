@@ -27,6 +27,7 @@ public class SleepHabitsSleepEnvironmentSetupActivity extends BaseABSActivity {
 		cData34f = new SleepHabitsSleepEnvironmentData(this);
 	
 		((Button)findViewById(R.id.bLownoiselevel)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( !((ToggleButton)findViewById(R.id.bLownoiselevel)).isChecked() )
 					showDialog(DIALOG_LNL);
@@ -34,6 +35,7 @@ public class SleepHabitsSleepEnvironmentSetupActivity extends BaseABSActivity {
 		}); 
 		
 		((Button)findViewById(R.id.bRoomisdark)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( !((ToggleButton)findViewById(R.id.bRoomisdark)).isChecked() )
 					showDialog(DIALOG_RID);
@@ -41,6 +43,7 @@ public class SleepHabitsSleepEnvironmentSetupActivity extends BaseABSActivity {
 		}); 
 		
 		((Button)findViewById(R.id.bTemperatureiscomfortable)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( !((ToggleButton)findViewById(R.id.bTemperatureiscomfortable)).isChecked() )
 					showDialog(DIALOG_TIC);
@@ -48,6 +51,7 @@ public class SleepHabitsSleepEnvironmentSetupActivity extends BaseABSActivity {
 		}); 
 		
 		((Button)findViewById(R.id.bSleepisundisturbedbyothers)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( !((ToggleButton)findViewById(R.id.bSleepisundisturbedbyothers)).isChecked() )
 					showDialog(DIALOG_SIU);
@@ -55,6 +59,7 @@ public class SleepHabitsSleepEnvironmentSetupActivity extends BaseABSActivity {
 		}); 
 		
 		((Button)findViewById(R.id.bReservemybedforsleepsex)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				if( !((ToggleButton)findViewById(R.id.bReservemybedforsleepsex)).isChecked() )
 					showDialog(DIALOG_RSS);

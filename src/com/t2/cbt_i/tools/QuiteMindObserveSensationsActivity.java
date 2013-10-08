@@ -18,6 +18,7 @@ public class QuiteMindObserveSensationsActivity extends BaseABSActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bAudioGuided)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindObserveSensationsActivity.this, QuiteMindObserveSensationsContentActivity.class );
@@ -29,6 +30,7 @@ public class QuiteMindObserveSensationsActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bSelfGuided)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindObserveSensationsActivity.this, QuiteMindObserveSensationsContentActivity.class );

@@ -19,6 +19,7 @@ public class AboutMainActivity extends BaseABSNHActivity {
 	
 		// mid Button CBTi Coach
 		((Button)findViewById(R.id.bCBTi)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(AboutMainActivity.this, AboutCBTiActivity.class );
@@ -29,6 +30,7 @@ public class AboutMainActivity extends BaseABSNHActivity {
 		
 		// mid Button Project Team
 		((Button)findViewById(R.id.bPTS)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(AboutMainActivity.this, AboutProjectTeamActivity.class );
@@ -39,6 +41,7 @@ public class AboutMainActivity extends BaseABSNHActivity {
 
 		// mid Button Project Partners
 		((Button)findViewById(R.id.bPP)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(AboutMainActivity.this, AboutProjectPartnersActivity.class );
@@ -49,6 +52,7 @@ public class AboutMainActivity extends BaseABSNHActivity {
 
 		// mid Button Settings
 		((Button)findViewById(R.id.bSettings)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(AboutMainActivity.this, SettingsActivity.class );

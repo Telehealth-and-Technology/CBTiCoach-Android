@@ -18,6 +18,7 @@ public class SleepDairyEntryResultsActivity extends BaseABSNHActivity {
 		
 		// DONE
 		((Button)findViewById(R.id.bDone)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(SleepDairyEntryResultsActivity.this, SleepDairyMainActivity.class );

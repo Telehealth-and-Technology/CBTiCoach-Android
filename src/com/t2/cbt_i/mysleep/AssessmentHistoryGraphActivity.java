@@ -34,6 +34,7 @@ public class AssessmentHistoryGraphActivity extends BaseABSActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bShowAssessmentDetails)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				Intent i = new Intent(AssessmentHistoryGraphActivity.this, AssessmentHistoryListActivity.class );
 				AssessmentHistoryGraphActivity.this.startActivity(i);
@@ -42,6 +43,7 @@ public class AssessmentHistoryGraphActivity extends BaseABSActivity {
 		});
 
 		((Button)findViewById(R.id.bClearHistory)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				// Build the dialog
 				AlertDialog.Builder alert = new AlertDialog.Builder(AssessmentHistoryGraphActivity.this);
@@ -51,7 +53,8 @@ public class AssessmentHistoryGraphActivity extends BaseABSActivity {
 				alert.setCancelable(false);
 				alert.setNegativeButton(R.string.s_Dismiss, null);
 				alert.setPositiveButton(R.string.s_Continue, new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int whichButton) {
+		            @Override
+					public void onClick(DialogInterface dialog, int whichButton) {
 		            	AssessmentStartData cData31b = new AssessmentStartData(AssessmentHistoryGraphActivity.this);
 		    			cData31b.alISIData.clear();
 		    			cData31b.saveData();

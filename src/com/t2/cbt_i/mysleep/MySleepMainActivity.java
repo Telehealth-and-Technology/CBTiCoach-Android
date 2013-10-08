@@ -20,6 +20,7 @@ public class MySleepMainActivity extends BaseABSActivity {
 	
 		// middle buttons
 		((Button)findViewById(R.id.bSleepDiary)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(MySleepMainActivity.this, SleepDairyMainActivity.class );
@@ -29,6 +30,7 @@ public class MySleepMainActivity extends BaseABSActivity {
 		});
 
 		((Button)findViewById(R.id.bUpdateSleepPrescription)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				Intent i = new Intent(MySleepMainActivity.this, UpdateSleepPrescriptionActivity.class );
@@ -38,6 +40,7 @@ public class MySleepMainActivity extends BaseABSActivity {
 		});
 
 		((Button)findViewById(R.id.bINeedMoreSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button 23a
 
 				Intent i = new Intent(MySleepMainActivity.this, INeedMoreSleepMainActivity.class );
@@ -47,6 +50,7 @@ public class MySleepMainActivity extends BaseABSActivity {
 		});
 
 		((Button)findViewById(R.id.bAssessment)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button 23a
 
 				Intent i = new Intent(MySleepMainActivity.this, AssessmentMainActivity.class );

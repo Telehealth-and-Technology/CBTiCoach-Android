@@ -8,7 +8,6 @@ import java.io.FileOutputStream;
 
 import android.app.Activity;
 import android.widget.CheckBox;
-import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;

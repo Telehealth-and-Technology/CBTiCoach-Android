@@ -38,6 +38,7 @@ public class QuiteMindScheduleWorryTimeActivity extends BaseABSActivity {
 
 		// Worry Time Reminder
 		((Button)findViewById(R.id.bWorryTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bWorryTimeReminder = ((ToggleButton)findViewById(R.id.bWorryTimeReminder)).isChecked();
@@ -52,6 +53,7 @@ public class QuiteMindScheduleWorryTimeActivity extends BaseABSActivity {
 
 		// Worry Time Reminder Time Picker
 		((TextView)findViewById(R.id.tWorryTimeReminderTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = 15;		// remember to initialize these
 				iInitialMin = 32;
@@ -117,6 +119,7 @@ public class QuiteMindScheduleWorryTimeActivity extends BaseABSActivity {
 		 * @param pos - the 0-based position of the selection in the mLocalAdapter
 		 * @param row - the 0-based row number of the selection in the View
 		 */
+		@Override
 		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
 		}
 
@@ -125,6 +128,7 @@ public class QuiteMindScheduleWorryTimeActivity extends BaseABSActivity {
 		 * of onNothingSelected(), even though this implementation does not use it.
 		 * @param parent - The View for this Listener
 		 */
+		@Override
 		public void onNothingSelected(AdapterView<?> parent) {
 		}
 	}

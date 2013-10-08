@@ -20,6 +20,7 @@ public class LearnMainActivity extends BaseABSActivity {
 	
 		// Middle Sleep101 
 		((Button)findViewById(R.id.bSleep101)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), LearnSleep101Activity.class );
@@ -30,6 +31,7 @@ public class LearnMainActivity extends BaseABSActivity {
 		
 		// Middle Healthy Sleep Habits 
 		((Button)findViewById(R.id.bHealthySleepHabits)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), LearnHealthySleepHabitsActivity.class );
@@ -40,6 +42,7 @@ public class LearnMainActivity extends BaseABSActivity {
 
 		// Middle CBT-i Glossary 
 		((Button)findViewById(R.id.bCBTiGlossary)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), LearnCBTiGlossaryActivity.class );

@@ -21,6 +21,7 @@ public class QuiteMindChangePerspectiveActivity extends BaseABSActivity {
 	
 		// Middle Worried About Sleep 
 		((Button)findViewById(R.id.bWorriedAboutSleep)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), ThoughtActivity.class );
@@ -32,6 +33,7 @@ public class QuiteMindChangePerspectiveActivity extends BaseABSActivity {
 		
 		// Middle Worried About Trauma
 		((Button)findViewById(R.id.bWorriedAboutTrauma)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), ThoughtActivity.class );

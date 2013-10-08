@@ -144,6 +144,7 @@ public class QuiteMindBreathingToolActivity extends BaseABSActivity {
 		
 		// PLAY
 		bPlayMe.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				iVideoPos=0;
 				videoPlay();
@@ -176,6 +177,7 @@ public class QuiteMindBreathingToolActivity extends BaseABSActivity {
 	
 	MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener() {
 
+		@Override
 		public void onCompletion(MediaPlayer arg0) {
 			iImage.setVisibility(View.VISIBLE);
 			iImageOverlay.setVisibility(View.INVISIBLE);
@@ -264,13 +266,16 @@ public class QuiteMindBreathingToolActivity extends BaseABSActivity {
 					asetOutt.addAnimation(scaleOutt);
 					asetOutt.addAnimation(fadeOutt);
 					asetOutt.setAnimationListener(new AnimationListener() {
+						@Override
 						public void onAnimationEnd(Animation animation) {
 							tCaption2.setText("");		// blank it out
 							tCaption2.clearAnimation();
 						}
+						@Override
 						public void onAnimationRepeat(Animation animation) {
 							// TODO Auto-generated method stub
 						}
+						@Override
 						public void onAnimationStart(Animation animation) {
 							// TODO Auto-generated method stub
 						}
@@ -296,12 +301,15 @@ public class QuiteMindBreathingToolActivity extends BaseABSActivity {
 						asetIn.addAnimation(fadeIn);
 						asetAnim = asetIn;
 						asetIn.setAnimationListener(new AnimationListener() {
+							@Override
 							public void onAnimationEnd(Animation animation) {
 								iImageOverlay.clearAnimation();
 							}
+							@Override
 							public void onAnimationRepeat(Animation animation) {
 								// TODO Auto-generated method stub
 							}
+							@Override
 							public void onAnimationStart(Animation animation) {
 								// TODO Auto-generated method stub
 							}
@@ -324,13 +332,16 @@ public class QuiteMindBreathingToolActivity extends BaseABSActivity {
 						asetOut.addAnimation(fadeOut);
 						asetAnim = asetOut;
 						asetOut.setAnimationListener(new AnimationListener() {
+							@Override
 							public void onAnimationEnd(Animation animation) {
 								iImageOverlay.clearAnimation();
 								iImageOverlay.setVisibility(View.INVISIBLE);
 							}
+							@Override
 							public void onAnimationRepeat(Animation animation) {
 								// TODO Auto-generated method stub
 							}
+							@Override
 							public void onAnimationStart(Animation animation) {
 								// TODO Auto-generated method stub
 							}

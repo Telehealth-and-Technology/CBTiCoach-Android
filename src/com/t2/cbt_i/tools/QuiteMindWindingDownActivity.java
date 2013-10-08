@@ -33,6 +33,7 @@ public class QuiteMindWindingDownActivity extends BaseABSActivity {
 		
 		// Wind Down Time Reminder Toggle Button 
 		((Button)findViewById(R.id.bWindDownTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bWindDownTimeReminder = ((ToggleButton)findViewById(R.id.bWindDownTimeReminder)).isChecked();
@@ -47,6 +48,7 @@ public class QuiteMindWindingDownActivity extends BaseABSActivity {
 
 		// Wind Down Time Reminder Time Picker
 		((TextView)findViewById(R.id.tWindDownTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = 15;		// remember to initialize these
 				iInitialMin = 32;
@@ -81,7 +83,8 @@ public class QuiteMindWindingDownActivity extends BaseABSActivity {
 	
 	//On click listener for button1
     final OnClickListener WindOCL = new OnClickListener() {
-        public void onClick(final View v) {
+        @Override
+		public void onClick(final View v) {
         	
         	Boolean bState = false;
         	int id = v.getId();

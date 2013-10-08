@@ -18,6 +18,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 	
 		// middle buttons
 		((Button)findViewById(R.id.bWindingDown)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindWindingDownActivity.class );
@@ -28,6 +29,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bScheduleWorryTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindScheduleWorryTimeActivity.class );
@@ -38,6 +40,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bChangeYourPerspective)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindChangePerspectiveActivity.class );
@@ -48,6 +51,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bObserveThoughtsCloudsintheSky)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindObserveThoughtsActivity.class );
@@ -58,6 +62,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bObserveSensationsBodyScan)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindObserveSensationsActivity.class );
@@ -68,6 +73,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bGuidedImageryForest)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindForestImageryActivity.class );
@@ -78,6 +84,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bGuidedImageryCountryRoad)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindCountryRoadImageryActivity.class );
@@ -88,6 +95,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bGuidedImageryBeach)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindBeachImageryActivity.class );
@@ -98,6 +106,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 		
 		// middle buttons
 		((Button)findViewById(R.id.bProgressiveMuscleRelaxation)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindProgressiveMuscleRelaxationActivity.class );
@@ -108,6 +117,7 @@ public class QuiteMindMainActivity extends BaseABSActivity {
 
 		// middle buttons
 		((Button)findViewById(R.id.bBreathingTool)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the button
 
 				Intent i = new Intent(QuiteMindMainActivity.this, QuiteMindBreathingToolActivity.class );

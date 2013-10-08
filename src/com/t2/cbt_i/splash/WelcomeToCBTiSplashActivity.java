@@ -19,7 +19,8 @@ public class WelcomeToCBTiSplashActivity extends Activity {
 		setContentView(R.layout.splash_welcome);
 		
 		((Button)findViewById(R.id.iContinue)).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+            @Override
+			public void onClick(View v) {
                 // Perform action on click
             	finish();		// make sure we close the splash screen so the user won't come back when it presses back key
             	Intent i = new Intent(WelcomeToCBTiSplashActivity.this, DashboardActivity.class );

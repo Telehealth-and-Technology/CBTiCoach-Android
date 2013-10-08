@@ -19,6 +19,7 @@ public class PreventInsomniaActivity extends BaseABSActivity {
 	
 		// SUBMIT
 		((Button)findViewById(R.id.bSubmit)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 				
 				Intent i = new Intent(PreventInsomniaActivity.this, PreventInsomniaResultActivity.class );

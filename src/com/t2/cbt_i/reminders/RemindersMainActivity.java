@@ -37,6 +37,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 	
 		// Sleep Diary Reminder Toggle Button 
 		((Button)findViewById(R.id.bSleepDiaryReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bSleepDiaryReminder = ((ToggleButton)findViewById(R.id.bSleepDiaryReminder)).isChecked();
@@ -52,6 +53,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Sleep Diary Reminder Time Picker
 		((TextView)findViewById(R.id.tSleepDiaryReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iSDRmin;
 				if( iInitialHourOfDay != -1 )
@@ -66,6 +68,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Wind Down Time Reminder Toggle Button 
 		((Button)findViewById(R.id.bWindDownTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bWindDownTimeReminder = ((ToggleButton)findViewById(R.id.bWindDownTimeReminder)).isChecked();
@@ -80,6 +83,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Wind Down Time Reminder Time Picker
 		((TextView)findViewById(R.id.tWindDownTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iWDTmin;	
 				if( iInitialHourOfDay != -1 )
@@ -92,6 +96,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Prescribed Bed Time Reminder
 		((Button)findViewById(R.id.bPrescribedBedTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bPrescribedBedTimeReminder = ((ToggleButton)findViewById(R.id.bPrescribedBedTimeReminder)).isChecked();
@@ -106,6 +111,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Prescribed Wake Time Reminder
 		((Button)findViewById(R.id.bPrescribedWakeTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bPrescribedWakeTimeReminder = ((ToggleButton)findViewById(R.id.bPrescribedWakeTimeReminder)).isChecked();
@@ -121,6 +127,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		enableUSPDayOfWeek();
 		// Update Sleep Prescription Reminder
 		((Button)findViewById(R.id.bUpdateSleepPrescriptionReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bUpdateSleepPrescriptionReminder = ((ToggleButton)findViewById(R.id.bUpdateSleepPrescriptionReminder)).isChecked();
@@ -137,6 +144,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Update Sleep Prescription Time Picker
 		((TextView)findViewById(R.id.tUpdateSleepPrescriptionTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iUSPmin;
 				if( iInitialHourOfDay != -1 )
@@ -151,6 +159,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		enableTARepeat();
 		// Take Assessment Reminder
 		((Button)findViewById(R.id.bTakeAssessmentReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bTakeAssessmentReminder = ((ToggleButton)findViewById(R.id.bTakeAssessmentReminder)).isChecked();
@@ -165,6 +174,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Take Assessment Reminder Time Picker
 		((TextView)findViewById(R.id.tTakeAssessmentTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iTAmin;
 				if( iInitialHourOfDay != -1 )
@@ -179,6 +189,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Stop Caffeine Reminder
 		((Button)findViewById(R.id.bStopCaffeineReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bStopCaffeineReminder = ((ToggleButton)findViewById(R.id.bStopCaffeineReminder)).isChecked();
@@ -193,6 +204,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Stop Caffeine Reminder Time Picker
 		((TextView)findViewById(R.id.tStopCaffeineReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iSCmin;	
 				if( iInitialHourOfDay != -1 )
@@ -206,6 +218,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		enableWTDayOfWeek();
 		// Worry Time Reminder
 		((Button)findViewById(R.id.bWorryTimeReminder)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {		// handle the about button
 
 				cData60a.bWorryTimeReminder = ((ToggleButton)findViewById(R.id.bWorryTimeReminder)).isChecked();
@@ -220,6 +233,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Worry Time Reminder Time Picker
 		((TextView)findViewById(R.id.tWorryTimeReminderTime)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				iInitialHourOfDay = cData60a.iWTmin;
 				if( iInitialHourOfDay != -1 )
@@ -234,6 +248,7 @@ public class RemindersMainActivity extends BaseABSActivity {
 		
 		// Reset Reminders
 		((Button)findViewById(R.id.bResetReminders)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {			// handle the about button
 				cData60a.resetData();				// reset to default values
 				renderData();
@@ -297,10 +312,12 @@ public class RemindersMainActivity extends BaseABSActivity {
         public myOnItemSelectedListener() {
         }
 
-        public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
+        @Override
+		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row) {
         }
 
-        public void onNothingSelected(AdapterView<?> parent) {
+        @Override
+		public void onNothingSelected(AdapterView<?> parent) {
         }
     }
 

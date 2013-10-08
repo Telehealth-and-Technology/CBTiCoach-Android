@@ -21,6 +21,7 @@ public class ToolsMainActivity extends BaseABSActivity {
 
 		// Middle New Sleep Habits 
 		((Button)findViewById(R.id.bCreateNewSleepHabits)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), SleepHabitsMainActivity.class );
@@ -31,6 +32,7 @@ public class ToolsMainActivity extends BaseABSActivity {
 		
 		// Middle Quiet Your Mind 
 		((Button)findViewById(R.id.bQuietYourMind)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), QuiteMindMainActivity.class );
@@ -41,6 +43,7 @@ public class ToolsMainActivity extends BaseABSActivity {
 		
 		// Middle Prevent Insomnia in the Future 
 		((Button)findViewById(R.id.bPreventInsomniaintheFuture)).setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				// Perform action on click
 				Intent i = new Intent(getApplicationContext(), PreventInsomniaActivity.class );
