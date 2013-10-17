@@ -57,7 +57,8 @@ public class SettingsActivity extends CBTi_BaseActivity
 
 		try
 		{
-			File dir = new File(getFilesDir(), sSubDir); // open the subdirectory
+			File dir = new File(getFilesDir(), sSubDir); // open the
+															// subdirectory
 
 			if (dir.isDirectory())
 			{ // delete each file in the directory
@@ -68,7 +69,8 @@ public class SettingsActivity extends CBTi_BaseActivity
 				}
 				Toast.makeText(SettingsActivity.this, "User Data Reset", Toast.LENGTH_SHORT).show();
 			}
-		} catch (Exception e)
+		}
+		catch (Exception e)
 		{
 			Toast.makeText(SettingsActivity.this, "User Data Reset Error", Toast.LENGTH_SHORT).show();
 		}

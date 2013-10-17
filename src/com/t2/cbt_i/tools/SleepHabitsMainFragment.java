@@ -26,7 +26,7 @@ public class SleepHabitsMainFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		setHasOptionsMenu(true);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_CreateNewSleepHabits));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_CreateNewSleepHabits));
 		
 		// middle buttons
 		((Button) getView().findViewById(R.id.bSetCaffeineGoals)).setOnClickListener(new View.OnClickListener()
@@ -115,6 +115,7 @@ public class SleepHabitsMainFragment extends CBTi_BaseFragment
 		}
 		else
 		{
+			this.goingToHelp = true;
 			Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
 			i.putExtra("RID_Img", R.drawable.buddy_toolscreatenewsleephabits);
 			i.putExtra("RID_Text", R.string.s_34b);

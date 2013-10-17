@@ -4,7 +4,6 @@ import java.util.Calendar;
 
 import android.app.AlarmManager;
 import android.app.Dialog;
-import android.app.Service;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -20,6 +19,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.reminders.Reminders_BR_StopCaffeine;
 import com.t2.cbt_i.reminders.RemindersData;
@@ -41,7 +41,7 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Caffeine Goals");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Caffeine));
 
 		cData34i = new SleepHabitsCaffeineLimtData(getSherlockActivity());
 		cData60a = new RemindersData(getSherlockActivity());
@@ -73,8 +73,6 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{
-				iInitialHourOfDay = 15; // remember to initialize these
-				iInitialMin = 32;
 				iNextClass = Reminders_BR_StopCaffeine.class;
 				showDialog(TIME_DIALOG_ID);
 			}
@@ -100,6 +98,10 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 		else
 		{
 			((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.VISIBLE);
+			int time = cData60a.timeFrom4pm(cData60a.iSCmin);
+			iInitialHourOfDay = time / 60;
+			iInitialMin = time % 60;
+			
 		}
 		super.onResume();
 	}
@@ -127,12 +129,14 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 		switch (id)
 		{
 		case TIME_DIALOG_ID:
+			CBTiDialogFragment dia = new CBTiDialogFragment();
 			if (iInitialHourOfDay == 0)
 			{
 				Calendar onscene = Calendar.getInstance();
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 			}
-			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
 		return null;
 	}

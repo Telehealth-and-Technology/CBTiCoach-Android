@@ -25,7 +25,7 @@ public class AssessmentMainFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_Assessment));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Assessment));
 		setHasOptionsMenu(true);
 
 		// middle buttons
@@ -91,6 +91,7 @@ public class AssessmentMainFragment extends CBTi_BaseFragment
 			this.goingToHelp = true;
 			current.getHelp();
 		}
+		this.goingToHelp = true;
 	}
 
 }

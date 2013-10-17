@@ -25,7 +25,7 @@ public class INeedMoreSleepMainFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_NeedSleep));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_NeedSleep));
 		setHasOptionsMenu(true);
 		
 		// Start Questionnaire Button

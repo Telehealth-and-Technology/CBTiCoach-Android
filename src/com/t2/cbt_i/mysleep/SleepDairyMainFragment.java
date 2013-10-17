@@ -42,7 +42,7 @@ public class SleepDairyMainFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_SleepDiary));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_SleepDiary));
 		setHasOptionsMenu(true);
 		
 		cData60a = new RemindersData(getSherlockActivity());
@@ -235,6 +235,7 @@ public class SleepDairyMainFragment extends CBTi_BaseFragment
 		}
 		else
 		{
+			this.goingToHelp = true;
 			Intent i = new Intent(getSherlockActivity(), SleepDairyHelpActivity.class);
 			getSherlockActivity().startActivity(i);
 			getSherlockActivity().overridePendingTransition(R.anim.slide_up, R.anim.slide_up2);

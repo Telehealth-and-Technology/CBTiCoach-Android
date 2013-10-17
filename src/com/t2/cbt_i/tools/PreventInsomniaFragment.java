@@ -26,8 +26,9 @@ public class PreventInsomniaFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_PreventInsomnia));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_PreventInsomnia));
 		setHasOptionsMenu(true);
+		
 		// SUBMIT
 		((Button) getView().findViewById(R.id.bSubmit)).setOnClickListener(new View.OnClickListener()
 		{

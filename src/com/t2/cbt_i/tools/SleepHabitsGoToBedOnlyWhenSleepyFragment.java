@@ -20,7 +20,7 @@ public class SleepHabitsGoToBedOnlyWhenSleepyFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Go To Bed Only When Sleepy");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GotoBedOnlyWhenSleepy));
 		
 		((CheckBox) getView().findViewById(R.id.cbAwake01)).setOnClickListener(awakeOCL);
 		((CheckBox) getView().findViewById(R.id.cbAwake02)).setOnClickListener(awakeOCL);

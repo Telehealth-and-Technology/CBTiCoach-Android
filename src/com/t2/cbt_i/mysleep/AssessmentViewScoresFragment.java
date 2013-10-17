@@ -26,7 +26,7 @@ public class AssessmentViewScoresFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_Assessment));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Assessment));
 
 		AssessmentStartData cData31b = new AssessmentStartData(getSherlockActivity());
 		Bundle b = this.getArguments();

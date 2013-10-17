@@ -52,7 +52,7 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Observe Sensations: Body Scan");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_bodyscan));
 		
 		if (iRid == R.id.bSelfGuided)
 		{

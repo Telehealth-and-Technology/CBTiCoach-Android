@@ -71,7 +71,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_ProgressiveMuscleRelaxation));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_ProgressiveMuscleRelaxation));
 		setup(true);
 		((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_35a11);
 

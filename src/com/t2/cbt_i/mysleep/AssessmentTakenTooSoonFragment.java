@@ -23,7 +23,7 @@ public class AssessmentTakenTooSoonFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_TooEarly));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_TooEarly));
 		// schedule Button
 		((Button) getView().findViewById(R.id.bScheduleNextAssessment)).setOnClickListener(new View.OnClickListener()
 		{

@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.classes.CBTi_Help;
 import com.t2.cbt_i.reminders.Reminders_BR_WorryTime;
@@ -27,7 +28,6 @@ import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 {
-
 	RemindersData cData60a;
 
 	@Override
@@ -40,7 +40,7 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Schedule Worry Time");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_WorryTime));
 
 		cData60a = new RemindersData(getSherlockActivity());
 
@@ -69,8 +69,9 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{
-				iInitialHourOfDay = 15; // remember to initialize these
-				iInitialMin = 32;
+				int time = cData60a.timeFrom4pm(cData60a.iWTmin);
+				iInitialHourOfDay = time / 60;
+				iInitialMin = time % 60;
 				iNextClass = Reminders_BR_WorryTime.class;
 				showDialog(TIME_DIALOG_ID);
 			}
@@ -107,6 +108,72 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 		sSpin.setSelection(cData60a.iWTDayofWeek, true);
 		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
 		sSpin.setOnItemSelectedListener(spinnerListener);
+	}
+
+	private void renderData()
+	{
+		// worry time reminder
+		((ToggleButton) getView().findViewById(R.id.bWorryTimeReminder)).setChecked(cData60a.bWorryTimeReminder);
+		((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
+		if (!cData60a.bWorryTimeReminder)
+		{
+			((RelativeLayout) getView().findViewById(R.id.rlWorryTime)).setVisibility(View.GONE);
+		}
+		else
+		{
+			((RelativeLayout) getView().findViewById(R.id.rlWorryTime)).setVisibility(View.VISIBLE);
+		}
+
+	}
+
+	private Class<Reminders_BR_WorryTime> iNextClass; // tells the alarm where
+														// to wake up
+
+	static final int TIME_DIALOG_ID = 1;
+	int iPicker; // used to figure what to do with picked time
+	int iInitialHourOfDay; // if zero we default to current time
+	int iInitialMin;
+
+	private Dialog showDialog(int id)
+	{
+		switch (id)
+		{
+		case TIME_DIALOG_ID:
+			CBTiDialogFragment dia = new CBTiDialogFragment();
+			if (iInitialHourOfDay == 0)
+			{
+				Calendar onscene = Calendar.getInstance();
+				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
+				iInitialMin = onscene.get(Calendar.MINUTE);
+			}
+			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+		}
+		return null;
+	}
+
+	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()
+	{
+		@Override
+		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
+		{
+			if (iNextClass == Reminders_BR_WorryTime.class)
+			{
+				cData60a.iWTmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
+				((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
+			}
+		}
+	};
+
+	@Override
+	public void getHelp()
+	{
+		this.goingToHelp = true;
+		Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
+		i.putExtra("RID_Img", R.drawable.buddy_toolsworrytime);
+		i.putExtra("RID_Text", R.string.s_35dhelp);
+		getSherlockActivity().startActivity(i);
+		getSherlockActivity().overridePendingTransition(R.anim.slide_up, R.anim.slide_up2);
 	}
 
 	/**
@@ -167,69 +234,5 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 		public void onNothingSelected(AdapterView<?> parent)
 		{
 		}
-	}
-
-	private void renderData()
-	{
-		// worry time reminder
-		((ToggleButton) getView().findViewById(R.id.bWorryTimeReminder)).setChecked(cData60a.bWorryTimeReminder);
-		((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
-		if (!cData60a.bWorryTimeReminder)
-		{
-			((RelativeLayout) getView().findViewById(R.id.rlWorryTime)).setVisibility(View.GONE);
-		}
-		else
-		{
-			((RelativeLayout) getView().findViewById(R.id.rlWorryTime)).setVisibility(View.VISIBLE);
-		}
-
-	}
-
-	private Class<Reminders_BR_WorryTime> iNextClass; // tells the alarm where
-														// to wake up
-
-	static final int TIME_DIALOG_ID = 1;
-	int iPicker; // used to figure what to do with picked time
-	int iInitialHourOfDay; // if zero we default to current time
-	int iInitialMin;
-
-	private Dialog showDialog(int id)
-	{
-		switch (id)
-		{
-		case TIME_DIALOG_ID:
-			if (iInitialHourOfDay == 0)
-			{
-				Calendar onscene = Calendar.getInstance();
-				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
-				iInitialMin = onscene.get(Calendar.MINUTE);
-			}
-			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
-		}
-		return null;
-	}
-
-	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()
-	{
-		@Override
-		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
-		{
-			if (iNextClass == Reminders_BR_WorryTime.class)
-			{
-				cData60a.iWTmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
-			}
-		}
-	};
-
-	@Override
-	public void getHelp()
-	{
-		this.goingToHelp = true;
-		Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
-		i.putExtra("RID_Img", R.drawable.buddy_toolsworrytime);
-		i.putExtra("RID_Text", R.string.s_35dhelp);
-		getSherlockActivity().startActivity(i);
-		getSherlockActivity().overridePendingTransition(R.anim.slide_up, R.anim.slide_up2);
 	}
 }

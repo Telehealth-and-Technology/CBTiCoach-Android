@@ -1,6 +1,5 @@
 package com.t2.cbt_i.mysleep;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,7 @@ public class SleepDairyEntryResultsFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_SleepData));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_SleepData));
 		
 		// DONE
 		((Button) getView().findViewById(R.id.bDone)).setOnClickListener(new View.OnClickListener()
@@ -31,10 +30,12 @@ public class SleepDairyEntryResultsFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{ // handle the about button
-				Intent i = new Intent(getSherlockActivity(), SleepDairyMainActivity.class);
-				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				getSherlockActivity().startActivity(i);
-				getSherlockActivity().overridePendingTransition(R.anim.slide_right, R.anim.slide_right2);
+				getFragmentManager().popBackStack();
+				getFragmentManager().popBackStack();
+//				Intent i = new Intent(getSherlockActivity(), SleepDairyMainActivity.class);
+//				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//				getSherlockActivity().startActivity(i);
+//				getSherlockActivity().overridePendingTransition(R.anim.slide_right, R.anim.slide_right2);
 			}
 		});
 	}

@@ -27,7 +27,7 @@ public class SleepHabitsGetOutOfBedWhenCantSleepFragment extends CBTi_BaseFragme
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Get Out Of Bed When You Can't Sleep");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GetoutofBedWhenyoucantSleep));
 		
 		cData34c1 = new SleepHabitsGetOutOfBedWhenCantSleepData(getSherlockActivity());
 

@@ -23,6 +23,7 @@ public class AboutMainFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_About));
 
 		// mid Button CBTi Coach
 		((Button) getView().findViewById(R.id.bCBTi)).setOnClickListener(new View.OnClickListener()

@@ -40,7 +40,7 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_GuidedImageryBeach));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GuidedImageryBeach));
 		// PLAY
 		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
 		{

@@ -30,7 +30,7 @@ public class SleepHabitsSleepEnvironmentSetupFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_Environment));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Environment));
 
 		cData34f = new SleepHabitsSleepEnvironmentData(getSherlockActivity());
 

@@ -30,7 +30,7 @@ public class AssessmentStartFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_Assessment));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Assessment));
 		
 		// ProviderToggle Button
 		((ToggleButton) getView().findViewById(R.id.bProvider)).setOnClickListener(new View.OnClickListener()

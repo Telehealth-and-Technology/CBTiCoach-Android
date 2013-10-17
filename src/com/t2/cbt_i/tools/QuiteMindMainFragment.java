@@ -15,6 +15,8 @@ import com.t2.cbt_i.classes.CBTi_Help;
 
 public class QuiteMindMainFragment extends CBTi_BaseFragment
 {
+	public boolean preventOptionsMenu = false;
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
@@ -25,8 +27,12 @@ public class QuiteMindMainFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		setHasOptionsMenu(true);  
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_ToolR08));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_QuietYourMind));
+		//This is included to prevent the options from being inflated twice when coming here from PreventInsomniaResultsFragment
+		if(!this.preventOptionsMenu)
+		{
+			setHasOptionsMenu(true);  
+		}
 
 		((Button) getView().findViewById(R.id.bWindingDown)).setOnClickListener(new View.OnClickListener()
 		{
@@ -182,6 +188,7 @@ public class QuiteMindMainFragment extends CBTi_BaseFragment
 		}
 		else
 		{
+			this.goingToHelp = true;
 			Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
 			i.putExtra("RID_Img", R.drawable.buddy_toolsquietyourmind);
 			i.putExtra("RID_Text", R.string.s_35b);

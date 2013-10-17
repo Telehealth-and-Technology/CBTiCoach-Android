@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.classes.CBTi_Help;
 import com.t2.cbt_i.reminders.Reminders_BR_WindDown;
@@ -38,7 +39,8 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Winding Down");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_WindingDown));
+		
 		// Wind Down Time Reminder Toggle Button
 		((Button) getView().findViewById(R.id.bWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
 		{
@@ -64,8 +66,6 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{
-				iInitialHourOfDay = 15; // remember to initialize these
-				iInitialMin = 32;
 				iNextClass = Reminders_BR_WindDown.class;
 				showDialog(TIME_DIALOG_ID);
 			}
@@ -267,6 +267,9 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		else
 		{
 			((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
+			int time = cData60a.timeFrom4pm(cData60a.iWDTmin);
+			iInitialHourOfDay = time / 60;
+			iInitialMin = time % 60;
 		}
 		super.onResume();
 	}
@@ -291,13 +294,15 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		switch (id)
 		{
 		case TIME_DIALOG_ID:
+			CBTiDialogFragment dia = new CBTiDialogFragment();
 			if (iInitialHourOfDay == 0)
 			{
 				Calendar onscene = Calendar.getInstance();
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
-			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
 		return null;
 	}

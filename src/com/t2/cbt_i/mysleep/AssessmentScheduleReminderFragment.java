@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.reminders.RemindersData;
 import com.t2.cbt_i.reminders.RemindersData.ALARMS;
@@ -38,7 +39,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_AddtomyCalendar));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_AddtomyCalendar));
 		
 		// Take Assessment Reminder
 		((Button) getView().findViewById(R.id.bTakeAssessmentReminder)).setOnClickListener(new View.OnClickListener()
@@ -115,6 +116,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 
 	public Dialog showDialog(int id)
 	{
+		CBTiDialogFragment dia = new CBTiDialogFragment();
 		switch (id)
 		{
 		case TIME_DIALOG_ID:
@@ -124,7 +126,9 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
-			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+//			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			break;
 		}
 		return null;
 	}

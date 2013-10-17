@@ -25,7 +25,7 @@ public class QuiteMindChangePerspectiveFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Change Your Perspective");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Perspective));
 		// Middle Worried About Sleep
 		((Button) getView().findViewById(R.id.bWorriedAboutSleep)).setOnClickListener(new View.OnClickListener()
 		{

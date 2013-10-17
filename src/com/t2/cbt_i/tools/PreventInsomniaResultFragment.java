@@ -24,7 +24,7 @@ public class PreventInsomniaResultFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_Feedback));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Feedback));
 
 		Bundle b = this.getArguments();
 		if (!(b.getBoolean("PREVENT01")))
@@ -216,9 +216,11 @@ public class PreventInsomniaResultFragment extends CBTi_BaseFragment
 				{ // handle the about button
 					final FragmentManager fm = getFragmentManager();
 					final FragmentTransaction ft = fm.beginTransaction();
+					QuiteMindMainFragment quite = new QuiteMindMainFragment();
+					quite.preventOptionsMenu = true;
 					ft.addToBackStack(null);
 					ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
-					ft.replace(R.id.preventinsomniafragment, new QuiteMindMainFragment());
+					ft.replace(R.id.preventinsomniafragment, quite);
 					ft.commit();
 					// Intent i = new Intent(getSherlockActivity(),
 					// QuiteMindMainFragment.class);

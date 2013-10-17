@@ -78,7 +78,7 @@ public class DashboardFragment extends CBTi_BaseFragment
 		super.onResume();
 		
 		// fetch the data and display either the sleep prescription or the msg
-		UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData( getSherlockActivity() );
+		UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData( getSherlockActivity(), this.getView() );
 		cData22a.displaySleepPrescription();		
 	}
 	

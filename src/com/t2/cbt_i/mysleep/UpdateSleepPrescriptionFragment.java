@@ -7,10 +7,8 @@ import android.app.AlertDialog.Builder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnTouchListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,10 +16,12 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.ToggleButton;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.classes.CBTi_Help;
 
@@ -39,8 +39,9 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_UpdateSleep));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_UpdateSleep));
 		setHasOptionsMenu(true);
+		
 		// Manual Button
 		((ToggleButton) getView().findViewById(R.id.bManMan)).setOnClickListener(new View.OnClickListener()
 		{
@@ -72,13 +73,12 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tManBedtime)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tManBedtime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_BEDTIME);
-				return false;
 			}
 		});
 
@@ -91,13 +91,12 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tManWaketime)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tManWaketime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_WAKETIME);
-				return false;
 			}
 		});
 
@@ -110,13 +109,12 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tAutoWaketime)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tAutoWaketime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_AUTOWAKETIME);
-				return false;
 			}
 		});
 
@@ -250,7 +248,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 		SleepDairyData cData21a = new SleepDairyData(getSherlockActivity());
 
 		// fetch the data and display either the sleep prescription or the msg
-		cData22a = new UpdateSleepPrescriptionData(getSherlockActivity());
+		cData22a = new UpdateSleepPrescriptionData(getSherlockActivity(), this.getView());
 		cData22a.displaySleepPrescription();
 		((ToggleButton) getView().findViewById(R.id.bManMan)).setChecked(cData22a.bManUpdate);
 		((ToggleButton) getView().findViewById(R.id.bManAut)).setChecked(!cData22a.bManUpdate);
@@ -290,7 +288,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 	private Dialog showDialog(int id)
 	{
 		Builder builder = new AlertDialog.Builder(getSherlockActivity());
-		;
+		CBTiDialogFragment dia = new CBTiDialogFragment();
 		switch (id)
 		{
 
@@ -338,15 +336,18 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 
 		case DIALOG_BEDTIME:
 			int iTime = cData22a.timeFrom4pm(cData22a.iBedtimemin);
-			return new TimePickerDialog(getSherlockActivity(), mBTTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showDialog(iTime, mBTTimePickerListener, getFragmentManager());
+			break;
 
 		case DIALOG_WAKETIME:
 			iTime = cData22a.timeFrom4pm(cData22a.iWaketimemin);
-			return new TimePickerDialog(getSherlockActivity(), mWTTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showDialog(iTime, mWTTimePickerListener, getFragmentManager());
+			break;
 
 		case DIALOG_AUTOWAKETIME:
 			iTime = cData22a.timeFrom4pm(cData22a.iAutoWaketimemin);
-			return new TimePickerDialog(getSherlockActivity(), mAWTTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showDialog(iTime, mAWTTimePickerListener, getFragmentManager());
+			break;
 
 		case DIALOG_USP1:
 			builder.setMessage(getString(R.string.s_USP1));
@@ -367,7 +368,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 	private TimePickerDialog.OnTimeSetListener mBTTimePickerListener = new TimePickerDialog.OnTimeSetListener()
 	{
 		@Override
-		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
+		public void onTimeSet(TimePicker view, int hourOfDay, int minute)
 		{
 			cData22a.iBedtimemin = cData22a.timeTo4pm((hourOfDay * 60) + minute);
 			((TextView) (getView().findViewById(R.id.tManBedtime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iBedtimemin));
@@ -377,7 +378,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 	private TimePickerDialog.OnTimeSetListener mWTTimePickerListener = new TimePickerDialog.OnTimeSetListener()
 	{
 		@Override
-		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
+		public void onTimeSet(TimePicker view, int hourOfDay, int minute)
 		{
 			cData22a.iWaketimemin = cData22a.timeTo4pm((hourOfDay * 60) + minute);
 			((TextView) (getView().findViewById(R.id.tManWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iWaketimemin));
@@ -387,7 +388,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 	private TimePickerDialog.OnTimeSetListener mAWTTimePickerListener = new TimePickerDialog.OnTimeSetListener()
 	{
 		@Override
-		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
+		public void onTimeSet(TimePicker view, int hourOfDay, int minute)
 		{
 			cData22a.iAutoWaketimemin = cData22a.timeTo4pm((hourOfDay * 60) + minute);
 			((TextView) (getView().findViewById(R.id.tAutoWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iAutoWaketimemin));

@@ -28,7 +28,7 @@ public class AssessmentResultsFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_Feedback));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Feedback));
 
 		// done Button
 		((Button) getView().findViewById(R.id.bDone)).setOnClickListener(new View.OnClickListener()

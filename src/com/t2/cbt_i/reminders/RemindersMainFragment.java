@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.classes.CBTi_Help;
 import com.t2.cbt_i.mysleep.UpdateSleepPrescriptionData;
@@ -39,7 +40,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		setHasOptionsMenu(true);
-		
+
 		cData60a = new RemindersData(getSherlockActivity());
 
 		// Sleep Diary Reminder Toggle Button
@@ -387,9 +388,10 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	@Override
 	public void onResume()
 	{
-		cData60a = new RemindersData(getSherlockActivity()); // initialize data from stored
-											// object
-		cData22a = new UpdateSleepPrescriptionData(getSherlockActivity());
+		cData60a = new RemindersData(getSherlockActivity()); // initialize data
+																// from stored
+		// object
+		cData22a = new UpdateSleepPrescriptionData(getSherlockActivity(), this.getView());
 		cData60a.cancelAllAlarms();
 		renderData();
 		super.onResume();
@@ -504,13 +506,16 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		switch (id)
 		{
 		case TIME_DIALOG_ID:
+			CBTiDialogFragment dia = new CBTiDialogFragment();
 			if (iInitialHourOfDay == -1)
 			{
 				Calendar onscene = Calendar.getInstance();
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
-			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			// return new TimePickerDialog(getSherlockActivity(),
+			// mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
 		return null;
 	}
@@ -558,10 +563,11 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	@Override
 	public void getHelp()
 	{
+		this.goingToHelp = true;
 		Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
 		i.putExtra("RID_Img", R.drawable.buddy_homereminder);
 		i.putExtra("RID_Text", R.string.s_60d);
 		getSherlockActivity().startActivity(i);
-		getSherlockActivity().overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
+		getSherlockActivity().overridePendingTransition(R.anim.slide_up, R.anim.slide_up2);
 	}
 }

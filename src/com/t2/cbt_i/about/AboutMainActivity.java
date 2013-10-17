@@ -13,9 +13,6 @@ public class AboutMainActivity extends CBTi_BaseActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about_main);
-
-		getSupportActionBar().setTitle("About");
-
 	}
 
 	@Override

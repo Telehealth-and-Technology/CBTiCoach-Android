@@ -27,7 +27,7 @@ public class AssessmentQuestionnaireFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_ISITitle));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_ISITitle));
 		
 		// CheckBox1
 		((CheckBox) getView().findViewById(R.id.cbISIQ0)).setOnClickListener(new View.OnClickListener()

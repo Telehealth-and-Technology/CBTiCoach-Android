@@ -26,7 +26,7 @@ public class QuiteMindObserveThoughtsFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Observe Thoughts: Clouds in the Sky");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_cloudsinthesky));
 
 		// middle buttons
 		((Button) getView().findViewById(R.id.bAudioGuided)).setOnClickListener(new View.OnClickListener()

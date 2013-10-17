@@ -87,7 +87,7 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_BreathingTool));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_BreathingTool));
 
 		iImageOverlay = (ImageView) getView().findViewById(R.id.iImageOverlay);
 		iImage = (ImageView) getView().findViewById(R.id.iImage);

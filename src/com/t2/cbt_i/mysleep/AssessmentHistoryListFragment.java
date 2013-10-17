@@ -29,7 +29,7 @@ public class AssessmentHistoryListFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_AllAssessments));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_AllAssessments));
 	}
 
 	@Override

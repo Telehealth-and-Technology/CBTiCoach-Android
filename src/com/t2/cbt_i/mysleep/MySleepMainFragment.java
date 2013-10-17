@@ -79,6 +79,7 @@ public class MySleepMainFragment extends CBTi_BaseFragment
 	@Override
 	public void getHelp()
 	{
+		this.goingToHelp = true;
 		Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
 		i.putExtra("RID_Img", R.drawable.buddy_learnusingbedroom);
 		i.putExtra("RID_Text", R.string.s_20b);

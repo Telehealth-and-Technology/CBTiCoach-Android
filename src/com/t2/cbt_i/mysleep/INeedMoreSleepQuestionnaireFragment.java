@@ -3,7 +3,6 @@ package com.t2.cbt_i.mysleep;
 import java.util.Calendar;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_ISITitle));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_ISITitle));
 
 		// Next Question Button
 		((Button) getView().findViewById(R.id.bNextQuestion)).setOnClickListener(new View.OnClickListener()
@@ -207,8 +206,10 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{ // handle the submit button
+				getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Feedback));
 				((LinearLayout) getView().findViewById(R.id.llISI)).setVisibility(View.GONE);
 				cData23c.iScore[cData23c.iQuestion + 1] = getScore();
+				cData23c.iQuestion++;
 				cData23c.iCumScore = cData23c.iScore[0] + cData23c.iScore[1] + cData23c.iScore[2] + cData23c.iScore[3];
 
 				((Button) getView().findViewById(R.id.bSubmit)).setVisibility(View.GONE);
@@ -254,8 +255,6 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 				cData23a.bAdd15 = false;
 				cData23a.bAdd30 = false;
 				cData23a.saveData();
-				FragmentManager fm = getFragmentManager();
-				fm.popBackStack();
 				getSherlockActivity().finish();
 			}
 		});
@@ -270,8 +269,6 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 				cData23a.bAdd15 = true;
 				cData23a.bAdd30 = false;
 				cData23a.saveData();
-				FragmentManager fm = getFragmentManager();
-				fm.popBackStack();
 				getSherlockActivity().finish();
 			}
 		});
@@ -286,8 +283,6 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 				cData23a.bAdd30 = true;
 				cData23a.bAdd15 = false;
 				cData23a.saveData();
-				FragmentManager fm = getFragmentManager();
-				fm.popBackStack();
 				getSherlockActivity().finish();
 			}
 		});
@@ -301,7 +296,12 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 		fetchScreen();
 		if (anyChecked())
 		{
-			if (cData23c.iQuestion == 2)
+			if(cData23c.iQuestion > 2)
+			{
+				((Button) getView().findViewById(R.id.bSubmit)).setVisibility(View.GONE);
+				((Button) getView().findViewById(R.id.bNextQuestion)).setVisibility(View.GONE);				
+			}
+			else if (cData23c.iQuestion == 2)
 			{
 				((Button) getView().findViewById(R.id.bSubmit)).setVisibility(View.VISIBLE);
 				((Button) getView().findViewById(R.id.bNextQuestion)).setVisibility(View.GONE);
@@ -388,8 +388,12 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 		{
 			((TextView) getView().findViewById(R.id.tISIQ)).setText(R.string.s_snq4);
 		}
-
-		getSherlockActivity().getSupportActionBar().setTitle(String.format(getString(R.string.s_INMSQTitle), cData23c.iQuestion + 2));
+		
+		if(cData23c.iQuestion <= 2)
+			getSherlockActivity().getSupportActionBar().setTitle(String.format(getString(R.string.s_INMSQTitle), cData23c.iQuestion + 2));
+		else
+			getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Feedback));
+		
 		((CheckBox) getView().findViewById(R.id.cbISIQ0)).setChecked(cData23c.b0);
 		((CheckBox) getView().findViewById(R.id.cbISIQ1)).setChecked(cData23c.b1);
 		((CheckBox) getView().findViewById(R.id.cbISIQ2)).setChecked(cData23c.b2);

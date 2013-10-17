@@ -26,7 +26,7 @@ public class QuiteMindObserveSensationsFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		getSherlockActivity().getSupportActionBar().setTitle("Observe Sensations: Body Scan");
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_bodyscan));
 
 		// middle buttons
 		((Button) getView().findViewById(R.id.bAudioGuided)).setOnClickListener(new View.OnClickListener()

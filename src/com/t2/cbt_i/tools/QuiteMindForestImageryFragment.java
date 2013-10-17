@@ -39,7 +39,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_GuidedImageryForest));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GuidedImageryForest));
 		// PLAY
 		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
 		{
