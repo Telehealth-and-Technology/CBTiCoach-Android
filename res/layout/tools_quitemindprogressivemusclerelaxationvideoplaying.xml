@@ -1,94 +1,87 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_bggraystriped"
     android:orientation="vertical" >
 
-    <!-- middle buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_bggraystriped"
+        android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
 
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/rlPMR"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_mysleepcreambackground"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
             android:orientation="vertical" >
 
-            <RelativeLayout
-                android:id="@+id/rlPMR"
+            <ImageView
+                android:id="@+id/iImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/buddy_toolsprogressivemusclerelaxation" />
+
+            <ImageView
+                android:id="@+id/iImageOverlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPMRC"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/rlPMR"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/caption"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="5"
-                android:gravity="center"
-                android:orientation="vertical" >
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="70dp"
+                android:background="@android:color/transparent"
+                android:contentDescription=" "
+                android:gravity="bottom|center_horizontal"
+                android:padding="18dp"
+                android:textColor="@android:color/white" />
 
-                <ImageView
-                    android:id="@+id/iImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="false"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/buddy_toolsprogressivemusclerelaxation" />
-                
-                <ImageView
-                    android:id="@+id/iImageOverlay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerInParent="false"
-                    android:layout_marginTop="10dp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rlPMRC"
+            <Button
+                android:id="@+id/bPlayMe"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:layout_below="@+id/rlPMR"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_PlayButton"
                 android:gravity="center"
-                android:orientation="vertical" >
-                <TextView
-                    android:id="@+id/caption"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="70dp"
-                    android:background="@android:color/transparent"
-                    android:textColor="@android:color/white"
-                    android:gravity="bottom|center_horizontal"
-                    android:padding="18dp"
-                    android:contentDescription=" " />
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/s_Play" />
 
-                <Button
-                    android:id="@+id/bPlayMe"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginRight="60dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/bg_whitebutton"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
-                    android:text="@string/s_Play" 
-                    android:contentDescription="@string/s_PlayButton"/>
-
-                <VideoView
-                    android:id="@+id/video"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp" />
-            </RelativeLayout>
-        </LinearLayout>
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </RelativeLayout>
     </LinearLayout>
-    <!-- middle buttons -->
 
-</RelativeLayout>
+</LinearLayout>

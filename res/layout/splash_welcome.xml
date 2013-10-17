@@ -58,6 +58,7 @@
             android:layout_weight="1.5"
             android:gravity="center"
             android:text="@string/s_Continue"
+            android:onClick="onAcceptDisclaimerClick"
             android:textSize="15dp" />
     </LinearLayout>
 

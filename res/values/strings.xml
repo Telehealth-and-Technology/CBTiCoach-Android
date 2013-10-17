@@ -606,6 +606,7 @@ What about your face? Is your brow smooth or wrinkled up? How does it feel? Now 
     <string name="s_btool66">Good Job</string>
     <string name="s_btool67">Even as you end this exercise, you can continue to allow your breathing to be deeper and slower. Take your time as you open your eyes, and bring your attention back to your surroundings.</string>
     <string name="s_NewEntry">New Entry</string>
+    <string name="s_SleepDairyEntry">Sleep Dairy Entry</string>
     <string name="s_bScan01">Start this exercise by finding a comfortable position sitting in a chair, or lying on a bed or the floor</string>
     <string name="s_bScan02">Close your eyes and take a few deep breaths</string>
     <string name="s_bScan03">Relax</string>
@@ -818,6 +819,7 @@ took you to fall asleep.  This will be an estimate.
     <string name="s_ISIQ73">Much</string>
     <string name="s_ISIQ74">Very Much Interfering</string>
     <string name="s_ISITitle">Question %d of 7</string>
+    <string name="s_INMSQTitle">Question %d of 4</string>
     <string name="s_ISI2">Are you currently working on your sleep with a healthcare provider?</string>
     <string name="s_ISI1">This self-assessment, the Insomnia Severity Index, cannot tell you if you have insomnia, but can give you some valuable information about your sleep symptoms.  If you are currently working with a sleep therapist, sharing the results of this assessment with him or her may help with your care. </string>
     <string name="s_ISIError">It has been less than a week since you last took the self-assessment.  The questions are designed to assess your symptoms since the last time you answered, so it is generally not helpful to take it more than once a week.</string>
@@ -1014,4 +1016,6 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_20b">Use this section to update your personalized sleep prescription, complete your daily sleep diary, assess your sleep need and create reminders to help you stick to a sleep schedule.</string>
     <string name="s_UpdatePrescriptionButton">update prescription button</string>
     <string name="s_Favorite">Favorite</string>
+    <string name="prf_disclaimer_accepted">DisclaimerAccepted</string>
+    <string name="prf_eula_accepted">EulaAccepted</string>
 </resources>

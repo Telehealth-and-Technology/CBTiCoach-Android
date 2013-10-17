@@ -7,27 +7,27 @@ import android.view.View;
 import android.widget.Button;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.classes.BaseABSNHActivity;
+import com.t2.cbt_i.classes.CBTi_BaseActivity;
 import com.t2.cbt_i.classes.CBTi_Help;
 
 
-public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
-
+public class LearnHealthySleepHabitsActivity extends CBTi_BaseActivity 
+{
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+	protected void onCreate(Bundle arg0)
+	{
+		super.onCreate(arg0);
 		setContentView(R.layout.learn_healthysleephabits);
-		
 		// middle button 1
 		((Button)findViewById(R.id.bWorryinginBed)).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshworryinginbed);
 				i.putExtra("RID_Text",  R.string.s_learnsh_01);
 				i.putExtra("RID_Title", R.string.s_learnsh_01t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -37,7 +37,7 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshwatchingtheclock);
 				i.putExtra("RID_Text",  R.string.s_learnsh_02);
 				i.putExtra("RID_Title", R.string.s_learnsh_02t);
@@ -51,11 +51,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshnapping);
 				i.putExtra("RID_Text",  R.string.s_learnsh_03);
 				i.putExtra("RID_Title", R.string.s_learnsh_03t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -65,11 +65,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshwindingdown);
 				i.putExtra("RID_Text",  R.string.s_learnsh_04);
 				i.putExtra("RID_Title", R.string.s_learnsh_04t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -79,11 +79,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshusingthebedroom);
 				i.putExtra("RID_Text",  R.string.s_learnsh_05);
 				i.putExtra("RID_Title", R.string.s_learnsh_05t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -93,11 +93,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnsheating);
 				i.putExtra("RID_Text",  R.string.s_learnsh_06);
 				i.putExtra("RID_Title", R.string.s_learnsh_06t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -107,11 +107,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshcaffeineuse);
 				i.putExtra("RID_Text",  R.string.s_learnsh_07);
 				i.putExtra("RID_Title", R.string.s_learnsh_07t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -121,11 +121,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshexercise);
 				i.putExtra("RID_Text",  R.string.s_learnsh_08);
 				i.putExtra("RID_Title", R.string.s_learnsh_08t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -135,11 +135,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshalcoholuse);
 				i.putExtra("RID_Text",  R.string.s_learnsh_09);
 				i.putExtra("RID_Title", R.string.s_learnsh_09t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -149,11 +149,11 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshnicotineuse);
 				i.putExtra("RID_Text",  R.string.s_learnsh_10);
 				i.putExtra("RID_Title", R.string.s_learnsh_10t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
@@ -163,22 +163,13 @@ public class LearnHealthySleepHabitsActivity extends BaseABSNHActivity {
 			@Override
 			public void onClick(View v) {
 				// Perform action on click
-				Intent i = new Intent(getApplicationContext(), CBTi_Help.class );
+				Intent i = new Intent(LearnHealthySleepHabitsActivity.this, CBTi_Help.class );
 				i.putExtra("RID_Img",   R.drawable.buddy_learnshgettingcomfortable);
 				i.putExtra("RID_Text",  R.string.s_learnsh_11);
 				i.putExtra("RID_Title", R.string.s_learnsh_11t);
-				startActivity(i);
+				LearnHealthySleepHabitsActivity.this.startActivity(i);
 				LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
 			}
 		}); 
-	}
-
-	
-
-	@Override
-	public void onBackPressed() {
-		// TODO Auto-generated method stub
-		super.onBackPressed();
-		LearnHealthySleepHabitsActivity.this.overridePendingTransition( R.anim.slide_right, R.anim.slide_right2);
 	}
 }

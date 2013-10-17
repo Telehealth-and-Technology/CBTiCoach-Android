@@ -12,7 +12,7 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.mysleep.AssessmentStartActivity;
+import com.t2.cbt_i.mysleep.AssessmentStartFragment;
 
 
 public class Reminders_BR_TakeAssessment extends BroadcastReceiver {
@@ -23,7 +23,7 @@ public class Reminders_BR_TakeAssessment extends BroadcastReceiver {
 		CharSequence cMsg = context.getResources().getString(R.string.s_remTakeAssessmentText);
 		Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 		
-		Intent iTgt = new Intent(context, AssessmentStartActivity.class);	// prepare target intent
+		Intent iTgt = new Intent(context, AssessmentStartFragment.class);	// prepare target intent
 		iTgt.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		PendingIntent pIntent = PendingIntent.getActivity(context, 0, iTgt, 0);
 		Notification noti = new NotificationCompat.Builder(context) 		// notification, no extra actions

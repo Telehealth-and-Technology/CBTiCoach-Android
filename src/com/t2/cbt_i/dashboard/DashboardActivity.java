@@ -1,100 +1,191 @@
 package com.t2.cbt_i.dashboard;
 
+import java.util.ArrayList;
 
-import android.content.Intent;
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.app.ActionBar.Tab;
 import com.t2.cbt_i.R;
-import com.t2.cbt_i.classes.BaseABSActivity;
-import com.t2.cbt_i.learn.LearnMainActivity;
-import com.t2.cbt_i.mysleep.MySleepMainActivity;
-import com.t2.cbt_i.mysleep.UpdateSleepPrescriptionData;
-import com.t2.cbt_i.reminders.RemindersMainActivity;
-import com.t2.cbt_i.tools.ToolsMainActivity;
+import com.t2.cbt_i.classes.CBTi_BaseActivity;
+import com.t2.cbt_i.learn.LearnMainFragment;
+import com.t2.cbt_i.mysleep.MySleepMainFragment;
+import com.t2.cbt_i.reminders.RemindersMainFragment;
+import com.t2.cbt_i.tools.ToolsMainFragment;
+import com.t2.cbt_i.utils.ActionBarUtils;
 
+public class DashboardActivity extends CBTi_BaseActivity
+{
 
-public class DashboardActivity extends BaseABSActivity {
+	private ViewPager mPager;
+
+	private TabsAdapter mAdapter;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
+		getSupportActionBar().setTitle("Home");
 		setContentView(R.layout.dashboard);
-	
-		// MySleep Button
-		((Button)findViewById(R.id.b10mysleep)).setOnClickListener(new View.OnClickListener() {
-		    @Override
-			public void onClick(View v) {		// handle the about button   
-		    	
-		    	Intent i = new Intent(DashboardActivity.this, MySleepMainActivity.class );
-		    	DashboardActivity.this.startActivity(i);
-		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
-		    }
-		});
-		
-		// Learn Button
-		((Button)findViewById(R.id.b10learn)).setOnClickListener(new View.OnClickListener() {
-		    @Override
-			public void onClick(View v) {		// handle the about button			                 
-		    	Intent i = new Intent(DashboardActivity.this, LearnMainActivity.class );
-		    	DashboardActivity.this.startActivity(i);
-		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
-		    }
-		});
-		
-		// Tools Button
-		((Button)findViewById(R.id.b10tools)).setOnClickListener(new View.OnClickListener() {
-		    @Override
-			public void onClick(View v) {		// handle the about button				                 
-		    	Intent i = new Intent(DashboardActivity.this, ToolsMainActivity.class );
-		    	DashboardActivity.this.startActivity(i);
-		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
+		getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+		mPager = (ViewPager) findViewById(R.id.tabpages);
+		mAdapter = new TabsAdapter(this, mPager);
+		mAdapter.addTab(getSupportActionBar().newTab().setText(getResources().getString(R.string.s_Home)).setTag(0).setIcon(R.drawable.ic_menu_home),
+						DashboardFragment.class, null);
+		mAdapter.addTab(getSupportActionBar().newTab().setText(getResources().getString(R.string.s_MySleep)).setTag(1).setIcon(R.drawable.ic_menu_edit),
+	 					MySleepMainFragment.class, null);
+		mAdapter.addTab(getSupportActionBar().newTab().setText(getResources().getString(R.string.s_Tools)).setTag(2).setIcon(R.drawable.ic_menu_manage), 
+						ToolsMainFragment.class, null);
+		mAdapter.addTab(getSupportActionBar().newTab().setText(getResources().getString(R.string.s_Learn)).setTag(3).setIcon(R.drawable.ic_menu_copy),
+		 				LearnMainFragment.class, null);
+		mAdapter.addTab(getSupportActionBar().newTab().setText(getResources().getString(R.string.s_Reminders)).setTag(4).setIcon(R.drawable.ic_menu_today),
+		 				RemindersMainFragment.class, null);
+	}
+
+	@Override
+	public void onBackPressed()
+	{
+		if (mPager.getCurrentItem() > 0)
+		{
+			setPage(0);
+		}
+		else
+		{
+			super.onBackPressed();
+		}
+	}
+
+	public void setPage(int page)
+	{
+		mPager.setCurrentItem(page);
+	}
+
+	public static class TabsAdapter extends FragmentPagerAdapter implements ActionBar.TabListener, ViewPager.OnPageChangeListener
+	{
+		private final Context mContext;
+
+		private final ActionBar mActionBar;
+
+		private final ViewPager mViewPager;
+
+		private final ArrayList<TabInfo> mTabs = new ArrayList<TabInfo>();
+
+		public TabsAdapter(SherlockFragmentActivity activity, ViewPager pager)
+		{
+			super(activity.getSupportFragmentManager());
+			mContext = activity;
+			mActionBar = activity.getSupportActionBar();
+			mViewPager = pager;
+			mViewPager.setAdapter(this);
+			mViewPager.setOnPageChangeListener(this);
+		}
+
+		public void addTab(ActionBar.Tab tab, Class<?> clss, Bundle args)
+		{
+			final TabInfo info = new TabInfo(clss, args);
+			tab.setTag(info);
+			tab.setTabListener(this);
+			mTabs.add(info);
+			mActionBar.addTab(tab);
+			notifyDataSetChanged();
+		}
+
+		@Override
+		public int getCount()
+		{
+			return mTabs.size();
+		}
+
+		@Override
+		public Fragment getItem(int position)
+		{
+			final TabInfo info = mTabs.get(position);
+			return Fragment.instantiate(mContext, info.clss.getName(), info.args);
+		}
+
+		@Override
+		public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels)
+		{
+		}
+
+		@Override
+		public void onPageScrollStateChanged(int state)
+		{
+		}
+
+		@Override
+		public void onPageSelected(int position)
+		{
+			mActionBar.setSelectedNavigationItem(position);
+			selectInSpinnerIfPresent(position, false);
+		}
+
+		@Override
+		public void onTabReselected(Tab tab, FragmentTransaction ft)
+		{
+		}
+
+		@Override
+		public void onTabSelected(Tab tab, FragmentTransaction ft)
+		{
+			final Object tag = tab.getTag();
+			for (int i = 0; i < mTabs.size(); i++)
+			{
+
+				if (mTabs.get(i) == tag)
+				{
+					mViewPager.setCurrentItem(i);
+					String title = "Home";
+					switch (i)
+					{
+					case 1:
+						title = "My Sleep";
+						break;
+					case 2:
+						title = "Tools";
+						break;
+					case 3:
+						title = "Learn";
+						break;
+					case 4:
+						title = "Reminders";
+						break;
+					}
+					mActionBar.setTitle(title);
+				}
 			}
-		});
-		
-		// Reminders Button
-		((Button)findViewById(R.id.b10reminders)).setOnClickListener(new View.OnClickListener() {
-		    @Override
-			public void onClick(View v) {		// handle the about button		                 
-		    	Intent i = new Intent(DashboardActivity.this, RemindersMainActivity.class );
-		    	DashboardActivity.this.startActivity(i);
-		    	DashboardActivity.this.overridePendingTransition( R.anim.slide_left, R.anim.slide_left2);
-		    }
-		});
-	}
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-		
-		// fetch the data and display either the sleep prescription or the msg
-		UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData( this );
-		cData22a.displaySleepPrescription();
-		
-	}
-	
-	
-	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		int ht = ((Button)findViewById(R.id.b10mysleep)).getHeight();
-		int wi = ((Button)findViewById(R.id.b10mysleep)).getWidth();
-		int sc = Math.min(ht,wi) / 18;
-		((TextView)findViewById(R.id.t10mysleep)).setTextSize(sc);
-		((TextView)findViewById(R.id.t10tools)).setTextSize(sc);
-		((TextView)findViewById(R.id.t10learn)).setTextSize(sc);
-		((TextView)findViewById(R.id.t10reminders)).setTextSize(sc);
-	    super.onWindowFocusChanged(hasFocus);
-	}
+		}
 
-	
-	//@Override
-	@Override
-	public void getHelp() {			// called to render help screen
-		startActivity( new Intent(this, DashboardHelpActivity.class) ); 
-		overridePendingTransition( R.anim.slide_up, R.anim.slide_up2);
+		@Override
+		public void onTabUnselected(Tab tab, FragmentTransaction ft)
+		{
+		}
+
+		private void selectInSpinnerIfPresent(int position, boolean animate)
+		{
+			ActionBarUtils.selectSpinnerIfPresent((Activity) mContext, position, animate);
+		}
+
+		static final class TabInfo
+		{
+			private final Class<?> clss;
+
+			private final Bundle args;
+
+			TabInfo(Class<?> _class, Bundle _args)
+			{
+				clss = _class;
+				args = _args;
+			}
+		}
 	}
-	
-	
 }

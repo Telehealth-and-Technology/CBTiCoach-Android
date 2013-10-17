@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressivemusclemainlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -81,12 +82,6 @@
                     android:paddingTop="5dp"
                     android:text="@string/s_Play"
                     android:contentDescription="@string/s_PlayButton" />
-
-                <VideoView
-                    android:id="@+id/video"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:visibility="invisible" />
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

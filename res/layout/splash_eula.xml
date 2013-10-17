@@ -74,6 +74,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="@string/s_IAccept"
+            		android:onClick="onAcceptEulaClick"
                     android:textSize="15dp" />
             </LinearLayout>
         </ScrollView>

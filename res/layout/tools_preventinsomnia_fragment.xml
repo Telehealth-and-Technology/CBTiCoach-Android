@@ -1,0 +1,426 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- middle buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1"
+        android:background="@drawable/bg_mysleepcreambackground"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bggraystriped"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_whitetextbox"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/s_PreventInsomniatext" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_topbar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical" >
+
+                    <!-- start #1 -->
+
+                    <LinearLayout
+                        android:id="@+id/llPrevent01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent01"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent01"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True" 
+                            android:contentDescription="@string/s_PI1Checkbox"/>
+                    </LinearLayout>
+                    <!-- end #1 -->
+                    
+                    <!-- start #2 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent02"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent02"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI2Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #2 -->
+                    
+                     <!-- start #3 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent03"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent03"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI3Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #3 -->
+                    
+                     <!-- start #4 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent04"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent04"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI4Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #4 -->
+                    
+                     <!-- start #5 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent05"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI5Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #5 -->
+                    
+                     <!-- start #6 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent06"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent06"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI6Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #6 -->
+                    
+                     <!-- start #7 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent07"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent07"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI7Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #7 -->
+                    
+                     <!-- start #8 -->
+                    <LinearLayout
+                        android:id="@+id/llPrevent02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bg_line" />
+                        
+                        <LinearLayout
+                            android:id="@+id/llPrevent08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:text="@string/s_Prevent08"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/bPrevent08"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="2"
+                            android:focusable="true"
+                            android:textOff="False"
+                            android:textOn="True"
+                            android:contentDescription="@string/s_PI8Checkbox" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- end #8 -->
+                    
+                    
+
+				</LinearLayout>
+				
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/bg_topbar" />
+                    
+                    <Button
+                    android:id="@+id/bSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/s_Submit"
+                    android:contentDescription="@string/s_SubmitButton" />
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
+
+</RelativeLayout>

@@ -14,12 +14,11 @@
     
     
     <application
-        android:allowBackup="true"
         android:icon="@drawable/cbti_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.t2.cbt_i.splash.LogoSplashActivity"
+            android:name="com.t2.cbt_i.splash.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,60 +29,58 @@
         
         <activity android:name="org.achartengine.GraphicalActivity" />
         
-        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.splash.EULASplashActivity" > </activity>
-        <activity android:label="@string/app_name" android:name="com.t2.cbt_i.splash.WelcomeToCBTiSplashActivity" > </activity>
         <activity android:label="@string/s_Home"   android:name="com.t2.cbt_i.dashboard.DashboardActivity" > </activity>
         <activity android:label="@string/app_name" android:name="com.t2.cbt_i.dashboard.ThoughtActivity" > </activity>       
         <activity android:label="@string/s_Help"   android:name="com.t2.cbt_i.dashboard.DashboardHelpActivity" > </activity>
         
-        <activity android:label="@string/s_MySleep" 			android:name="com.t2.cbt_i.mysleep.MySleepMainActivity" > </activity>
+        <activity android:label="@string/s_MySleep" 			android:name="com.t2.cbt_i.mysleep.MySleepMainFragment" > </activity>
         <activity android:label="@string/s_SleepDiary"  		android:name="com.t2.cbt_i.mysleep.SleepDairyMainActivity" > </activity>
         <activity android:label="@string/s_Help"    			android:name="com.t2.cbt_i.mysleep.SleepDairyHelpActivity" > </activity>
-        <activity android:label="@string/s_NewEntry"  			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryActivity" 
+        <activity android:label="@string/s_NewEntry"  			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryFragment" 
             	  android:screenOrientation="portrait" 			android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
-        <activity android:label="@string/s_SleepData" 			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryResultsActivity" > </activity>
+        <activity android:label="@string/s_SleepData" 			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryResultsFragment" > </activity>
         <activity android:label="@string/s_UpdateSleep"  		android:name="com.t2.cbt_i.mysleep.UpdateSleepPrescriptionActivity" 
             	  android:screenOrientation="portrait" 			android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
        <!-- <activity android:label="@string/s_SleepPrescription"  	android:name="com.t2.cbt_i.mysleep.CBTi_Activity22f" > </activity>  -->
         <activity android:label="@string/s_NeedSleep"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepMainActivity" > </activity>
-        <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepQuestionnaireActivity" > </activity>
+        <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepQuestionnaireFragment" > </activity>
         <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentMainActivity" > </activity>
-        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentStartActivity"> </activity>  
-        <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.AssessmentQuestionnaireActivity"> </activity>
-        <activity android:label="@string/s_Feedback"  			android:name="com.t2.cbt_i.mysleep.AssessmentResultsActivity"> </activity>
+        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentStartFragment"> </activity>  
+        <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.AssessmentQuestionnaireFragment"> </activity>
+        <activity android:label="@string/s_Feedback"  			android:name="com.t2.cbt_i.mysleep.AssessmentResultsFragment"> </activity>
        <!-- <activity android:label="@string/s_Feedback"  			android:name="cocom.t2.cbt_i.tools.CBTi_Activity31e2"> </activity> -->
-        <activity android:label="@string/s_TooEarly"  			android:name="com.t2.cbt_i.mysleep.AssessmentTakenTooSoonActivity" > </activity>
+        <activity android:label="@string/s_TooEarly"  			android:name="com.t2.cbt_i.mysleep.AssessmentTakenTooSoonFragment" > </activity>
         <activity android:label="@string/s_History"  			android:name="com.t2.cbt_i.mysleep.AssessmentHistoryGraphActivity"> </activity> 
         <activity android:label="@string/s_NoHistory"  			android:name="com.t2.cbt_i.mysleep.AssessmentBlankHistoryActivity"> </activity>
-        <activity android:label="@string/s_AllAssessments"  	android:name="com.t2.cbt_i.mysleep.AssessmentHistoryListActivity"/> 
-        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentViewScoresActivity"/>
-        <activity android:label="@string/s_AddtomyCalendar"  	android:name="com.t2.cbt_i.mysleep.AssessmentScheduleReminderActivity"/> 
+        <activity android:label="@string/s_AllAssessments"  	android:name="com.t2.cbt_i.mysleep.AssessmentHistoryListFragment"/> 
+        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentViewScoresFragment"/>
+        <activity android:label="@string/s_AddtomyCalendar"  	android:name="com.t2.cbt_i.mysleep.AssessmentScheduleReminderFragment"/> 
         
-        <activity android:label="@string/s_Tools"  				android:name="com.t2.cbt_i.tools.ToolsMainActivity" > </activity>
+        <activity android:label="@string/s_Tools"  				android:name="com.t2.cbt_i.tools.ToolsMainFragment" > </activity>
         <activity android:label="@string/s_NewSleepHabits"  	android:name="com.t2.cbt_i.tools.SleepHabitsMainActivity" > </activity>
         <activity android:label="@string/s_GotoBedOnlyWhenSleepy"  			
-                                                                android:name="com.t2.cbt_i.tools.SleepHabitsGoToBedOnlyWhenSleepyActivity" > </activity>
+                                                                android:name="com.t2.cbt_i.tools.SleepHabitsGoToBedOnlyWhenSleepyFragment" > </activity>
         <activity android:label="@string/s_GetoutofBedWhenyoucantSleep"  			
-                                                                android:name="com.t2.cbt_i.tools.SleepHabitsGetOutOfBedWhenCantSleepActivity" > </activity>
+                                                                android:name="com.t2.cbt_i.tools.SleepHabitsGetOutOfBedWhenCantSleepFragment" > </activity>
         <activity android:label="@string/s_GetoutofBedatyourPrescribedTime"  			
-                                                                android:name="com.t2.cbt_i.tools.SleepHabitsGetOutOfBedOnTimeActivity" > </activity>
-        <activity android:label="@string/s_Environment"  		android:name="com.t2.cbt_i.tools.SleepHabitsSleepEnvironmentSetupActivity" > </activity>
-        <activity android:label="@string/s_Caffeine"  			android:name="com.t2.cbt_i.tools.SleepHabitsCaffeineActivity" > </activity>
+                                                                android:name="com.t2.cbt_i.tools.SleepHabitsGetOutOfBedOnTimeFragment" > </activity>
+        <activity android:label="@string/s_Environment"  		android:name="com.t2.cbt_i.tools.SleepHabitsSleepEnvironmentSetupFragment" > </activity>
+        <activity android:label="@string/s_Caffeine"  			android:name="com.t2.cbt_i.tools.SleepHabitsCaffeineFragment" > </activity>
         <activity android:label="@string/s_QuietYourMind"  		android:name="com.t2.cbt_i.tools.QuiteMindMainActivity" > </activity>
-        <activity android:label="@string/s_WindingDown"  		android:name="com.t2.cbt_i.tools.QuiteMindWindingDownActivity" > </activity> 
-        <activity android:label="@string/s_BreathingTool"  		android:name="com.t2.cbt_i.tools.QuiteMindBreathingToolActivity" > </activity>
+        <activity android:label="@string/s_WindingDown"  		android:name="com.t2.cbt_i.tools.QuiteMindWindingDownFragment" > </activity> 
+        <activity android:label="@string/s_BreathingTool"  		android:name="com.t2.cbt_i.tools.QuiteMindBreathingToolFragment" > </activity>
         <activity android:label="@string/s_ProgressiveMuscleRelaxation"  
-            													android:name="com.t2.cbt_i.tools.QuiteMindProgressiveMuscleRelaxationActivity" > </activity>
-        <activity android:label="@string/s_GuidedImageryForest" android:name="com.t2.cbt_i.tools.QuiteMindForestImageryActivity" > </activity>
+            													android:name="com.t2.cbt_i.tools.QuiteMindProgressiveMuscleRelaxationFragment" > </activity>
+        <activity android:label="@string/s_GuidedImageryForest" android:name="com.t2.cbt_i.tools.QuiteMindForestImageryFragment" > </activity>
         <activity android:label="@string/s_GuidedImageryCountryRoad"  
-            													android:name="com.t2.cbt_i.tools.QuiteMindCountryRoadImageryActivity" > </activity>
+            													android:name="com.t2.cbt_i.tools.QuiteMindCountryRoadImageryFragment" > </activity>
         <activity android:label="@string/s_GuidedImageryBeach"  android:name="com.t2.cbt_i.tools.QuiteMindBeachImageryActivity" > </activity>
-        <activity android:label="@string/s_cloudsinthesky"  	android:name="com.t2.cbt_i.tools.QuiteMindObserveThoughtsActivity" > </activity>
-        <activity android:label="@string/s_bodyscan"  			android:name="com.t2.cbt_i.tools.QuiteMindObserveSensationsActivity" > </activity>
-        <activity android:label="@string/s_cloudsinthesky"  	android:name="com.t2.cbt_i.tools.QuiteMindObserveThoughtsContentActivity" > </activity>
-        <activity android:label="@string/s_bodyscan"  			android:name="com.t2.cbt_i.tools.QuiteMindObserveSensationsContentActivity" > </activity>
-        <activity android:label="@string/s_WorryTime"  			android:name="com.t2.cbt_i.tools.QuiteMindScheduleWorryTimeActivity" > </activity>
-        <activity android:label="@string/s_Perspective"  		android:name="com.t2.cbt_i.tools.QuiteMindChangePerspectiveActivity" > </activity>
+        <activity android:label="@string/s_cloudsinthesky"  	android:name="com.t2.cbt_i.tools.QuiteMindObserveThoughtsFragment" > </activity>
+        <activity android:label="@string/s_bodyscan"  			android:name="com.t2.cbt_i.tools.QuiteMindObserveSensationsFragment" > </activity>
+        <activity android:label="@string/s_cloudsinthesky"  	android:name="com.t2.cbt_i.tools.QuiteMindObserveThoughtsContentFragment" > </activity>
+        <activity android:label="@string/s_bodyscan"  			android:name="com.t2.cbt_i.tools.QuiteMindObserveSensationsContentFragment" > </activity>
+        <activity android:label="@string/s_WorryTime"  			android:name="com.t2.cbt_i.tools.QuiteMindScheduleWorryTimeFragment" > </activity>
+        <activity android:label="@string/s_Perspective"  		android:name="com.t2.cbt_i.tools.QuiteMindChangePerspectiveFragment" > </activity>
         <activity android:label="@string/s_PreventInsomnia"  	android:name="com.t2.cbt_i.tools.PreventInsomniaActivity" > </activity>
         <activity android:label="@string/s_Feedback"  			android:name="com.t2.cbt_i.tools.PreventInsomniaResultActivity" > </activity>
         
@@ -122,7 +119,7 @@
         <activity android:label="@string/s_ProjectTeam"  		android:name="com.t2.cbt_i.about.AboutProjectTeamActivity" > </activity>
         <activity android:label="@string/s_ProjectPartners"  	android:name="com.t2.cbt_i.about.AboutProjectPartnersActivity" > </activity>
         
-        <activity android:label="@string/s_Reminders"  android:name="com.t2.cbt_i.reminders.RemindersMainActivity" > </activity>
+        <activity android:label="@string/s_Reminders"  android:name="com.t2.cbt_i.reminders.RemindersMainFragment" > </activity>
         
         <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_WindDown" />
         <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_SleepDiary" />
@@ -140,10 +137,7 @@
         <intent-filter> <action android:name="android.intent.action.BOOT_COMPLETED"></action> </intent-filter>
     	</receiver>   
     	
-		<activity android:label="@string/s_Help"  android:name="com.t2.cbt_i.classes.CBTi_Help"   > </activity>
-
-        <meta-data android:name="bForceSplash" android:value="false" /> 
-        <meta-data android:name="iSplashTime"  android:value="3000" />  
+		<activity android:label="@string/s_Help"  android:name="com.t2.cbt_i.classes.CBTi_Help"   > </activity> 
     </application>
 
 </manifest>
