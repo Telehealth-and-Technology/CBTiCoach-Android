@@ -5,8 +5,6 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.Calendar;
-
 import android.app.Activity;
 
 public class INeedMoreSleepQuestionnaireAnswersData {

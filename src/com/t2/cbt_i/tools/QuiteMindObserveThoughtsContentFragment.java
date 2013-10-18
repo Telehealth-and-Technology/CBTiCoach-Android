@@ -15,7 +15,7 @@ import com.t2.cbt_i.classes.CBTi_BaseFragment;
 public class QuiteMindObserveThoughtsContentFragment extends CBTi_BaseFragment
 {
 	private static int iVideoPos;
-	public int iRid = 0;
+	public static int iRid = 0;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

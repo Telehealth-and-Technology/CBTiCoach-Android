@@ -1,6 +1,5 @@
 package com.t2.cbt_i.mysleep;
 
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;

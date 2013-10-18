@@ -33,7 +33,7 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 			179, 197, 201, 207, 210, 218, 224, 228, 245, 250, 254, 258, 262, 271, 285, 290, 294, 301, 313, 318, 323, 326, 331, 339, 341, 343, 349, 365, 369,
 			378, 394, 399, 403, 407, 410, 416, 420, 433, 455, 475, 483, 487, 494, 498, 514, 521, 524, 527, 529, 544, 549, 551, 555, 559, 564, 576 };
 	private Handler sHandler;
-	public int iRid = 0;
+	public static int iRid = 0;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
