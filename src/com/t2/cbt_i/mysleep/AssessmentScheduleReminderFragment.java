@@ -127,7 +127,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
 //			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
-			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			break;
 		}
 		return null;

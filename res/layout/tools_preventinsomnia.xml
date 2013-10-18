@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <fragment 
+    <FrameLayout 
         android:id="@+id/preventinsomniafragment"
-        android:name="com.t2.cbt_i.tools.PreventInsomniaFragment"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"/>
 </LinearLayout>

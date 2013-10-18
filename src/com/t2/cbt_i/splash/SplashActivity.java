@@ -116,9 +116,6 @@ public class SplashActivity extends SherlockFragmentActivity
 
         ft.setTransition(initial ? FragmentTransaction.TRANSIT_FRAGMENT_OPEN : FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
-
-        getSupportActionBar().setTitle("Welcome to CPT Coach");
-        getSupportActionBar().show();
     }
 
     private void showEula(boolean initial) {
@@ -133,9 +130,6 @@ public class SplashActivity extends SherlockFragmentActivity
 
         ft.setTransition(initial ? FragmentTransaction.TRANSIT_FRAGMENT_OPEN : FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
-
-        getSupportActionBar().setTitle("End User License Agreement");
-        getSupportActionBar().show();
     }
 
     private void showHome() {

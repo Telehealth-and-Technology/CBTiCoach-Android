@@ -40,6 +40,8 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GuidedImageryCountryRoad));
+		setHasOptionsMenu(true);
+		
 		// PLAY
 		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
 		{

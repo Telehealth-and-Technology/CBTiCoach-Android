@@ -135,7 +135,7 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 				Calendar onscene = Calendar.getInstance();
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 			}
-			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
 		return null;

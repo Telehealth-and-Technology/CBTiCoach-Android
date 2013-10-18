@@ -1,5 +1,6 @@
 package com.t2.cbt_i.mysleep;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -115,13 +116,16 @@ public class AssessmentResultsFragment extends CBTi_BaseFragment
 		if(backButtonPressed)
 		{
 			AssessmentMainFragment.goingBacktoMain = true;
-			getFragmentManager().popBackStack();
-			getFragmentManager().popBackStack();
-			getFragmentManager().popBackStack();
-			getFragmentManager().popBackStack();
+			try
+			{
+				getFragmentManager().popBackStack();
+				getFragmentManager().popBackStack();
+				getFragmentManager().popBackStack();
+				getFragmentManager().popBackStack();
+			}
+			catch(Exception ex){}
 		}
 	}
-
 	@Override
 	public void getHelp()
 	{

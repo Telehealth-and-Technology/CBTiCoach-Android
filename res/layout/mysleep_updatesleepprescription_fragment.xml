@@ -130,7 +130,6 @@
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textIsSelectable="true"
                                 android:textSize="15dp" />
 
                             <ImageButton
@@ -201,7 +200,6 @@
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textIsSelectable="true"
                                 android:textSize="15dp" />
 
                             <ImageButton
@@ -278,7 +276,6 @@
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textIsSelectable="true"
                                 android:textSize="15dp" 
                                 android:contentDescription="@string/s_WakeTimeButton" />
 

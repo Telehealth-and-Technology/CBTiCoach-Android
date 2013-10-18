@@ -39,9 +39,9 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="7"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_EnterDate"
                         android:gravity="center"
-                        android:orientation="horizontal"
-                        android:contentDescription="@string/s_EnterDate" />
+                        android:orientation="horizontal" />
 
                     <ImageButton
                         android:id="@+id/bSleepDiaryEntryTimeInfo"
@@ -49,13 +49,12 @@
                         android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
+                        android:contentDescription="@string/s_InfoButton"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="5dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_menu_info_details" 
-                        android:contentDescription="@string/s_InfoButton" />
-
+                        android:src="@drawable/ic_menu_info_details" />
                 </LinearLayout>
                 <!-- end each button 1 -->
 
@@ -63,8 +62,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:background="@drawable/bg_line" />
- 
- 				<!-- Total Nap Time -->
+
+                <!-- Total Nap Time -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -73,7 +73,6 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical" >
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -92,64 +91,64 @@
                             android:paddingTop="10dp"
                             android:text="@string/s_TNTQuestion"
                             android:textSize="15dp" />
-                        
+
                         <ToggleButton
                             android:id="@+id/bTNT"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
+                            android:contentDescription="@string/s_NapOrDozeCheckbox"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes" 
-                            android:contentDescription="@string/s_NapOrDozeCheckbox" />
-
+                            android:textOn="Yes" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/llTNT"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal" 
+                        android:orientation="horizontal"
                         android:visibility="gone" >
-                        
+
                         <TextView
                             android:id="@+id/tTNT"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_TotalNapTimeButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_TotalNapTimeButton" />
-                        
+                            android:textSize="15dp" />
+
                         <ImageButton
                             android:id="@+id/bTNTInfo"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="5dp"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_menu_info_details" 
-                            android:contentDescription="@string/s_InfoButton"/>
-
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End Total Nap Time -->
-                 
-                 <!-- Total Bed Time -->
+                <!-- End Total Nap Time -->
+
+
+                <!-- Total Bed Time -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -183,45 +182,47 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <TextView
                             android:id="@+id/tBT"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_BedtimeButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_BedtimeButton"/>
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bBTInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End Bed Time -->
-                 
-                 <!-- SIAT -->
-                 <LinearLayout
+                <!-- End Bed Time -->
+
+
+                <!-- SIAT -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -254,22 +255,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <TextView
                             android:id="@+id/tSIAT"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_SIATButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_SIATButton" />
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bSIATInfo"
@@ -277,23 +277,25 @@
                             android:layout_height="match_parent"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="5dp"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/ic_menu_info_details" 
-                            android:contentDescription="@string/s_InfoButton"/>
-
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End SIAT -->
-                 
-                 <!-- TTS -->
-                 <LinearLayout
+                <!-- End SIAT -->
+
+
+                <!-- TTS -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -326,45 +328,47 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <TextView
                             android:id="@+id/tTTS"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_FallAsleepTimeButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_FallAsleepTimeButton" />
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bTTSInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End TTS -->
-                 
-                 <!-- Times Awake -->
-                 <LinearLayout
+                <!-- End TTS -->
+
+
+                <!-- Times Awake -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -397,45 +401,48 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <Spinner
                             android:id="@+id/sTimesAwake"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_AwakeningsButton"
                             android:drawSelectorOnTop="true"
                             android:orientation="horizontal"
-                            android:layout_marginRight="10dp"
                             android:paddingBottom="0dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="0dp"
                             android:prompt="@string/numpicker_prompt"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_AwakeningsButton" />
-                        
+                            android:textSize="15dp" />
+
                         <ImageButton
                             android:id="@+id/bTimesAwakeInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End Times Awake -->
-                 
-                 <!-- TA -->
-                 <LinearLayout
+                <!-- End Times Awake -->
+
+
+                <!-- TA -->
+
+                <LinearLayout
                     android:id="@+id/llTA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -468,45 +475,47 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <TextView
                             android:id="@+id/tTA"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_TAButton"
                             android:gravity="left"
-                            android:paddingBottom="10dp"  
+                            android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_TAButton" />
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bTAInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End TA -->
-                 
-                 <!-- WUT -->
-                 <LinearLayout
+                <!-- End TA -->
+
+
+                <!-- WUT -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -539,44 +548,46 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <TextView
                             android:id="@+id/tWUT"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_WUTButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_WUTButton"/>
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bWUTInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End WUT -->
-                 
-                 <!-- Earlier -->
+                <!-- End WUT -->
+
+
+                <!-- Earlier -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -585,7 +596,6 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical" >
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -604,64 +614,65 @@
                             android:paddingTop="10dp"
                             android:text="@string/s_EarlierQuestion"
                             android:textSize="15dp" />
-                        
+
                         <ToggleButton
                             android:id="@+id/bEarlier"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
+                            android:contentDescription="@string/s_EarlierCheckbox"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes" 
-                            android:contentDescription="@string/s_EarlierCheckbox" />
-
+                            android:textOn="Yes" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/llEarlier"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal" 
+                        android:orientation="horizontal"
                         android:visibility="gone" >
-                        
+
                         <TextView
                             android:id="@+id/tEarlier"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_EarlierButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_EarlierButton" />
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bEarlierInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End Earlier -->
-                 
-                 <!-- WT -->
-                 <LinearLayout
+                <!-- End Earlier -->
+
+
+                <!-- WT -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -694,45 +705,47 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <TextView
                             android:id="@+id/tWT"
-                            android:textIsSelectable="true"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_WTButton"
                             android:gravity="left"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_WTButton" />
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bWTInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End WT -->
-                 
-                 <!-- Sleep Quality -->
-                 <LinearLayout
+                <!-- End WT -->
+
+
+                <!-- Sleep Quality -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -765,45 +778,48 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <Spinner
                             android:id="@+id/sSleepQuality"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/s_SleepQualityButton"
                             android:drawSelectorOnTop="true"
                             android:orientation="horizontal"
-                            android:layout_marginRight="10dp"
                             android:paddingBottom="0dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="0dp"
                             android:prompt="@string/sleepquality_prompt"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_SleepQualityButton" />
-                        
+                            android:textSize="15dp" />
+
                         <ImageButton
-                            android:id="@+id/bSleepQualityInfo" 
+                            android:id="@+id/bSleepQualityInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End Sleep Quality -->
-                 
-                 <!-- Comment -->
-                 <LinearLayout
+                <!-- End Sleep Quality -->
+
+
+                <!-- Comment -->
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -836,7 +852,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
-                        
+
                         <EditText
                             android:id="@+id/tComment"
                             android:layout_width="0dp"
@@ -845,33 +861,34 @@
                             android:layout_marginRight="10dp"
                             android:layout_weight="7"
                             android:background="@drawable/bg_whitebutton"
-                            android:hint="@string/s_CommentHint"
+                            android:contentDescription="@string/s_CommentsButton"
                             android:gravity="left"
+                            android:hint="@string/s_CommentHint"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" 
-                            android:contentDescription="@string/s_CommentsButton" />
+                            android:textSize="15dp" />
 
                         <ImageButton
                             android:id="@+id/bCommentInfo"
                             android:layout_width="0dp"
-                        	android:layout_height="match_parent"
-                        	android:layout_weight="2"
-                        	android:background="@android:color/transparent"
-                        	android:gravity="center"
-                        	android:orientation="horizontal"
-                        	android:padding="5dp"
-                        	android:scaleType="fitCenter"
-                        	android:src="@drawable/ic_menu_info_details" 
-                        	android:contentDescription="@string/s_InfoButton"/>
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/s_InfoButton"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu_info_details" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@drawable/bg_line" />
-                 <!-- End WT -->
+                <!-- End WT -->
 
                 <Button
                     android:id="@+id/bSaveEntry"
@@ -881,11 +898,10 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_SaveEntryButton"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:text="@string/s_SaveEntry" 
-                    android:contentDescription="@string/s_SaveEntryButton" />
-
+                    android:text="@string/s_SaveEntry" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

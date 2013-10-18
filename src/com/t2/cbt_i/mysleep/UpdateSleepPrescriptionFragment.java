@@ -336,17 +336,17 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 
 		case DIALOG_BEDTIME:
 			int iTime = cData22a.timeFrom4pm(cData22a.iBedtimemin);
-			dia.showDialog(iTime, mBTTimePickerListener, getFragmentManager());
+			dia.showTimeDialog(iTime, mBTTimePickerListener, getFragmentManager());
 			break;
 
 		case DIALOG_WAKETIME:
 			iTime = cData22a.timeFrom4pm(cData22a.iWaketimemin);
-			dia.showDialog(iTime, mWTTimePickerListener, getFragmentManager());
+			dia.showTimeDialog(iTime, mWTTimePickerListener, getFragmentManager());
 			break;
 
 		case DIALOG_AUTOWAKETIME:
 			iTime = cData22a.timeFrom4pm(cData22a.iAutoWaketimemin);
-			dia.showDialog(iTime, mAWTTimePickerListener, getFragmentManager());
+			dia.showTimeDialog(iTime, mAWTTimePickerListener, getFragmentManager());
 			break;
 
 		case DIALOG_USP1:

@@ -39,8 +39,7 @@
         <activity android:label="@string/s_NewEntry"  			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryFragment" 
             	  android:screenOrientation="portrait" 			android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
         <activity android:label="@string/s_SleepData" 			android:name="com.t2.cbt_i.mysleep.SleepDairyEntryResultsFragment" > </activity>
-        <activity android:label="@string/s_UpdateSleep"  		android:name="com.t2.cbt_i.mysleep.UpdateSleepPrescriptionActivity" 
-            	  android:screenOrientation="portrait" 			android:configChanges="keyboardHidden|orientation|screenLayout" > </activity>
+        <activity android:label="@string/s_UpdateSleep"  		android:name="com.t2.cbt_i.mysleep.UpdateSleepPrescriptionActivity"> </activity>
        <!-- <activity android:label="@string/s_SleepPrescription"  	android:name="com.t2.cbt_i.mysleep.CBTi_Activity22f" > </activity>  -->
         <activity android:label="@string/s_NeedSleep"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepMainActivity" > </activity>
         <activity android:label="@string/s_ISITitle"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepQuestionnaireFragment" > </activity>

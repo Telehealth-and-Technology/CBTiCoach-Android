@@ -4365,7 +4365,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0d00f3;
-        public static final int CBTiActionbar=0x7f0d00f4;
         public static final int DialogWindowTitle_Sherlock=0x7f0d0036;
         public static final int DialogWindowTitle_Sherlock_Light=0x7f0d0037;
         public static final int Holo=0x7f0d005c;

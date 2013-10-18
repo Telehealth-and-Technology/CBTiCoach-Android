@@ -16,7 +16,8 @@ import com.t2.cbt_i.classes.CBTi_BaseFragment;
 
 public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 {
-	INeedMoreSleepQuestionnaireAnswersData cData23c;
+	private INeedMoreSleepQuestionnaireAnswersData cData23c;
+	private static boolean displayAddMinutes = false;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -217,6 +218,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 				((TextView) getView().findViewById(R.id.tSNQResult)).setVisibility(View.VISIBLE);
 				if (!inLast6Days())
 				{
+					displayAddMinutes = true;
 					if (cData23c.iCumScore < 10)
 						((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq09a);
 					else if (cData23c.iCumScore < 13)
@@ -228,6 +230,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 				}
 				else
 				{
+					displayAddMinutes = false;
 					if (cData23c.iCumScore < 10)
 						((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq09b);
 					else if (cData23c.iCumScore < 13)
@@ -251,6 +254,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{ // handle the submit button
+				displayAddMinutes = false;
 				INeedMoreSleepQuestionnaireResultData cData23a = new INeedMoreSleepQuestionnaireResultData(getSherlockActivity());
 				cData23a.bAdd15 = false;
 				cData23a.bAdd30 = false;
@@ -265,6 +269,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{ // handle the submit button
+				displayAddMinutes = false;
 				INeedMoreSleepQuestionnaireResultData cData23a = new INeedMoreSleepQuestionnaireResultData(getSherlockActivity());
 				cData23a.bAdd15 = true;
 				cData23a.bAdd30 = false;
@@ -279,6 +284,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 			@Override
 			public void onClick(View v)
 			{ // handle the submit button
+				displayAddMinutes = false;
 				INeedMoreSleepQuestionnaireResultData cData23a = new INeedMoreSleepQuestionnaireResultData(getSherlockActivity());
 				cData23a.bAdd30 = true;
 				cData23a.bAdd15 = false;
@@ -388,6 +394,34 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 		{
 			((TextView) getView().findViewById(R.id.tISIQ)).setText(R.string.s_snq4);
 		}
+		else if(cData23c.iQuestion == 3)
+		{
+			((LinearLayout) getView().findViewById(R.id.llISI)).setVisibility(View.GONE);
+
+			((Button) getView().findViewById(R.id.bSubmit)).setVisibility(View.GONE);
+			((Button) getView().findViewById(R.id.bDone)).setVisibility(View.VISIBLE);
+			((TextView) getView().findViewById(R.id.tSNQResult)).setVisibility(View.VISIBLE);
+			if (displayAddMinutes)
+			{
+				if (cData23c.iCumScore < 10)
+					((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq09a);
+				else if (cData23c.iCumScore < 13)
+					((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq1012a);
+				else
+					((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq13ga);
+				((Button) getView().findViewById(R.id.bAdd15)).setVisibility(View.VISIBLE);
+				((Button) getView().findViewById(R.id.bAdd30)).setVisibility(View.VISIBLE);
+			}
+			else
+			{
+				if (cData23c.iCumScore < 10)
+					((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq09b);
+				else if (cData23c.iCumScore < 13)
+					((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq1012b);
+				else
+					((TextView) getView().findViewById(R.id.tSNQResult)).setText(R.string.s_snq13gb);
+			}
+		}
 		
 		if(cData23c.iQuestion <= 2)
 			getSherlockActivity().getSupportActionBar().setTitle(String.format(getString(R.string.s_INMSQTitle), cData23c.iQuestion + 2));
@@ -414,7 +448,6 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 		int iJulian = cc.get(Calendar.DAY_OF_YEAR);
 		cc.set(Calendar.DAY_OF_YEAR, iJulian - 6);
 		long l6Days = cc.getTimeInMillis(); // 6 days ago
-
 		return cData23c.lDate >= l6Days;
 	}
 }

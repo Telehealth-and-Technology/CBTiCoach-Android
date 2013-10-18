@@ -25,8 +25,8 @@ public class SleepHabitsMainFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		setHasOptionsMenu(true);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_CreateNewSleepHabits));
+		setHasOptionsMenu(true);
 		
 		// middle buttons
 		((Button) getView().findViewById(R.id.bSetCaffeineGoals)).setOnClickListener(new View.OnClickListener()

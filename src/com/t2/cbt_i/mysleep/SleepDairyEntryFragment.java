@@ -6,16 +6,13 @@ import java.util.Calendar;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -30,6 +27,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 
 public class SleepDairyEntryFragment extends CBTi_BaseFragment
@@ -93,13 +91,12 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tTNT)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tTNT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_TNTTime);
-				return false;
 			}
 		});
 
@@ -112,13 +109,12 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tBT)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tBT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_BTTime);
-				return false;
 			}
 		});
 
@@ -131,14 +127,13 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tSIAT)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tSIAT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				bProcessed = false;
 				showDialog(DIALOG_SIATTime);
-				return false;
 			}
 		});
 
@@ -151,13 +146,12 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tTTS)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tTTS)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_TTSTime);
-				return false;
 			}
 		});
 
@@ -179,13 +173,12 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tTA)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tTA)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_TATime);
-				return false;
 			}
 		});
 
@@ -232,13 +225,12 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tEarlier)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tEarlier)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				showDialog(DIALOG_EarlierTime);
-				return false;
 			}
 		});
 
@@ -251,14 +243,13 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tWT)).setOnTouchListener(new OnTouchListener()
+		((TextView) getView().findViewById(R.id.tWT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
-			public boolean onTouch(View v, MotionEvent event)
+			public void onClick(View v)
 			{
 				bProcessed = false;
 				showDialog(DIALOG_WTTime);
-				return false;
 			}
 		});
 
@@ -546,16 +537,21 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	 * c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH)); break; } }
 	 */
 
-	protected Dialog showDialog(int id)
+	private void showDialog(int id)
 	{
 		Builder builder;
+		CBTiDialogFragment dia;
 		switch (id)
 		{
 		case DATE_DIALOG_ID:
+			dia = new CBTiDialogFragment();
 			Calendar cc = Calendar.getInstance();
 			if (cData21c.lSDETime != 0)
 				cc.setTimeInMillis(cData21c.lSDETime);
-			return new DatePickerDialog(getSherlockActivity(), mDatePickerListener, cc.get(Calendar.YEAR), cc.get(Calendar.MONTH), cc.get(Calendar.DAY_OF_MONTH));
+			dia.showDateDialog(cc.get(Calendar.YEAR), cc.get(Calendar.MONTH), cc.get(Calendar.DAY_OF_MONTH), mDatePickerListener, getFragmentManager());
+			break;
+//			new DatePickerDialog(getSherlockActivity(), mDatePickerListener, cc.get(Calendar.YEAR), cc.get(Calendar.MONTH), cc.get(Calendar.DAY_OF_MONTH)).show();
+//			break;
 
 		case DIALOG_SDETimeInfo:
 			builder = new AlertDialog.Builder(getSherlockActivity());
@@ -681,42 +677,65 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			break;
 
 		case DIALOG_BTTime:
+			dia = new CBTiDialogFragment();
 			int iTime = timeFrom4pm(cData21c.iBTmin);
-			return new TimePickerDialog(getSherlockActivity(), mBTTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showTimeDialog(iTime, mBTTimePickerListener, getFragmentManager());
+			break;
+			//return new TimePickerDialog(getSherlockActivity(), mBTTimePickerListener, iTime / 60, iTime % 60, false);
 
 		case DIALOG_SIATTime:
+			dia = new CBTiDialogFragment();
 			iTime = timeFrom4pm(cData21c.iSIATmin);
-			return new TimePickerDialog(getSherlockActivity(), mSIATTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showTimeDialog(iTime, mSIATTimePickerListener, getFragmentManager());
+			break;
+			//return new TimePickerDialog(getSherlockActivity(), mSIATTimePickerListener, iTime / 60, iTime % 60, false);
 
 		case DIALOG_TNTTime:
-			TimePickerDialog tp = new TimePickerDialog(getSherlockActivity(), mTNTTimePickerListener, cData21c.iTNTmin / 60, cData21c.iTNTmin % 60, true);
-			tp.setTitle(R.string.s_TNTQuestion);
-			return tp;
+			dia = new CBTiDialogFragment();
+			dia.showTimeDialogWithTitle(getString(R.string.s_TNTQuestion), cData21c.iTNTmin, mTNTTimePickerListener, getFragmentManager());
+			break;
+//			TimePickerDialog tp = new TimePickerDialog(getSherlockActivity(), mTNTTimePickerListener, cData21c.iTNTmin / 60, cData21c.iTNTmin % 60, true);
+//			tp.setTitle(R.string.s_TNTQuestion);
+//			return tp;
 
 		case DIALOG_TTSTime:
-			tp = new TimePickerDialog(getSherlockActivity(), mTTSTimePickerListener, cData21c.iTTSmin / 60, cData21c.iTTSmin % 60, true);
-			tp.setTitle(R.string.s_TTSQuestion);
-			return tp;
+			dia = new CBTiDialogFragment();
+			dia.showTimeDialogWithTitle(getString(R.string.s_TTSQuestion), cData21c.iTTSmin, mTTSTimePickerListener, getFragmentManager());
+			break;
+//			tp = new TimePickerDialog(getSherlockActivity(), mTTSTimePickerListener, cData21c.iTTSmin / 60, cData21c.iTTSmin % 60, true);
+//			tp.setTitle(R.string.s_TTSQuestion);
+//			return tp;
 
 		case DIALOG_TATime:
-			tp = new TimePickerDialog(getSherlockActivity(), mTATimePickerListener, cData21c.iTAmin / 60, cData21c.iTAmin % 60, true);
-			tp.setTitle(R.string.s_TAQuestion);
-			return tp;
+			dia = new CBTiDialogFragment();
+			dia.showTimeDialogWithTitle(getString(R.string.s_TAQuestion), cData21c.iTAmin, mTATimePickerListener, getFragmentManager());
+			break;
+//			tp = new TimePickerDialog(getSherlockActivity(), mTATimePickerListener, cData21c.iTAmin / 60, cData21c.iTAmin % 60, true);
+//			tp.setTitle(R.string.s_TAQuestion);
+//			return tp;
 
 		case DIALOG_WUTTime:
+			dia = new CBTiDialogFragment();
 			iTime = timeFrom4pm(cData21c.iWUTmin);
-			return new TimePickerDialog(getSherlockActivity(), mWUTTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showTimeDialog(iTime, mWUTTimePickerListener, getFragmentManager());
+			break;
+//			return new TimePickerDialog(getSherlockActivity(), mWUTTimePickerListener, iTime / 60, iTime % 60, false);
 
 		case DIALOG_EarlierTime:
-			tp = new TimePickerDialog(getSherlockActivity(), mEarlierTimePickerListener, cData21c.iEarliermin / 60, cData21c.iEarliermin % 60, true);
-			tp.setTitle(R.string.s_EarlierQuestion);
-			return tp;
+			dia = new CBTiDialogFragment();
+			dia.showTimeDialogWithTitle(getString(R.string.s_EarlierQuestion), cData21c.iEarliermin, mEarlierTimePickerListener, getFragmentManager());
+			break;
+//			tp = new TimePickerDialog(getSherlockActivity(), mEarlierTimePickerListener, cData21c.iEarliermin / 60, cData21c.iEarliermin % 60, true);
+//			tp.setTitle(R.string.s_EarlierQuestion);
+//			return tp;
 
 		case DIALOG_WTTime:
+			dia = new CBTiDialogFragment();
 			iTime = timeFrom4pm(cData21c.iWTmin);
-			return new TimePickerDialog(getSherlockActivity(), mWTTimePickerListener, iTime / 60, iTime % 60, false);
+			dia.showTimeDialog(iTime, mWTTimePickerListener, getFragmentManager());
+			break;
+			//return new TimePickerDialog(getSherlockActivity(), mWTTimePickerListener, iTime / 60, iTime % 60, false);
 		}
-		return null;
 	}
 
 	private Boolean bProcessed; // if true the button has been handled

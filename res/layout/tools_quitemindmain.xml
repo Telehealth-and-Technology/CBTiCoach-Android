@@ -4,9 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-	<fragment
+	<FrameLayout
 	    android:id="@+id/quitemindfragment"
-	    android:name="com.t2.cbt_i.tools.QuiteMindMainFragment"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"/>
 </LinearLayout>

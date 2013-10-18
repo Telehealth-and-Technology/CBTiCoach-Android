@@ -4,9 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <fragment 
+    <FrameLayout
         android:id="@+id/prescriptionfragment"
-        android:name="com.t2.cbt_i.mysleep.UpdateSleepPrescriptionFragment"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent" />
 </RelativeLayout>

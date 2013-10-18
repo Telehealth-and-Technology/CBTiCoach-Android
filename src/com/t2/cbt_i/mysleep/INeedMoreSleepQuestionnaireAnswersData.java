@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.Calendar;
 
 import android.app.Activity;
 
@@ -107,9 +108,13 @@ public class INeedMoreSleepQuestionnaireAnswersData {
 	
 	public void deleteData() {
 		try {
+			long date = lDate;
 			File dir = new File(c.getFilesDir(), sSubDir );		// open the subdirectory if it exists
 			File file = new File(dir, sFilename);
 			file.delete();
+			//We are keeping the date around so we know when they last took the questionnaire
+			lDate = date;
+			saveData();
 		}
 		catch( Exception e ) {
 		

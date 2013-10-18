@@ -42,6 +42,7 @@ public class AssessmentHistoryGraphFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_History));
+		setHasOptionsMenu(true);
 		
 		// middle buttons
 		((Button) getView().findViewById(R.id.bShowAssessmentDetails)).setOnClickListener(new View.OnClickListener()

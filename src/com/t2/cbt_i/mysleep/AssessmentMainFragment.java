@@ -26,7 +26,6 @@ public class AssessmentMainFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_Assessment));
-		setHasOptionsMenu(true);
 
 		// middle buttons
 		((Button) getView().findViewById(R.id.bTakeAssessment)).setOnClickListener(new View.OnClickListener()

@@ -27,8 +27,8 @@ public class SleepHabitsGetOutOfBedOnTimeFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		
-		getSherlockActivity().getSupportActionBar().setTitle(getSherlockActivity().getResources().getString(R.string.s_GetoutofBedatyourPrescribedTime));
+		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GetoutofBedatyourPrescribedTime));
+		setHasOptionsMenu(true);
 
 		((CheckBox) getView().findViewById(R.id.cbGetOut01)).setOnClickListener(GetOutOCL);
 		((CheckBox) getView().findViewById(R.id.cbGetOut02)).setOnClickListener(GetOutOCL);

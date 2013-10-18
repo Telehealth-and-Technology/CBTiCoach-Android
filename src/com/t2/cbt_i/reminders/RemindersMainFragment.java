@@ -513,7 +513,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
-			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			// return new TimePickerDialog(getSherlockActivity(),
 			// mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}

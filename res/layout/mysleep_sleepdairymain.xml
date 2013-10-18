@@ -6,9 +6,8 @@
     android:orientation="vertical"
     tools:context=".mysleep.SleepDairyMainActivity" >
 
-    <fragment
+    <FrameLayout
         android:id="@+id/sleepdairyfragment"
-        android:name="com.t2.cbt_i.mysleep.SleepDairyMainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

@@ -41,6 +41,8 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GuidedImageryBeach));
+		setHasOptionsMenu(true);
+		
 		// PLAY
 		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
 		{

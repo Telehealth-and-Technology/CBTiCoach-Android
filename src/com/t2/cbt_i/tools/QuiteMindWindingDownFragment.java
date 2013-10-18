@@ -40,6 +40,7 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_WindingDown));
+		setHasOptionsMenu(true);
 		
 		// Wind Down Time Reminder Toggle Button
 		((Button) getView().findViewById(R.id.bWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
@@ -301,7 +302,7 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
-			dia.showDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
+			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
 		return null;
