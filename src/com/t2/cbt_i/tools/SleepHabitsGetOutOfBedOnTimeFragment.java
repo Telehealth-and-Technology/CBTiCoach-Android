@@ -178,18 +178,20 @@ public class SleepHabitsGetOutOfBedOnTimeFragment extends CBTi_BaseFragment
 					v.setSelected(true);
 				bState = ((CheckBox) getView().findViewById(iButton)).isChecked();
 			}
-			//save new state to data store
+			// save new state to data store
 			cData34c2.bGetOut[cData34c2.iMap[iStart]] = bState;
-
-			// if( bState ) { // if checked place at top
-			// if( iStart > 0 ) {
-			// int iHold = cData34c2.iMap[iStart];
-			// for( ; iStart>0 ; iStart-- )
-			// cData34c2.iMap[iStart] = cData34c2.iMap[iStart-1];
-			// cData34c2.iMap[0] = iHold;
-			// }
-			// }
-			// cData34c2.renderData();
+//
+//			if (bState)
+//			{ // if checked place at top
+//				if (iStart > 0)
+//				{
+//					int iHold = cData34c2.iMap[iStart];
+//					for (; iStart > 0; iStart--)
+//						cData34c2.iMap[iStart] = cData34c2.iMap[iStart - 1];
+//					cData34c2.iMap[0] = iHold;
+//				}
+//			}
+//			cData34c2.renderData();
 		}
 	};
 

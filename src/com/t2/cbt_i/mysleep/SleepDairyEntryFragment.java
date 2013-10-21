@@ -435,10 +435,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 
 		if (bNew == true)
 		{
-			cData21c = new SleepDairyEntryData(getSherlockActivity()); // this will get a brand
-														// new object or one
-														// with in progress data
-														// in in progress
+			// this will get a brand new object or one with in progress data in in progress
+			cData21c = new SleepDairyEntryData(getSherlockActivity());
 		}
 		else
 		{

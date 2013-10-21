@@ -25,7 +25,6 @@ import com.t2.cbt_i.reminders.RemindersData.ALARMS;
 
 public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 {
-
 	QuiteMindWindingDownData cData35a1;
 	RemindersData cData60a;
 
@@ -232,21 +231,19 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 					v.setSelected(true);
 				bState = ((CheckBox) getView().findViewById(iButton)).isChecked();
 			}
-			cData35a1.bWind[cData35a1.iMap[iStart]] = bState; // scrape new
-																// state to data
-																// store
+			cData35a1.bWind[cData35a1.iMap[iStart]] = bState; // scrape new state to data store
 
-			if (bState)
-			{ // if checked then re order display
-				if (iStart > 0)
-				{
-					int iHold = cData35a1.iMap[iStart];
-					for (; iStart > 0; iStart--)
-						cData35a1.iMap[iStart] = cData35a1.iMap[iStart - 1];
-					cData35a1.iMap[0] = iHold;
-				}
-			}
-			cData35a1.renderData();
+//			if (bState)
+//			{ // if checked then re order display
+//				if (iStart > 0)
+//				{
+//					int iHold = cData35a1.iMap[iStart];
+//					for (; iStart > 0; iStart--)
+//						cData35a1.iMap[iStart] = cData35a1.iMap[iStart - 1];
+//					cData35a1.iMap[0] = iHold;
+//				}
+//			}
+//			cData35a1.renderData();
 		}
 	};
 

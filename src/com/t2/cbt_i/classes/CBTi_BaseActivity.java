@@ -1,9 +1,12 @@
 package com.t2.cbt_i.classes;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.MenuItem;
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.dashboard.DashboardActivity;
 
 //import com.flurry.android.FlurryAgent;
 
@@ -12,8 +15,7 @@ public class CBTi_BaseActivity extends SherlockFragmentActivity
 	// private static Boolean bFlurryEnabled = false;
 
 	// private static Boolean bProvideUsageData;
-	
-	
+
 	@Override
 	protected void onStart()
 	{
@@ -29,6 +31,28 @@ public class CBTi_BaseActivity extends SherlockFragmentActivity
 	{
 		super.onCreate(arg0);
 		getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_topbar));
+		getSupportActionBar().setHomeButtonEnabled(true);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+		case android.R.id.home:
+			if (!(this instanceof DashboardActivity))
+			{
+				Intent intent = new Intent(this, DashboardActivity.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(intent);
+			}
+			else
+			{
+				((DashboardActivity)this).setPage(0);
+			}
+			break;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 
 	@Override

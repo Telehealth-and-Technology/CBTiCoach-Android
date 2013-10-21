@@ -34,9 +34,6 @@ public class CBTi_Help extends CBTi_BaseActivity
 	public void onBackPressed()
 	{
 		super.onBackPressed();
-		if (iTitle != 0)
-			CBTi_Help.this.overridePendingTransition(R.anim.slide_right, R.anim.slide_right2);
-		else
-			CBTi_Help.this.overridePendingTransition(R.anim.slide_down, R.anim.slide_down2);
+		CBTi_Help.this.overridePendingTransition(R.anim.slide_down, R.anim.slide_down2);
 	}
 }

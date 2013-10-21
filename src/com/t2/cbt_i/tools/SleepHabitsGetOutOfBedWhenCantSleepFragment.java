@@ -29,7 +29,7 @@ public class SleepHabitsGetOutOfBedWhenCantSleepFragment extends CBTi_BaseFragme
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GetoutofBedWhenyoucantSleep));
 		setHasOptionsMenu(true);
-		
+
 		cData34c1 = new SleepHabitsGetOutOfBedWhenCantSleepData(getSherlockActivity());
 
 		((CheckBox) getView().findViewById(R.id.cbCantSleep01)).setOnClickListener(CantSleepOCL);
@@ -180,19 +180,20 @@ public class SleepHabitsGetOutOfBedWhenCantSleepFragment extends CBTi_BaseFragme
 					v.setSelected(true);
 				bState = ((CheckBox) getView().findViewById(iButton)).isChecked();
 			}
-			cData34c1.bCantSleep[cData34c1.iMap[iStart]] = bState; // scrape new
-																	// state to
-																	// data
-																	// store
+			// scrape new state to data store
+			cData34c1.bCantSleep[cData34c1.iMap[iStart]] = bState;
 
-			// if( bState ) { // if checked then place at top
-			// if( iStart > 0 ) {
-			// int iHold = cData34c1.iMap[iStart];
-			// for( ; iStart>0 ; iStart-- )
-			// cData34c1.iMap[iStart] = cData34c1.iMap[iStart-1];
-			// cData34c1.iMap[0] = iHold;
-			// }
-			// }cData34c1.renderData();
+//			if (bState)
+//			{ // if checked then place at top
+//				if (iStart > 0)
+//				{
+//					int iHold = cData34c1.iMap[iStart];
+//					for (; iStart > 0; iStart--)
+//						cData34c1.iMap[iStart] = cData34c1.iMap[iStart - 1];
+//					cData34c1.iMap[0] = iHold;
+//				}
+//			}
+//			cData34c1.renderData();
 		}
 	};
 
@@ -203,7 +204,7 @@ public class SleepHabitsGetOutOfBedWhenCantSleepFragment extends CBTi_BaseFragme
 		cData34c1.renderData();
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onPause()
 	{
