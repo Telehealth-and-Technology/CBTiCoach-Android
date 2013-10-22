@@ -3,7 +3,6 @@ package com.t2.cbt_i.reminders;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-
 public class Reminders_BR_BootLoader extends BroadcastReceiver
 {
 
@@ -14,7 +13,6 @@ public class Reminders_BR_BootLoader extends BroadcastReceiver
 	@Override
 	public void onReceive(Context c, Intent intent)
 	{
-
 		if (BOOT_ACTION_NAME.equals(intent.getAction()))
 		{
 			if (cData60a == null)

@@ -13,7 +13,7 @@ import android.util.Log;
 public class SettingsData
 {
 
-	public Boolean bProvideUsageData = false;
+	public Boolean bProvideUsageData = true;
 	Context c;
 
 	public SettingsData(Activity c)
