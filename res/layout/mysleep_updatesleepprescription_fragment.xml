@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-   	<!-- middle buttons -->
+    <!-- middle buttons -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="15dp"
-                        android:text="@string/s_22a" 
+                        android:text="@string/s_22a"
                         android:textSize="15dp" />
                 </LinearLayout>
 
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal" >
-"
+"
 
                     <ToggleButton
                         android:id="@+id/bManMan"
@@ -55,10 +55,10 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:background="@drawable/manbutton"
+                        android:contentDescription="@string/s_SelectManually"
                         android:textOff="@string/s_Manually"
                         android:textOn="@string/s_Manually"
-                        android:textSize="15dp" 
-                        android:contentDescription="@string/s_SelectManually" />
+                        android:textSize="15dp" />
 
                     <ToggleButton
                         android:id="@+id/bManAut"
@@ -66,10 +66,10 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:background="@drawable/manbutton"
+                        android:contentDescription="@string/s_SelectAutomatically"
                         android:textOff="@string/s_Automatically"
                         android:textOn="@string/s_Automatically"
-                        android:textSize="15dp" 
-                        android:contentDescription="@string/s_SelectAutomatically" />
+                        android:textSize="15dp" />
                 </LinearLayout>
 
                 <View
@@ -83,9 +83,10 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:visibility="gone" >
- 					
- 					<!-- MAN Bedtime -->
-					<LinearLayout
+
+                    <!-- MAN Bedtime -->
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -138,12 +139,12 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="@android:color/transparent"
+                                android:contentDescription="@string/s_InfoButton"
                                 android:gravity="center"
                                 android:orientation="horizontal"
                                 android:padding="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/ic_menu_info_details"
-                                android:contentDescription="@string/s_InfoButton"  />
+                                android:src="@drawable/ic_menu_info_details" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -155,6 +156,7 @@
 
 
                     <!-- MAN Waketime -->
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -208,12 +210,12 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="@android:color/transparent"
+                                android:contentDescription="@string/s_InfoButton"
                                 android:gravity="center"
                                 android:orientation="horizontal"
                                 android:padding="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/ic_menu_info_details"
-                                android:contentDescription="@string/s_InfoButton" />
+                                android:src="@drawable/ic_menu_info_details" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -223,16 +225,18 @@
                         android:background="@drawable/bg_line" />
                     <!-- End MAN Waketime -->
 
-                </LinearLayout>  <!-- End llManUpdate -->
-                
+                </LinearLayout>
+ <!-- End llManUpdate -->
+
                 <LinearLayout
-                    android:id="@+id/llAutoUpdate" 
+                    android:id="@+id/llAutoUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" >
- 					
- 					<!-- AUTO Waketime -->
-					<LinearLayout
+
+                    <!-- AUTO Waketime -->
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -257,7 +261,7 @@
                                 android:text="@string/s_Whatisyourdesiredwakeuptime"
                                 android:textSize="15dp" />
                         </LinearLayout>
-                        
+
                         <LinearLayout
                             android:id="@+id/llAutoWaketime"
                             android:layout_width="match_parent"
@@ -272,12 +276,12 @@
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="7"
                                 android:background="@drawable/bg_whitebutton"
+                                android:contentDescription="@string/s_WakeTimeButton"
                                 android:gravity="left"
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textSize="15dp" 
-                                android:contentDescription="@string/s_WakeTimeButton" />
+                                android:textSize="15dp" />
 
                             <ImageButton
                                 android:id="@+id/bAutoWakeInfo"
@@ -285,12 +289,12 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="@android:color/transparent"
+                                android:contentDescription="@string/s_InfoButton"
                                 android:gravity="center"
                                 android:orientation="horizontal"
                                 android:padding="5dp"
                                 android:scaleType="fitCenter"
-                                android:src="@drawable/ic_menu_info_details"
-                                android:contentDescription="@string/s_InfoButton"  />
+                                android:src="@drawable/ic_menu_info_details" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -302,6 +306,7 @@
 
 
                     <!-- UpdateSleepPrescription -->
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -314,23 +319,23 @@
                             android:id="@+id/tUpdateSleepPrescriptionTime"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
                             android:gravity="center_vertical"
                             android:paddingBottom="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_Updateautomaticallyeachweekon"
                             android:textColor="#1c2739"
                             android:textSize="15dp" />
-                        
+
                         <Spinner
                             android:id="@+id/sAutoDay"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bg_whitebutton"
+                            android:contentDescription="@string/dow_prompt"
                             android:drawSelectorOnTop="true"
                             android:orientation="horizontal"
-                            android:background="@drawable/bg_whitebutton"
                             android:prompt="@string/dow_prompt"
-                            android:textSize="15dp"  android:contentDescription="@string/dow_prompt" /> 
+                            android:textSize="15dp" />
                     </LinearLayout>
 
                     <!-- End UpdateSleepPrescription -->
@@ -338,20 +343,19 @@
                 </LinearLayout>
                 <!-- End llAutoUpdate -->
 
-				<Button
-				    android:id="@+id/bUpdatePrescription"
-				    android:layout_width="wrap_content"
-				    android:layout_height="wrap_content"
-				    android:layout_gravity="center_horizontal"
-				    android:layout_marginBottom="10dp"
-				    android:layout_marginTop="10dp"
-				    android:background="@drawable/bg_whitebutton"
-				    android:gravity="center"
-				    android:orientation="horizontal"
-				    android:padding="10dp"
-				    android:text="@string/s_UpdatePrescription"
-				    android:contentDescription="@string/s_UpdatePrescriptionButton" />
-
+                <Button
+                    android:id="@+id/bUpdatePrescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_UpdatePrescriptionButton"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:text="@string/s_UpdatePrescription" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

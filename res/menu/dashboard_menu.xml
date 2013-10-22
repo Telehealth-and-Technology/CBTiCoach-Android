@@ -5,18 +5,18 @@
         android:icon="@drawable/ab_about"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="About"/>
+        android:title="@string/s_About"/>
     <item
         android:id="@+id/menu_help"
         android:icon="@drawable/ab_help"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="Help"/>
+        android:title="@string/s_Help"/>
 
     <item
         android:id="@+id/menu_settings"
         android:icon="@drawable/menu_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="Settings"/>
+        android:title="@string/s_Settings"/>
 </menu>
