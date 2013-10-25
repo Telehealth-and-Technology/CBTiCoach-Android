@@ -18,9 +18,6 @@ import com.t2.cbt_i.classes.CBTi_Help;
 
 public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 {
-
-	VideoView vvVideo;
-
 	private int[] iCaptionId = { R.string.s_Beach01, R.string.s_Beach02, R.string.s_Beach03, R.string.s_Beach04, R.string.s_Beach05, R.string.s_Beach06,
 			R.string.s_Beach07, R.string.s_Beach08, R.string.s_Beach09, R.string.s_Beach10, R.string.s_Beach11, R.string.s_Beach12, R.string.s_Beach13,
 			R.string.s_Beach14, R.string.s_Beach15, R.string.s_Beach16, R.string.s_Beach17, R.string.s_Beach18, R.string.s_Beach19, R.string.s_Beach20,
@@ -29,6 +26,7 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 	private int[] iCaptionStart = { 1, 9, 14, 20, 24, 30, 41, 43, 46, 51, 62, 66, 74, 90, 96, 106, 117, 126, 132, 140, 150, 162, 173, 178, 188, 200, 207, 218,
 			236, 252, 261, 273, 289 };
 	private Handler sHandler;
+	private boolean isPlaying = false;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -48,9 +46,22 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 		{
 			@Override
 			public void onClick(View v)
-			{ // handle the about button
-				iVideoPos = 0;
+			{
+				isPlaying = true;
 				videoPlay();
+			}
+		});
+		
+		// PAUSE
+		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				isPlaying = false;
+				((VideoView) getView().findViewById(R.id.video)).pause();
+				iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
+				sHandler.removeCallbacks(rSequencer);				
 			}
 		});
 
@@ -77,7 +88,7 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 	@Override
 	public void onPause()
 	{
-		if (goingToHelp)
+		if (goingToHelp || isPlaying)
 		{
 			((VideoView) getView().findViewById(R.id.video)).pause();
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
@@ -94,7 +105,7 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 
 	private void videoPlay()
 	{
-		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
 		((VideoView) getView().findViewById(R.id.video)).start();
 		iVideoPos = 0;
 		rSequencer.run();
@@ -108,8 +119,7 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 		{
 			((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_RoadText);
 			((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.VISIBLE);
-			// ((VideoView) getView().findViewById( R.id.video
-			// )).setVisibility(View.INVISIBLE);
+			// ((VideoView) getView().findViewById( R.id.video )).setVisibility(View.INVISIBLE);
 		}
 	};
 	

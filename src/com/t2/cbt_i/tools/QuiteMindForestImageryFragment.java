@@ -27,6 +27,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 	private int[] iCaptionStart = { 1, 8, 14, 20, 24, 32, 44, 46, 52, 57, 64, 75, 86, 98, 110, 120, 136, 147, 151, 158, 163, 177, 187, 197, 203, 211, 226, 242,
 			256, 266, 278 };
 	private Handler sHandler;
+	private boolean isPlaying = false;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -46,9 +47,22 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 		{
 			@Override
 			public void onClick(View v)
-			{ // handle the about button
-				iVideoPos = 0;
+			{
+				isPlaying  = true;
 				videoPlay();
+			}
+		});
+		
+		// PAUSE
+		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				isPlaying = false;
+				((VideoView) getView().findViewById(R.id.video)).pause();
+				iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
+				sHandler.removeCallbacks(rSequencer);				
 			}
 		});
 
@@ -75,7 +89,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 	@Override
 	public void onPause()
 	{
-		if(goingToHelp)
+		if(goingToHelp || isPlaying)
 		{
 			((VideoView) getView().findViewById(R.id.video)).pause();
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
@@ -92,7 +106,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 
 	private void videoPlay()
 	{
-		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
 		((VideoView) getView().findViewById(R.id.video)).start();
 		rSequencer.run();
 		iResLast = -1;
@@ -105,8 +119,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 		{
 			((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_RoadText);
 			((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.VISIBLE);
-			// ((VideoView) getView().findViewById( R.id.video
-			// )).setVisibility(View.INVISIBLE);
+			// ((VideoView) getView().findViewById( R.id.video )).setVisibility(View.INVISIBLE);
 		}
 	};
 	

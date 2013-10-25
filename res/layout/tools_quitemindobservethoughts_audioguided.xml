@@ -2,38 +2,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_mysleepcreambackground"
     android:orientation="vertical" >
 
-    <!-- middle buttons -->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_mysleepcreambackground"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
         <LinearLayout
+            android:id="@+id/llAudio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <VideoView
+                android:id="@+id/video"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_bggraystriped"
-                android:orientation="vertical" >
-                
-                <LinearLayout
-                   	android:id="@+id/llAudio"
-                	android:layout_width="match_parent"
-               	 	android:layout_height="match_parent"
-                	android:layout_margin="20dp"
-                	android:layout_gravity="center"
-                	android:orientation="vertical" 
-                	android:visibility="visible" >
+                android:layout_gravity="center" />
+        </LinearLayout>
 
-                	<VideoView
-                    	android:id="@+id/video"
-                    	android:layout_width="match_parent"
-                    	android:layout_height="match_parent"
-                    	android:layout_gravity="center" />
-                </LinearLayout>
-            </LinearLayout>
-    </LinearLayout>
-    <!-- middle buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/bPlayMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_PlayButton"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/s_Play" />
+
+            <Button
+                android:id="@+id/bPauseMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_PlayButton"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/s_Pause" />
+        </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

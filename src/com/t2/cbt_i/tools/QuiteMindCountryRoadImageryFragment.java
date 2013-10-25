@@ -28,6 +28,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 	private int[] iCaptionStart = { 1, 8, 13, 22, 26, 36, 38, 44, 55, 59, 63, 75, 79, 81, 87, 97, 100, 104, 109, 121, 124, 133, 138, 146, 155, 167, 180, 184,
 			206, 214 };
 	private Handler sHandler;
+	private boolean isPlaying = false;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -47,9 +48,22 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 		{
 			@Override
 			public void onClick(View v)
-			{ // handle the about button
-				iVideoPos = 0;
+			{
+				isPlaying = true;
 				videoPlay();
+			}
+		});
+		
+		// PAUSE
+		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				isPlaying = false;
+				((VideoView) getView().findViewById(R.id.video)).pause();
+				iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
+				sHandler.removeCallbacks(rSequencer);				
 			}
 		});
 
@@ -62,7 +76,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 
 	private void videoPlay()
 	{
-		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
 		((VideoView) getView().findViewById(R.id.video)).start();
 		rSequencer.run();
 		iResLast = -1;
@@ -75,8 +89,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 		{
 			((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_RoadText);
 			((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.VISIBLE);
-			// ((VideoView) getView().findViewById( R.id.video
-			// )).setVisibility(View.INVISIBLE);
+			// ((VideoView) getView().findViewById( R.id.video )).setVisibility(View.INVISIBLE);
 		}
 	};
 
@@ -97,7 +110,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 	@Override
 	public void onPause()
 	{
-		if (goingToHelp)
+		if (goingToHelp || isPlaying)
 		{
 			((VideoView) getView().findViewById(R.id.video)).pause();
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();

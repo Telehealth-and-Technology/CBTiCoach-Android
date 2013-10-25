@@ -8,6 +8,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -34,6 +35,7 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 			378, 394, 399, 403, 407, 410, 416, 420, 433, 455, 475, 483, 487, 494, 498, 514, 521, 524, 527, 529, 544, 549, 551, 555, 559, 564, 576 };
 	private Handler sHandler;
 	public static int iRid = 0;
+	private boolean isPlaying = false;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -53,19 +55,44 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_bodyscan));
-		
+
 		if (iRid == R.id.bSelfGuided)
 		{
 			((TextView) getView().findViewById(R.id.tvSelf)).setMovementMethod(new ScrollingMovementMethod());
 		}
 		else
 		{
+			// PLAY
+			((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					isPlaying = true;
+					videoPlay();
+				}
+			});
+
+			// PAUSE
+			((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					isPlaying = false;
+					((VideoView) getView().findViewById(R.id.video)).pause();
+					iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
+					sHandler.removeCallbacks(rSequencer);
+				}
+			});
+
 			Uri uUri = Uri.parse("android.resource://" + getSherlockActivity().getPackageName() + "/" + R.raw.mp3_observe_sensations_new);
 
 			((VideoView) getView().findViewById(R.id.video)).setVideoURI(uUri);
 			((VideoView) getView().findViewById(R.id.video)).setOnCompletionListener(onComplete);
 
 			sHandler = new Handler();
+			videoPlay();
 		}
 	}
 
@@ -74,8 +101,9 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 	@Override
 	public void onResume()
 	{
-		if (((VideoView) getView().findViewById(R.id.video)) != null)
+		if (iVideoPos > 0 && ((VideoView) getView().findViewById(R.id.video)) != null)
 		{
+			((VideoView) getView().findViewById(R.id.video)).seekTo(iVideoPos);
 			videoPlay();
 		}
 		super.onResume();
@@ -84,23 +112,23 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 	@Override
 	public void onPause()
 	{
-		if(goingToHelp && ((VideoView) getView().findViewById(R.id.video)) != null)
+		if (goingToHelp || isPlaying && ((VideoView) getView().findViewById(R.id.video)) != null)
 		{
 			((VideoView) getView().findViewById(R.id.video)).pause();
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
 			sHandler.removeCallbacks(rSequencer);
 		}
-		else if(((VideoView) getView().findViewById(R.id.video)) != null)
+		else if (((VideoView) getView().findViewById(R.id.video)) != null)
 		{
-			((VideoView) getView().findViewById( R.id.video )).stopPlayback();
+			((VideoView) getView().findViewById(R.id.video)).stopPlayback();
 			sHandler.removeCallbacks(rSequencer);
-			iVideoPos = 0;	
+			iVideoPos = 0;
 		}
 		super.onPause();
 	}
 
 	@Override
-	public void getHelp() 
+	public void getHelp()
 	{
 		this.goingToHelp = true;
 	}
@@ -129,22 +157,9 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 
 	private void videoPlay()
 	{
-		iResLast = -1;
-		rSequencer.run();
-		if (iVideoPos == 0)
-		{
-			try
-			{
-				Thread.sleep(500);
-			}
-			catch (Exception e)
-			{
-			}
-		}
-		if (iVideoPos > 0)
-			((VideoView) getView().findViewById(R.id.video)).seekTo(iVideoPos);
 		((VideoView) getView().findViewById(R.id.video)).start();
-
+		rSequencer.run();
+		iResLast = -1;
 	}
 
 	MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener()
