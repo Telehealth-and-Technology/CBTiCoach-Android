@@ -15,7 +15,7 @@
         <LinearLayout
             android:id="@+id/lBamboo"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="5"
             android:background="@drawable/bamboo"
@@ -24,7 +24,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center"
                 android:padding="10dp"
@@ -34,7 +34,7 @@
             <TextView
                 android:id="@+id/tThought"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:gravity="center"
                 android:padding="10dp"
@@ -42,22 +42,45 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/bTryAnother"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_whitebutton"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp"
-            android:text="@string/s_TryAnother" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/bPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_PlayButton"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="5dp"
+                android:text="@string/s_Previous" />
+
+            <Button
+                android:id="@+id/bTryAnother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_whitebutton"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/s_TryAnother" />
+        </LinearLayout>
     </LinearLayout>
     <!-- middle buttons -->
 

@@ -38,6 +38,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 			R.drawable.toolsmusclerelaxation_bodyfeet, R.drawable.toolsmusclerelaxation_bodyall };
 	private int[] iResIdStart = { 59, 115, 186, 242, 293, 353, 429 };
 	private Handler sHandler;
+	private boolean isPlaying;
 
 	private void setup(boolean initial)
 	{
@@ -82,8 +83,8 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		{
 			@Override
 			public void onClick(View v)
-			{ // handle the about button
-				iVideoPos = 0;
+			{
+				isPlaying = true;
 				videoPlay();
 			}
 		});
@@ -96,7 +97,19 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		main.addView(View.inflate(getSherlockActivity(), R.layout.tools_quitemindprogressivemusclerelaxationvideoplaying, null));
 		setup(false);
 
-		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+		// PAUSE
+		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				isPlaying = false;
+				((VideoView) getView().findViewById(R.id.video)).pause();
+				iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
+				sHandler.removeCallbacks(rSequencer);
+			}
+		});
 		((ImageView) getView().findViewById(R.id.iImage)).setImageResource(R.drawable.toolsmusclerelaxation_body);
 		((ImageView) getView().findViewById(R.id.iImageOverlay)).setVisibility(View.VISIBLE);
 		((RelativeLayout) getView().findViewById(R.id.rlPMR)).setBackgroundColor(Color.BLACK);
@@ -148,7 +161,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		return ((iList[i - 1] <= iVideoPos) ? i - 1 : -1);
 	}
 
-	private static int iVideoPos;
+	private static int iVideoPos = 0;
 
 	@Override
 	public void onResume()
@@ -164,7 +177,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 	@Override
 	public void onPause()
 	{
-		if (goingToHelp && (VideoView) getView().findViewById(R.id.video) != null)
+		if (goingToHelp || isPlaying && (VideoView) getView().findViewById(R.id.video) != null)
 		{
 			((VideoView) getView().findViewById(R.id.video)).pause();
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();

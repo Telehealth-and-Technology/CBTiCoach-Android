@@ -2,7 +2,6 @@ package com.t2.cbt_i.classes;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.flurry.android.FlurryAgent;
@@ -14,7 +13,7 @@ public class CBTi_BaseActivity extends SherlockFragmentActivity
 {
 	private static Boolean bFlurryEnabled = false;
 
-//	private static Boolean bProvideUsageData;
+	// private static Boolean bProvideUsageData;
 
 	@Override
 	protected void onStart()

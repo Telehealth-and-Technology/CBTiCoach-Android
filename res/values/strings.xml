@@ -27,6 +27,7 @@
     <string name="s_Tools">Tools</string>
     <string name="s_MySleep">My Sleep</string>
     <string name="s_Home">Home</string>
+    <string name="s_Previous">Previous</string>
     <string name="s_UpdateSleep">Update Sleep</string>
     <string name="s_Assessment">Assessment</string>
     <string name="s_MySleepHelp">Record sleep habits and help with keeping a sleep schedule</string>
