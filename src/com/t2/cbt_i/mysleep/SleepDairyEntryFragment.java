@@ -72,7 +72,6 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			public void onClick(View v)
 			{
 				showDialog(DIALOG_SDETimeInfo);
-
 			}
 		});
 
@@ -698,6 +697,7 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 
 		case DIALOG_TTSTime:
 			dia = new CBTiDialogFragment();
+			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_TTSQuestion), cData21c.iTTSmin, mTTSTimePickerListener, getFragmentManager());
 			break;
 //			tp = new TimePickerDialog(getSherlockActivity(), mTTSTimePickerListener, cData21c.iTTSmin / 60, cData21c.iTTSmin % 60, true);

@@ -21,9 +21,10 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 	private boolean convertTime = false;
 	private boolean writeTitle = false;
 	private boolean showDateDialog = false;
+	private boolean is24hour = false;
 	private TimePickerDialog.OnTimeSetListener tListener;
 	private DatePickerDialog.OnDateSetListener dListener;
-	
+
 	public void showTimeDialog(int time, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		convertTime = true;
@@ -31,7 +32,7 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		iTime = time;
 		this.show(manager, "dialog");
 	}
-	
+
 	public void showTimeDialog(int hour, int min, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		tListener = l;
@@ -39,7 +40,7 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		iMinute = min;
 		this.show(manager, "dialog");
 	}
-	
+
 	public void showTimeDialogWithTitle(String title, int time, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		convertTime = true;
@@ -49,7 +50,7 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		iTime = time;
 		this.show(manager, "dialog");
 	}
-	
+
 	public void showTimeDialogWithTitle(String title, int hour, int min, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		writeTitle = true;
@@ -59,7 +60,7 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		iMinute = min;
 		this.show(manager, "dialog");
 	}
-	
+
 	public void showDateDialog(int year, int month, int day, OnDateSetListener l, FragmentManager manager)
 	{
 		showDateDialog = true;
@@ -69,25 +70,39 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		iDay = day;
 		this.show(manager, "dialog");
 	}
-	
+
+	public void set24hourMode(boolean isEnabled)
+	{
+		is24hour = isEnabled;
+	}
+
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState)
 	{
-		if(showDateDialog)
+		if (showDateDialog)
 		{
 			return new DatePickerDialog(getSherlockActivity(), dListener, iYear, iMonth, iDay);
 		}
 		else
 		{
 			TimePickerDialog tia;
-			if(convertTime)
-				tia = new TimePickerDialog(getSherlockActivity(), tListener, iTime / 60, iTime % 60, false);
-			else
-				tia = new TimePickerDialog(getSherlockActivity(), tListener, iHour, iMinute, false);
-			
-			if(writeTitle)
+
+			if (writeTitle)
+			{
+				if (convertTime)
+					tia = new CBTi_TimePickerDialog(getSherlockActivity(), tListener, iTime / 60, iTime % 60, is24hour);
+				else
+					tia = new CBTi_TimePickerDialog(getSherlockActivity(), tListener, iHour, iMinute, is24hour);
 				tia.setTitle(title);
-			
+			}
+			else
+			{
+				if (convertTime)
+					tia = new TimePickerDialog(getSherlockActivity(), tListener, iTime / 60, iTime % 60, is24hour);
+				else
+					tia = new TimePickerDialog(getSherlockActivity(), tListener, iHour, iMinute, is24hour);
+			}
+
 			return tia;
 		}
 	}

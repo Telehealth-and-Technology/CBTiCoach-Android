@@ -779,10 +779,10 @@ took you to fall asleep.  This will be an estimate.
     <string name="s_Add30">Add 30 minutes to Prescription</string>
     <string name="s_Add15">Add 15 minutes to Prescription</string>
     <string name="s_Done">Done</string>
-    <string name="s_snq1">Question 1\nDid you feel tired or fatigued during the day or evening?</string>
-    <string name="s_snq2">Question 2\nWere you sleepy or drowsy during the day or evening?</string>
-    <string name="s_snq3">Question 3\nDid you take any naps or fall asleep briefly during the day or evening?</string>
-    <string name="s_snq4">Question 4\nDid you feel you had been getting an adequate amount of sleep?</string>
+    <string name="s_snq1">Question 1\nBased on the previous week, did you feel tired or fatigued during the day or evening?</string>
+    <string name="s_snq2">Question 2\nBased on the previous week, were you sleepy or drowsy during the day or evening?</string>
+    <string name="s_snq3">Question 3\nBased on the previous week, did you take any naps or fall asleep briefly during the day or evening?</string>
+    <string name="s_snq4">Question 4\nBased on the previous week, did you feel you had been getting an adequate amount of sleep?</string>
     <string name="s_Next">Next Question</string>
     <string name="s_SleepData">Sleep Data</string>
     <string name="s_SeeaProvider">See a Provider</string>
