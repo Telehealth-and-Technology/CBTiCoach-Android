@@ -6,12 +6,13 @@
     android:orientation="vertical" >
 
     <!-- middle buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
-        
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -24,6 +25,7 @@
                 android:orientation="vertical" >
 
                 <!-- sleep diary reminder -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -70,10 +72,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_SleepDiaryReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_SleepDiaryReminderCheckbox" />
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -121,8 +123,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:paddingBottom="10dp"
                     android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
                     android:paddingTop="0dp"
                     android:text="@string/s_remSleepDiaryReminderHint"
                     android:textColor="#1c2739"
@@ -130,7 +132,9 @@
 
                 <!-- End Sleep Diary Reminder Time -->
 
+
                 <!-- Wind Down Time -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -178,15 +182,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_WindDownTimeReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_WindDownTimeReminderCheckbox" />
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Wind Down Time -->
 
+
                 <!-- Prescribed Bed Time -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -233,15 +239,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_PrescribedBedtimeReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_PrescribedBedtimeReminderCheckbox" />
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Prescribed Bed Time -->
-                
+
+
                 <!-- Prescribed Wake Time -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -288,15 +296,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_PrescribedWakeTimeReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_PrescribedWakeTimeReminderCheckbox" />
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Prescribed Wake Time -->
-                
+
+
                 <!-- UpdateSleepPrescription -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -330,17 +340,16 @@
                                 android:textSize="15dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
-                        
+
                         <ToggleButton
                             android:id="@+id/bUpdateSleepPrescriptionReminder"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_UpdateSleepPrescriptionReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_UpdateSleepPrescriptionReminderCheckbox" />
-                        
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -357,40 +366,40 @@
                             android:layout_height="1dp"
                             android:background="@drawable/bg_line" />
 
-                        <RelativeLayout 
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                        	android:layout_height="wrap_content"
-                        	android:gravity="center_vertical"
-                        	android:orientation="horizontal"
-                            >
-                        	<Spinner 
-        						android:id="@+id/sUpdateSleepPrescriptionDay"
-        						android:layout_height="wrap_content"
-        						android:layout_width="wrap_content"
-        						android:drawSelectorOnTop = "true"
-        						android:prompt = "@string/dow_prompt"
-        						android:orientation="horizontal"
-        						/>
-        					
-        					<TextView
-        				    	android:id="@+id/tUpdateSleepPrescriptionTime"
-        				    	android:layout_width="wrap_content"
-        				    	android:layout_height="wrap_content"
-        				    	android:layout_alignParentRight="true"
-        				    	android:layout_centerVertical="true"
-        				    	android:gravity="center_vertical"
-        				    	android:paddingBottom="10dp"
-        				    	android:paddingTop="10dp"
-        				    	android:text="10:15AM"
-        				    	android:textColor="#1c2739"
-        				    	android:textSize="15dp" />
-        				
-        				</RelativeLayout>
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <Spinner
+                                android:id="@+id/sUpdateSleepPrescriptionDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawSelectorOnTop="true"
+                                android:orientation="horizontal"
+                                android:prompt="@string/dow_prompt" />
+
+                            <TextView
+                                android:id="@+id/tUpdateSleepPrescriptionTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="10:15AM"
+                                android:textColor="#1c2739"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End UpdateSleepPrescription -->
-                
+
+
                 <!-- Take Assessment -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -424,17 +433,16 @@
                                 android:textSize="15dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
-                        
+
                         <ToggleButton
                             android:id="@+id/bTakeAssessmentReminder"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_TakeAssessmentReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_TakeAssessmentReminderCheckbox" />
-                        
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -446,54 +454,53 @@
                         android:visibility="gone" >
 
                         <View
-                            
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@drawable/bg_line" />
 
-                        <RelativeLayout 
+                        <LinearLayout
                             android:layout_width="match_parent"
-                        	android:layout_height="wrap_content"
-                        	android:gravity="center_vertical"
-                        	android:orientation="horizontal"
-                            >
-                        	<Spinner 
-        						android:id="@+id/sTakeAssessmentDay"
-        						android:layout_height="wrap_content"
-        						android:layout_width="wrap_content"
-        						android:drawSelectorOnTop = "true"
-        						android:prompt = "@string/dow_prompt"
-        						android:orientation="horizontal"
-        						/>
-                        	<Spinner 
-        						android:id="@+id/sTakeAssessmentRepeat"
-        						android:layout_height="wrap_content"
-        						android:layout_width="wrap_content"
-        						android:layout_toRightOf="@+id/sTakeAssessmentDay"
-        						android:drawSelectorOnTop = "true"
-        						android:prompt = "@string/dow_prompt"
-        						android:orientation="horizontal"
-        						/>
-        				
-        					<TextView
-        				    	android:id="@+id/tTakeAssessmentTime"
-        				    	android:layout_width="wrap_content"
-        				    	android:layout_height="wrap_content"
-        				    	android:layout_alignParentRight="true"
-        				    	android:layout_centerVertical="true"
-        				    	android:gravity="center_vertical"
-        				    	android:paddingBottom="10dp"
-        				    	android:paddingTop="10dp"
-        				    	android:text="10:15AM"
-        				    	android:textColor="#1c2739"
-        				    	android:textSize="15dp" />
-        				
-        				</RelativeLayout>
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <Spinner
+                                android:id="@+id/sTakeAssessmentDay"
+                                style="@style/SimpleSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:drawSelectorOnTop="true"
+                                android:prompt="@string/dow_prompt" />
+
+                            <Spinner
+                                android:id="@+id/sTakeAssessmentRepeat"
+                                style="@style/SimpleSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:drawSelectorOnTop="true"
+                                android:prompt="@string/dow_prompt" />
+
+                            <TextView
+                                android:id="@+id/tTakeAssessmentTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="10:15AM"
+                                android:textColor="#1c2739"
+                                android:textSize="15dp" />
+                        </LinearLayout>
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Take Assessment -->
-                
+
+
                 <!-- Stop Caffeine -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -540,15 +547,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_StopCaffeineReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_StopCaffeineReminderCheckbox" />
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Stop Caffeine -->
-                
+
+
                 <!-- Worry Time Reminder -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -582,17 +591,16 @@
                                 android:textSize="15dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
-                        
+
                         <ToggleButton
                             android:id="@+id/bWorryTimeReminder"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_WorryTimeReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_WorryTimeReminderCheckbox" />
-                        
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -608,38 +616,36 @@
                             android:layout_height="1dp"
                             android:background="@drawable/bg_line" />
 
-                        <RelativeLayout 
+                        <RelativeLayout
                             android:layout_width="match_parent"
-                        	android:layout_height="wrap_content"
-                        	android:gravity="center_vertical"
-                        	android:orientation="horizontal"
-                            >
-                        	<Spinner 
-        						android:id="@+id/sWorryTimeDay"
-        						android:layout_height="wrap_content"
-        						android:layout_width="wrap_content"
-        						android:drawSelectorOnTop = "true"
-        						android:prompt = "@string/dow_prompt"
-        						android:orientation="horizontal"
-        						/>
-        					
-        					<TextView
-        				    	android:id="@+id/tWorryTimeReminderTime"
-        				    	android:layout_width="wrap_content"
-        				    	android:layout_height="wrap_content"
-        				    	android:layout_alignParentRight="true"
-        				    	android:gravity="center_vertical"
-        				    	android:paddingBottom="10dp"
-        				    	android:paddingTop="10dp"
-        				    	android:text="10:15AM"
-        				    	android:textColor="#1c2739"
-        				    	android:textSize="15dp" />
-        				
-        				</RelativeLayout>
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <Spinner
+                                android:id="@+id/sWorryTimeDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawSelectorOnTop="true"
+                                android:orientation="horizontal"
+                                android:prompt="@string/dow_prompt" />
+
+                            <TextView
+                                android:id="@+id/tWorryTimeReminderTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="10:15AM"
+                                android:textColor="#1c2739"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Worry Time Reminder -->
-                
+
                 <Button
                     android:id="@+id/bResetReminders"
                     android:layout_width="match_parent"
@@ -648,20 +654,18 @@
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_ResetAllRemindersButton"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_ResetAllReminders"
-                    android:contentDescription="@string/s_ResetAllRemindersButton" />
-                
+                    android:text="@string/s_ResetAllReminders" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
-   
     <!-- middle buttons -->
 
 </RelativeLayout>

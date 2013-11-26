@@ -42,22 +42,12 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 
 	private void setup(boolean initial)
 	{
-		// PLAY
-		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
-		{
-			@Override
-			public void onClick(View v)
-			{ // handle the about button
-				iVideoPos = 0;
-				videoPlay();
-			}
-		});
-		if(!initial)
+		if (!initial)
 		{
 			Uri uUri = Uri.parse("android.resource://" + getSherlockActivity().getPackageName() + "/" + R.raw.mp3_progressivemr);
 			((VideoView) getView().findViewById(R.id.video)).setVideoURI(uUri);
 			((VideoView) getView().findViewById(R.id.video)).setOnCompletionListener(onComplete);
-	
+
 			sHandler = new Handler();
 		}
 	}
@@ -74,7 +64,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_ProgressiveMuscleRelaxation));
 		setHasOptionsMenu(true);
-		
+
 		setup(true);
 		((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_35a11);
 
@@ -97,8 +87,16 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		main.addView(View.inflate(getSherlockActivity(), R.layout.tools_quitemindprogressivemusclerelaxationvideoplaying, null));
 		setup(false);
 
-//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
-		// PAUSE
+		((ImageView) getView().findViewById(R.id.iImage)).setImageResource(R.drawable.toolsmusclerelaxation_body);
+		((ImageView) getView().findViewById(R.id.iImageOverlay)).setVisibility(View.VISIBLE);
+		((RelativeLayout) getView().findViewById(R.id.rlPMR)).setBackgroundColor(Color.BLACK);
+		((RelativeLayout) getView().findViewById(R.id.rlPMRC)).setBackgroundColor(Color.BLACK);
+
+		TextView mTextView = (TextView) getView().findViewById(R.id.caption);
+		ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) mTextView.getLayoutParams();
+		mlp.setMargins(0, 0, 0, 0);
+
+		// PAUSE setup here because it only occurs in tools_quitemindprogressivemusclerelaxationvideoplaying
 		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
@@ -110,14 +108,21 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 				sHandler.removeCallbacks(rSequencer);
 			}
 		});
-		((ImageView) getView().findViewById(R.id.iImage)).setImageResource(R.drawable.toolsmusclerelaxation_body);
-		((ImageView) getView().findViewById(R.id.iImageOverlay)).setVisibility(View.VISIBLE);
-		((RelativeLayout) getView().findViewById(R.id.rlPMR)).setBackgroundColor(Color.BLACK);
-		((RelativeLayout) getView().findViewById(R.id.rlPMRC)).setBackgroundColor(Color.BLACK);
-
-		TextView mTextView = (TextView) getView().findViewById(R.id.caption);
-		ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) mTextView.getLayoutParams();
-		mlp.setMargins(0, 0, 0, 0);
+		
+		// PLAY setup again here because its functionality changes once the video starts
+		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				isPlaying = true;
+				((VideoView) getView().findViewById(R.id.video)).start();
+				((VideoView) getView().findViewById(R.id.video)).seekTo(iVideoPos);
+				rSequencer.run();
+			}
+		});
+		
+		//Start the video and seek to location
 		((VideoView) getView().findViewById(R.id.video)).start();
 
 		iResLast = iResLast2 = -1;
@@ -134,18 +139,9 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 			main.removeAllViews();
 			main.addView(View.inflate(getSherlockActivity(), R.layout.tools_quitemindprogressivemusclerelaxation, null));
 
+			iVideoPos = 0;
 			setup(false);
 			((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_35a11);
-			// PLAY
-			((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
-			{
-				@Override
-				public void onClick(View v)
-				{ // handle the about button
-					iVideoPos = 0;
-					videoPlay();
-				}
-			});
 		}
 	};
 
@@ -169,7 +165,6 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		if (iVideoPos > 0 && (VideoView) getView().findViewById(R.id.video) != null)
 		{
 			videoPlay();
-			((VideoView) getView().findViewById(R.id.video)).seekTo(iVideoPos);
 		}
 		super.onResume();
 	}
@@ -183,7 +178,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
 			sHandler.removeCallbacks(rSequencer);
 		}
-		else if((VideoView) getView().findViewById(R.id.video) != null)
+		else if ((VideoView) getView().findViewById(R.id.video) != null)
 		{
 			((VideoView) getView().findViewById(R.id.video)).stopPlayback();
 			sHandler.removeCallbacks(rSequencer);
