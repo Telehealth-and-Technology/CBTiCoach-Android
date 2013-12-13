@@ -689,6 +689,7 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 
 		case DIALOG_TNTTime:
 			dia = new CBTiDialogFragment();
+			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_TNTQuestion), cData21c.iTNTmin, mTNTTimePickerListener, getFragmentManager());
 			break;
 //			TimePickerDialog tp = new TimePickerDialog(getSherlockActivity(), mTNTTimePickerListener, cData21c.iTNTmin / 60, cData21c.iTNTmin % 60, true);
@@ -722,6 +723,7 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 
 		case DIALOG_EarlierTime:
 			dia = new CBTiDialogFragment();
+			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_EarlierQuestion), cData21c.iEarliermin, mEarlierTimePickerListener, getFragmentManager());
 			break;
 //			tp = new TimePickerDialog(getSherlockActivity(), mEarlierTimePickerListener, cData21c.iEarliermin / 60, cData21c.iEarliermin % 60, true);
