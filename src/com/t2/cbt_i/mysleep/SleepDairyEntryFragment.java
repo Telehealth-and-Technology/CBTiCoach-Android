@@ -706,6 +706,7 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 
 		case DIALOG_TATime:
 			dia = new CBTiDialogFragment();
+			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_TAQuestion), cData21c.iTAmin, mTATimePickerListener, getFragmentManager());
 			break;
 //			tp = new TimePickerDialog(getSherlockActivity(), mTATimePickerListener, cData21c.iTAmin / 60, cData21c.iTAmin % 60, true);

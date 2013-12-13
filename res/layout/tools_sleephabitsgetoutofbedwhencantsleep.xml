@@ -1,874 +1,884 @@
-<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
     android:orientation="vertical" >
 
-    <!-- middle buttons -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:fillViewport="true"
+        android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/s_34c1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_topbar"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/s_ActivitiesfortheMiddleoftheNight"
+            android:textColor="@color/tbText"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/llAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="20dp"
-                android:gravity="center_vertical"
-                android:text="@string/s_34c1"
-                android:textSize="15dp" />
-
-			<TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bg_topbar"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="@string/s_ActivitiesfortheMiddleoftheNight"
-                android:textColor="@color/tbText"
-                android:textSize="20dp" />
+            <!-- start #1 -->
 
             <LinearLayout
-                android:id="@+id/llAll"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:measureWithLargestChild="true"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="vertical" >
-                
-               <!-- start #1 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep01"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-                        
-                   		<TextView
-                            android:id="@+id/tCantSleep01"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep01"  
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep01"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-
-                </LinearLayout>
-                <!-- end #1 -->
-
-
-                <!-- start #2 -->
 
                 <LinearLayout
+                    android:id="@+id/llCantSleep01"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
 
-                    <LinearLayout
-                        android:id="@+id/llCantSleep02"
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/tCantSleep01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep01"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep01"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep02"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep02"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep02"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
-                <!-- end #2 -->
 
-
-                <!-- start #3 -->
-
-                <LinearLayout
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep03"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep03"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep03"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep03"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #3 -->
-
-
-                <!-- start #4 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep04"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep04"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep04"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep04"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #4 -->
-
-
-                <!-- start #5 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep05"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep05"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep05"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep05"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #5 -->
-
-
-                <!-- start #6 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep06"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep06"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep06"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep06"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #6 -->
-
-
-                <!-- start #7 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep07"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep07"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep07"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep07"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #7 -->
-
-
-                <!-- start #8 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep08"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep08"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep08"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep08"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #8 -->
-
-
-                <!-- start #9 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep09"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep09"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep09"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep09"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #9 -->
-
-
-                <!-- start #10 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep10"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep10"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep10"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep10"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #10 -->
-
-
-                <!-- start #11 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep11"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep11"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep11"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep11"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #11 -->
-
-
-                <!-- start #2 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep12"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep12"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep12"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep12"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #12 -->
-
-
-                <!-- start #13 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep13"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep13"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep13"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep13"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #13 -->
-
-
-                <!-- start #14 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep14"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep14"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep14"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep14"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #14 -->
-
-
-                <!-- start #15 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep15"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep15"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep15"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep15"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #15 -->
-
-
-                <!-- start #16 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep16"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep16"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep16"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep16"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #16 -->
-
-
-                <!-- start #17 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep17"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep17"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep17"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep17"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #17 -->
-
-
-                <!-- start #18 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep18"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep18"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep18"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep18"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #18 -->
-
-
-                <!-- start #19 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep19"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep19"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep19"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep19"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #19 -->
-
-
-                <!-- start #20 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical" >
-
-                    <LinearLayout
-                        android:id="@+id/llCantSleep20"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-                        <TextView
-                            android:id="@+id/tCantSleep20"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="5"
-                            android:text="@string/s_CantSleep20"
-                            android:textSize="15dp" />
-
-                        <CheckBox
-                            android:id="@+id/cbCantSleep20"
-                            android:button="@drawable/toolsstarcheckbox"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@drawable/bg_line" />
-                </LinearLayout>
-                <!-- end #20 -->
-
-
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-    <!-- middle buttons -->
+            <!-- end #1 -->
 
-</RelativeLayout>
+
+            <!-- start #2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep02"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep02"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #2 -->
+
+
+            <!-- start #3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep03"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep03"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #3 -->
+
+
+            <!-- start #4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep04"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep04"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #4 -->
+
+
+            <!-- start #5 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep05"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep05"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep05"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #5 -->
+
+
+            <!-- start #6 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep06"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep06"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep06"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #6 -->
+
+
+            <!-- start #7 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep07"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep07"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep07"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep07"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #7 -->
+
+
+            <!-- start #8 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep08"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep08"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep08"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #8 -->
+
+
+            <!-- start #9 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep09"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep09"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep09"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep09"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #9 -->
+
+
+            <!-- start #10 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep10"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #10 -->
+
+
+            <!-- start #11 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep11"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #11 -->
+
+
+            <!-- start #2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep12"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #12 -->
+
+
+            <!-- start #13 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep13"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #13 -->
+
+
+            <!-- start #14 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep14"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #14 -->
+
+
+            <!-- start #15 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep15"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #15 -->
+
+
+            <!-- start #16 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep16"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #16 -->
+
+
+            <!-- start #17 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep17"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep17"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #17 -->
+
+
+            <!-- start #18 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep18"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep18"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #18 -->
+
+
+            <!-- start #19 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep19"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep19"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #19 -->
+
+
+            <!-- start #20 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llCantSleep20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tCantSleep20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:minLines="2"
+                        android:text="@string/s_CantSleep20"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbCantSleep20"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/toolsstarcheckbox" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_line" />
+            </LinearLayout>
+            <!-- end #20 -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

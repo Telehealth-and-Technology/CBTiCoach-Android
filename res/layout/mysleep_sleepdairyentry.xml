@@ -45,8 +45,8 @@
 
                     <ImageButton
                         android:id="@+id/bSleepDiaryEntryTimeInfo"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:contentDescription="@string/s_InfoButton"
@@ -127,8 +127,8 @@
 
                         <ImageButton
                             android:id="@+id/bTNTInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -200,8 +200,8 @@
 
                         <ImageButton
                             android:id="@+id/bBTInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -273,8 +273,8 @@
 
                         <ImageButton
                             android:id="@+id/bSIATInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -346,8 +346,8 @@
 
                         <ImageButton
                             android:id="@+id/bTTSInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -420,8 +420,8 @@
 
                         <ImageButton
                             android:id="@+id/bTimesAwakeInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -493,8 +493,8 @@
 
                         <ImageButton
                             android:id="@+id/bTAInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -566,8 +566,8 @@
 
                         <ImageButton
                             android:id="@+id/bWUTInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -650,8 +650,8 @@
 
                         <ImageButton
                             android:id="@+id/bEarlierInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -723,8 +723,8 @@
 
                         <ImageButton
                             android:id="@+id/bWTInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -797,8 +797,8 @@
 
                         <ImageButton
                             android:id="@+id/bSleepQualityInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
@@ -871,8 +871,8 @@
 
                         <ImageButton
                             android:id="@+id/bCommentInfo"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
