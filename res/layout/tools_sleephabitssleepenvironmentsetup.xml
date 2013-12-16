@@ -4,37 +4,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <!--   middle buttons -->
-    <LinearLayout 
-       	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:orientation="vertical"
-    	android:background="@drawable/bg_bggraystriped" >
-    	
-       <ScrollView
-   			android:layout_width="match_parent"
-    	    android:layout_height="match_parent" 
-    	    android:fillViewport="true"
-   		    >
-    
-    	    <LinearLayout
-    	        android:layout_width="match_parent"
-    	        android:layout_height="wrap_content" 
-	    		android:orientation="vertical"
-	    		>
-	    		
-    	        <TextView
-    	            android:layout_width="match_parent"
-    	            android:layout_height="wrap_content"
-    	            android:layout_gravity="center_vertical"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="20dp"
-    	            android:gravity="center_vertical"
-    	            android:text="@string/s_34f"
-    	            android:textSize="15dp" />
-    	        
-    	        <!-- Low Noise level -->
+    <!-- middle buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/s_34f"
+                    android:textSize="15dp" />
+
+                <!-- Low Noise level -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -57,10 +57,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_LowNoiseLevelCheckbox"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes" 
-                            android:contentDescription="@string/s_LowNoiseLevelCheckbox"/>
+                            android:textOn="Yes" />
 
                         <TextView
                             android:id="@+id/tStopCaffeineReminder"
@@ -73,12 +73,13 @@
                             android:text="@string/s_LowNoiseLevel"
                             android:textColor="#1c2739"
                             android:textSize="15dp" />
-
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Low Noise level -->
-                
+
+
                 <!-- Rook is dark -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -100,11 +101,11 @@
                             android:id="@+id/bRoomisdark"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_RoomIsDarkCheckbox"
+                            android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes"
-                            android:contentDescription="@string/s_RoomIsDarkCheckbox" />
+                            android:textOn="Yes" />
 
                         <TextView
                             android:id="@+id/tStopCaffeineReminder"
@@ -117,13 +118,13 @@
                             android:text="@string/s_Roomisdark"
                             android:textColor="#1c2739"
                             android:textSize="15dp" />
-
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Room is dark -->
-                
-                
+
+
                 <!-- Temperature is comfortable -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,10 +147,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_TemperatureisComfortableCheckbox"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes"
-                            android:contentDescription="@string/s_TemperatureisComfortableCheckbox" />
+                            android:textOn="Yes" />
 
                         <TextView
                             android:id="@+id/tStopCaffeineReminder"
@@ -162,13 +163,13 @@
                             android:text="@string/s_Temperatureiscomfortable"
                             android:textColor="#1c2739"
                             android:textSize="15dp" />
-
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Temperature is comfortable -->
-                
-                
+
+
                 <!-- Sleep is undisturbed by others -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -191,10 +192,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_SleepIsUndisturbedByOthersCheckbox"
                             android:gravity="center"
                             android:textOff="No"
-                            android:textOn="Yes"
-                            android:contentDescription="@string/s_SleepIsUndisturbedByOthersCheckbox" />
+                            android:textOn="Yes" />
 
                         <TextView
                             android:id="@+id/tStopCaffeineReminder"
@@ -207,12 +208,13 @@
                             android:text="@string/s_Sleepisundisturbedbyothers"
                             android:textColor="#1c2739"
                             android:textSize="15dp" />
-
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Sleep is undisturbed by others -->
-                
+
+
                 <!-- Reserve my bed for sleep/sex -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -235,10 +237,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_ReserveMyBedForSleepSexCheckbox"
                             android:gravity="center"
-                           android:textOff="No"
-                            android:textOn="Yes"
-                            android:contentDescription="@string/s_ReserveMyBedForSleepSexCheckbox" />
+                            android:textOff="No"
+                            android:textOn="Yes" />
 
                         <TextView
                             android:id="@+id/tStopCaffeineReminder"
@@ -251,16 +253,13 @@
                             android:text="@string/s_Reservemybedforsleepsex"
                             android:textColor="#1c2739"
                             android:textSize="15dp" />
-
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Reserve my bed for sleep/sex -->
 
-</LinearLayout>
-    	    
-       	</ScrollView>
-    	
-   	</LinearLayout>
-   	<!--   middle buttons -->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
 
 </RelativeLayout>

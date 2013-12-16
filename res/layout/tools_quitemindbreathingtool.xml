@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <!-- middle buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,18 +30,18 @@
                     android:id="@+id/iImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentTop="true"
                     android:layout_above="@+id/bPlayMe"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
                     android:src="@drawable/buddy_toolsbreathingtool" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:focusable="false"
                     android:layout_centerHorizontal="true"
                     android:layout_centerInParent="false"
-                    android:layout_marginTop="20dp" >
+                    android:layout_marginTop="20dp"
+                    android:focusable="false" >
 
                     <ImageView
                         android:id="@+id/iImageOverlay"
@@ -54,13 +55,10 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:background="@android:color/transparent"
+                        android:contentDescription=" "
                         android:gravity="center"
-                        android:textSize="80dp"
                         android:textColor="@android:color/white"
-                        android:contentDescription=" " />
-                    
-                    
-                    
+                        android:textSize="80dp" />
                 </RelativeLayout>
 
                 <TextView
@@ -70,9 +68,9 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="70dp"
                     android:background="@android:color/transparent"
+                    android:contentDescription=" "
                     android:gravity="bottom|center_horizontal"
-                    android:padding="18dp"
-                    android:contentDescription=" " />
+                    android:padding="18dp" />
 
                 <Button
                     android:id="@+id/bPlayMe"
@@ -83,14 +81,14 @@
                     android:layout_marginRight="60dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_PlayButton"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_Play" 
-                    android:contentDescription="@string/s_PlayButton" />
+                    android:text="@string/s_Play" />
 
                 <VideoView
                     android:id="@+id/video"

@@ -69,7 +69,7 @@
                  	android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_whitebutton"
-                    android:contentDescription="@string/s_PlayButton"
+                    android:contentDescription="@string/s_Pause"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"

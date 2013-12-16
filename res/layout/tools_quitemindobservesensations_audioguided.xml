@@ -40,8 +40,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_alignParentBottom="true" >
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp" >
 
         <Button
             android:id="@+id/bPlayMe"
@@ -70,7 +70,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/bg_whitebutton"
-            android:contentDescription="@string/s_PlayButton"
+            android:contentDescription="@string/s_Pause"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingBottom="5dp"

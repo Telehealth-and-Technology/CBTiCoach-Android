@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <!-- middle buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,9 +30,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_TakeAssessmentButton"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" 
-                    android:contentDescription="@string/s_TakeAssessmentButton" />
+                    android:orientation="horizontal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -41,8 +42,8 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:layout_margin="10dp"
+                        android:layout_weight="2"
                         android:src="@drawable/buddy_toolstakeassessment" />
 
                     <TextView
@@ -50,31 +51,30 @@
                         android:layout_height="match_parent"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
-                        android:textSize="20dp"
-                        android:textStyle="bold" 
                         android:text="@string/s_TakeAssessment"
-                        />
-
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
             <!-- end each button 1 -->
 
 
             <!-- each button 2 -->
-			<RelativeLayout
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
-                android:layout_margin="15dp" >
+                android:layout_margin="15dp"
+                android:layout_weight="2" >
 
                 <Button
                     android:id="@+id/bResultsHistory"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_ResultsHistoryButton"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:contentDescription="@string/s_ResultsHistoryButton"  />
+                    android:orientation="horizontal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -93,9 +93,9 @@
                         android:layout_height="match_parent"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
+                        android:text="@string/s_ResultsHistory"
                         android:textSize="20dp"
-                        android:textStyle="bold" 
-                        android:text="@string/s_ResultsHistory"  />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
             <!-- end each button 2 -->
@@ -104,18 +104,19 @@
             <!-- each button 3 -->
 
             <RelativeLayout
-               android:layout_width="match_parent"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
-                android:layout_margin="15dp" >
+                android:layout_margin="15dp"
+                android:layout_weight="2" >
+
                 <Button
                     android:id="@+id/bScheduleAssessments"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_ScheduleAssessmentsButton"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:contentDescription="@string/s_ScheduleAssessmentsButton"  />
+                    android:orientation="horizontal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -134,9 +135,9 @@
                         android:layout_height="match_parent"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
+                        android:text="@string/s_ScheduleAssessments"
                         android:textSize="20dp"
-                        android:textStyle="bold" 
-                        android:text="@string/s_ScheduleAssessments" />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
             <!-- end each button 3 -->

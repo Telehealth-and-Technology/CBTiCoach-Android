@@ -30,6 +30,15 @@ public class ThoughtActivity extends CBTi_BaseActivity
 
 		Bundle b = getIntent().getExtras();
 		bIsSleep = b.getBoolean("THINKABOUT");
+		
+		if(bIsSleep)
+		{
+			this.setTitle(R.string.s_WorriedAboutSleep);
+		}
+		else
+		{
+			this.setTitle(R.string.s_WorriedAboutTrauma);			
+		}
 
 		View v = findViewById(R.id.lBamboo);
 		v.getBackground().setAlpha(45);

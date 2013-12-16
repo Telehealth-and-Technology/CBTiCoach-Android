@@ -66,6 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_gravity="right"
+                        android:contentDescription="@string/s_DailyCaffeineDrinkLimit"
                         android:drawSelectorOnTop="true"
                         android:orientation="horizontal" />
                 </RelativeLayout>

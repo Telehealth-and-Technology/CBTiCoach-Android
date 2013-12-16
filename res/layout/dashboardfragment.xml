@@ -1,180 +1,168 @@
-<RelativeLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical" >
 
-    <include layout="@layout/prescriptionbar"/>
-       	
-   	<!--   middle buttons -->
+    <include layout="@layout/prescriptionbar" />
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_above="@+id/rlpb"
-      
-       android:background="@drawable/bg_bggraystriped"
-       android:orientation="vertical" >
-    
-    	        <LinearLayout
-	        		android:layout_width="fill_parent"
-	        		android:layout_height="0dp"
-	        		android:layout_weight="1"
-	        		android:layout_margin="15dp"
-	        		android:gravity="center_horizontal"
-	        		>
-			       
-    	            <RelativeLayout 
-    	                android:layout_height="match_parent"
-			            android:layout_width="0dp"
-			            android:layout_weight="1"
-			            android:layout_marginRight="5dp"
-    	                >
-			        	<Button
-			            	android:id="@+id/b10mysleep"
-			            	android:layout_height="match_parent"
-			            	android:layout_width="match_parent"
-			            	android:layout_marginRight="5dp"
-			            	android:background="@drawable/bg_whitebutton"
-			            	android:contentDescription="@string/s_MySleepButton" />
+    <!-- middle buttons -->
 
-			        	<ImageView
-			        	    android:id="@+id/ivmysleep"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:gravity="center"
-			        	    android:layout_margin="15dp"
-			        	    android:src="@drawable/buddy_homemysleep" />
-			        	    
-			        	<TextView
-			        	    android:id="@+id/t10mysleep"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:layout_marginBottom="10dp"
-			        	    android:gravity="bottom|center_horizontal"
-			        	    android:text="@string/s_MySleep"
-			        	    android:textSize="20sp" 
-			        	    android:textStyle="bold"/>
-			        	
-			        </RelativeLayout>
-			        
-    	            
-    	            <RelativeLayout 
-    	                android:layout_height="match_parent"
-			            android:layout_width="0dp"
-			            android:layout_weight="1"
-			            android:layout_marginLeft="5dp"
-    	                >
-			        	<Button
-			            	android:id="@+id/b10tools"
-			            	android:layout_height="match_parent"
-			            	android:layout_width="match_parent"
-			            	android:layout_marginRight="5dp"
-			            	android:background="@drawable/bg_whitebutton"
-			            	android:contentDescription="@string/s_ToolsButton"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlpb"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
 
-			        	<ImageView
-			        	    android:id="@+id/ivtools"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:gravity="center"
-			        	    android:layout_margin="15dp"
-			        	    android:src="@drawable/buddy_hometools" />
-			        	    
-			        	<TextView
-			        	    android:id="@+id/t10tools"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:layout_marginBottom="10dp"
-			        	    android:gravity="bottom|center_horizontal"
-			        	    android:text="@string/s_Tools"
-			        	    android:textSize="20sp"
-			        	    android:textStyle="bold" />
-			        	
-			        </RelativeLayout>				        
-			    </LinearLayout>
-	    		
-    	        <LinearLayout
-	        		android:layout_width="fill_parent"
-	        		android:layout_height="0dp"
-	        		android:layout_weight="1"
-	        		android:layout_margin="15dp"
-	        		android:gravity="center_horizontal"
-	        		>
-			       
-    	            <RelativeLayout 
-    	                android:layout_height="match_parent"
-			            android:layout_width="0dp"
-			            android:layout_weight="1"
-			            android:layout_marginRight="5dp"
-    	                >
-			        	<Button
-			            	android:id="@+id/b10learn"
-			            	android:layout_height="match_parent"
-			            	android:layout_width="match_parent"
-			            	android:layout_marginRight="5dp"
-			            	android:background="@drawable/bg_whitebutton"
-			            	android:contentDescription="@string/s_LearnButton"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
 
-			        	<ImageView
-			        	    android:id="@+id/ivmysleep"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:gravity="center"
-			        	    android:layout_margin="15dp"
-			        	    android:src="@drawable/buddy_homelearn" />
-			        	    
-			        	<TextView
-			        	    android:id="@+id/t10learn"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:layout_marginBottom="10dp"
-			        	    android:gravity="bottom|center_horizontal"
-			        	    android:text="@string/s_Learn"
-			        	    android:textSize="20sp" 
-			        	    android:textStyle="bold" />
-			        	
-			        </RelativeLayout>
-			        
-    	            
-    	            <RelativeLayout 
-    	                android:layout_height="match_parent"
-			            android:layout_width="0dp"
-			            android:layout_weight="1"
-			            android:layout_marginLeft="5dp"
-    	                >
-			        	<Button
-			            	android:id="@+id/b10reminders"
-			            	android:layout_height="match_parent"
-			            	android:layout_width="match_parent"
-			            	android:layout_marginRight="5dp"
-			            	android:background="@drawable/bg_whitebutton"
-			            	android:contentDescription="@string/s_RemindersButton"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" >
 
-			        	<ImageView
-			        	    android:id="@+id/ivreminders"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:gravity="center"
-			        	    android:layout_margin="15dp"
-			        	    android:src="@drawable/buddy_homereminder" />
-			        	    
-			        	<TextView
-			        	    android:id="@+id/t10reminders"
-			        	    android:layout_width="match_parent"
-			        	    android:layout_height="match_parent"
-			        	    android:layout_marginBottom="10dp"
-			        	    android:gravity="bottom|center_horizontal"
-			        	    android:text="@string/s_Reminders"
-			        	    android:textSize="20dp" 
-			        	    android:textStyle="bold"/>
-			        	
-			        </RelativeLayout>				        
-			    </LinearLayout>
-	
-   	</LinearLayout>
-   	<!--   middle buttons -->
+                <Button
+                    android:id="@+id/b10mysleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_MySleepButton" />
+
+                <ImageView
+                    android:id="@+id/ivmysleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:src="@drawable/buddy_homemysleep" />
+
+                <TextView
+                    android:id="@+id/t10mysleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/s_MySleep"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/b10tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_ToolsButton" />
+
+                <ImageView
+                    android:id="@+id/ivtools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:src="@drawable/buddy_hometools" />
+
+                <TextView
+                    android:id="@+id/t10tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/s_Tools"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/b10learn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_LearnButton" />
+
+                <ImageView
+                    android:id="@+id/ivmysleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:src="@drawable/buddy_homelearn" />
+
+                <TextView
+                    android:id="@+id/t10learn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/s_Learn"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/b10reminders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_RemindersButton" />
+
+                <ImageView
+                    android:id="@+id/ivreminders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:src="@drawable/buddy_homereminder" />
+
+                <TextView
+                    android:id="@+id/t10reminders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/s_Reminders"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- middle buttons -->
 
 </RelativeLayout>

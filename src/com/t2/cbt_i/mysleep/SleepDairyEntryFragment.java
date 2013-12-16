@@ -47,11 +47,11 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
-		
+
 		bNew = getArguments().getBoolean("NEW");
 		iPos = getArguments().getInt("POS");
-		
-		if(bNew)
+
+		if (bNew)
 			getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_NewEntry));
 		else
 			getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_SleepDairyEntry));
@@ -83,7 +83,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 				if (((ToggleButton) getView().findViewById(R.id.bTNT)).isChecked())
 				{
 					((LinearLayout) getView().findViewById(R.id.llTNT)).setVisibility(View.VISIBLE);
-					((TextView) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", cData21c.iTNTmin / 60, cData21c.iTNTmin % 60));
+					((TextView) (getView().findViewById(R.id.tTNT))).setText(String
+							.format("%d hours: %d minutes", cData21c.iTNTmin / 60, cData21c.iTNTmin % 60));
 				}
 				else
 					((LinearLayout) getView().findViewById(R.id.llTNT)).setVisibility(View.GONE);
@@ -324,13 +325,13 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 						}
 						cData21a.saveData();
 						cData21c.saveData();
-						
+
 						final FragmentManager fm = getFragmentManager();
-					    final FragmentTransaction ft = fm.beginTransaction();					    
-					    ft.addToBackStack(null);
-					    ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
-				        ft.replace(R.id.sleepdairyfragment, new SleepDairyEntryResultsFragment());
-					    ft.commit();
+						final FragmentTransaction ft = fm.beginTransaction();
+						ft.addToBackStack(null);
+						ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
+						ft.replace(R.id.sleepdairyfragment, new SleepDairyEntryResultsFragment());
+						ft.commit();
 					}
 				}
 			}
@@ -341,7 +342,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sTimesAwake);
 		sSpin.setVisibility(View.VISIBLE);
-		ArrayAdapter<CharSequence> aa = ArrayAdapter.createFromResource(getSherlockActivity(), R.array.NUMPICKER, android.R.layout.simple_spinner_dropdown_item);
+		ArrayAdapter<CharSequence> aa = ArrayAdapter
+				.createFromResource(getSherlockActivity(), R.array.NUMPICKER, android.R.layout.simple_spinner_dropdown_item);
 		sSpin.setAdapter(aa);
 		sSpin.setSelection(cData21c.iTimesAwake, true);
 		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
@@ -360,10 +362,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	}
 
 	/**
-	 * A callback listener that implements the
-	 * {@link android.widget.AdapterView.OnItemSelectedListener} interface For
-	 * views based on adapters, this interface defines the methods available
-	 * when the user selects an item from the View.
+	 * A callback listener that implements the {@link android.widget.AdapterView.OnItemSelectedListener} interface For views based on adapters, this interface
+	 * defines the methods available when the user selects an item from the View.
 	 * 
 	 */
 	public class myOnItemSelectedListener implements OnItemSelectedListener
@@ -382,7 +382,10 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 				((TextView) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", cData21c.iTAmin / 60, cData21c.iTAmin % 60)));
 			}
 			else
-				((LinearLayout) getView().findViewById(R.id.llTA)).setVisibility(View.GONE);
+			{
+				if (getView() != null)
+					((LinearLayout) getView().findViewById(R.id.llTA)).setVisibility(View.GONE);
+			}
 		}
 
 		@Override
@@ -392,10 +395,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	}
 
 	/**
-	 * A callback listener that implements the
-	 * {@link android.widget.AdapterView.OnItemSelectedListener} interface For
-	 * views based on adapters, this interface defines the methods available
-	 * when the user selects an item from the View.
+	 * A callback listener that implements the {@link android.widget.AdapterView.OnItemSelectedListener} interface For views based on adapters, this interface
+	 * defines the methods available when the user selects an item from the View.
 	 * 
 	 */
 	public class myOnSQItemSelectedListener implements OnItemSelectedListener
@@ -477,7 +478,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 		if (((ToggleButton) getView().findViewById(R.id.bEarlier)).isChecked())
 		{
 			((LinearLayout) getView().findViewById(R.id.llEarlier)).setVisibility(View.VISIBLE);
-			((TextView) (getView().findViewById(R.id.tEarlier))).setText(String.format("%d hours: %d minutes", cData21c.iEarliermin / 60, cData21c.iEarliermin % 60));
+			((TextView) (getView().findViewById(R.id.tEarlier))).setText(String.format("%d hours: %d minutes", cData21c.iEarliermin / 60,
+					cData21c.iEarliermin % 60));
 		}
 		else
 			((LinearLayout) getView().findViewById(R.id.llEarlier)).setVisibility(View.GONE);
@@ -525,12 +527,8 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	private static final int DIALOG_TSTWARN2 = 41;
 
 	/*
-	 * @Override protected void onPrepareDialog(int id, Dialog dialog) {
-	 * super.onPrepareDialog(id, dialog);
-	 * 
-	 * switch(id) { case DATE_DIALOG_ID: Calendar c = Calendar.getInstance();
-	 * if( cData21c.lSDETime != 0 ) c.setTimeInMillis(cData21c.lSDETime);
-	 * ((DatePickerDialog) dialog).updateDate(c.get(Calendar.YEAR),
+	 * @Override protected void onPrepareDialog(int id, Dialog dialog) { super.onPrepareDialog(id, dialog); switch(id) { case DATE_DIALOG_ID: Calendar c =
+	 * Calendar.getInstance(); if( cData21c.lSDETime != 0 ) c.setTimeInMillis(cData21c.lSDETime); ((DatePickerDialog) dialog).updateDate(c.get(Calendar.YEAR),
 	 * c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH)); break; } }
 	 */
 
@@ -547,8 +545,9 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 				cc.setTimeInMillis(cData21c.lSDETime);
 			dia.showDateDialog(cc.get(Calendar.YEAR), cc.get(Calendar.MONTH), cc.get(Calendar.DAY_OF_MONTH), mDatePickerListener, getFragmentManager());
 			break;
-//			new DatePickerDialog(getSherlockActivity(), mDatePickerListener, cc.get(Calendar.YEAR), cc.get(Calendar.MONTH), cc.get(Calendar.DAY_OF_MONTH)).show();
-//			break;
+		// new DatePickerDialog(getSherlockActivity(), mDatePickerListener, cc.get(Calendar.YEAR), cc.get(Calendar.MONTH),
+		// cc.get(Calendar.DAY_OF_MONTH)).show();
+		// break;
 
 		case DIALOG_SDETimeInfo:
 			builder = new AlertDialog.Builder(getSherlockActivity());
@@ -678,64 +677,64 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			int iTime = timeFrom4pm(cData21c.iBTmin);
 			dia.showTimeDialog(iTime, mBTTimePickerListener, getFragmentManager());
 			break;
-			//return new TimePickerDialog(getSherlockActivity(), mBTTimePickerListener, iTime / 60, iTime % 60, false);
+		// return new TimePickerDialog(getSherlockActivity(), mBTTimePickerListener, iTime / 60, iTime % 60, false);
 
 		case DIALOG_SIATTime:
 			dia = new CBTiDialogFragment();
 			iTime = timeFrom4pm(cData21c.iSIATmin);
 			dia.showTimeDialog(iTime, mSIATTimePickerListener, getFragmentManager());
 			break;
-			//return new TimePickerDialog(getSherlockActivity(), mSIATTimePickerListener, iTime / 60, iTime % 60, false);
+		// return new TimePickerDialog(getSherlockActivity(), mSIATTimePickerListener, iTime / 60, iTime % 60, false);
 
 		case DIALOG_TNTTime:
 			dia = new CBTiDialogFragment();
 			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_TNTQuestion), cData21c.iTNTmin, mTNTTimePickerListener, getFragmentManager());
 			break;
-//			TimePickerDialog tp = new TimePickerDialog(getSherlockActivity(), mTNTTimePickerListener, cData21c.iTNTmin / 60, cData21c.iTNTmin % 60, true);
-//			tp.setTitle(R.string.s_TNTQuestion);
-//			return tp;
+		// TimePickerDialog tp = new TimePickerDialog(getSherlockActivity(), mTNTTimePickerListener, cData21c.iTNTmin / 60, cData21c.iTNTmin % 60, true);
+		// tp.setTitle(R.string.s_TNTQuestion);
+		// return tp;
 
 		case DIALOG_TTSTime:
 			dia = new CBTiDialogFragment();
 			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_TTSQuestion), cData21c.iTTSmin, mTTSTimePickerListener, getFragmentManager());
 			break;
-//			tp = new TimePickerDialog(getSherlockActivity(), mTTSTimePickerListener, cData21c.iTTSmin / 60, cData21c.iTTSmin % 60, true);
-//			tp.setTitle(R.string.s_TTSQuestion);
-//			return tp;
+		// tp = new TimePickerDialog(getSherlockActivity(), mTTSTimePickerListener, cData21c.iTTSmin / 60, cData21c.iTTSmin % 60, true);
+		// tp.setTitle(R.string.s_TTSQuestion);
+		// return tp;
 
 		case DIALOG_TATime:
 			dia = new CBTiDialogFragment();
 			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_TAQuestion), cData21c.iTAmin, mTATimePickerListener, getFragmentManager());
 			break;
-//			tp = new TimePickerDialog(getSherlockActivity(), mTATimePickerListener, cData21c.iTAmin / 60, cData21c.iTAmin % 60, true);
-//			tp.setTitle(R.string.s_TAQuestion);
-//			return tp;
+		// tp = new TimePickerDialog(getSherlockActivity(), mTATimePickerListener, cData21c.iTAmin / 60, cData21c.iTAmin % 60, true);
+		// tp.setTitle(R.string.s_TAQuestion);
+		// return tp;
 
 		case DIALOG_WUTTime:
 			dia = new CBTiDialogFragment();
 			iTime = timeFrom4pm(cData21c.iWUTmin);
 			dia.showTimeDialog(iTime, mWUTTimePickerListener, getFragmentManager());
 			break;
-//			return new TimePickerDialog(getSherlockActivity(), mWUTTimePickerListener, iTime / 60, iTime % 60, false);
+		// return new TimePickerDialog(getSherlockActivity(), mWUTTimePickerListener, iTime / 60, iTime % 60, false);
 
 		case DIALOG_EarlierTime:
 			dia = new CBTiDialogFragment();
 			dia.set24hourMode(true);
 			dia.showTimeDialogWithTitle(getString(R.string.s_EarlierQuestion), cData21c.iEarliermin, mEarlierTimePickerListener, getFragmentManager());
 			break;
-//			tp = new TimePickerDialog(getSherlockActivity(), mEarlierTimePickerListener, cData21c.iEarliermin / 60, cData21c.iEarliermin % 60, true);
-//			tp.setTitle(R.string.s_EarlierQuestion);
-//			return tp;
+		// tp = new TimePickerDialog(getSherlockActivity(), mEarlierTimePickerListener, cData21c.iEarliermin / 60, cData21c.iEarliermin % 60, true);
+		// tp.setTitle(R.string.s_EarlierQuestion);
+		// return tp;
 
 		case DIALOG_WTTime:
 			dia = new CBTiDialogFragment();
 			iTime = timeFrom4pm(cData21c.iWTmin);
 			dia.showTimeDialog(iTime, mWTTimePickerListener, getFragmentManager());
 			break;
-			//return new TimePickerDialog(getSherlockActivity(), mWTTimePickerListener, iTime / 60, iTime % 60, false);
+		// return new TimePickerDialog(getSherlockActivity(), mWTTimePickerListener, iTime / 60, iTime % 60, false);
 		}
 	}
 
@@ -899,11 +898,11 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 			cData21a.saveData();
 
 			final FragmentManager fm = getFragmentManager();
-		    final FragmentTransaction ft = fm.beginTransaction();					    
-		    ft.addToBackStack(null);
-		    ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
-	        ft.replace(R.id.sleepdairyfragment, new SleepDairyEntryResultsFragment());
-		    ft.commit();
+			final FragmentTransaction ft = fm.beginTransaction();
+			ft.addToBackStack(null);
+			ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
+			ft.replace(R.id.sleepdairyfragment, new SleepDairyEntryResultsFragment());
+			ft.commit();
 		}
 	}
 
@@ -947,7 +946,7 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 	}
 
 	@Override
-	public void getHelp() 
+	public void getHelp()
 	{
 		this.goingToHelp = true;
 	}

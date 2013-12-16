@@ -5,7 +5,7 @@
     android:layout_marginBottom="5dp"
     android:orientation="vertical" >
 
- <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_mysleepcreambackground"
@@ -23,7 +23,8 @@
                 android:orientation="vertical" >
 
                 <!-- ISI screen 1 -->
-				<LinearLayout
+
+                <LinearLayout
                     android:id="@+id/llISI1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -49,7 +50,6 @@
                         android:layout_marginBottom="1dp"
                         android:layout_marginLeft="40dp"
                         android:layout_marginRight="40dp"
-                     
                         android:orientation="vertical"
                         android:padding="10dp" >
 
@@ -65,8 +65,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ10"
                             android:textColor="#1c2739"
-                            android:textSize="15dp"
-                            android:contentDescription="@string/s_NoneCheckbox"  />
+                            android:textSize="15dp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ1"
@@ -80,8 +79,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ11"
                             android:textColor="#1c2739"
-                            android:textSize="15dp"
-                            android:contentDescription="@string/s_MildCheckbox" />
+                            android:textSize="15dp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ2"
@@ -95,8 +93,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ12"
                             android:textColor="#1c2739"
-                            android:textSize="15dp"
-                            android:contentDescription="@string/s_ModerateCheckbox" />
+                            android:textSize="15dp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ3"
@@ -110,8 +107,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ13"
                             android:textColor="#1c2739"
-                            android:textSize="15dp"
-                            android:contentDescription="@string/s_SevereCheckbox" />
+                            android:textSize="15dp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ4"
@@ -124,8 +120,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ14"
                             android:textColor="#1c2739"
-                            android:textSize="15dp"
-                            android:contentDescription="@string/s_VerySevereCheckbox" />
+                            android:textSize="15dp" />
                     </LinearLayout>
                     <!-- end ISI screen 1 -->
                 </LinearLayout>
@@ -145,7 +140,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:text="@string/s_NextQuestion" 
+                    android:text="@string/s_NextQuestion"
                     android:visibility="gone" />
 
                 <Button
@@ -155,6 +150,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_SubmitButton"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:paddingBottom="5dp"
@@ -162,8 +158,7 @@
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
                     android:text="@string/s_Submit"
-                    android:visibility="gone"
-                    android:contentDescription="@string/s_SubmitButton" />
+                    android:visibility="gone" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

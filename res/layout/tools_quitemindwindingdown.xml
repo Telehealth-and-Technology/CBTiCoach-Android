@@ -21,7 +21,8 @@
             android:textSize="15sp" />
 
         <!-- Wind Down Time -->
-        <LinearLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -124,7 +125,7 @@
                         android:id="@+id/cbWind01"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -166,7 +167,7 @@
                         android:id="@+id/cbWind02"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -208,7 +209,7 @@
                         android:id="@+id/cbWind03"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -250,7 +251,7 @@
                         android:id="@+id/cbWind04"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -292,7 +293,7 @@
                         android:id="@+id/cbWind05"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -334,7 +335,7 @@
                         android:id="@+id/cbWind06"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -376,7 +377,7 @@
                         android:id="@+id/cbWind07"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -418,7 +419,7 @@
                         android:id="@+id/cbWind08"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -460,7 +461,7 @@
                         android:id="@+id/cbWind09"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -502,7 +503,7 @@
                         android:id="@+id/cbWind10"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -544,7 +545,7 @@
                         android:id="@+id/cbWind11"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -586,7 +587,7 @@
                         android:id="@+id/cbWind12"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -628,7 +629,7 @@
                         android:id="@+id/cbWind13"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -670,7 +671,7 @@
                         android:id="@+id/cbWind14"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -712,7 +713,7 @@
                         android:id="@+id/cbWind15"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -754,7 +755,7 @@
                         android:id="@+id/cbWind16"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -796,7 +797,7 @@
                         android:id="@+id/cbWind17"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -838,7 +839,7 @@
                         android:id="@+id/cbWind18"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -880,7 +881,7 @@
                         android:id="@+id/cbWind19"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -922,7 +923,7 @@
                         android:id="@+id/cbWind20"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -964,7 +965,7 @@
                         android:id="@+id/cbWind21"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
@@ -1006,7 +1007,7 @@
                         android:id="@+id/cbWind22"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_weight="1.3"
                         android:button="@drawable/toolsstarcheckbox" />
                 </LinearLayout>
 
