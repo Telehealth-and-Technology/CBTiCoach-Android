@@ -36,7 +36,7 @@ public class QuiteMindObserveThoughtsFragment extends CBTi_BaseFragment
 			public void onClick(View v)
 			{
 				QuiteMindObserveThoughtsContentFragment content = new QuiteMindObserveThoughtsContentFragment();
-				content.iRid = R.id.bAudioGuided;
+				QuiteMindObserveThoughtsContentFragment.iRid = R.id.bAudioGuided;
 				final FragmentManager fm = getFragmentManager();
 			    final FragmentTransaction ft = fm.beginTransaction();
 			    ft.addToBackStack(null);
@@ -53,7 +53,7 @@ public class QuiteMindObserveThoughtsFragment extends CBTi_BaseFragment
 			public void onClick(View v)
 			{
 				QuiteMindObserveThoughtsContentFragment content = new QuiteMindObserveThoughtsContentFragment();
-				content.iRid = R.id.bSelfGuided;
+				QuiteMindObserveThoughtsContentFragment.iRid = R.id.bSelfGuided;
 				final FragmentManager fm = getFragmentManager();
 			    final FragmentTransaction ft = fm.beginTransaction();
 			    ft.addToBackStack(null);
