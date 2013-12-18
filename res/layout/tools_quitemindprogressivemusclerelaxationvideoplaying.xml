@@ -50,7 +50,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp" />
 
-
             <LinearLayout
                 android:id="@+id/mediacontrol"
                 android:layout_width="match_parent"
@@ -94,13 +93,14 @@
                     android:paddingTop="5dp"
                     android:text="@string/s_Pause" />
             </LinearLayout>
-            
+
             <TextView
                 android:id="@+id/caption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/mediacontrol"
                 android:background="@android:color/transparent"
+                android:contentDescription="@string/blankcontentdescription"
                 android:gravity="bottom|center_horizontal"
                 android:padding="18dp"
                 android:textColor="@android:color/white" />

@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/blankcontentdescription"
     android:orientation="vertical" >
 
     <!-- middle buttons -->
@@ -10,27 +11,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_bggraystriped"
-        android:orientation="vertical"  >
+        android:orientation="vertical" >
 
         <!-- each button 1 -->
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp" >
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
 
             <Button
                 android:id="@+id/bSleepDiary"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_SleepDiaryButton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" 
-                android:contentDescription="@string/s_SleepDiaryButton" />
+                android:orientation="horizontal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,18 +41,18 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_margin="6dp"
+                    android:layout_weight="2"
                     android:src="@drawable/buddy_mysleepsleepdiary" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
                     android:layout_weight="4"
+                    android:gravity="center_vertical"
                     android:text="@string/s_SleepDiary"
-                    android:textStyle="bold" 
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
         <!-- end each button -->
@@ -62,20 +63,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp" >
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
 
             <Button
                 android:id="@+id/bUpdateSleepPrescription"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_UpdateSleepPrescriptionButton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" 
-                android:contentDescription="@string/s_UpdateSleepPrescriptionButton" />
+                android:orientation="horizontal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,8 +86,8 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_margin="6dp"
+                    android:layout_weight="2"
                     android:src="@drawable/buddy_mysleepupdatesleepprescription" />
 
                 <TextView
@@ -97,7 +98,6 @@
                     android:text="@string/s_UpdateSleepPrescription"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-
             </LinearLayout>
         </RelativeLayout>
         <!-- end each button -->
@@ -107,42 +107,42 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp" >
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
 
             <Button
                 android:id="@+id/bINeedMoreSleep"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_INeedMoreSleepButton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" 
-                android:contentDescription="@string/s_INeedMoreSleepButton" />
+                android:orientation="horizontal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal" >
-                
+
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_margin="6dp"
+                    android:layout_weight="2"
                     android:src="@drawable/buddy_mysleepineedmoresleep" />
 
                 <TextView
-                   android:layout_width="0dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
                     android:layout_weight="4"
+                    android:gravity="center_vertical"
                     android:text="@string/s_INeedMoreSleep"
-                    android:textStyle="bold" 
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
         <!-- end each button -->
@@ -152,42 +152,42 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp" >
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
 
             <Button
                 android:id="@+id/bAssessment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_whitebutton"
+                android:contentDescription="@string/s_AssessmentButton"
                 android:gravity="center_vertical"
-                android:orientation="horizontal" 
-                android:contentDescription="@string/s_AssessmentButton" />
+                android:orientation="horizontal" />
 
             <LinearLayout
-               android:layout_width="match_parent"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal" >
 
                 <ImageView
-                   	android:layout_width="0dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_margin="6dp"
+                    android:layout_weight="2"
                     android:src="@drawable/buddy_mysleepassessment" />
 
                 <TextView
-                   android:layout_width="0dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
                     android:layout_weight="4"
+                    android:gravity="center_vertical"
                     android:text="@string/s_Assessment"
-                    android:textStyle="bold" 
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
         <!-- end each button -->

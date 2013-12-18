@@ -30,7 +30,7 @@ public class CBTi_BaseActivity extends SherlockFragmentActivity
 	{
 		super.onCreate(arg0);
 		getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_topbar));
-		getSupportActionBar().setHomeButtonEnabled(true);
+//		getSupportActionBar().setHomeButtonEnabled(true);
 	}
 
 	@Override

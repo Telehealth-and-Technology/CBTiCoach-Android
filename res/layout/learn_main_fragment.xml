@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/blankcontentdescription"
     android:orientation="vertical" >
 
     <!-- middle buttons -->
@@ -19,6 +20,7 @@
             android:orientation="vertical" >
 
             <!-- each button 1 -->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -59,12 +61,13 @@
             </RelativeLayout>
             <!-- end each button 1 -->
 
-			<RelativeLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
             <!-- each button 2 -->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -104,12 +107,13 @@
             </RelativeLayout>
             <!-- end each button 2 -->
 
-			<RelativeLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
             <!-- each button 3 -->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

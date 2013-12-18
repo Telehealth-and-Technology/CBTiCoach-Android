@@ -54,7 +54,7 @@ public class SleepDairyEntryFragment extends CBTi_BaseFragment
 		if (bNew)
 			getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_NewEntry));
 		else
-			getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_SleepDairyEntry));
+			getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_SleepDiaryEntry));
 
 		((Button) getView().findViewById(R.id.bSleepDiaryEntryTime)).setOnClickListener(new View.OnClickListener()
 		{

@@ -2,9 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/blankcontentdescription"
     android:orientation="vertical" >
 
-    <include layout="@layout/prescriptionbar" />
+    <include
+        layout="@layout/prescriptionbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:contentDescription="@string/sleepprescriptiondescription" />
 
     <!-- middle buttons -->
 

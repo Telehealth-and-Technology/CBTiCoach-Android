@@ -127,27 +127,6 @@ public class SleepHabitsGetOutOfBedWhenCantSleepData
 		((TextView) c.findViewById(R.id.tCantSleep18)).setText(iID[iMap[17]]);
 		((TextView) c.findViewById(R.id.tCantSleep19)).setText(iID[iMap[18]]);
 		((TextView) c.findViewById(R.id.tCantSleep20)).setText(iID[iMap[19]]);
-
-		((CheckBox) c.findViewById(R.id.cbCantSleep01)).setContentDescription(c.getString(iID[iMap[0]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep02)).setContentDescription(c.getString(iID[iMap[1]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep03)).setContentDescription(c.getString(iID[iMap[2]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep04)).setContentDescription(c.getString(iID[iMap[3]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep05)).setContentDescription(c.getString(iID[iMap[4]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep06)).setContentDescription(c.getString(iID[iMap[5]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep07)).setContentDescription(c.getString(iID[iMap[6]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep08)).setContentDescription(c.getString(iID[iMap[7]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep09)).setContentDescription(c.getString(iID[iMap[8]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep10)).setContentDescription(c.getString(iID[iMap[9]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep11)).setContentDescription(c.getString(iID[iMap[10]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep12)).setContentDescription(c.getString(iID[iMap[11]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep13)).setContentDescription(c.getString(iID[iMap[12]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep14)).setContentDescription(c.getString(iID[iMap[13]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep15)).setContentDescription(c.getString(iID[iMap[14]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep16)).setContentDescription(c.getString(iID[iMap[15]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep17)).setContentDescription(c.getString(iID[iMap[16]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep18)).setContentDescription(c.getString(iID[iMap[17]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep19)).setContentDescription(c.getString(iID[iMap[18]]) + " checkbox)");
-		((CheckBox) c.findViewById(R.id.cbCantSleep20)).setContentDescription(c.getString(iID[iMap[19]]) + " checkbox)");
 	}
 
 	private void reOrderMap()

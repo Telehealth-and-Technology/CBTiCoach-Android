@@ -61,6 +61,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut01"
                         android:minLines="2"
                         android:text="@string/s_GetOut01"
                         android:textSize="15sp" />
@@ -70,7 +71,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut01" />
                 </LinearLayout>
 
                 <View
@@ -103,6 +105,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut02"
                         android:minLines="2"
                         android:text="@string/s_GetOut02"
                         android:textSize="15sp" />
@@ -112,7 +115,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut02" />
                 </LinearLayout>
 
                 <View
@@ -145,6 +149,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut03"
                         android:minLines="2"
                         android:text="@string/s_GetOut03"
                         android:textSize="15sp" />
@@ -154,7 +159,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut03" />
                 </LinearLayout>
 
                 <View
@@ -187,6 +193,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut04"
                         android:minLines="2"
                         android:text="@string/s_GetOut04"
                         android:textSize="15sp" />
@@ -196,7 +203,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut04" />
                 </LinearLayout>
 
                 <View
@@ -229,6 +237,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut05"
                         android:minLines="2"
                         android:text="@string/s_GetOut05"
                         android:textSize="15sp" />
@@ -238,7 +247,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut05" />
                 </LinearLayout>
 
                 <View
@@ -271,6 +281,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut06"
                         android:minLines="2"
                         android:text="@string/s_GetOut06"
                         android:textSize="15sp" />
@@ -280,7 +291,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut06" />
                 </LinearLayout>
 
                 <View
@@ -313,6 +325,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut07"
                         android:minLines="2"
                         android:text="@string/s_GetOut07"
                         android:textSize="15sp" />
@@ -322,7 +335,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut07" />
                 </LinearLayout>
 
                 <View
@@ -355,6 +369,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut08"
                         android:minLines="2"
                         android:text="@string/s_GetOut08"
                         android:textSize="15sp" />
@@ -364,7 +379,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut08" />
                 </LinearLayout>
 
                 <View
@@ -397,6 +413,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut09"
                         android:minLines="2"
                         android:text="@string/s_GetOut09"
                         android:textSize="15sp" />
@@ -406,7 +423,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut09" />
                 </LinearLayout>
 
                 <View
@@ -439,6 +457,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut10"
                         android:minLines="2"
                         android:text="@string/s_GetOut10"
                         android:textSize="15sp" />
@@ -448,7 +467,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut10" />
                 </LinearLayout>
 
                 <View
@@ -481,6 +501,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut11"
                         android:minLines="2"
                         android:text="@string/s_GetOut11"
                         android:textSize="15sp" />
@@ -490,7 +511,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut11" />
                 </LinearLayout>
 
                 <View
@@ -523,6 +545,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut12"
                         android:minLines="2"
                         android:text="@string/s_GetOut12"
                         android:textSize="15sp" />
@@ -532,7 +555,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut12" />
                 </LinearLayout>
 
                 <View
@@ -565,6 +589,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut13"
                         android:minLines="2"
                         android:text="@string/s_GetOut13"
                         android:textSize="15sp" />
@@ -574,7 +599,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut13" />
                 </LinearLayout>
 
                 <View
@@ -607,6 +633,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut14"
                         android:minLines="2"
                         android:text="@string/s_GetOut14"
                         android:textSize="15sp" />
@@ -616,7 +643,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut14" />
                 </LinearLayout>
 
                 <View
@@ -649,6 +677,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut15"
                         android:minLines="2"
                         android:text="@string/s_GetOut15"
                         android:textSize="15sp" />
@@ -658,7 +687,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut15" />
                 </LinearLayout>
 
                 <View
@@ -691,6 +721,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut16"
                         android:minLines="2"
                         android:text="@string/s_GetOut16"
                         android:textSize="15sp" />
@@ -700,7 +731,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut16" />
                 </LinearLayout>
 
                 <View
@@ -733,6 +765,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut17"
                         android:minLines="2"
                         android:text="@string/s_GetOut17"
                         android:textSize="15sp" />
@@ -742,7 +775,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut17" />
                 </LinearLayout>
 
                 <View
@@ -775,6 +809,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut18"
                         android:minLines="2"
                         android:text="@string/s_GetOut18"
                         android:textSize="15sp" />
@@ -784,7 +819,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut18" />
                 </LinearLayout>
 
                 <View
@@ -817,6 +853,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut19"
                         android:minLines="2"
                         android:text="@string/s_GetOut19"
                         android:textSize="15sp" />
@@ -826,7 +863,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut19" />
                 </LinearLayout>
 
                 <View
@@ -859,6 +897,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
+                        android:contentDescription="@string/s_GetOut20"
                         android:minLines="2"
                         android:text="@string/s_GetOut20"
                         android:textSize="15sp" />
@@ -868,7 +907,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1.3"
-                        android:button="@drawable/toolsstarcheckbox" />
+                        android:button="@drawable/toolsstarcheckbox"
+                        android:contentDescription="@string/s_GetOut20" />
                 </LinearLayout>
 
                 <View
