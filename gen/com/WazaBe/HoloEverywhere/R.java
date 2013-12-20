@@ -837,7 +837,7 @@ public final class R {
 		public static final int buttonPanel = 0x7f070068;
 		public static final int buttonPanelTopDivivder = 0x7f070069;
 		public static final int button_bar = 0x7f070133;
-		public static final int calendar_view = 0x7f070095;
+		public static final int calendar_view = 0x7f070094;
 		public static final int center = 0x7f070018;
 		public static final int center_horizontal = 0x7f070016;
 		public static final int center_vertical = 0x7f070014;
@@ -847,8 +847,8 @@ public final class R {
 		public static final int contentPanel = 0x7f070063;
 		public static final int custom = 0x7f070067;
 		public static final int customPanel = 0x7f070066;
-		public static final int datePicker = 0x7f070090;
-		public static final int day = 0x7f070093;
+		public static final int datePicker = 0x7f07008f;
+		public static final int day = 0x7f070092;
 		public static final int day_names = 0x7f070072;
 		public static final int decrement = 0x7f070032;
 		public static final int dialog = 0x7f070029;
@@ -871,7 +871,7 @@ public final class R {
 		public static final int internalEmpty = 0x7f0700b3;
 		public static final int left = 0x7f070012;
 		public static final int leftSpacer = 0x7f07002e;
-		public static final int left_icon = 0x7f070096;
+		public static final int left_icon = 0x7f070095;
 		public static final int list = 0x7f070073;
 		public static final int listContainer = 0x7f0700b2;
 		public static final int listMode = 0x7f070002;
@@ -879,7 +879,7 @@ public final class R {
 		public static final int message = 0x7f070065;
 		public static final int middle = 0x7f070028;
 		public static final int minute = 0x7f070163;
-		public static final int month = 0x7f070092;
+		public static final int month = 0x7f070091;
 		public static final int month_name = 0x7f070071;
 		public static final int music = 0x7f070025;
 		public static final int next_button = 0x7f070136;
@@ -888,7 +888,7 @@ public final class R {
 		public static final int notification = 0x7f07001f;
 		public static final int numberpicker_input = 0x7f07012b;
 		public static final int parentPanel = 0x7f07005c;
-		public static final int pickers = 0x7f070091;
+		public static final int pickers = 0x7f070090;
 		public static final int prefs = 0x7f070132;
 		public static final int prefs_frame = 0x7f070131;
 		public static final int progress = 0x7f07002b;
@@ -926,7 +926,7 @@ public final class R {
 		public static final int voice = 0x7f070022;
 		public static final int widget_frame = 0x7f07012d;
 		public static final int wrap_content = 0x7f070000;
-		public static final int year = 0x7f070094;
+		public static final int year = 0x7f070093;
 	}
 	public static final class integer {
 		public static final int abs__max_action_buttons = 0x7f0b0000;

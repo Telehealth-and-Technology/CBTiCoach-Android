@@ -47,7 +47,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal" >
-"
 
                     <ToggleButton
                         android:id="@+id/bManMan"
@@ -226,7 +225,7 @@
                     <!-- End MAN Waketime -->
 
                 </LinearLayout>
- <!-- End llManUpdate -->
+                <!-- End llManUpdate -->
 
                 <LinearLayout
                     android:id="@+id/llAutoUpdate"
