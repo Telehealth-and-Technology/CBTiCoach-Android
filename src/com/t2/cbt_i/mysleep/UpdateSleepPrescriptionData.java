@@ -209,10 +209,10 @@ public class UpdateSleepPrescriptionData
 			((LinearLayout) contentView.findViewById(R.id.tvSP)).setVisibility(View.GONE);
 		}
 		RelativeLayout llbar = (RelativeLayout)contentView.findViewById(R.id.rlpb);
-		String bedtime = (String)((TextView)contentView.findViewById(R.id.tSPBedtime)).getText().toString();
-		String bedtimeAM = (String)((TextView)contentView.findViewById(R.id.tSPBedtimeAM)).getText().toString();
-		String waketime = (String)((TextView)contentView.findViewById(R.id.tSPWaketime)).getText().toString();
-		String waketimeAM = (String)((TextView)contentView.findViewById(R.id.tSPWaketimeAM)).getText().toString();
+		String bedtime = ((TextView)contentView.findViewById(R.id.tSPBedtime)).getText().toString();
+		String bedtimeAM = ((TextView)contentView.findViewById(R.id.tSPBedtimeAM)).getText().toString();
+		String waketime = ((TextView)contentView.findViewById(R.id.tSPWaketime)).getText().toString();
+		String waketimeAM = ((TextView)contentView.findViewById(R.id.tSPWaketimeAM)).getText().toString();
 		llbar.setContentDescription("Sleep Prescription Bedtime: " + bedtime + " " + bedtimeAM +
 													" Waketime: " + waketime + " " + waketimeAM +
 													" Sleep Efficiency " + efficiency);
