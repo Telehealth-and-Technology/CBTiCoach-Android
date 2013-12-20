@@ -1,36 +1,36 @@
 /*
-* UpdateSleepPrescriptionData.java
-* Class used to hold and store all data associated with the user's sleep prescription
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * UpdateSleepPrescriptionData.java
+ * Class used to hold and store all data associated with the user's sleep prescription
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.mysleep;
 
 import java.io.DataInputStream;
@@ -44,6 +44,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.t2.cbt_i.R;
@@ -63,14 +64,14 @@ public class UpdateSleepPrescriptionData
 
 	private Context c;
 	private View contentView;
-	
+
 	public UpdateSleepPrescriptionData(Context c)
 	{ // build an object from disk if possible
 		this.c = c;
 		this.contentView = null;
 		loadData();
 	}
-	
+
 	public UpdateSleepPrescriptionData(Context c, View v)
 	{ // build an object from disk if possible
 		this.c = c;
@@ -165,6 +166,7 @@ public class UpdateSleepPrescriptionData
 
 	public void displaySleepPrescription()
 	{
+		String efficiency = "";
 		if (iSP_PBTimemin == -2)
 		{
 			((TextView) contentView.findViewById(R.id.tvSPNote)).setVisibility(View.GONE);
@@ -187,11 +189,17 @@ public class UpdateSleepPrescriptionData
 				iTime -= 30;
 			formattedTimeFrom4pm2(iTime, R.id.tSPBedtime, R.id.tSPBedtimeAM);
 			formattedTimeFrom4pm2(iSP_PWTimemin, R.id.tSPWaketime, R.id.tSPWaketimeAM);
-
+			
 			if ((iSP_SleepEfficiency == -1) || (iSP_SleepEfficiency < 0) || (iSP_SleepEfficiency > 100))
+			{
+				efficiency = c.getResources().getString(R.string.s_NoData);
 				((TextView) contentView.findViewById(R.id.tSPEfficiency)).setText(R.string.s_NoData);
+			}
 			else
-				((TextView) contentView.findViewById(R.id.tSPEfficiency)).setText((String.format("%d", iSP_SleepEfficiency)));
+			{
+				efficiency = String.format("%d", iSP_SleepEfficiency) + "%";
+				((TextView) contentView.findViewById(R.id.tSPEfficiency)).setText(efficiency);
+			}
 
 		}
 		else
@@ -200,6 +208,14 @@ public class UpdateSleepPrescriptionData
 			((TextView) contentView.findViewById(R.id.tvSPNote2)).setVisibility(View.GONE);
 			((LinearLayout) contentView.findViewById(R.id.tvSP)).setVisibility(View.GONE);
 		}
+		RelativeLayout llbar = (RelativeLayout)contentView.findViewById(R.id.rlpb);
+		String bedtime = (String)((TextView)contentView.findViewById(R.id.tSPBedtime)).getText().toString();
+		String bedtimeAM = (String)((TextView)contentView.findViewById(R.id.tSPBedtimeAM)).getText().toString();
+		String waketime = (String)((TextView)contentView.findViewById(R.id.tSPWaketime)).getText().toString();
+		String waketimeAM = (String)((TextView)contentView.findViewById(R.id.tSPWaketimeAM)).getText().toString();
+		llbar.setContentDescription("Sleep Prescription Bedtime: " + bedtime + " " + bedtimeAM +
+													" Waketime: " + waketime + " " + waketimeAM +
+													" Sleep Efficiency " + efficiency);
 	}
 
 	public int timeTo4pm(int iTime)
