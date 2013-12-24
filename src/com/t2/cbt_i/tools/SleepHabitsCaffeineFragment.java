@@ -42,7 +42,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -137,6 +136,7 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 			iInitialMin = time % 60;
 			
 		}
+		this.getActivity().setTitle(R.string.blankcontentdescription);
 		super.onResume();
 	}
 
@@ -147,6 +147,7 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 		cData34i.saveData();
 		cData60a.setAnAlarm(ALARMS.StopCaffeine);
 		cData60a.saveData();
+		this.getActivity().setTitle(R.string.s_CreateNewSleepHabits);
 		super.onPause();
 	}
 	
@@ -199,65 +200,5 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 		sSpin.setSelection(cData34i.iDailyCaffeineDrinkLimit, true);
 //		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
 //		sSpin.setOnItemSelectedListener(spinnerListener);
-	}
-
-	/**
-	 * A callback listener that implements the
-	 * {@link android.widget.AdapterView.OnItemSelectedListener} interface For
-	 * views based on adapters, this interface defines the methods available
-	 * when the user selects an item from the View.
-	 * 
-	 */
-	public class myOnItemSelectedListener implements OnItemSelectedListener
-	{
-
-		/**
-		 * Constructor
-		 * 
-		 * @param c
-		 *            - The activity that displays the Spinner.
-		 * @param ad
-		 *            - The Adapter view that
-		 * @param id
-		 *            - where to put the result; controls the Spinner.
-		 *            Instantiate a new listener object.
-		 */
-		public myOnItemSelectedListener()
-		{
-		}
-
-		/**
-		 * When the user selects an item in the spinner, this method is invoked
-		 * by the callback chain. Android calls the item selected listener for
-		 * the spinner, which invokes the onItemSelected method.
-		 * 
-		 * @see android.widget.AdapterView.OnItemSelectedListener#onItemSelected(android.widget.AdapterView,
-		 *      android.view.View, int, long)
-		 * @param parent
-		 *            - the AdapterView for this listener
-		 * @param v
-		 *            - the View for this listener
-		 * @param pos
-		 *            - the 0-based position of the selection in the
-		 *            mLocalAdapter
-		 * @param row
-		 *            - the 0-based row number of the selection in the View
-		 */
-		@Override
-		public void onItemSelected(AdapterView<?> parent, View v, int pos, long row)
-		{
-		}
-
-		/**
-		 * The definition of OnItemSelectedListener requires an override of
-		 * onNothingSelected(), even though this implementation does not use it.
-		 * 
-		 * @param parent
-		 *            - The View for this Listener
-		 */
-		@Override
-		public void onNothingSelected(AdapterView<?> parent)
-		{
-		}
 	}
 }
