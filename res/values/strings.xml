@@ -52,25 +52,25 @@
     <string name="s_32ehelp">This graph shows how your scores on the assessment have changed over time. It is normal for your symptoms to go up and down a bit from week to week.  Higher scores mean that you have more severe symptoms, so if your line is going up, you may want to check in with your provider and let him or her know (or get a provider if you don\'t already have one).</string>
     <string name="s_21b44">If your sleep or daytime functioning is affected by some unusual event (such as an illness, or an emergency) you may make brief notes on your diary.</string>
     <string name="s_21b33"> If you remember your sleep habits for that day, you can edit the diary through the "Past Diaries" tab. Otherwise leave it blank.</string>
-    <string name="s_21b5">•	What do the words "bed" and "day" mean on the diary? </string>
+    <string name="s_21b5">•	What do the words "bed" and "day" mean on the diary?</string>
     <string name="s_21b6">•	Will answering these questions about my sleep keep me awake?</string>
     <string name="s_21b3">•	What should I do if I miss a day?</string>
-    <string name="s_21b4">•	What if something unusual affects my sleep or how I feel in the daytime? </string>
-    <string name="s_21b1">•	What is a Sleep Diary? </string>
-    <string name="s_21b2">•	How often and when do I fill out the sleep diary? </string>
+    <string name="s_21b4">•	What if something unusual affects my sleep or how I feel in the daytime?</string>
+    <string name="s_21b1">•	What is a Sleep Diary?</string>
+    <string name="s_21b2">•	How often and when do I fill out the sleep diary?</string>
     <string name="s_21b22">It is necessary for you to complete your sleep diary every day. Remember, you will generally be answering questions about your sleep habits during the previous day and night. If possible, the sleep diary should be completed within one hour of getting out of bed in the morning.</string>
     <string name="s_21b66">This is not usually a problem. You should not worry about giving exact times, and you should not watch the clock. Just give your best estimate.</string>
     <string name="s_21b11">A sleep diary is designed to gather information about your daily sleep pattern.  It should be filled out every day and is designed to be completed within two hours of getting out of bed in the morning.  If you forget to fill in the diary or are unable to finish it, leave the diary blank for that day.</string>
     <string name="s_21b55">This diary can be used for people who are awake or asleep at unusual times. In the sleep diary, the word \‘day\' is the time when you choose or are required to be awake. The term "bed" means the place where you usually sleep.</string>
     <string name="s_SleepDiary">Sleep Diary</string>
-    <string name="s_PastWeeks">Past 7 days Sleep Diary completion: </string>
+    <string name="s_PastWeeks">Past 7 days Sleep Diary completion:</string>
     <string name="s_SleepDiaryReminder">Sleep Diary Reminder</string>
     <string name="s_RecommendedDaily">Recommended Daily</string>
     <string name="s_Time">Time</string>
     <string name="s_51a">CBT-i Coach is a mobile phone application for Veterans, Service Members, and others who are participating in Cognitive Behavioral Therapy for Insomnia.  It is intended to augment face-to-face care with a healthcare professional.  You can also use it on its own, but it is not intended to replace therapy for those who need it.\nIt will guide you through the process of learning about sleep, developing good sleep habits, and getting rid of habits that interfere with sleep.  It also provides a structured program to get your biological clock reset to make it easier to go to sleep and to sleep through the night.</string>
     <string name="s_ResetAllUserData">Reset All User Data</string>
     <string name="s_ProvideAUD">Provide Anonymous Usage Data</string>
-    <string name="s_50b">Help improve this application by automatically sending daily diagnostics and usage data.  Diagnostic data may include location information.   Although no one can see your personal data, looking at overall trends helps us make better products. </string>
+    <string name="s_50b">Help improve this application by automatically sending daily diagnostics and usage data.  Diagnostic data may include location information.   Although no one can see your personal data, looking at overall trends helps us make better products.</string>
     <string name="s_PTeam">•	Julia E. Hoffman, Psy.D.\n•	Katherine Taylor, M.P.H.\n•	Eric Kuhn, Ph.D.\n•	Carolyn Greene, Ph.D.\n•	Kenneth Weingardt, Ph.D.\n•	Josef I. Ruzek, Ph.D.</string>
     <string name="s_SME">Subject Matter Experts</string>
     <string name="s_SMETeam">•	Rachel Manber, Ph.D.\n•	Mickey Trockel, M.D.\n•	Philip Gehrman, Ph.D.</string>
@@ -91,8 +91,8 @@
     <string name="s_learn101_3">Many research studies have shown that sleep is a process made up of two states: Rapid Eye Movement (REM sleep) and Non-Rapid Eye Movement (non REM) sleep. Non REM sleep is composed of several stages, and occupies about 75 – 80% of the night\'s sleep of a \"typical\" young, healthy adult. The rest of the night\’s sleep is REM sleep.</string>
     <string name="s_learn101_3t">The Stages of Sleep</string>
     <string name="s_learn101_32">N1:  People experience stage N1 sleep as very light; when awakened, many individuals think they have not been asleep. Nonetheless, stage N1 seems to be an essential part of normal sleep. People with insomnia and older adults spend more of their night\’s sleep in stage N1 than those without insomnia.</string>
-    <string name="s_learn101_33">N2:  N2 occupies about 40–55% of the night\'s sleep in a young adult.  It is harder to wake a person from this stage and most people know they have been asleep. </string>
-    <string name="s_learn101_34">N3:  Brain activity during N3 sleep is also called slow-wave sleep because it is characterized by slow, distinctive waves called Delta waves.  N3 is perceived as the deepest sleep; it is hardest to wake people up from this stage.  People tend to have more stage N3 sleep on nights following prolonged wakefulness.  </string>
+    <string name="s_learn101_33">N2:  N2 occupies about 40–55% of the night\'s sleep in a young adult.  It is harder to wake a person from this stage and most people know they have been asleep.</string>
+    <string name="s_learn101_34">N3:  Brain activity during N3 sleep is also called slow-wave sleep because it is characterized by slow, distinctive waves called Delta waves.  N3 is perceived as the deepest sleep; it is hardest to wake people up from this stage.  People tend to have more stage N3 sleep on nights following prolonged wakefulness.</string>
     <string name="s_learn101_35">REM:  REM sleep is when most dreaming occurs. During REM sleep, bursts of rapid eye movements can be observed and heart and breathing rates become less regular. There is increased blood flow to the brain. Interestingly, brain wave activities during REM sleep are a bit similar to those seen during wakefulness. However, during REM sleep the body\'s skeletal muscles are in a state of relative paralysis which prevents people from \'acting out\' their dreams</string>
     <string name="s_learn101_42">Sleep Drive:  Our sleep drive is lowest in the morning and gradually increases as the day progresses. Sleeping gradually reduces our sleep drive as we "recharge our energy reserve", which is why napping close to bedtime (for example, dozing off while watching TV in the evening) can make it harder for us to fall asleep later.  The longer the time that has elapsed since we last slept, the stronger is the sleep drive  and the easier it will be to fall asleep. When the sleep drive is very strong we feel sleepy.</string>
     <string name="s_learn101_43">Circadian Process:  People have powerful internal \‘clocks\’ that affect their bodily functioning, including digestion, body temperature, and sleep/wake pattern. Most of these \'clocks\' seem to work across roughly 24-hour periods. Irregular sleep schedules weaken our biological clocks, which is why it is particularly important to keep regular wake and out of bed times.  Our clocks use light signals to reset, so getting out of bed at the same time each day keeps the clock ticking with a strong and regular beat, which supports good sleep.</string>
@@ -101,24 +101,24 @@
     <string name="s_learn101_4t">Sleep Regulators</string>
     <string name="s_learn101_5t">Sleepiness vs. Tiredness</string>
     <string name="s_learn101_5">Often people use the terms \"sleepy\" and \"tired\" interchangeably, but they actually mean different things. \"Tired\" can mean that the person has low energy, but not necessarily a need to sleep. \"Sleepy\" generally refers to an actual need for sleep. Thinking about your levels of feeling tired and sleepy separately might help you determine when you have an actual need for sleep (strong sleep drive), rather than an overall lack of energy. This can help you decide when to actually try to sleep and when to rest your body.</string>
-    <string name="s_learn101_6">Post Traumatic Stress Disorder (PTSD) describes a group of symptoms that occur in response to a traumatic event such as being involved in an automobile accident or military combat. These symptoms include feeling tense or \"on guard\" much of the time, having flashbacks or nightmares and feeling disconnected from people and situations. Trouble sleeping is an extremely common symptom of PTSD.\n\nSome individuals report avoiding sleeping because they are afraid they might have nightmares, or they may not be able to respond to urgent situations that might arise. They might engage in \"safety behaviors\", such as listening for noises outside or checking locks on doors and windows. People with PTSD may prefer sleeping in locations other than the bedroom or try to delay bedtime. Sleep can also be hard if it brings back memories of trauma, for example, if the trauma happened at night.    </string>
+    <string name="s_learn101_6">Post Traumatic Stress Disorder (PTSD) describes a group of symptoms that occur in response to a traumatic event such as being involved in an automobile accident or military combat. These symptoms include feeling tense or \"on guard\" much of the time, having flashbacks or nightmares and feeling disconnected from people and situations. Trouble sleeping is an extremely common symptom of PTSD.\n\nSome individuals report avoiding sleeping because they are afraid they might have nightmares, or they may not be able to respond to urgent situations that might arise. They might engage in \"safety behaviors\", such as listening for noises outside or checking locks on doors and windows. People with PTSD may prefer sleeping in locations other than the bedroom or try to delay bedtime. Sleep can also be hard if it brings back memories of trauma, for example, if the trauma happened at night.  </string>
     <string name="s_learn101_6t">PTSD and Sleep</string>
-    <string name="s_learn101_9t">Depression and Sleep </string>
+    <string name="s_learn101_9t">Depression and Sleep</string>
     <string name="s_learn101_7t">Nightmares</string>
-    <string name="s_learn101_10t">Sleep Apnea </string>
+    <string name="s_learn101_10t">Sleep Apnea</string>
     <string name="s_learn101_9">Most people with depression have trouble sleeping.  Some wake up earlier than desired or planned and others may find it difficult to get out of bed because they do not derive much pleasure from what they do during the day.  The good news is that CBT-i is effective even for people who experience depression. Improved sleep can improve  mood</string>
     <string name="s_learn101_8">Because sleep deprivation can cause confusion when awakened suddenly, it is dangerous to keep weapons within easy access. Being confused and frightened upon waking will increase the likelihood of misjudging the situation and unintentionally discharging a loaded weapon. Therefore, it’s important to lock up or unload weapons at home even if doing so increases the sense of vulnerability and anxiety, which can lead to sleeplessness in the short run.</string>
-    <string name="s_learn101_7">Nightmares are bad dreams that cause awakening and strong negative emotional responses like fear upon waking up from the dream. For veterans, many nightmares relate to dangerous combat activities. Awakening after a nightmare can result in people replaying the nightmare, trying to figure out why the nightmare happened and what it might mean.  Some experts believe that by avoiding sleeping and replaying nightmares people may be more likely to have future nightmares. </string>
-    <string name="s_learn101_8t">Weapons and Sleep  </string>
+    <string name="s_learn101_7">Nightmares are bad dreams that cause awakening and strong negative emotional responses like fear upon waking up from the dream. For veterans, many nightmares relate to dangerous combat activities. Awakening after a nightmare can result in people replaying the nightmare, trying to figure out why the nightmare happened and what it might mean.  Some experts believe that by avoiding sleeping and replaying nightmares people may be more likely to have future nightmares.</string>
+    <string name="s_learn101_8t">Weapons and Sleep</string>
     <string name="s_learn101_10">Sleep apnea is a sleep disorder in which the airway passages (nose or throat) are fully or partially obstructed.  These events can lead to a decrease in oxygen levels in the blood and awakenings. Nighttime symptoms of sleep apnea include loud snoring, snorting, and gasping for air.  Unless told by a partner, many people have no idea they have these symptoms of sleep apnea.  Daytime symptoms of sleep apnea include feeling tired in the morning and sleepy during the day. Other daytime symptoms include a morning headache that resolves shortly after rising and waking with a dry mouth.  If you experience these symptoms on a regular basis you should talk to your doctor. Sleep apnea increases the risk of heart disease and stroke.</string>
-    <string name="s_learn101_11">Certain medications and commonly used substances can disrupt sleep. These include some asthma medications (e.g. theophylline), some over the counter  decongestants and allergy and cold medicines, some steroids (e.g., prednisone), beta blockers (medicines used to treat heart conditions), medications for ADHD (e.g., Adderall) and some antidepressants (e.g., Wellbutrin). Ask your physician if any medications you are taking might interfere with sleep.  Don\’t stop taking prescribed medications without first checking with your doctor.\n\nWhile \"sleeping pills\" are  useful  when taken for a short time , prolonged, chronic use can cause tolerance (needing more medication to get the same effect) and psychological dependence. Each person has a different level of tolerance for these medications and will have a different reaction to their use. Some experience the effect of the medication for a long time and are sleepy or lethargic the next day. Make sure to only use sleep medications as instructed by your physician and to report any side effects to your treatment team. </string>
+    <string name="s_learn101_11">Certain medications and commonly used substances can disrupt sleep. These include some asthma medications (e.g. theophylline), some over the counter  decongestants and allergy and cold medicines, some steroids (e.g., prednisone), beta blockers (medicines used to treat heart conditions), medications for ADHD (e.g., Adderall) and some antidepressants (e.g., Wellbutrin). Ask your physician if any medications you are taking might interfere with sleep.  Don\’t stop taking prescribed medications without first checking with your doctor.\n\nWhile \"sleeping pills\" are  useful  when taken for a short time , prolonged, chronic use can cause tolerance (needing more medication to get the same effect) and psychological dependence. Each person has a different level of tolerance for these medications and will have a different reaction to their use. Some experience the effect of the medication for a long time and are sleepy or lethargic the next day. Make sure to only use sleep medications as instructed by your physician and to report any side effects to your treatment team.</string>
     <string name="s_learn101_11t">Medications</string>
     <string name="s_learnsh_01">Preoccupation with small and big worries, mulling over your problems, or planning future events while in bed can keep you awake.  When disruptive thinking occurs frequently, you may find it helpful to set aside a time each day to do the thinking, worrying, problem-solving, and planning you need to do. Then, if intrusive thoughts occur during your sleep period, postpone them to the \"thinking and worrying time\" during the next day. By scheduling a daily time to focus on your concerns you will find that you are having fewer worried thoughts while you are in bed.  For help with his, see \"Scheduling a Worry Time\" in the \"Tools\" tab.\n\n
 Many people find themselves worrying about not sleeping, which, unfortunately, can also keep them awake. Remember that, while not sleeping can be uncomfortable, your body is designed to tolerate less-than-perfect sleep some nights. In fact, losing sleep can increase your sleep drive, which may result in improved sleep the following nights. It’s important to reduce night time anxiety in order to improve your chances of getting quality sleep. </string>
     <string name="s_learnsh_01t">Worrying in Bed</string>
     <string name="s_learnsh_04">You can create a \"buffer zone\" for yourself, which is a quiet time right before bedtime that allows you to wind down. It provides a transition between activities of the day and the quiet, more peaceful time of sleep. Shedding the day’s excitements and tensions will calm you and allow sleep to unfold naturally. For ideas about ways to create a buffer zone, see the \"Tools\" tab.</string>
     <string name="s_learnsh_02">Being aware of the time can increase frustration and interfere with sleep.  Put your clock across the room, turn it around, and do not check the time in the middle of the night.</string>
-    <string name="s_learnsh_03">Sleeping at times other than your specified time in bed can weaken your sleep drive and could throw off the natural circadian rhythm of your body.  However, if you find yourself feeling very sleepy (not just tired, but actually sleepy) you can take a brief (15 to 30 minutes) nap. Sleepy people make mistakes, misjudge situations, and may accidentally hurt themselves or others. Therefore, do not try and stay awake just to keep in line with your sleep prescription. Safety supersedes all other sleep guidelines.\n\n If you feel like you have to nap, try to do it 7 to 9 hours after your morning wake up time, which for most people is in the mid-afternoon.  The nap will then coincide with the pattern of your biological clock, which has a natural dip (lower alertness) at that time. Ideally naps should be taken at approximately the same time every day, otherwise they may weaken your sleep signal. Naps should be taken in your bed because you are training yourself to associate the bed with sleep. Set your alarm so you don\’t nap too long. </string>
+    <string name="s_learnsh_03">Sleeping at times other than your specified time in bed can weaken your sleep drive and could throw off the natural circadian rhythm of your body.  However, if you find yourself feeling very sleepy (not just tired, but actually sleepy) you can take a brief (15 to 30 minutes) nap. Sleepy people make mistakes, misjudge situations, and may accidentally hurt themselves or others. Therefore, do not try and stay awake just to keep in line with your sleep prescription. Safety supersedes all other sleep guidelines.\n\n If you feel like you have to nap, try to do it 7 to 9 hours after your morning wake up time, which for most people is in the mid-afternoon.  The nap will then coincide with the pattern of your biological clock, which has a natural dip (lower alertness) at that time. Ideally naps should be taken at approximately the same time every day, otherwise they may weaken your sleep signal. Naps should be taken in your bed because you are training yourself to associate the bed with sleep. Set your alarm so you don\’t nap too long.</string>
     <string name="s_learnsh_02t">Watching the Clock</string>
     <string name="s_learnsh_03t">Napping</string>
     <string name="s_learnsh_04t">Winding Down</string>
@@ -129,9 +129,9 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_learnsh_06t">Eating</string>
     <string name="s_learnsh_11t">Getting Comfortable</string>
     <string name="s_learnsh_07t">Caffeine Use</string>
-    <string name="s_learnsh_08">Exercise too close to bedtime may have a negative impact on sleep. Exercise activates the body, and raises the core body temperature, which doesn’t allow the body to experience its normal drop in temperature prior to sleep. Strenuous exercise should be avoided about four hours before bedtime.  Gentle stretching exercises before bedtime are OK and may even be relaxing.  </string>
+    <string name="s_learnsh_08">Exercise too close to bedtime may have a negative impact on sleep. Exercise activates the body, and raises the core body temperature, which doesn’t allow the body to experience its normal drop in temperature prior to sleep. Strenuous exercise should be avoided about four hours before bedtime.  Gentle stretching exercises before bedtime are OK and may even be relaxing. </string>
     <string name="s_learnsh_09">Alcoholic beverages can be relaxing and make people feel drowsy, however they can have the opposite effect later in the night. As alcohol is metabolized, it leads to restless and disturbed sleep. For most people with no history of alcoholism, one glass of wine or beer with dinner scheduled 3–4 hours before bedtime is not likely to have a negative impact on sleep. However, for some very sensitive individuals complete elimination of alcohol in the evening may be advisable.</string>
-    <string name="s_learnsh_06">The process of falling asleep slows down the digestive system.  A heavy meal close to bedtime may therefore lead to indigestion or reflux during the night, both of which disturb sleep.  Allowing a 4 hour window between eating and sleeping to let food to digest is a good sleep practice. However if you are hungry, a light snack is appropriate. </string>
+    <string name="s_learnsh_06">The process of falling asleep slows down the digestive system.  A heavy meal close to bedtime may therefore lead to indigestion or reflux during the night, both of which disturb sleep.  Allowing a 4 hour window between eating and sleeping to let food to digest is a good sleep practice. However if you are hungry, a light snack is appropriate.</string>
     <string name="s_learnsh_07">Caffeine is a relatively long-acting stimulant whose effects may last for several hours after it is consumed. People differ greatly in how caffeine affects them and in the length of time it lasts, for example, older adults tend to be more sensitive to caffeine. Caffeine can remain active 4–5 hours after it is consumed, so try to avoid having caffeine after lunch if you want to make sure it doesn’t affect your sleep. Limit consumption of caffeinated beverages to the equivalent of no more than three, eight- ounce cups daily.  To set goals for caffeine use, check out the \"Tools\" tab.</string>
     <string name="s_learnsh_05">While in bed, you should avoid doing things that you do when you are awake. Do not read, watch TV, eat, study or use your phone or laptop. Doing these things in bed creates associations between the bed and activities other than sleep, which can train your mind to stay awake while in bed. By only using your bed for sleep, you can help it become a place where sleep comes naturally.  Sexual activity is the only exception to this guideline.\n\nThe most important activity that you should eliminate from the bed is the activity of \"trying to sleep\" because it inevitably interferes with the natural sleep process. If you find yourself thinking about sleep while in bed, get up. It can be hard not to use your bed for other things, especially if you live in a studio apartment or a dorm room, but it can be an important part of improving your sleep habits.</string>
     <string name="s_learnsh_08t">Exercise</string>
@@ -164,7 +164,7 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_Reminder">Reminder</string>
     <string name="s_remUpdateSleepPrescription">Update Sleep Prescription</string>
     <string name="s_remUpdateSleepPrescriptionText">It has been one week since you updated your sleep prescription. It may be helpful to review your prescribed bedtime and wake time with your provider or calculate a new sleep prescription. You can change your prescribed bedtime and wake time under \"Update Prescription.\"</string>
-    <string name="s_remSleepDiaryReminderHint">It is recommended to fill out sleep diaries within two hours of your scheduled wake up time, and should be completed every day. </string>
+    <string name="s_remSleepDiaryReminderHint">It is recommended to fill out sleep diaries within two hours of your scheduled wake up time, and should be completed every day.</string>
     <string name="s_remTakeAssessment">Take Assessment</string>
     <string name="s_remTakeAssessmentText">Take Assessment</string>
     <string name="s_remWorryTime">Worry Time</string>
@@ -186,7 +186,7 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_34a">Incorporating new habits into your nighttime routine can help sleep come more easily. Use the following tools to shape your current schedule into one that leads to quality sleep.</string>
     <string name="s_34i">It is important to manage caffeine intake if you are having trouble sleeping. People who are having difficulty sleeping should drink no more than three 8-oz cups of caffeinated beverages per day, and avoid having any after lunch. If you would like to manage your caffeine intake, set a daily goal below:</string>
     <string name="s_ReducingCaffeine">Reducing Caffeine</string>
-    <string name="s_NewSleepHabits">New Sleep Habits</string>
+    <string name="s_NewSleepHabits">Create New Sleep Habits</string>
     <string name="s_DailyCaffeineDrinkLimit">Daily Caffeine Drink Limit</string>
     <string name="s_34f">Use the following checklist to make sure you have the optimum sleep environment. If it is not possible to adapt your environment to these guidelines, read about alternate possibilities.</string>
     <string name="s_LowNoiseLevel">Low Noise Level</string>
@@ -201,7 +201,7 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_Sleepisundisturbedbyotherstext">Consider alternate sleep arrangements with partners and pets that will allow you the space and quiet you need.</string>
     <string name="s_Reservemybedforsleepsextext">If living in a dorm or studio makes reserving your bed for sleep and sex difficult, create another corner in your room for other activities. If you must use the bed for other activities try covering the bed with a day blanket (of a different color than your night blanket). When you are ready for sleep, remove the blanket. This will help cue your mind to associate your bed with sleep.</string>
     <string name="s_SleepEnvironment">Sleep Environment</string>
-    <string name="s_slpy_text">If you are having trouble staying awake until your scheduled bedtime, see the Activities to Keep You Awake, below, for ideas on how to keep yourself up until it’s time for bed.  If an activity continues to work for you tap the star next to it to highlight it. </string>
+    <string name="s_slpy_text">If you are having trouble staying awake until your scheduled bedtime, see the Activities to Keep You Awake, below, for ideas on how to keep yourself up until it’s time for bed.  If an activity continues to work for you tap the star next to it to highlight it.</string>
     <string name="s_awake05">Call a friend</string>
     <string name="s_awake06">Do stretching exercises</string>
     <string name="s_awake03">Watch a mystery show</string>
@@ -238,9 +238,9 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_CantSleep05">Catch up on your reading (as long as the reading materials can keep you awake)</string>
     <string name="s_CantSleep09">Create a list of activities that you’d enjoy doing on weekends and vacations</string>
     <string name="s_CantSleep20">Read your kids’ books- these are often very comforting and positive in their messages</string>
-    <string name="s_CantSleep14">Make a materials list for a project around the house </string>
+    <string name="s_CantSleep14">Make a materials list for a project around the house</string>
     <string name="s_CantSleep15">Choose one or two drawers to clean out (in your desk, kitchen, bathroom)</string>
-    <string name="s_CantSleep12">Shop for holiday, wedding or birthday gifts online </string>
+    <string name="s_CantSleep12">Shop for holiday, wedding or birthday gifts online</string>
     <string name="s_CantSleep13">Read magazines or other light material</string>
     <string name="s_CantSleep18">Jot down thoughts on a notepad for an assigned period of time. Use this exercise to help decrease nighttime thinking and worrying</string>
     <string name="s_CantSleep19">Knit or do other crafts that you can stop working on when you feel sleepy</string>
@@ -250,7 +250,7 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_CantSleep11">Fold clothes, put away clothes</string>
     <string name="s_MorningActivities">Morning Activities</string>
     <string name="s_GetOutofBedatYourPrescribedTime">Get Out of Bed at Your Prescribed Time</string>
-    <string name="s_MorningActivitiestext">Having an activity to look forward to in the morning can help getting out of bed at the same time each day seem more doable. See Morning Activities, below, for ideas for things to do in the morning. If an activity continues to work for you, you may want to tap the star next to it to highlight it.  </string>
+    <string name="s_MorningActivitiestext">Having an activity to look forward to in the morning can help getting out of bed at the same time each day seem more doable. See Morning Activities, below, for ideas for things to do in the morning. If an activity continues to work for you, you may want to tap the star next to it to highlight it. </string>
     <string name="s_GetOut02">Watch the sunrise</string>
     <string name="s_GetOut03">Take the dog for a walk</string>
     <string name="s_GetOut01">Meditate or Pray</string>
@@ -261,17 +261,17 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_GetOut08">Enjoy being able to get ready for work and kids ready for school without having to rush</string>
     <string name="s_GetOut09">Sort out some kids’ toys and choose things for Goodwill or a yard sale</string>
     <string name="s_GetOut10">Sort and start your laundry, or iron clothes for work</string>
-    <string name="s_GetOut11">Start a budget for your family on a spreadsheet or in a notebook </string>
+    <string name="s_GetOut11">Start a budget for your family on a spreadsheet or in a notebook</string>
     <string name="s_GetOut12">Send emails to friends or check your work email</string>
-    <string name="s_GetOut13">Shred or erase old computer disks, DVDs, etc. </string>
+    <string name="s_GetOut13">Shred or erase old computer disks, DVDs, etc.</string>
     <string name="s_GetOut14">Organize all of your bills, receipts, coupons and warranty information in a filing cabinet or folders</string>
     <string name="s_GetOut15">Get some of the preparation started for dinner dishes (marinating, chopping vegetables, and so on)</string>
-    <string name="s_GetOut16">Make the bed and tidy up your bedroom </string>
+    <string name="s_GetOut16">Make the bed and tidy up your bedroom</string>
     <string name="s_GetOut17">Open the curtains and blinds in the house</string>
     <string name="s_GetOut18">Sweep your sidewalk or steps, or shovel snow</string>
     <string name="s_GetOut19">Do some light gardening or water houseplants or those around your porch</string>
     <string name="s_GetOut20">Review your to-do list for the day or the week</string>
-    <string name="s_35a">Relaxation exercises are opportunities to help your body learn to relax.  Try each of the exercises to determine which ones are the most appealing and useful.  </string>
+    <string name="s_35a">Relaxation exercises are opportunities to help your body learn to relax.  Try each of the exercises to determine which ones are the most appealing and useful. </string>
     <string name="s_WindingDown">Winding Down</string>
     <string name="s_ChangeYourPerspective">Change Your Perspective</string>
     <string name="s_ScheduleWorryTime">Schedule Worry Time</string>
@@ -283,7 +283,7 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_ObserveThoughtsCloudsintheSky">Observe Thoughts: Clouds in the Sky</string>
     <string name="s_ObserveSensationsBodyScan">Observe Sensations: Body Scan</string>
     <string name="s_35b">Relaxation is an integral part of being able to sleep. Use the tools in this section to encourage relaxation of the mind and body, so that sleep comes naturally.</string>
-    <string name="s_WindDownTimetext">Having a wind-down time before you go to sleep can help relax your mind and body. See the Evening Activities below to explore some ideas for things to do during your buffer zone. If an activity continues to work for you, you may want to tap the star next to it to mark it as a favorite.  </string>
+    <string name="s_WindDownTimetext">Having a wind-down time before you go to sleep can help relax your mind and body. See the Evening Activities below to explore some ideas for things to do during your buffer zone. If an activity continues to work for you, you may want to tap the star next to it to mark it as a favorite. </string>
     <string name="s_EveningActivities">Evening Activities</string>
     <string name="s_Wind21">Knit</string>
     <string name="s_Wind20">Floss</string>
@@ -354,19 +354,19 @@ Many people find themselves worrying about not sleeping, which, unfortunately, c
     <string name="s_35a26self">Please read the following script through until you feel familiar with it, then follow the instructions on your own.\n\nStart this exercise by finding a comfortable position sitting or lying down. Take a few deep breaths—relax.\n\nNow bring your awareness to your fingers. Rub them together and notice their texture, temperature, and the sensations as they move.  Can you feel the indentations of your fingerprints? Take your time noticing all of this.
 Now rest your fingers where they were before. What are they touching? What does that feel like? Is it soft? hard? What are its features and textures?  Really notice what you feel.\n\nNow bring attention to your hands and arms. What do they feel like? Relaxed? Heavy? Tense? Painful?  Try to observe these sensations, including uncomfortable ones, without judgment. \n\nNotice your toes now. Wiggle them and feel whatever is around and under them. How does it feel? Can you tell what it is just by feeling?\n\nNext, notice how your head is positioned. Is it upright? drooping? Is your neck turned in a particular direction? Simply notice this without trying to change it. Also note the sensations in your head and neck, including temperature, pain, and relaxation. Take your time noticing.
 What about your face? Is your brow smooth or wrinkled up? How does it feel? Now notice your nose. Can you breathe freely? As you breathe, notice the sensations in your nose and lungs—expansion, tickling, warmth, or coolness. Then notice how your mouth is positioned? Is it pursed? Open? Closed? Is the inside of your mouth wet or dry? Just notice. Also, notice how your skin feels.  Is it dry? Itchy, tingling, hot or cool? Is there no sensation?\n\nNow notice your chest and belly. Place one hand on your chest and one on your belly. Can you feel your body breathing? What is that like? Are you breathing fast or slow? Is your breath going more into your belly or your chest? Just notice all these sensations.\n\nNext expand your attention to include your whole body. Where are you sitting or lying? Can you feel the back side of your body touching the chair or bed in places? Without moving, just observe your body’s position.\n\nWhen you are ready, look around the room and notice your surroundings, without judgment. When you are ready, stop this exercise and continue to relax.</string>
-    <string name="s_35a25audio">Please listen to the audio and follow along with the exercise. </string>
-    <string name="s_35a26audio">Please listen to the audio and follow along with the exercise. </string>
+    <string name="s_35a25audio">Please listen to the audio and follow along with the exercise.</string>
+    <string name="s_35a26audio">Please listen to the audio and follow along with the exercise.</string>
     <string name="s_PreventInsomnia">Prevent Insomnia</string>
     <string name="s_Feedback">Feedback</string>
     <string name="s_PreventInsomniatext">Difficulty sleeping can return in certain situations; this is normal.\n\nIf you find that your sleep is getting worse take the self-quiz below to see what areas you might be able to improve:\n\nWhich of these have you had trouble with?</string>
-    <string name="s_Prevent01">I have trouble waking up and getting out of bed at my prescribed wake time. </string>
-    <string name="s_Prevent02">I have trouble going to bed only when I\'m sleepy and not before my prescribed bedtime. </string>
-    <string name="s_Prevent03">It is hard for me to get out of bed when I can\’t sleep. </string>
-    <string name="s_Prevent04">I have trouble creating a buffer zone to wind down before sleep. </string>
-    <string name="s_Prevent05">I worry in bed. </string>
-    <string name="s_Prevent06">I am having trouble limiting my caffeine use. </string>
-    <string name="s_Prevent07">I don\’t have a sleep environment that is quiet, dark and cool. </string>
-    <string name="s_Prevent08">I can\'t relax enough for sleep </string>
+    <string name="s_Prevent01">I have trouble waking up and getting out of bed at my prescribed wake time.</string>
+    <string name="s_Prevent02">I have trouble going to bed only when I\'m sleepy and not before my prescribed bedtime.</string>
+    <string name="s_Prevent03">It is hard for me to get out of bed when I can\’t sleep.</string>
+    <string name="s_Prevent04">I have trouble creating a buffer zone to wind down before sleep.</string>
+    <string name="s_Prevent05">I worry in bed.</string>
+    <string name="s_Prevent06">I am having trouble limiting my caffeine use.</string>
+    <string name="s_Prevent07">I don\’t have a sleep environment that is quiet, dark and cool.</string>
+    <string name="s_Prevent08">I can\'t relax enough for sleep</string>
     <string name="s_36b">Sleep is the result of a complex physiological system that is very sensitive to distress. This means that difficulty sleeping can return in certain situations. Use this tool to pinpoint ways to maintain good sleep when symptoms of insomnia return.</string>
     <string name="s_Submit">Submit</string>
     <string name="s_36c2">Based on these issues, try looking at the following tools:</string>
@@ -482,7 +482,7 @@ What about your face? Is your brow smooth or wrinkled up? How does it feel? Now 
     <string name="s_Beach33">When you\'re ready, gently bring your attention back to the room, still letting yourself feel relaxed and comfortable, sitting where you are.</string>
     <string name="s_RoadText">You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now</string>
     <string name="s_ForestText">You are about to be led through a relaxation exercise focused on visualizing something pleasant.  This exercise takes about 4 minutes.  It has accompanying audio so you will have to find a quiet place or put on your headphones now.</string>
-    <string name="s_35a10help">This activity will guide you through a brief exercise in which you take slower, depper breaths to help you relax.  Taking slow, deep breaths helps you balance the carbon dioxide and orygen in your blood.  This calms your nervous system, creating a \"relaxation response.\"  Deep breathing exercises can help manage stress and insomnia, focus the mind and improve health.</string>
+    <string name="s_35a10help">This activity will guide you through a brief exercise in which you take slower, deeper breaths to help you relax.  Taking slow, deep breaths helps you balance the carbon dioxide and orygen in your blood.  This calms your nervous system, creating a \"relaxation response.\"  Deep breathing exercises can help manage stress and insomnia, focus the mind and improve health.</string>
     <string name="s_35a10">Listen to the audio and follow along with the exercise.</string>
     <string name="s_35a11">You are about to be led through a progressive muscle relaxation exercise. You will progress through each of your major muscle groups, tensing and relaxing as you go. This exercise takes about 9 minutes. It has audio, so you will need to find a quiet place or put on your headphones now. Sit down in a comfortable chair or lay down. Do not do this exercise while driving.</string>
     <string name="s_35a11help">This exercise will guide you, either sitting comfortably or lying down, through tensing and relaxing a sequence of muscle groups.  This allows muscles to relax more deeply than usual.  This exercise can help decrease heart rate and blood pressure, slow breathing, decrease muscle tension and clear thinking\n\nThis exercise is also great because over time you can train yourself to really know what tense muscles feel like.  The, when you recognize that your muscles are tense or becoming tense you can immediately switch your muscles to the more relaxed state because you have trained yourself to know how relaxed muscles feel</string>
@@ -529,7 +529,7 @@ What about your face? Is your brow smooth or wrinkled up? How does it feel? Now 
     <string name="s_muscle41">Flex these muscles carefully to avoid a cramp.</string>
     <string name="s_muscle42">Continue to flex your feet, feeling the muscles of your calves, feet, and toes tighten and pull. Hold the tension for another second and take a deep breath. And now, slowly, exhale, release.</string>
     <string name="s_muscle43">As your muscles relax, notice how the sensations in your calves and feet change, perhaps feeling softer, or warmer, or lighter. Really notice how the sensations of tension are different from the sensations of relaxation you are now experiencing.</string>
-    <string name="s_muscle44">With each breath, allow more tension to drain from your calves, relaxing more and more deeply. </string>
+    <string name="s_muscle44">With each breath, allow more tension to drain from your calves, relaxing more and more deeply.</string>
     <string name="s_muscle45">Continue to breathe slowly, thinking the word \"Relax\" each time you exhale, continuing to let any remaining tension drain away, breathing in, and out, in, and out.</string>
     <string name="s_muscle46">Relax, relax.</string>
     <string name="s_muscle47">Now that your whole body is feeling relaxed and comfortable, feel that sense of warmth and calmness spread over your whole body, continuing to breathe naturally, smoothly and steadily, letting the breath in and out, slowly and regularly, thinking the word \"relax\", every time you breathe out, breathing in, and out, in, and out.</string>
@@ -538,7 +538,7 @@ What about your face? Is your brow smooth or wrinkled up? How does it feel? Now 
     <string name="s_muscle50">Allow yourself to relax completely, continuing to breathe slowly and smoothly, sinking into that feeling of relaxation and noticing how it feels, so that you will be able to access it and recreate it later on your own.</string>
     <string name="s_muscle51">In a moment, I\'m going to count from 5 to 1. As I do, you will gradually feel more and more alert. When I get to 3, open your eyes, and when I get to 1, you will feel alert and refreshed and ready for the rest of your day.</string>
     <string name="s_muscle52">5, 4, beginning to shift your body, feeling a bit more awake now, 3, opening your eyes, 2, a bit more awake now, 1.</string>
-    <string name="s_muscle53">Now you are feeling refreshed and alert, relaxed and ready for whatever is next. </string>
+    <string name="s_muscle53">Now you are feeling refreshed and alert, relaxed and ready for whatever is next.</string>
     <string name="s_btool01">To prepare, get in a comfortable position. Sitting would be best for now, so that you can practice as you listen and watch the demonstration</string>
     <string name="s_btool02">Later, when you practice, you can do this exercise sitting, standing up, or lying down - whatever works for you.</string>
     <string name="s_btool03">Although this exercise should be safe for almost anyone, if you have difficulty breathing, or feel out of breath, or begin to feel dizzy, nervous, or out of control, you can adjust your breathing pace, or go back to breathing normally</string>
@@ -707,7 +707,7 @@ What about your face? Is your brow smooth or wrinkled up? How does it feel? Now 
     <string name="s_SaveEntry">Save Entry</string>
     <string name="s_SDEDateWarn">It is often very difficult to remember sleep habits more than 24 hours later. If you were not able to enter data from previous days, it may be advisable to skip entering diary data for those days.</string>
     <string name="s_SDEDateError">Please choose today\’s date or a date in the past.</string>
-    <string name="s_TNTQuestion">Did you nap or doze yesterday? </string>
+    <string name="s_TNTQuestion">Did you nap or doze yesterday?</string>
     <string name="s_Minutes">Minutes</string>
     <string name="s_Hours">Hours</string>
     <string name="s_TNTInfo">Estimate the total amount of time you spent napping or dozing. For instance, if you napped twice, once for 30minutes and once for 60 minutes, and dozed for 10 minutes, you would answer \“1 hour 40 minutes.\”</string>
@@ -726,10 +726,10 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_WUT_Info">Record the last time you woke up in the morning.</string>
     <string name="s_SQQuestion">How would you rate the quality of your sleep?</string>
     <string name="s_CommentInfo">free to write anything that you would like to say that is relevant to your sleep.</string>
-    <string name="s_EarlierQuestion2">How much earlier? </string>
+    <string name="s_EarlierQuestion2">How much earlier?</string>
     <string name="s_WUTQuestion">What time was your final awakening?</string>
     <string name="s_CommentQuestion">Comments:</string>
-    <string name="s_EarlierQuestion">Did you wake up earlier than you desired? </string>
+    <string name="s_EarlierQuestion">Did you wake up earlier than you desired?</string>
     <string name="s_WTQuestion">What time did you get out of bed for the day?</string>
     <string name="s_SQInfo">“Sleep Quality” is your sense of whether your sleep was  good or poor. Did you wake refreshed or not?</string>
     <string name="s_EarlierInfo">If you woke up or were awakened earlier than you planned, check yes. If you woke up at your planned time, check no. Write the number of minutes you woke up earlier than you had planned on waking up. For example, if you woke up 15 minutes before the alarm went off, record 15 minutes here.</string>
@@ -744,8 +744,8 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_TSTWarn2">The data you entered shows that you are getting less than five hours of sleep-this can be very difficult and can affect daily functioning. It is recommended that you see a provider to discuss ways to improve your sleep.</string>
     <string name="s_TTSWarn">You reported spending more than three hours awake or trying to get to sleep during the night. Is this correct? If you find yourself getting less than five hours of sleep on a typical night, contact your provider.</string>
     <string name="s_22d">Restricting the time you spend in bed can actually help you sleep better. If you have discussed specific times with your provider or would like to select your own bed times and wake times, choose \“Manually\” to enter the times that work best for you. If you would like the app to generate ideal bed times and wake times weekly, based on data from your sleep log, choose \“Automatically\”, then select the day you would like it to update each week. In order to calculate a sleep prescription the program needs data from your sleep diary for at least five nights in the past week.\n\nRemember, safety should always be considered when deciding how much time to allow for sleep. It is recommended you work with a provider to determine your best sleep prescription. If you have sleep apnea or if you find yourself very sleep during the day, visit the \"I Need Sleep\" section to take the questionnaire before determining a sleep prescription. Never restrict your sleep to the point where it affects your daily functioning.</string>
-    <string name="s_22b">Restricting the time you spend in bed can actually help you sleep better. If you have discussed specific times with your provider or would like to select your own bed times and wake times, choose “Manually” to enter the times that work best for you. If you would like the app to generate ideal bed times and wake times weekly, based on data from your sleep log, choose “Automatically”, then select the day you would like it to update each week. In order to calculate a sleep prescription the program needs data from your sleep diary for at least five nights in the past week.  Your sleep efficiency shows the percentage of time in bed that you spend sleeping; increase this number to improve your sleep. </string>
-    <string name="s_22a">Here you can update your prescribed bedtime and wake time, which can help you decide how long to spend in bed for sleep. Always consider your safety first when working to change your sleep habits. </string>
+    <string name="s_22b">Restricting the time you spend in bed can actually help you sleep better. If you have discussed specific times with your provider or would like to select your own bed times and wake times, choose “Manually” to enter the times that work best for you. If you would like the app to generate ideal bed times and wake times weekly, based on data from your sleep log, choose “Automatically”, then select the day you would like it to update each week. In order to calculate a sleep prescription the program needs data from your sleep diary for at least five nights in the past week.  Your sleep efficiency shows the percentage of time in bed that you spend sleeping; increase this number to improve your sleep.</string>
+    <string name="s_22a">Here you can update your prescribed bedtime and wake time, which can help you decide how long to spend in bed for sleep. Always consider your safety first when working to change your sleep habits.</string>
     <string name="s_22f">Restricting the time you spend in bed can actually help you sleep better. If you have discussed specific times with your provider or would like to select your own bed times and wake times, choose \“Manually\” to enter the times that work best for you. If you would like the app to generate ideal bed times and wake times weekly, based on data from your sleep log, choose \“Automatically\”, then select the day you would like it to update each week. In order to calculate a sleep prescription the program needs data from your sleep diary for at least five nights in the past week.\n\nRemember, safety should always be considered when deciding how much time to allow for sleep. It is recommended you work with a provider to determine your best sleep prescription. If you have sleep apnea or if you find yourself very sleep during the day, visit the \"I Need Sleep\" section to take the questionnaire before determining a sleep prescription. Never restrict your sleep to the point where it affects your daily functioning.</string>
     <string name="s_UpdateSleepPrescriptionNow">Update Sleep Prescription Now</string>
     <string name="s_Manually">Manually</string>
@@ -753,8 +753,8 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_UpdateError">The program was unable to update your sleep prescription due to insufficient information from your sleep diaries. Complete at least five diaries per week so the program can generate a sleep prescription. It is best to work collaboratively with a provider to decide on a sleep prescription.</string>
     <string name="s_WhatIsYourPrescribedWaketime">What is your prescribed wake time?</string>
     <string name="s_WhatIsYourPrescribedBedtime">What is your prescribed bedtime?</string>
-    <string name="s_ManWakeInfo">Choose a wake up time that works for your schedule. </string>
-    <string name="s_ManBedInfo"> Choose a bedtime that works for your schedule. </string>
+    <string name="s_ManWakeInfo">Choose a wake up time that works for your schedule.</string>
+    <string name="s_ManBedInfo"> Choose a bedtime that works for your schedule.</string>
     <string name="s_eula10b">NATIONAL CENTER FOR TELEHEALTH AND TECHNOLOGY (T2)\n\nUNITED STATES DEPARTMENT OF VETERANS AFFAIRS (\"VA\")\n\nSOFTWARE END USER LICENSE AGREEMENT\n\nBy agreeing to have any of T2/VA\’s software products installed on to your device and by subsequent use of the Licensed Software, you agree to comply with the terms of this general End User License Agreement (\'EULA\') where no specific agreement is in place between T2/VA and the user of the software. If you do not agree to the terms of this EULA, do not install or use the Licensed Software but uninstall it from your device. This EULA applies to any upgrades and supplements to the original Licensed Software provided and is referred to on your opening screen.\n\nThe Licensed Software is owned by T2 a division of the US Defense Centers of Excellence (DCOE) and the United States Department of Defense (DOD)and the VA. The Licensed Software is licensed, not sold, only on the terms of this EULA. Acceptance and installation of the software indicates your acceptance of the terms and conditions of this EULA.\n\nUpon installation of the Licensed Software, you will acquire the right to use the Licensed Software, directly from T2/VA. You assume responsibility for the selection of the program to achieve your intended results, and for the installation, use and results obtained from the Licensed Software.\n\nT2/VA and you acknowledge that this Agreement is concluded between T2/VA and you only, and not with Apple. T2/VA is solely responsible for the Licensed Software and its content.\n\nIn consideration of your acceptance of the terms and conditions contained in this EULA, T2/VA grants you a non-exclusive license to use the Licensed Software and the associated documentation for your own needs on one device. You are not licensed to rent, lease, transfer, or distribute the Licensed Software.\n\nTitle to the Licensed Software, including media and documentation, remain with T2/VA. You may not copy, reproduce or make data transmissions, in whole or in part, except as is necessary for back-up or archival purposes. You may not reverse engineer, translate, disassemble, decompile the Licensed Software or create similar software in whole or in part.\n\nThe license is effective upon acceptance and installation of the Licensed Software and shall continue until terminated. You may terminate it at any time by uninstalling the Licensed Software. T2/VA has the right to terminate this Agreement if you fail to comply with any term or condition of this EULA. Upon termination you shall stop all use of the Software and uninstall the Licensed Software.\n\nConfidentiality obligations pertaining to the Licensed Software will survive any termination of this EULA, to include the application, design, and functionality.\n\nThis Licensed Software is distributed AS IS, in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\nIn no event will T2/VA be liable for any damages, including those for loss of data, loss of use, or indirect, special, incidental or consequential damages in any way related to or arising out of the use of the Licensed Software, whether based upon warranty, contract, or otherwise, whether or not injury was sustained by persons or property or otherwise, and whether or not loss was sustained from, or arose out of, use of Licensed Software . You agree to waive any and all claims against the U.S. Government, T2, VA, its contractors, their subcontractors, and shall indemnify and hold harmless the U.S. Government, its contractors, and their subcontractors for any damage that you may incur from your use of the Licensed Software.\n\nT2/VA shall be neither liable nor responsible for any maintenance or updating of the provided Licensed Software, nor for correction of any errors in the Licensed Software.\n\nThis Agreement shall be construed and enforced in accordance with federal law and each party agrees to be subject to those relevant laws for all purposes.\n\nIt is understood and acknowledged that T2/VA has the absolute right to obtain injunctive relief to protect T2\'s/VA\'s proprietary rights.\n\nBy using the Licensed Software, you further agree that this is the complete and exclusive statement of the Agreement which supersedes any proposal or prior agreement, oral or written, and any other communications relating to the subject matter of this EULA.\n\nIf any provision of this Agreement is held to be invalid or unenforceable the remaining provisions will not be affected.\n\nFor statistical purposes T2/VA collects anonymous usage data and sends it to a data provider. By accepting this agreement, it is understood that this feature can be disabled through the settings screen at any time.\n\nPRIVACY NOTICE: No individually identifiable data is transferred or transmitted to T2/VA in any way through the use of the Licensed Software. All individually identifiable data entered by you remains your sole property and will not be accessed by VA without your further express consent. You also acknowledge that it is your sole responsibility to protect and otherwise secure any information captured and stored by the software once installed on your device.\n\nDISCLAIMER: The content of this application is intended for use only as an informative tool. It is not, is not intended to be, and should not be used in any way as a substitute for professional medical advice or training. The accuracy of the information provided is not guaranteed. You acknowledge in initiating this application that the information is not meant to diagnose a health condition or disease and is not meant to develop a health treatment plan. If you are in an emergency or life-threatening medical situation, seek medical assistance immediately. Dial emergency number (911 in the USA) for emergency medical services.\n\nExternal Links: The appearance of external hyperlinks does not constitute endorsement by the United States Department of Defense or United States Department of Veterans Affairs of the linked websites, or the information, products or services contain therein. The United States Department of Defense and Department of Veterans Affiars does not exercise any editorial control over the information you may find at these locations. All links are provided consistent with the stated purpose of these DoD/VA websites.</string>
     <string name="s_UpdateError2">Bedtime must be entered to update sleep prescription</string>
     <string name="s_UpdateError3">Waketime must be entered to update sleep prescription</string>
@@ -762,7 +762,7 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_WTError">Wake time is earlier than bed time</string>
     <string name="s_Updateautomaticallyeachweekon">Update automatically each week on:</string>
     <string name="s_Whatisyourdesiredwakeuptime">What is your desired wake up time?</string>
-    <string name="s_AWTInfo">Choose a wake up time that works for your schedule. Your sleep prescription will use that time to select an ideal bedtime. </string>
+    <string name="s_AWTInfo">Choose a wake up time that works for your schedule. Your sleep prescription will use that time to select an ideal bedtime.</string>
     <string name="s_snq09a">Based on your scores, it does not seem necessary to change your sleep prescription at this time. However, if you are notice becoming extremely sleepy or having difficulty functioning during the day, discuss changing your sleep prescription with your provider. If your sleep efficiency is below 80%, it is recommended that you contact a provider.</string>
     <string name="s_snq09b">It has been less than a week since you last took the self-assessment. The questions are designed to assess your symptoms over time, so it is not helpful to take it more than once a week. Based on your current scores, it does not seem necessary to change your sleep prescription at this time. If you are notice becoming extremely sleepy or having difficulty functioning during the day, discuss changing your sleep prescription with your provider.  Try taking the assessment after a week or more to see if your sleep need has changed. Remember to never restrict sleep to the point where it could affect your daily functioning.</string>
     <string name="s_snq1012b">It has been less than a week since you last took the self-assessment. The questions are designed to assess your symptoms over time, so it is not helpful to take it more than once a week. Based on your current scores you may be having some issues with daytime sleepiness. Try taking the assessment after a week or more to see if your sleep need has changed. If you continue to have issues with daytime sleepiness, consider going to bed 15 minutes earlier. Remember to never restrict sleep to the point where it could affect your daily functioning</string>
@@ -798,19 +798,19 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_ISIQ42">Moderately Satisfied</string>
     <string name="s_ISIQ43">Dissatisfied</string>
     <string name="s_ISIQ44">Very Dissatisfied</string>
-    <string name="s_ISIQ5">How NOTICEABLE to others do you think your sleep problem is in terms of impairing the quality of your life? </string>
+    <string name="s_ISIQ5">How NOTICEABLE to others do you think your sleep problem is in terms of impairing the quality of your life?</string>
     <string name="s_ISIQ50">Not at all Noticeable</string>
     <string name="s_ISIQ51">A Little</string>
     <string name="s_ISIQ52">Somewhat</string>
     <string name="s_ISIQ53">Much</string>
     <string name="s_ISIQ54">Very Much Noticeable</string>
-    <string name="s_ISIQ6">How WORRIED/DISTRESSED are you about your current sleep problem? </string>
+    <string name="s_ISIQ6">How WORRIED/DISTRESSED are you about your current sleep problem?</string>
     <string name="s_ISIQ60">Not at all Worried</string>
     <string name="s_ISIQ61">A Little</string>
     <string name="s_ISIQ62">Somewhat</string>
     <string name="s_ISIQ63">Much</string>
     <string name="s_ISIQ64">Very Much Worried</string>
-    <string name="s_ISIQ7">To what extent do you consider your sleep problem to INTERFERE with your daily functioning (e.g. daytime fatigue, mood, ability to function at work/daily chores, concentration, memory, mood, etc.) CURRENTLY? </string>
+    <string name="s_ISIQ7">To what extent do you consider your sleep problem to INTERFERE with your daily functioning (e.g. daytime fatigue, mood, ability to function at work/daily chores, concentration, memory, mood, etc.) CURRENTLY?</string>
     <string name="s_ISIQ70">Not at all Interfering</string>
     <string name="s_ISIQ71">A Little</string>
     <string name="s_ISIQ72">Somewhat</string>
@@ -819,7 +819,7 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_ISITitle">Question %d of 7</string>
     <string name="s_INMSQTitle">Question %d of 4</string>
     <string name="s_ISI2">Are you currently working on your sleep with a healthcare provider?</string>
-    <string name="s_ISI1">This self-assessment, the Insomnia Severity Index, cannot tell you if you have insomnia, but can give you some valuable information about your sleep symptoms.  If you are currently working with a sleep therapist, sharing the results of this assessment with him or her may help with your care. </string>
+    <string name="s_ISI1">This self-assessment, the Insomnia Severity Index, cannot tell you if you have insomnia, but can give you some valuable information about your sleep symptoms.  If you are currently working with a sleep therapist, sharing the results of this assessment with him or her may help with your care.</string>
     <string name="s_ISIError">It has been less than a week since you last took the self-assessment.  The questions are designed to assess your symptoms since the last time you answered, so it is generally not helpful to take it more than once a week.</string>
     <string name="s_ISIFeed1">Your score suggests that you do not have symptoms meeting criteria for insomnia at this time. \n\nHowever, if you are feeling stressed,  make an appointment with a healthcare professional.  A professional will be able to help you understand what is going on and provide ways to deal with stress.  </string>
     <string name="s_ISIFeed2">You are reporting a number of sleep problems, similar to people who have been diagnosed with insomnia. If you continue to have these kinds of sleep problems over the next several weeks, you should talk with a trained health care provider.  Seeking help will be especially important if you think that you may have other problems which can interfere with sleep, such as depression, substance abuse, PTSD or anxiety.  This app can help you learn effective strategies for improving your sleep and allows you to keep track of how well you’re sleeping over time.  Take this assessment again in four weeks so you can keep an eye on your symptoms.</string>
@@ -827,7 +827,7 @@ took you to fall asleep.  This will be an estimate.</string>
     <string name="s_ISIFeed4">The sleep problems that you are reporting do not suggest insomnia.  Your score is an improvement over your previous scores on this assessment.  Answer the sleep questions again in four weeks so you can keep an eye on your symptoms.  If you continue to use this app to support good sleep habits, you may find that you will continue to sleep well.  However, don’t be alarmed if minor sleep difficulties occur once in a while. It’s not unusual to have occasional sleep problems, especially during times of increased stress.  
 If you are feeling very stressed make an appointment with a healthcare professional, regardless of the outcome of this assessment.  A professional will be able to help you understand what is going on and what you can do to deal with stress.</string>
     <string name="s_ISIFeed5">You are continuing to report a number of sleep problems, similar to people who have been diagnosed with insomnia.   Since you are continuing to have these kinds of sleep problems, you should talk with a trained health care provider.  Seeking help will be especially important if you think that you may have other problems which can interfere with sleep, such as depression, substance abuse, PTSD or anxiety.  Share the results of this assessment with your health care provider.  Take this assessment again in four weeks so you can keep an eye on your symptoms and try to include the information and tools in this app in your bedtime routine.</string>
-    <string name="s_ISIFeed6">You are reporting a number of sleep problems which are similar to people who have been diagnosed with insomnia.  Your sleep may have gotten worse since you last took the assessment.   If you continue to have these kinds of sleep problems over the next several weeks, you should talk with a trained health care provider.  Seeking help will be especially important if you think that you may have other problems which can interfere with sleep, such as depression, substance abuse, PTSD or anxiety. While there is no substitute for professional face-to-face care, this app can help you learn effective strategies for improving your sleep.  Take this assessment again in four weeks so you can keep an eye on your symptom picture.  </string>
+    <string name="s_ISIFeed6">You are reporting a number of sleep problems which are similar to people who have been diagnosed with insomnia.  Your sleep may have gotten worse since you last took the assessment.   If you continue to have these kinds of sleep problems over the next several weeks, you should talk with a trained health care provider.  Seeking help will be especially important if you think that you may have other problems which can interfere with sleep, such as depression, substance abuse, PTSD or anxiety. While there is no substitute for professional face-to-face care, this app can help you learn effective strategies for improving your sleep.  Take this assessment again in four weeks so you can keep an eye on your symptom picture. </string>
     <string name="s_TakeAssessmentNow">Take Assessment Now</string>
     <string name="s_Off">Off</string>
     <string name="s_Yes">Yes</string>
@@ -851,6 +851,8 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_TotalTimeInBed" formatted="false">Total Time In Bed  %dh:%02dm</string>
     <string name="s_TotalTimeAsleep" formatted="false">Total Time Asleep  %dh:%02dm</string>
     <string name="s_SleepEfficiency" formatted="false">Sleep Efficiency %d</string>
+    <string name="s_TotalTimeInBedDesc" formatted="false">Total Time In Bed  %d hours %02d minutes</string>
+    <string name="s_TotalTimeAsleepDesc" formatted="false">Total Time Asleep  %d hours %02d minutes</string>
     <string name="s_Never">Never</string>
     <string name="s_Always">Always</string>
     <string name="s_Sometimes">Sometimes</string>
@@ -863,10 +865,10 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_Cancel">Cancel</string>
     <string name="s_32c">You won\'t be able to compare new assessment results with your earlier results.  Are you sure you want to clear your assessment history?</string>
     <string name="s_32cTitle">Clear History?</string>
-    <string name="s_32d">Once you take the assessment your results will show up here as a graph. Remember, no one will see your results other than you (your sleep therapist will be able to see the results if you decide to share them). This is an opportunity to get feedback on how severe your symptoms are, and if you are getting better or worse over time.   </string>
+    <string name="s_32d">Once you take the assessment your results will show up here as a graph. Remember, no one will see your results other than you (your sleep therapist will be able to see the results if you decide to share them). This is an opportunity to get feedback on how severe your symptoms are, and if you are getting better or worse over time.  </string>
     <string name="s_AllAssessments">All Assessments</string>
     <string name="s_32f">Touch an item to view Assessment responses to specific questions.</string>
-    <string name="s_Score">Score: </string>
+    <string name="s_Score">Score:</string>
     <string name="s_TooEarly">Too Early</string>
     <string name="s_OK">OK</string>
     <string name="s_Dismiss">Dismiss</string>
@@ -917,8 +919,9 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_TakeAssessmentButton">Take Assessment</string>
     <string name="s_ScheduleAssessmentsButton">Schedule assessments</string>
     <string name="s_ResultsHistoryButton">Results History</string>
-    <string name="s_HealthcareProviderCheckbox">are you currently working with a healthcare provider checkbox</string>
+    <string name="s_HealthcareProviderCheckbox">are you currently working with a healthcare provider</string>
     <string name="s_TakeAssessmentNowButton">take assessment now</string>
+    <string name="s_AssessmentHistoryGraphDesc">Assessment History Graph</string>
     <string name="s_MildCheckbox">Mild</string>
     <string name="s_ModerateCheckbox">Moderate</string>
     <string name="s_VerySevereCheckbox">Very Severe</string>
@@ -927,19 +930,19 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_ShowAssessmentDetailsButton">Show assessment details</string>
     <string name="s_ClearHistoryButton">clear history</string>
     <string name="s_ScheduleNextAssessmentButton">schedule next assessment</string>
-    <string name="s_TakeAssessmentCheckbox">Take Assessment Checkbox</string>
-    <string name="s_TakeAssessmentReminderCheckbox">take assessment reminder checkbox</string>
+    <string name="s_TakeAssessmentCheckbox">Take Assessment</string>
+    <string name="s_TakeAssessmentReminderCheckbox">take assessment reminder</string>
     <string name="s_TakeAssessmentTimeButton">take assessment time</string>
     <string name="s_GetOutOfBedAtYourPrescribedTimeButton">get out of bed at your prescribed time</string>
     <string name="s_GoToBedOnlyWhenSleepyButton">go to bed only when sleepy</string>
     <string name="s_GetOutOfBedWhenYouCantSleepButton">get out of bed when you can\'t sleep</string>
     <string name="s_SetCaffeineGoalsButton">set caffeine goals</string>
     <string name="s_SetUpYourSleepEnvironmentButton">Set up your sleep environment</string>
-    <string name="s_RoomIsDarkCheckbox">room is dark checkbox</string>
-    <string name="s_TemperatureisComfortableCheckbox">temperature is comfortable checkbox</string>
-    <string name="s_LowNoiseLevelCheckbox">Low noise level checkbox</string>
-    <string name="s_SleepIsUndisturbedByOthersCheckbox">sleep is undisturbed by others checkbox</string>
-    <string name="s_ReserveMyBedForSleepSexCheckbox">Reserve my bed for sleep or sex checkbox</string>
+    <string name="s_RoomIsDarkCheckbox">room is dark</string>
+    <string name="s_TemperatureisComfortableCheckbox">temperature is comfortable</string>
+    <string name="s_LowNoiseLevelCheckbox">Low noise level</string>
+    <string name="s_SleepIsUndisturbedByOthersCheckbox">sleep is undisturbed by others</string>
+    <string name="s_ReserveMyBedForSleepSexCheckbox">Reserve my bed for sleep or sex</string>
     <string name="s_StopCaffeineReminderCheckbox">Stop Caffeine Reminder Checkbox</string>
     <string name="s_GuidedImageryForestButton">Guided Imagery, Forest</string>
     <string name="s_ProgressiveMuscleRelaxationButton">Progressive Muscle relaxation</string>
@@ -951,21 +954,21 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_ObserveThoughtsBodyButton">observe sensations, body scan</string>
     <string name="s_GuidedImageryCountryRoadButton">guided imagery, country road</string>
     <string name="s_BreathingToolButton">Breathing Tool</string>
-    <string name="s_WindDownTimeReminderCheckbox">Wind down time reminder checkbox</string>
+    <string name="s_WindDownTimeReminderCheckbox">Wind down time reminder</string>
     <string name="s_PlayButton">Play</string>
     <string name="s_AudioGuidedButton">Audio Guided</string>
     <string name="s_SelfGuidedButton">self guided</string>
     <string name="s_WorryTimeReminderButton">Worry time reminder</string>
     <string name="s_WorriedAboutTraumaButton">Worried about trauma</string>
     <string name="s_WorriedAboutSleepButton">Worried about sleep</string>
-    <string name="s_PI2Checkbox">i have trouble going to bed only when im sleepy andy prescribed bedtime checkbox</string>
-    <string name="s_PI1Checkbox">i have trouble waking up and getting out of bed at my prescribed wake time checkbox</string>
-    <string name="s_PI3Checkbox">it is hard for me to get out of bed when i cannot sleep checkbox</string>
-    <string name="s_PI4Checkbox">i have trouble creating a buffer zone to wind down before sleep checkbox</string>
-    <string name="s_PI5Checkbox">i worry in bed checkbox</string>
-    <string name="s_PI6Checkbox">i am having trouble limiting my caffeine use checkbox</string>
-    <string name="s_PI8Checkbox">i cannot relax enough for sleep checkbox</string>
-    <string name="s_PI7Checkbox">i don\'t have a sleep environment that is quiet, dark and cool checkbox</string>
+    <string name="s_PI2Checkbox">i have trouble going to bed only when im sleepy andy prescribed bedtime</string>
+    <string name="s_PI1Checkbox">i have trouble waking up and getting out of bed at my prescribed wake time</string>
+    <string name="s_PI3Checkbox">it is hard for me to get out of bed when i cannot sleep</string>
+    <string name="s_PI4Checkbox">i have trouble creating a buffer zone to wind down before sleep</string>
+    <string name="s_PI5Checkbox">i worry in bed</string>
+    <string name="s_PI6Checkbox">i am having trouble limiting my caffeine use</string>
+    <string name="s_PI8Checkbox">i cannot relax enough for sleep</string>
+    <string name="s_PI7Checkbox">i don\'t have a sleep environment that is quiet, dark and cool</string>
     <string name="s_CBTIGlossaryButton">cbt-i glossary</string>
     <string name="s_Sleep101Button">Sleep 1o1</string>
     <string name="s_HealthySleepHabitsButton">healthy sleep habits</string>
@@ -996,13 +999,14 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_ProjectPartnersButton">project partners</string>
     <string name="s_CBTICoachButton">CBT-i coach</string>
     <string name="s_ResetAllUserDataButton">reset all user data</string>
-    <string name="s_WindDownTimeCheckbox">wind down time checkbox</string>
+    <string name="s_WindDownTimeCheckbox">wind down time</string>
     <string name="s_ResetAllRemindersButton">reset all reminders</string>
-    <string name="s_PrescribedWakeTimeReminderCheckbox">prescribed wake time reminder checkbox</string>
-    <string name="s_PrescribedBedtimeReminderCheckbox">prescribed bedtime reminder checkbox</string>
-    <string name="s_UpdateSleepPrescriptionReminderCheckbox">update sleep prescription reminder checkbox</string>
-    <string name="s_WorryTimeReminderCheckbox">worry time reminder checkbox</string>
-    <string name="s_ReserveMyBedForSleepSexCheckbox">Reserve my bed for sleep or sex checkbox</string>
+    <string name="s_confirmResetAllReminders">Are you sure you want to reset all of your reminders?</string>
+    <string name="s_PrescribedWakeTimeReminderCheckbox">prescribed wake time reminder</string>
+    <string name="s_PrescribedBedtimeReminderCheckbox">prescribed bedtime reminder</string>
+    <string name="s_UpdateSleepPrescriptionReminderCheckbox">update sleep prescription reminder</string>
+    <string name="s_WorryTimeReminderCheckbox">worry time reminder</string>
+    <string name="s_ReserveMyBedForSleepSexCheckbox">Reserve my bed for sleep or sex</string>
     <string name="s_RemindersButton">Reminders</string>
     <string name="s_MySleepButton">My sleep</string>
     <string name="s_ToolsButton">Tools</string>

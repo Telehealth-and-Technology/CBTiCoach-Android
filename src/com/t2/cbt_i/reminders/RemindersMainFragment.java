@@ -1,42 +1,44 @@
 /*
-* RemindersMainFragment.java
-* Fragment used as the graphical interface for the user to alter and set all of their reminders
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * RemindersMainFragment.java
+ * Fragment used as the graphical interface for the user to alter and set all of their reminders
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.reminders;
 
 import java.util.Calendar;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -328,10 +330,8 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		{
 			@Override
 			public void onClick(View v)
-			{ // handle the about button
-				cData60a.resetData(); // reset to default values
-				renderData();
-				cData60a.cancelAllAlarms();
+			{ 
+				showDialog(CONFIRM_RESET_DIALOG);
 			}
 		});
 	}
@@ -381,10 +381,8 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	}
 
 	/**
-	 * A callback listener that implements the
-	 * {@link android.widget.AdapterView.OnItemSelectedListener} interface For
-	 * views based on adapters, this interface defines the methods available
-	 * when the user selects an item from the View.
+	 * A callback listener that implements the {@link android.widget.AdapterView.OnItemSelectedListener} interface For views based on adapters, this interface
+	 * defines the methods available when the user selects an item from the View.
 	 * 
 	 */
 	public class myOnItemSelectedListener implements OnItemSelectedListener
@@ -531,6 +529,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	}
 
 	static final int TIME_DIALOG_ID = 1;
+	static final int CONFIRM_RESET_DIALOG = 2;
 	int iInitialHourOfDay; // if zero we default to current time
 	int iInitialMin = 0;
 
@@ -549,6 +548,27 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			// return new TimePickerDialog(getSherlockActivity(),
 			// mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			break;
+		case CONFIRM_RESET_DIALOG:
+			AlertDialog.Builder build = new AlertDialog.Builder(getActivity());
+			build.setMessage(getString(R.string.s_confirmResetAllReminders))
+				.setPositiveButton(R.string.s_OK, new DialogInterface.OnClickListener()
+				{
+					@Override
+					public void onClick(DialogInterface dialog, int which)
+					{
+						cData60a.resetData(); // reset to default values
+						renderData();
+						cData60a.cancelAllAlarms();
+					}
+				})
+				.setNegativeButton(R.string.s_No, new DialogInterface.OnClickListener()
+				{
+					@Override
+					public void onClick(DialogInterface dialog, int which) { }
+				})
+				.show();
+			break;
 		}
 		return null;
 	}

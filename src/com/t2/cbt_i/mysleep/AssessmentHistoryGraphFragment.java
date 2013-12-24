@@ -145,6 +145,7 @@ public class AssessmentHistoryGraphFragment extends CBTi_BaseFragment
 			initChart();
 			addData();
 			mChart = ChartFactory.getLineChartView(getSherlockActivity(), mDataset, mRenderer);
+			mChart.setContentDescription(getString(R.string.s_AssessmentHistoryGraphDesc));
 			// mChart.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_mysleepassessment));
 			layout.addView(mChart);
 		}

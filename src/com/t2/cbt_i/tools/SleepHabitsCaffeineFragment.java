@@ -42,6 +42,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -196,8 +197,8 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 		ArrayAdapter<CharSequence> aa = ArrayAdapter.createFromResource(getSherlockActivity(), R.array.DCDL, android.R.layout.simple_spinner_dropdown_item);
 		sSpin.setAdapter(aa);
 		sSpin.setSelection(cData34i.iDailyCaffeineDrinkLimit, true);
-		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
-		sSpin.setOnItemSelectedListener(spinnerListener);
+//		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
+//		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
 	/**

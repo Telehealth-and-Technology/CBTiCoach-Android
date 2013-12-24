@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <!-- middle buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,9 +48,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_GoToBedOnlyWhenSleepyButton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:contentDescription="@string/s_GoToBedOnlyWhenSleepyButton" />
+                        android:orientation="horizontal" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -93,9 +94,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_GetOutOfBedWhenYouCantSleepButton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:contentDescription="@string/s_GetOutOfBedWhenYouCantSleepButton" />
+                        android:orientation="horizontal" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -138,9 +139,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_GetOutOfBedAtYourPrescribedTimeButton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:contentDescription="@string/s_GetOutOfBedAtYourPrescribedTimeButton" />
+                        android:orientation="horizontal" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -183,9 +184,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_SetUpYourSleepEnvironmentButton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:contentDescription="@string/s_SetUpYourSleepEnvironmentButton" />
+                        android:orientation="horizontal" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -228,9 +229,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_SetCaffeineGoalsButton"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:contentDescription="@string/s_SetCaffeineGoalsButton" />
+                        android:orientation="horizontal" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

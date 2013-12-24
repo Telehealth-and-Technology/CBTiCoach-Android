@@ -4,500 +4,488 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <!--   middle buttons -->
-    <LinearLayout 
-       	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:orientation="vertical"
-    	android:background="@drawable/bg_bggraystriped" >
-    	
-       <ScrollView
-   			android:layout_width="match_parent"
-    	    android:layout_height="match_parent" 
-    	    android:fillViewport="true"
-   		    >
-    
-    	    <LinearLayout
-    	        android:layout_width="match_parent"
-    	        android:layout_height="wrap_content" 
-	    		android:orientation="vertical"
-	    		>
-	    		
-    	        <TextView
-    	            android:layout_width="match_parent"
-    	            android:layout_height="wrap_content"
-    	            android:layout_marginTop="20dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_weight="2"
-    	            android:layout_gravity="center_vertical"
-    	            android:text="@string/s_35a"
-    	            android:textSize="15dp" />
-   	            
-    	        <!-- each button 1 -->
-    	        <RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="20dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bWindingDown"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_WindingDownButton"/>
-    	                	        
-    	        	<LinearLayout
-    	        	    android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+    <!-- middle buttons -->
 
-    	            	<ImageView
-    	                	android:layout_width="0dp"
-    	                	android:layout_height="match_parent"
-    	                	android:layout_margin="5dp"
-    	                	android:layout_weight="2"
-    	                	android:layout_gravity="center_vertical"
-    	                	android:src="@drawable/buddy_toolsgetoutofbedwhenyoucantsleep" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
 
-    	            	<TextView
-    	                	android:layout_width="0dp"
-    	                	android:layout_height="wrap_content"
-    	                	android:layout_marginRight="15dp"
-    	                	android:layout_weight="4"
-    	                	android:layout_gravity="center_vertical"
-    	                	android:textSize="20dp"
-                        	android:textStyle="bold" 
-    	                	android:text="@string/s_WindingDown" />
-    	        	</LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
 
-   	        	</RelativeLayout>
-   	        	<!-- end each button 1 -->
-   	        	
-   	        	<!-- each button 2 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bScheduleWorryTime"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_ScheduleWorryTimeButton"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-    	        	<LinearLayout
-    	            	android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="2"
+                    android:text="@string/s_35a"
+                    android:textSize="15dp" />
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/buddy_toolsgetoutofbedatyourprescribedbedtime" />
+                <!-- each button 1 -->
 
-    	            	<TextView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="wrap_content"
-    	            	    android:layout_gravity="center_vertical"
-    	            	    android:layout_marginRight="15dp"
-    	            	    android:layout_weight="4"
-    	            	    android:textSize="20dp"
-                        	android:textStyle="bold" 
-    	            	    android:text="@string/s_ScheduleWorryTime" />
-    	        	</LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp" >
 
-   	        	</RelativeLayout>
-   	        	<!-- end each button 2 -->
-   	        	
-   	        	<!-- each button 3 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bChangeYourPerspective"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_ChangeYourPerspectiveButton"/>
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/bWindingDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_WindingDownButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/buddy_toolschangeyourperspective" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_ChangeYourPerspective" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 3 -->
-   	        	
-   	        	<!-- each button 4 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bBreathingTool"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_BreathingToolButton"/>
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolsgetoutofbedwhenyoucantsleep" />
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/buddy_toolsbreathingtool" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_BreathingTool"  />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_WindingDown"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 1 -->
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 4 -->
-   	        	
-   	        	<!-- each button 5 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bProgressiveMuscleRelaxation"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_ProgressiveMuscleRelaxationButton" />
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/buddy_toolsprogressivemusclerelaxation" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_ProgressiveMuscleRelaxation"  />
+                <!-- each button 2 -->
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 5 -->
-   	        	
-   	        	<!-- each button 6 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bGuidedImageryForest"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_GuidedImageryForestButton" />
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/guidedimageryforest" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_GuidedImageryForest"  />
+                    <Button
+                        android:id="@+id/bScheduleWorryTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ScheduleWorryTimeButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 6 -->
-   	        	
-   	        	<!-- each button 7 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bGuidedImageryCountryRoad"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_GuidedImageryCountryRoadButton" />
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/guidedimageryroad" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_GuidedImageryCountryRoad" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolsgetoutofbedatyourprescribedbedtime" />
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 7 -->
-   	        	
-   	        	<!-- each button 8 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bGuidedImageryBeach"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_GuidedImageryBeachButton" />
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_ScheduleWorryTime"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 2 -->
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/guidedimagerybeach" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_GuidedImageryBeach" />
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 8 -->
-   	        	
-   	        	<!-- each button 9 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bObserveThoughtsCloudsintheSky"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_ObserveThoughtsCloudsButton" />
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                <!-- each button 3 -->
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/buddy_toolsobservethoughtscloudsinthesky" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_ObserveThoughtsCloudsintheSky" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 9 -->
-   	        	
-   	        	<!-- each button 10 -->
-   	        	<RelativeLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="100dp"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="10dp"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bObserveSensationsBodyScan"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="match_parent"
-    	                android:background="@drawable/bg_whitebutton" 
-    	                android:gravity="center_vertical"
-    	            	android:orientation="horizontal" 
-    	            	android:contentDescription="@string/s_ObserveThoughtsBodyButton" />
-   	        	
-    	        	<LinearLayout 
-   	        			android:layout_width="match_parent"
-    	            	android:layout_height="match_parent"
-    	            	android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/bChangeYourPerspective"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ChangeYourPerspectiveButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
 
-    	            	<ImageView
-    	            	    android:layout_width="0dp"
-    	            	    android:layout_height="match_parent"
-    	            	    android:layout_margin="5dp"
-    	            	    android:layout_weight="2"
-    	            	    android:src="@drawable/buddy_toolsobservesensationsbodyscan" />
-   	        		
-   	        			<TextView
-   	        			    android:layout_width="0dp"
-   	        			    android:layout_height="wrap_content"
-   	        			    android:layout_gravity="center_vertical"
-   	        			    android:layout_marginRight="15dp"
-   	        			    android:layout_weight="4"
-   	        			    android:textSize="20dp"
-                        	android:textStyle="bold" 
-   	        			    android:text="@string/s_ObserveSensationsBodyScan" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
 
-   	        		</LinearLayout>
-   	        		
-   	        	</RelativeLayout>
-   	        	<!-- end each button 10 -->
-   	        	 	        
-	    	</LinearLayout>
-    	    
-       	</ScrollView>
-    	
-   	</LinearLayout>
-   	<!--   middle buttons -->
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolschangeyourperspective" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_ChangeYourPerspective"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 3 -->
+
+
+                <!-- each button 4 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bBreathingTool"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_BreathingToolButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolsbreathingtool" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_BreathingTool"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 4 -->
+
+
+                <!-- each button 5 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bProgressiveMuscleRelaxation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ProgressiveMuscleRelaxationButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolsprogressivemusclerelaxation" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_ProgressiveMuscleRelaxation"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 5 -->
+
+
+                <!-- each button 6 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bGuidedImageryForest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_GuidedImageryForestButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/guidedimageryforest" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_GuidedImageryForest"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 6 -->
+
+
+                <!-- each button 7 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bGuidedImageryCountryRoad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_GuidedImageryCountryRoadButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/guidedimageryroad" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_GuidedImageryCountryRoad"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 7 -->
+
+
+                <!-- each button 8 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bGuidedImageryBeach"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_GuidedImageryBeachButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/guidedimagerybeach" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_GuidedImageryBeach"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 8 -->
+
+
+                <!-- each button 9 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bObserveThoughtsCloudsintheSky"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ObserveThoughtsCloudsButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolsobservethoughtscloudsinthesky" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_ObserveThoughtsCloudsintheSky"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 9 -->
+
+
+                <!-- each button 10 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/bObserveSensationsBodyScan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ObserveThoughtsBodyButton"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/buddy_toolsobservesensationsbodyscan" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="4"
+                            android:text="@string/s_ObserveSensationsBodyScan"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- end each button 10 -->
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
 
 </RelativeLayout>
