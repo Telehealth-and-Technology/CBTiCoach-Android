@@ -4,97 +4,81 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-   <!--   middle buttons -->
-   <LinearLayout 
-       	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:orientation="vertical"
-    	android:background="@drawable/bg_bggraystriped" >
-    	
-       <ScrollView
-   			android:layout_width="match_parent"
-    	    android:layout_height="match_parent" 
-    	    android:fillViewport="true"
-   		    >
-    
-    	    <LinearLayout
-    	        android:layout_width="match_parent"
-    	        android:layout_height="wrap_content" 
-	    		android:orientation="vertical"
-	    		>
-   	            
-    	        <!-- each button 1 -->
-    	        <LinearLayout
-    	            android:layout_width="match_parent"
-    	            android:layout_height="wrap_content"
-    	            android:layout_marginBottom="10dp"
-    	            android:layout_marginLeft="20dp"
-    	            android:layout_marginRight="20dp"
-    	            android:layout_marginTop="20dp"
-    	            android:orientation="vertical"
-    	            >
-    	            
-    	            <Button
-    	                android:id="@+id/bResetData"
-    	                android:layout_width="match_parent"
-    	                android:layout_height="wrap_content"
-    	                android:background="@drawable/bg_whitebutton"
-    	                android:gravity="center"
-    	                android:textSize="20dp"
-    	                android:textStyle="bold"
-    	                android:text="@string/s_ResetAllUserData"
-    	                android:contentDescription="@string/s_ResetAllUserDataButton" />
-    	            
-    	            <TextView
-    	                android:layout_width="match_parent"
-    	                android:layout_height="wrap_content"
-    	                android:layout_marginTop="20dp"
-    	                android:gravity="center"
-    	                android:textSize="20dp"
-    	                android:text="@string/s_50b" 
-    	                android:visibility="gone" />
-    	            
-    	            <RelativeLayout
-    	                android:layout_width="match_parent"
-    	                android:layout_height="wrap_content"
-    	                android:layout_marginTop="10dp"
-    	                android:paddingTop="10dp"
-    	                android:orientation="horizontal" 
-    	                android:visibility="gone" >
-    	                
-    	            	<TextView
-    	            	    android:layout_width="match_parent"
-    	            	    android:layout_height="wrap_content"
-    	            	    android:layout_alignParentLeft="true"
-    	            	    android:background="@drawable/bg_whitebutton"
-    	            	    android:paddingBottom="10dp"
-    	            	    android:paddingLeft="10dp"
-    	            	    android:paddingTop="10dp"
-    	            	    android:text="@string/s_ProvideAUD"
-    	            	    android:textSize="18dp" 
-    	            	    android:textStyle="bold" />
-    	            
-    	            	<CheckBox
-    	            	    android:id="@+id/bHelpImprove"
-    	            	    android:layout_width="wrap_content"
-    	            	    android:layout_height="wrap_content"
-    	            	    android:layout_alignParentRight="true"
-    	            	    android:paddingBottom="10dp"
-    	            	    android:paddingRight="10dp"
-    	            	    android:paddingTop="10dp" />
+    <!-- middle buttons -->
 
-    	            </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bggraystriped"
+        android:orientation="vertical" >
 
-   	        	</LinearLayout>
-   	        	<!-- end each button 1 -->
-   	        	
-   	        	
-   	        	 	        
-	    	</LinearLayout>
-    	    
-       	</ScrollView>
-    	
-   	</LinearLayout>
-   	<!--   middle buttons -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <!-- each button 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bResetData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_whitebutton"
+                    android:contentDescription="@string/s_ResetAllUserDataButton"
+                    android:gravity="center"
+                    android:text="@string/s_ResetAllUserData"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/s_50b"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/bg_whitebutton"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/s_ProvideAUD"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/bHelpImprove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- end each button 1 -->
+
+        </ScrollView>
+    </LinearLayout>
+    <!-- middle buttons -->
 
 </RelativeLayout>

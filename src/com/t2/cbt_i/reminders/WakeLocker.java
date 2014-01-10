@@ -33,13 +33,16 @@
 */
 package com.t2.cbt_i.reminders;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.PowerManager;
 
 public abstract class WakeLocker {
     private static PowerManager.WakeLock wakeLock;
 
-    public static void acquire(Context ctx) {
+    @SuppressLint("Wakelock")
+	@SuppressWarnings("deprecation")
+	public static void acquire(Context ctx) {
         if (wakeLock != null) 
         	wakeLock.release();
 

@@ -38,14 +38,12 @@ import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
-import com.flurry.android.FlurryAgent;
 import com.t2.cbt_i.R;
 import com.t2.cbt_i.dashboard.DashboardActivity;
-import com.t2.cbt_i.settings.SettingsData;
 
 public class CBTi_BaseActivity extends SherlockFragmentActivity
 {
-	private static Boolean bFlurryEnabled = false;
+//	private static Boolean bFlurryEnabled = false;
 
 	// private static Boolean bProvideUsageData;
 
@@ -53,10 +51,10 @@ public class CBTi_BaseActivity extends SherlockFragmentActivity
 	protected void onStart()
 	{
 		super.onStart();
-		SettingsData cData50b = new SettingsData(this);
-		bFlurryEnabled = cData50b.bProvideUsageData;
-		if (bFlurryEnabled)
-			FlurryAgent.onStartSession(this, "3WMX22DG599MF9986NDV");
+//		SettingsData cData50b = new SettingsData(this);
+//		bFlurryEnabled = cData50b.bProvideUsageData;
+//		if (bFlurryEnabled)
+//			FlurryAgent.onStartSession(this, "3WMX22DG599MF9986NDV");
 	}
 
 	@Override
@@ -93,8 +91,8 @@ public class CBTi_BaseActivity extends SherlockFragmentActivity
 	protected void onStop()
 	{
 		super.onStop();
-		if (bFlurryEnabled)
-			FlurryAgent.onEndSession(this);
+//		if (bFlurryEnabled)
+//			FlurryAgent.onEndSession(this);
 	}
 
 }
