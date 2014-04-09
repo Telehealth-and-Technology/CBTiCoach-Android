@@ -1005,7 +1005,6 @@ If you are feeling very stressed make an appointment with a healthcare professio
     <string name="s_PrescribedBedtimeReminderCheckbox">prescribed bedtime reminder</string>
     <string name="s_UpdateSleepPrescriptionReminderCheckbox">update sleep prescription reminder</string>
     <string name="s_WorryTimeReminderCheckbox">worry time reminder</string>
-    <string name="s_ReserveMyBedForSleepSexCheckbox">Reserve my bed for sleep or sex</string>
     <string name="s_RemindersButton">Reminders</string>
     <string name="s_MySleepButton">My sleep</string>
     <string name="s_ToolsButton">Tools</string>

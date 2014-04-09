@@ -2867,7 +2867,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int rightSpacer=0x7f07002f;
         public static final int ring=0x7f070024;
         public static final int ringtone=0x7f07001e;
-        public static final int rl1=0x7f070096;
+        public static final int rl1=0x7f070097;
         public static final int rlAudio=0x7f0701a1;
         public static final int rlPMR=0x7f0701a6;
         public static final int rlPMRC=0x7f0701a7;
@@ -2878,7 +2878,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int rlWorryTime=0x7f070152;
         public static final int rl_onoff=0x7f07011a;
         public static final int rllv=0x7f0700bd;
-        public static final int rlpb=0x7f070097;
+        public static final int rlpb=0x7f070096;
         public static final int rlsp=0x7f07013b;
         public static final int rowTextView=0x7f070159;
         public static final int sAutoDay=0x7f070129;

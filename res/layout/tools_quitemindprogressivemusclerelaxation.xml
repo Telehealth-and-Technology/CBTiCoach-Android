@@ -62,7 +62,7 @@
                     android:textColor="@android:color/black"
                     android:gravity="bottom|center_horizontal"
                     android:padding="18dp"
-                    android:contentDescription=" " />
+                    android:contentDescription="@string/blankcontentdescription" />
 
                 <Button
                     android:id="@+id/bPlayMe"
