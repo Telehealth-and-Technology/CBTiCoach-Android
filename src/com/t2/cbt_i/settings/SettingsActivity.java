@@ -40,7 +40,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.Toast;
 
 import com.t2.cbt_i.R;
@@ -117,7 +116,6 @@ public class SettingsActivity extends CBTi_BaseActivity
 	@Override
 	protected void onPause()
 	{
-		cData50b.bProvideUsageData = ((CheckBox) findViewById(R.id.bHelpImprove)).isChecked();
 		cData50b.saveData(); // save data to file
 		super.onPause();
 	}
@@ -126,7 +124,6 @@ public class SettingsActivity extends CBTi_BaseActivity
 	protected void onResume()
 	{
 		cData50b = new SettingsData(this);
-		((CheckBox) findViewById(R.id.bHelpImprove)).setChecked(cData50b.bProvideUsageData);
 		super.onResume();
 	}
 

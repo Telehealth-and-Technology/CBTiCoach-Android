@@ -827,7 +827,7 @@ public final class R {
 		public static final int alarm = 0x7f070020;
 		public static final int alertTitle = 0x7f070061;
 		public static final int all = 0x7f070021;
-		public static final int amPm = 0x7f070164;
+		public static final int amPm = 0x7f070163;
 		public static final int back_button = 0x7f070134;
 		public static final int beginning = 0x7f070027;
 		public static final int bottom = 0x7f070011;
@@ -853,7 +853,7 @@ public final class R {
 		public static final int decrement = 0x7f070032;
 		public static final int dialog = 0x7f070029;
 		public static final int disableHome = 0x7f070009;
-		public static final int divider = 0x7f070162;
+		public static final int divider = 0x7f070161;
 		public static final int dropdown = 0x7f07002a;
 		public static final int edit = 0x7f07002d;
 		public static final int edit_query = 0x7f070050;
@@ -865,7 +865,7 @@ public final class R {
 		public static final int fill_vertical = 0x7f070015;
 		public static final int headers = 0x7f07012f;
 		public static final int homeAsUp = 0x7f070006;
-		public static final int hour = 0x7f070161;
+		public static final int hour = 0x7f070160;
 		public static final int icon = 0x7f070060;
 		public static final int increment = 0x7f070031;
 		public static final int internalEmpty = 0x7f0700b3;
@@ -878,7 +878,7 @@ public final class R {
 		public static final int list_footer = 0x7f070130;
 		public static final int message = 0x7f070065;
 		public static final int middle = 0x7f070028;
-		public static final int minute = 0x7f070163;
+		public static final int minute = 0x7f070162;
 		public static final int month = 0x7f070091;
 		public static final int month_name = 0x7f070071;
 		public static final int music = 0x7f070025;
@@ -913,7 +913,7 @@ public final class R {
 		public static final int system = 0x7f070023;
 		public static final int tabMode = 0x7f070003;
 		public static final int text1 = 0x7f070157;
-		public static final int timePicker = 0x7f070160;
+		public static final int timePicker = 0x7f07015f;
 		public static final int title = 0x7f070070;
 		public static final int titleDivider = 0x7f070062;
 		public static final int titleDividerTop = 0x7f07005e;
