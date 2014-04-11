@@ -73,7 +73,7 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remTakeAssessment"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -136,7 +136,7 @@
                                 android:paddingTop="10dp"
                                 android:text="10:15AM"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" 
+                                android:textSize="15sp" 
                                 android:contentDescription="@string/s_TakeAssessmentTimeButton" />
                         </RelativeLayout>
                     </RelativeLayout>

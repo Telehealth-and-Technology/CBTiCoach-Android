@@ -1,36 +1,36 @@
 /*
-* AssessmentScheduleReminderFragment.java
-* Fragment used to schedule a reminder for the user to take assessments
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * AssessmentScheduleReminderFragment.java
+ * Fragment used to schedule a reminder for the user to take assessments
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.mysleep;
 
 import java.util.Calendar;
@@ -67,13 +67,13 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 	{
 		return inflater.inflate(R.layout.mysleep_assessmentschedulereminder, null);
 	}
-	
+
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState)
 	{
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_AddtomyCalendar));
-		
+
 		// Take Assessment Reminder
 		((Button) getView().findViewById(R.id.bTakeAssessmentReminder)).setOnClickListener(new View.OnClickListener()
 		{
@@ -111,7 +111,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 	public void onResume()
 	{
 		cData60a = new RemindersData(getSherlockActivity()); // initialize data from stored
-											// object
+		// object
 		cData60a.cancelAnAlarm(ALARMS.TakeAssessment);
 		// take assessment reminder
 		((ToggleButton) getView().findViewById(R.id.bTakeAssessmentReminder)).setChecked(cData60a.bTakeAssessmentReminder);
@@ -159,7 +159,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
-//			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			// return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			break;
 		}
@@ -183,6 +183,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		ArrayAdapter<CharSequence> aa = ArrayAdapter.createFromResource(getSherlockActivity(), R.array.Days, android.R.layout.simple_spinner_dropdown_item);
 		sSpin.setAdapter(aa);
 		sSpin.setSelection(cData60a.iTADayofWeek, true);
+		sSpin.setContentDescription(getString(R.string.s_Days));
 		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
@@ -194,10 +195,11 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		ArrayAdapter<CharSequence> aa = ArrayAdapter.createFromResource(getSherlockActivity(), R.array.Repeat, android.R.layout.simple_spinner_dropdown_item);
 		sSpin.setAdapter(aa);
 		sSpin.setSelection(cData60a.iTARepeat, true);
+		sSpin.setContentDescription(getString(R.string.s_ReminderRecurrence));
 		OnItemSelectedListener spinnerListener = new myOnItemSelectedListener();
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
-	
+
 	public class myOnItemSelectedListener implements OnItemSelectedListener
 	{
 		public myOnItemSelectedListener()

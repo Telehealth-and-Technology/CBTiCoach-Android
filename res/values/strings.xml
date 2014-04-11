@@ -23,6 +23,8 @@
     <string name="sleeppefficiency">Efficiency</string>
     <string name="sleeppbedtime">Bedtime</string>
     <string name="s_Help">Help</string>
+    <string name="s_Days">Days</string>
+    <string name="s_ReminderRecurrence">Reminder recurrence</string>
     <string name="s_Pause">Pause</string>
     <string name="s_Reminders">Reminders</string>
     <string name="s_About">About</string>

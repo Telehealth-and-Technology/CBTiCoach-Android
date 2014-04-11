@@ -154,7 +154,8 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		// pbWeek.setProgressDrawable(getResources().getDrawable(iColorsID[iProg]));
 
 		pbWeek.setProgress(iProg);
-		((TextView) getView().findViewById(R.id.tPastWeeks)).setText(getResources().getString(R.string.s_PastWeeks) + iProg + "/7");
+		((TextView) getView().findViewById(R.id.tPastWeeks)).setText(getResources().getString(R.string.s_PastWeeks) + " " + iProg + "/7");
+		((TextView) getView().findViewById(R.id.tPastWeeks)).setContentDescription(getResources().getString(R.string.s_PastWeeks) + " " + iProg + "of 7");
 	}
 
 	TimePickerDialog tp;
