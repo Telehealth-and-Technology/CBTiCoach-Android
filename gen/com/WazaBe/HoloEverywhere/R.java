@@ -781,7 +781,7 @@ public final class R {
 		public static final int textfield_multiline_focused_holo_dark = 0x7f020200;
 		public static final int textfield_multiline_focused_holo_light = 0x7f020201;
 		public static final int toast_frame = 0x7f020202;
-		public static final int transparent = 0x7f02020e;
+		public static final int transparent = 0x7f02020f;
 	}
 	public static final class id {
 		public static final int abs__action_bar = 0x7f07004b;

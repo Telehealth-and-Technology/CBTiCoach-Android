@@ -106,7 +106,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tManBedtime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tManBedtime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -124,7 +124,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tManWaketime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tManWaketime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -142,7 +142,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tAutoWaketime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tAutoWaketime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -286,9 +286,9 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 		((ToggleButton) getView().findViewById(R.id.bManMan)).setChecked(cData22a.bManUpdate);
 		((ToggleButton) getView().findViewById(R.id.bManAut)).setChecked(!cData22a.bManUpdate);
 
-		((TextView) (getView().findViewById(R.id.tManBedtime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iBedtimemin));
-		((TextView) (getView().findViewById(R.id.tManWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iWaketimemin));
-		((TextView) (getView().findViewById(R.id.tAutoWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iAutoWaketimemin));
+		((Button) (getView().findViewById(R.id.tManBedtime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iBedtimemin));
+		((Button) (getView().findViewById(R.id.tManWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iWaketimemin));
+		((Button) (getView().findViewById(R.id.tAutoWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iAutoWaketimemin));
 		if (cData22a.bManUpdate == true)
 		{
 			((LinearLayout) getView().findViewById(R.id.llManUpdate)).setVisibility(View.VISIBLE);
@@ -404,7 +404,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 		public void onTimeSet(TimePicker view, int hourOfDay, int minute)
 		{
 			cData22a.iBedtimemin = cData22a.timeTo4pm((hourOfDay * 60) + minute);
-			((TextView) (getView().findViewById(R.id.tManBedtime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iBedtimemin));
+			((Button) (getView().findViewById(R.id.tManBedtime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iBedtimemin));
 		}
 	};
 
@@ -414,7 +414,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 		public void onTimeSet(TimePicker view, int hourOfDay, int minute)
 		{
 			cData22a.iWaketimemin = cData22a.timeTo4pm((hourOfDay * 60) + minute);
-			((TextView) (getView().findViewById(R.id.tManWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iWaketimemin));
+			((Button) (getView().findViewById(R.id.tManWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iWaketimemin));
 		}
 	};
 
@@ -424,7 +424,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 		public void onTimeSet(TimePicker view, int hourOfDay, int minute)
 		{
 			cData22a.iAutoWaketimemin = cData22a.timeTo4pm((hourOfDay * 60) + minute);
-			((TextView) (getView().findViewById(R.id.tAutoWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iAutoWaketimemin));
+			((Button) (getView().findViewById(R.id.tAutoWaketime))).setText(cData22a.formattedTimeFrom4pm(cData22a.iAutoWaketimemin));
 		}
 	};
 

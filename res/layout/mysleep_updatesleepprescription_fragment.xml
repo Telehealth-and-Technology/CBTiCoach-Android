@@ -36,7 +36,7 @@
                         android:layout_height="wrap_content"
                         android:padding="15dp"
                         android:text="@string/s_22a"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <include layout="@layout/prescriptionbar2" />
@@ -57,7 +57,7 @@
                         android:contentDescription="@string/s_SelectManually"
                         android:textOff="@string/s_Manually"
                         android:textOn="@string/s_Manually"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <ToggleButton
                         android:id="@+id/bManAut"
@@ -68,7 +68,7 @@
                         android:contentDescription="@string/s_SelectAutomatically"
                         android:textOff="@string/s_Automatically"
                         android:textOn="@string/s_Automatically"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <View
@@ -109,7 +109,7 @@
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
                                 android:text="@string/s_WhatIsYourPrescribedBedtime"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -118,7 +118,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal" >
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tManBedtime"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -127,10 +127,14 @@
                                 android:layout_weight="7"
                                 android:background="@drawable/bg_whitebutton"
                                 android:gravity="left"
+                                android:nextFocusDown="@+id/tManWaketime"
+                                android:nextFocusLeft="@+id/rl_onoff"
+                                android:nextFocusRight="@+id/tManWaketime"
+                                android:nextFocusUp="@+id/rl_onoff"
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
 
                             <ImageButton
                                 android:id="@+id/bManBedInfo"
@@ -180,7 +184,7 @@
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
                                 android:text="@string/s_WhatIsYourPrescribedWaketime"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -189,7 +193,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal" >
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tManWaketime"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -198,10 +202,14 @@
                                 android:layout_weight="7"
                                 android:background="@drawable/bg_whitebutton"
                                 android:gravity="left"
+                                android:nextFocusDown="@+id/bUpdatePrescription"
+                                android:nextFocusLeft="@+id/tManBedtime"
+                                android:nextFocusRight="@+id/bUpdatePrescription"
+                                android:nextFocusUp="@+id/tManBedtime"
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
 
                             <ImageButton
                                 android:id="@+id/bManWakeInfo"
@@ -258,7 +266,7 @@
                                 android:paddingLeft="0dp"
                                 android:paddingTop="10dp"
                                 android:text="@string/s_Whatisyourdesiredwakeuptime"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -267,7 +275,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal" >
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tAutoWaketime"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -277,10 +285,14 @@
                                 android:background="@drawable/bg_whitebutton"
                                 android:contentDescription="@string/s_WakeTimeButton"
                                 android:gravity="left"
+                                android:nextFocusDown="@+id/tAutoWaketime"
+                                android:nextFocusLeft="@+id/rl_onoff"
+                                android:nextFocusRight="@+id/tAutoWaketime"
+                                android:nextFocusUp="@+id/rl_onoff"
                                 android:paddingBottom="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingTop="10dp"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
 
                             <ImageButton
                                 android:id="@+id/bAutoWakeInfo"
@@ -323,7 +335,7 @@
                             android:paddingTop="10dp"
                             android:text="@string/s_Updateautomaticallyeachweekon"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <Spinner
                             android:id="@+id/sAutoDay"
@@ -332,9 +344,13 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/dow_prompt"
                             android:drawSelectorOnTop="true"
+                            android:nextFocusDown="@+id/bUpdatePrescription"
+                            android:nextFocusLeft="@+id/tAutoWaketime"
+                            android:nextFocusRight="@+id/bUpdatePrescription"
+                            android:nextFocusUp="@+id/tAutoWaketime"
                             android:orientation="horizontal"
                             android:prompt="@string/dow_prompt"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <!-- End UpdateSleepPrescription -->

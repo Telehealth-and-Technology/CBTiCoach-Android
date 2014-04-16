@@ -45,7 +45,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
@@ -84,17 +83,17 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 				cData60a.bWindDownTimeReminder = ((ToggleButton) getView().findViewById(R.id.bWindDownTimeReminder)).isChecked();
 				if (!cData60a.bWindDownTimeReminder)
 				{
-					((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.INVISIBLE);
+					((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.INVISIBLE);
 				}
 				else
 				{
-					((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
+					((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
 				}
 			}
 		});
 
 		// Wind Down Time Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -290,14 +289,14 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		cData60a.cancelAnAlarm(ALARMS.WindDownTime);
 		// wind down time reminder
 		((ToggleButton) getView().findViewById(R.id.bWindDownTimeReminder)).setChecked(cData60a.bWindDownTimeReminder);
-		((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
+		((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
 		if (!cData60a.bWindDownTimeReminder)
 		{
-			((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.INVISIBLE);
+			((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.INVISIBLE);
 		}
 		else
 		{
-			((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
+			((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
 			int time = cData60a.timeFrom4pm(cData60a.iWDTmin);
 			iInitialHourOfDay = time / 60;
 			iInitialMin = time % 60;
@@ -346,7 +345,7 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 			if (iNextClass == Reminders_BR_WindDown.class)
 			{
 				cData60a.iWDTmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
+				((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
 			}
 
 		}

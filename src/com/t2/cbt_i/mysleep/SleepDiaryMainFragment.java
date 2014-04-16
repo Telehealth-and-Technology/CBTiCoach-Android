@@ -55,6 +55,7 @@ import android.widget.ToggleButton;
 import android.widget.AdapterView.OnItemClickListener;
 
 import com.t2.cbt_i.R;
+import com.t2.cbt_i.classes.CBTiDialogFragment;
 import com.t2.cbt_i.classes.CBTi_BaseFragment;
 import com.t2.cbt_i.reminders.RemindersData;
 import com.t2.cbt_i.reminders.RemindersData.ALARMS;
@@ -95,12 +96,12 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 				else
 				{
 					getView().findViewById(R.id.remindertime).setVisibility(View.VISIBLE);
-					((TextView) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+					((Button) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 				}
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tSleepDiaryReminderTime)).setOnClickListener(new View.OnClickListener()
+		getView().findViewById(R.id.remindertime).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -168,13 +169,14 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		switch (id)
 		{
 		case TIME_DIALOG_ID:
+			CBTiDialogFragment dia = new CBTiDialogFragment();
 			if (iInitialHourOfDay == -1)
 			{
 				Calendar onscene = Calendar.getInstance();
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
-			}
-			return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			} 
+			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager()); 
 		}
 		return null;
 	}
@@ -185,7 +187,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData60a.iSDRmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-			((TextView) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+			((Button) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 		}
 	};
 
@@ -212,7 +214,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		cData60a.cancelAnAlarm(ALARMS.SleepDiary);
 
 		((ToggleButton) getView().findViewById(R.id.bSleepDiaryReminder)).setChecked(cData60a.bSleepDiaryReminder);
-		((TextView) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+		((Button) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 		if (!cData60a.bSleepDiaryReminder)
 		{
 			getView().findViewById(R.id.remindertime).setVisibility(View.GONE);
@@ -220,7 +222,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		else
 		{
 			getView().findViewById(R.id.remindertime).setVisibility(View.VISIBLE);
-			((TextView) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+			((Button) getView().findViewById(R.id.tSleepDiaryReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 		}
 
 		updateProgressBar(cData21a.iPastWeek);

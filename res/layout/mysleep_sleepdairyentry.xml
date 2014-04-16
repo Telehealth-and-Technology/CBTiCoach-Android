@@ -41,6 +41,8 @@
                         android:background="@drawable/bg_whitebutton"
                         android:contentDescription="@string/s_EnterDate"
                         android:gravity="center"
+                        android:nextFocusDown="@+id/bTNT"
+                        android:nextFocusLeft="@+id/bTNT"
                         android:orientation="horizontal" />
 
                     <ImageButton
@@ -90,7 +92,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_TNTQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ToggleButton
                             android:id="@+id/bTNT"
@@ -99,6 +101,10 @@
                             android:layout_weight="2"
                             android:contentDescription="@string/s_NapOrDozeCheckbox"
                             android:gravity="center"
+                            android:nextFocusDown="@+id/tTNT"
+                            android:nextFocusLeft="@id/bSleepDiaryEntryTime"
+                            android:nextFocusRight="@+id/tTNT"
+                            android:nextFocusUp="@id/bSleepDiaryEntryTime"
                             android:textOff="No"
                             android:textOn="Yes" />
                     </LinearLayout>
@@ -110,7 +116,7 @@
                         android:orientation="horizontal"
                         android:visibility="gone" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tTNT"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -120,10 +126,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_TotalNapTimeButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/tBT"
+                            android:nextFocusLeft="@+id/bTNT"
+                            android:nextFocusRight="@+id/tBT"
+                            android:nextFocusUp="@id/bTNT"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bTNTInfo"
@@ -174,7 +184,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_BTQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -183,7 +193,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tBT"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -193,10 +203,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_BedtimeButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/tSIAT"
+                            android:nextFocusLeft="@id/tTNT"
+                            android:nextFocusRight="@+id/tSIAT"
+                            android:nextFocusUp="@id/tTNT"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bBTInfo"
@@ -247,7 +261,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_SIATQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -256,7 +270,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tSIAT"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -266,10 +280,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_SIATButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/tTTS"
+                            android:nextFocusLeft="@id/tBT"
+                            android:nextFocusRight="@+id/tTTS"
+                            android:nextFocusUp="@id/tBT"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bSIATInfo"
@@ -320,7 +338,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_TTSQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -329,7 +347,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tTTS"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -339,10 +357,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_FallAsleepTimeButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/sTimesAwake"
+                            android:nextFocusLeft="@id/tSIAT"
+                            android:nextFocusRight="@+id/sTimesAwake"
+                            android:nextFocusUp="@id/tSIAT"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bTTSInfo"
@@ -393,7 +415,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_TimesAwakeQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -411,12 +433,16 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_AwakeningsButton"
                             android:drawSelectorOnTop="true"
+                            android:nextFocusDown="@+id/tTA"
+                            android:nextFocusLeft="@id/tTTS"
+                            android:nextFocusRight="@+id/tTA"
+                            android:nextFocusUp="@id/tTTS"
                             android:orientation="horizontal"
                             android:paddingBottom="0dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="0dp"
                             android:prompt="@string/numpicker_prompt"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bTimesAwakeInfo"
@@ -468,7 +494,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_TAQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -476,7 +502,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tTA"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -486,10 +512,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_TAButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/tWUT"
+                            android:nextFocusLeft="@id/sTimesAwake"
+                            android:nextFocusRight="@+id/tWUT"
+                            android:nextFocusUp="@id/sTimesAwake"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bTAInfo"
@@ -540,7 +570,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_WUTQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -549,7 +579,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tWUT"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -559,10 +589,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_WUTButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/bEarlier"
+                            android:nextFocusLeft="@id/tTA"
+                            android:nextFocusRight="@+id/bEarlier"
+                            android:nextFocusUp="@id/tTA"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bWUTInfo"
@@ -613,7 +647,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_EarlierQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ToggleButton
                             android:id="@+id/bEarlier"
@@ -622,6 +656,10 @@
                             android:layout_weight="2"
                             android:contentDescription="@string/s_EarlierCheckbox"
                             android:gravity="center"
+                            android:nextFocusDown="@+id/tEarlier"
+                            android:nextFocusLeft="@id/tWUT"
+                            android:nextFocusRight="@+id/tEarlier"
+                            android:nextFocusUp="@id/tWUT"
                             android:textOff="No"
                             android:textOn="Yes" />
                     </LinearLayout>
@@ -633,7 +671,7 @@
                         android:orientation="horizontal"
                         android:visibility="gone" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tEarlier"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -643,10 +681,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_EarlierButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/tWT"
+                            android:nextFocusLeft="@id/bEarlier"
+                            android:nextFocusRight="@+id/tWT"
+                            android:nextFocusUp="@id/bEarlier"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bEarlierInfo"
@@ -697,7 +739,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_WTQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -706,7 +748,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <TextView
+                        <Button
                             android:id="@+id/tWT"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -716,10 +758,14 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_WTButton"
                             android:gravity="left"
+                            android:nextFocusDown="@+id/sSleepQuality"
+                            android:nextFocusLeft="@id/tEarlier"
+                            android:nextFocusRight="@+id/sSleepQuality"
+                            android:nextFocusUp="@id/tEarlier"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bWTInfo"
@@ -770,7 +816,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_SQQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -788,12 +834,16 @@
                             android:background="@drawable/bg_whitebutton"
                             android:contentDescription="@string/s_SleepQualityButton"
                             android:drawSelectorOnTop="true"
+                            android:nextFocusDown="@+id/tComment"
+                            android:nextFocusLeft="@id/tWT"
+                            android:nextFocusRight="@+id/tComment"
+                            android:nextFocusUp="@id/tWT"
                             android:orientation="horizontal"
                             android:paddingBottom="0dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="0dp"
                             android:prompt="@string/sleepquality_prompt"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bSleepQualityInfo"
@@ -844,7 +894,7 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="@string/s_CommentQuestion"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -864,10 +914,14 @@
                             android:contentDescription="@string/s_CommentsButton"
                             android:gravity="left"
                             android:hint="@string/s_CommentHint"
+                            android:nextFocusDown="@+id/bSaveEntry"
+                            android:nextFocusLeft="@id/sSleepQuality"
+                            android:nextFocusRight="@+id/bSaveEntry"
+                            android:nextFocusUp="@id/sSleepQuality"
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <ImageButton
                             android:id="@+id/bCommentInfo"
@@ -876,6 +930,7 @@
                             android:layout_weight="2"
                             android:background="@android:color/transparent"
                             android:contentDescription="@string/s_InfoButton"
+                            android:focusable="false"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="5dp"
@@ -900,6 +955,9 @@
                     android:background="@drawable/bg_whitebutton"
                     android:contentDescription="@string/s_SaveEntryButton"
                     android:gravity="center"
+                    android:nextFocusLeft="@id/tComment"
+                    android:nextFocusRight="@id/tComment"
+                    android:nextFocusUp="@id/tComment"
                     android:orientation="horizontal"
                     android:text="@string/s_SaveEntry" />
             </LinearLayout>

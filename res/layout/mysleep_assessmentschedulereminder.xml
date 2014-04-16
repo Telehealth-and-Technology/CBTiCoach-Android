@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <!-- middle buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +39,6 @@
                         android:layout_height="wrap_content"
                         android:padding="10dp"
                         android:text="@string/s_33a" />
-
                 </LinearLayout>
 
                 <!-- Take Assessment -->
@@ -82,10 +82,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
+                            android:contentDescription="@string/s_TakeAssessmentReminderCheckbox"
                             android:gravity="center"
                             android:textOff="@string/s_Off"
-                            android:textOn="@string/s_On"
-                            android:contentDescription="@string/s_TakeAssessmentReminderCheckbox"  />
+                            android:textOn="@string/s_On" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -125,19 +125,22 @@
                                 android:orientation="horizontal"
                                 android:prompt="@string/repeat_prompt" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tTakeAssessmentTime"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_centerVertical="true"
+                                android:background="@drawable/bg_whitebutton"
+                                android:contentDescription="@string/s_TakeAssessmentTimeButton"
                                 android:gravity="center_vertical"
                                 android:paddingBottom="10dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
                                 android:paddingTop="10dp"
                                 android:text="10:15AM"
                                 android:textColor="#1c2739"
-                                android:textSize="15sp" 
-                                android:contentDescription="@string/s_TakeAssessmentTimeButton" />
+                                android:textSize="15sp" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>

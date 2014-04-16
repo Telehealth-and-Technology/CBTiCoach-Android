@@ -94,7 +94,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		});
 
 		// Take Assessment Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tTakeAssessmentTime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tTakeAssessmentTime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -115,7 +115,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		cData60a.cancelAnAlarm(ALARMS.TakeAssessment);
 		// take assessment reminder
 		((ToggleButton) getView().findViewById(R.id.bTakeAssessmentReminder)).setChecked(cData60a.bTakeAssessmentReminder);
-		((TextView) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
+		((Button) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
 		if (!cData60a.bTakeAssessmentReminder)
 		{
 			getView().findViewById(R.id.rlTakeAssessment).setVisibility(View.GONE);
@@ -172,7 +172,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData60a.iTAmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-			((TextView) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
+			((Button) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
 		}
 	};
 

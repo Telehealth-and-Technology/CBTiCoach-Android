@@ -57,7 +57,7 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_SleepDiaryReminder"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -65,7 +65,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/s_RecommendedDaily"
                                 android:textColor="#1c2739"
-                                android:textSize="14dp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <ToggleButton
@@ -101,21 +101,22 @@
                             android:paddingTop="10dp"
                             android:text="@string/s_Time"
                             android:textColor="#1c2739"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
-                        <TextView
+                        <Button
                             android:id="@+id/tSleepDiaryReminder"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_gravity="center_vertical"
+                            android:background="@drawable/bg_whitebutton"
                             android:gravity="center_vertical"
                             android:paddingBottom="10dp"
                             android:paddingTop="10dp"
                             android:text="10:15AM"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -166,16 +167,17 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_WindDownTime"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tWindDownTimeReminder"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/bg_whitebutton"
                                 android:text="10:15"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <ToggleButton
@@ -223,16 +225,17 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remPrescribedBedtime"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tPrescribedBedTimeReminder"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/bg_whitebutton"
                                 android:text="10:15"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <ToggleButton
@@ -280,16 +283,17 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remPrescribedWake"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tPrescribedWakeTimeReminder"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/bg_whitebutton"
                                 android:text="10:15"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <ToggleButton
@@ -338,7 +342,7 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remUpdateSleepPrescription"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -381,18 +385,19 @@
                                 android:orientation="horizontal"
                                 android:prompt="@string/dow_prompt" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tUpdateSleepPrescriptionTime"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_centerVertical="true"
+                                android:background="@drawable/bg_whitebutton"
                                 android:gravity="center_vertical"
                                 android:paddingBottom="10dp"
                                 android:paddingTop="10dp"
                                 android:text="10:15AM"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
@@ -431,7 +436,7 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remTakeAssessment"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -483,17 +488,18 @@
                                 android:drawSelectorOnTop="true"
                                 android:prompt="@string/dow_prompt" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tTakeAssessmentTime"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="0"
+                                android:background="@drawable/bg_whitebutton"
                                 android:gravity="center_vertical"
                                 android:paddingBottom="10dp"
                                 android:paddingTop="10dp"
                                 android:text="10:15AM"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
                     </RelativeLayout>
                 </LinearLayout>
@@ -531,16 +537,17 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remStopCaffeine"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tStopCaffeineReminder"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/bg_whitebutton"
                                 android:text="10:15"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </LinearLayout>
 
                         <ToggleButton
@@ -589,7 +596,7 @@
                                 android:gravity="center_vertical"
                                 android:text="@string/s_remWorryTime"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -631,17 +638,18 @@
                                 android:orientation="horizontal"
                                 android:prompt="@string/dow_prompt" />
 
-                            <TextView
+                            <Button
                                 android:id="@+id/tWorryTimeReminderTime"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
+                                android:background="@drawable/bg_whitebutton"
                                 android:gravity="center_vertical"
                                 android:paddingBottom="10dp"
                                 android:paddingTop="10dp"
                                 android:text="10:15AM"
                                 android:textColor="#1c2739"
-                                android:textSize="15dp" />
+                                android:textSize="15sp" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>

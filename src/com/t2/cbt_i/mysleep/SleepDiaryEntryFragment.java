@@ -116,7 +116,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				if (((ToggleButton) getView().findViewById(R.id.bTNT)).isChecked())
 				{
 					((LinearLayout) getView().findViewById(R.id.llTNT)).setVisibility(View.VISIBLE);
-					((TextView) (getView().findViewById(R.id.tTNT))).setText(String
+					((Button) (getView().findViewById(R.id.tTNT))).setText(String
 							.format("%d hours: %d minutes", cData21c.iTNTmin / 60, cData21c.iTNTmin % 60));
 				}
 				else
@@ -124,7 +124,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tTNT)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tTNT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -142,7 +142,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tBT)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tBT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -160,7 +160,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tSIAT)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tSIAT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -179,7 +179,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tTTS)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tTTS)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -206,7 +206,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tTA)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tTA)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -224,7 +224,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tWUT)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tWUT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -250,7 +250,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				if (((ToggleButton) getView().findViewById(R.id.bEarlier)).isChecked())
 				{
 					((LinearLayout) getView().findViewById(R.id.llEarlier)).setVisibility(View.VISIBLE);
-					((TextView) (getView().findViewById(R.id.tEarlier))).setText(String.format("%d hours: %2d minutes", cData21c.iEarliermin / 60,
+					((Button) (getView().findViewById(R.id.tEarlier))).setText(String.format("%d hours: %2d minutes", cData21c.iEarliermin / 60,
 							cData21c.iEarliermin % 60));
 				}
 				else
@@ -258,7 +258,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tEarlier)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tEarlier)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -276,7 +276,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			}
 		});
 
-		((TextView) getView().findViewById(R.id.tWT)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tWT)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -412,7 +412,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			if (pos > 0)
 			{
 				((LinearLayout) getView().findViewById(R.id.llTA)).setVisibility(View.VISIBLE);
-				((TextView) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", cData21c.iTAmin / 60, cData21c.iTAmin % 60)));
+				((Button) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", cData21c.iTAmin / 60, cData21c.iTAmin % 60)));
 			}
 			else
 			{
@@ -486,14 +486,14 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		if (((ToggleButton) getView().findViewById(R.id.bTNT)).isChecked())
 		{
 			((LinearLayout) getView().findViewById(R.id.llTNT)).setVisibility(View.VISIBLE);
-			((TextView) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", cData21c.iTNTmin / 60, cData21c.iTNTmin % 60));
+			((Button) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", cData21c.iTNTmin / 60, cData21c.iTNTmin % 60));
 		}
 		else
 			((LinearLayout) getView().findViewById(R.id.llTNT)).setVisibility(View.GONE);
 
-		((TextView) (getView().findViewById(R.id.tBT))).setText(formattedTimeFrom4pm(cData21c.iBTmin));
-		((TextView) (getView().findViewById(R.id.tSIAT))).setText(formattedTimeFrom4pm(cData21c.iSIATmin));
-		((TextView) (getView().findViewById(R.id.tTTS))).setText((String.format("%d hours: %2d minutes", cData21c.iTTSmin / 60, cData21c.iTTSmin % 60)));
+		((Button) (getView().findViewById(R.id.tBT))).setText(formattedTimeFrom4pm(cData21c.iBTmin));
+		((Button) (getView().findViewById(R.id.tSIAT))).setText(formattedTimeFrom4pm(cData21c.iSIATmin));
+		((Button) (getView().findViewById(R.id.tTTS))).setText((String.format("%d hours: %2d minutes", cData21c.iTTSmin / 60, cData21c.iTTSmin % 60)));
 
 		enableTimesAwakePicker();
 
@@ -505,19 +505,19 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		else
 			((LinearLayout) getView().findViewById(R.id.llTA)).setVisibility(View.GONE);
 
-		((TextView) (getView().findViewById(R.id.tWUT))).setText(formattedTimeFrom4pm(cData21c.iWUTmin));
+		((Button) (getView().findViewById(R.id.tWUT))).setText(formattedTimeFrom4pm(cData21c.iWUTmin));
 		((ToggleButton) getView().findViewById(R.id.bEarlier)).setChecked(cData21c.bEarlier);
 
 		if (((ToggleButton) getView().findViewById(R.id.bEarlier)).isChecked())
 		{
 			((LinearLayout) getView().findViewById(R.id.llEarlier)).setVisibility(View.VISIBLE);
-			((TextView) (getView().findViewById(R.id.tEarlier))).setText(String.format("%d hours: %d minutes", cData21c.iEarliermin / 60,
+			((Button) (getView().findViewById(R.id.tEarlier))).setText(String.format("%d hours: %d minutes", cData21c.iEarliermin / 60,
 					cData21c.iEarliermin % 60));
 		}
 		else
 			((LinearLayout) getView().findViewById(R.id.llEarlier)).setVisibility(View.GONE);
 
-		((TextView) (getView().findViewById(R.id.tWT))).setText(formattedTimeFrom4pm(cData21c.iWTmin));
+		((Button) (getView().findViewById(R.id.tWT))).setText(formattedTimeFrom4pm(cData21c.iWTmin));
 
 		enableSleepQualityPicker();
 
@@ -814,7 +814,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iTNTmin = (hourOfDay * 60) + minute;
-			((TextView) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", hourOfDay, minute));
+			((Button) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", hourOfDay, minute));
 		}
 	};
 
@@ -824,7 +824,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iBTmin = timeTo4pm((hourOfDay * 60) + minute);
-			((TextView) (getView().findViewById(R.id.tBT))).setText(formattedTimeFrom4pm(cData21c.iBTmin));
+			((Button) (getView().findViewById(R.id.tBT))).setText(formattedTimeFrom4pm(cData21c.iBTmin));
 		}
 	};
 
@@ -841,7 +841,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				else
 				{
 					cData21c.iSIATmin = timeTo4pm((hourOfDay * 60) + minute);
-					((TextView) (getView().findViewById(R.id.tSIAT))).setText(formattedTimeFrom4pm(cData21c.iSIATmin));
+					((Button) (getView().findViewById(R.id.tSIAT))).setText(formattedTimeFrom4pm(cData21c.iSIATmin));
 				}
 			}
 		}
@@ -853,7 +853,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iTTSmin = (hourOfDay * 60) + minute;
-			((TextView) (getView().findViewById(R.id.tTTS))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
+			((Button) (getView().findViewById(R.id.tTTS))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
 		}
 	};
 
@@ -863,7 +863,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iTAmin = hourOfDay * 60 + minute;
-			((TextView) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
+			((Button) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
 		}
 	};
 
@@ -877,7 +877,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			// showDialog(DIALOG_WUTERROR);
 			// else {
 			cData21c.iWUTmin = iTime;
-			((TextView) (getView().findViewById(R.id.tWUT))).setText(formattedTimeFrom4pm(cData21c.iWUTmin));
+			((Button) (getView().findViewById(R.id.tWUT))).setText(formattedTimeFrom4pm(cData21c.iWUTmin));
 			// }
 		}
 	};
@@ -888,7 +888,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iEarliermin = (hourOfDay * 60) + minute;
-			((TextView) (getView().findViewById(R.id.tEarlier))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
+			((Button) (getView().findViewById(R.id.tEarlier))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
 		}
 	};
 
@@ -909,7 +909,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				else
 				{
 					cData21c.iWTmin = iTime;
-					((TextView) (getView().findViewById(R.id.tWT))).setText(formattedTimeFrom4pm(cData21c.iWTmin));
+					((Button) (getView().findViewById(R.id.tWT))).setText(formattedTimeFrom4pm(cData21c.iWTmin));
 				}
 			}
 		}

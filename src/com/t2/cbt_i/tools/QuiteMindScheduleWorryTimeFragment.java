@@ -48,7 +48,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
@@ -98,7 +97,7 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 		});
 
 		// Worry Time Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tWorryTimeReminderTime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -148,7 +147,7 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 	{
 		// worry time reminder
 		((ToggleButton) getView().findViewById(R.id.bWorryTimeReminder)).setChecked(cData60a.bWorryTimeReminder);
-		((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
+		((Button) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
 		if (!cData60a.bWorryTimeReminder)
 		{
 			((RelativeLayout) getView().findViewById(R.id.rlWorryTime)).setVisibility(View.GONE);
@@ -194,7 +193,7 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 			if (iNextClass == Reminders_BR_WorryTime.class)
 			{
 				cData60a.iWTmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
+				((Button) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
 			}
 		}
 	};

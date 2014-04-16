@@ -93,13 +93,13 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				else
 				{
 					getView().findViewById(R.id.rlRreminderTime).setVisibility(View.VISIBLE);
-					((TextView) getView().findViewById(R.id.tSleepDiaryReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+					((Button) getView().findViewById(R.id.tSleepDiaryReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 				}
 			}
 		});
 
 		// Sleep Diary Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tSleepDiaryReminder)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tSleepDiaryReminder)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -123,17 +123,17 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				cData60a.bWindDownTimeReminder = ((ToggleButton) getView().findViewById(R.id.bWindDownTimeReminder)).isChecked();
 				if (!cData60a.bWindDownTimeReminder)
 				{
-					((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.GONE);
+					((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.GONE);
 				}
 				else
 				{
-					((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
+					((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
 				}
 			}
 		});
 
 		// Wind Down Time Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -157,11 +157,11 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				cData60a.bPrescribedBedTimeReminder = ((ToggleButton) getView().findViewById(R.id.bPrescribedBedTimeReminder)).isChecked();
 				if (!cData60a.bPrescribedBedTimeReminder)
 				{
-					((TextView) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.GONE);
+					((Button) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.GONE);
 				}
 				else
 				{
-					((TextView) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.VISIBLE);
+					((Button) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.VISIBLE);
 				}
 			}
 		});
@@ -206,7 +206,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		});
 
 		// Update Sleep Prescription Time Picker
-		((TextView) getView().findViewById(R.id.tUpdateSleepPrescriptionTime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tUpdateSleepPrescriptionTime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -242,7 +242,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		});
 
 		// Take Assessment Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tTakeAssessmentTime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tTakeAssessmentTime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -266,17 +266,17 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				cData60a.bStopCaffeineReminder = ((ToggleButton) getView().findViewById(R.id.bStopCaffeineReminder)).isChecked();
 				if (!cData60a.bStopCaffeineReminder)
 				{
-					((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.GONE);
+					((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.GONE);
 				}
 				else
 				{
-					((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.VISIBLE);
+					((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.VISIBLE);
 				}
 			}
 		});
 
 		// Stop Caffeine Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -311,7 +311,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		});
 
 		// Worry Time Reminder Time Picker
-		((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setOnClickListener(new View.OnClickListener()
+		((Button) getView().findViewById(R.id.tWorryTimeReminderTime)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -432,7 +432,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	{
 		// sleep diary reminder time
 		((ToggleButton) getView().findViewById(R.id.bSleepDiaryReminder)).setChecked(cData60a.bSleepDiaryReminder);
-		((TextView) getView().findViewById(R.id.tSleepDiaryReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+		((Button) getView().findViewById(R.id.tSleepDiaryReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 		if (!cData60a.bSleepDiaryReminder)
 		{
 			getView().findViewById(R.id.rlRreminderTime).setVisibility(View.GONE);
@@ -444,26 +444,26 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 
 		// wind down time reminder
 		((ToggleButton) getView().findViewById(R.id.bWindDownTimeReminder)).setChecked(cData60a.bWindDownTimeReminder);
-		((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
+		((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
 		if (!cData60a.bWindDownTimeReminder)
 		{
-			((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.GONE);
+			((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.GONE);
 		}
 		else
 		{
-			((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
+			((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setVisibility(View.VISIBLE);
 		}
 
 		// prescribed bed time reminder
 		((ToggleButton) getView().findViewById(R.id.bPrescribedBedTimeReminder)).setChecked(cData60a.bPrescribedBedTimeReminder);
-		((TextView) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData22a.iSP_PBTimemin));
+		((Button) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData22a.iSP_PBTimemin));
 		if (!cData60a.bPrescribedBedTimeReminder)
 		{
-			((TextView) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.GONE);
+			((Button) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.GONE);
 		}
 		else
 		{
-			((TextView) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.VISIBLE);
+			((Button) getView().findViewById(R.id.tPrescribedBedTimeReminder)).setVisibility(View.VISIBLE);
 		}
 
 		// prescribed wake time reminder
@@ -480,7 +480,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 
 		// update sleep prescription reminder
 		((ToggleButton) getView().findViewById(R.id.bUpdateSleepPrescriptionReminder)).setChecked(cData60a.bUpdateSleepPrescriptionReminder);
-		((TextView) getView().findViewById(R.id.tUpdateSleepPrescriptionTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iUSPmin));
+		((Button) getView().findViewById(R.id.tUpdateSleepPrescriptionTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iUSPmin));
 		if (!cData60a.bUpdateSleepPrescriptionReminder)
 		{
 			getView().findViewById(R.id.rlUpdateSleepPrescription).setVisibility(View.GONE);
@@ -492,7 +492,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 
 		// take assessment reminder
 		((ToggleButton) getView().findViewById(R.id.bTakeAssessmentReminder)).setChecked(cData60a.bTakeAssessmentReminder);
-		((TextView) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
+		((Button) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
 		if (!cData60a.bTakeAssessmentReminder)
 		{
 			getView().findViewById(R.id.rlTakeAssessment).setVisibility(View.GONE);
@@ -504,19 +504,19 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 
 		// stop caffeine reminder
 		((ToggleButton) getView().findViewById(R.id.bStopCaffeineReminder)).setChecked(cData60a.bStopCaffeineReminder);
-		((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSCmin));
+		((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSCmin));
 		if (!cData60a.bStopCaffeineReminder)
 		{
-			((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.GONE);
+			((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.GONE);
 		}
 		else
 		{
-			((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.VISIBLE);
+			((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setVisibility(View.VISIBLE);
 		}
 
 		// worry time reminder
 		((ToggleButton) getView().findViewById(R.id.bWorryTimeReminder)).setChecked(cData60a.bWorryTimeReminder);
-		((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
+		((Button) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
 		if (!cData60a.bWorryTimeReminder)
 		{
 			((RelativeLayout) getView().findViewById(R.id.rlWorryTime)).setVisibility(View.GONE);
@@ -546,8 +546,6 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
-			// return new TimePickerDialog(getSherlockActivity(),
-			// mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 			break;
 		case CONFIRM_RESET_DIALOG:
 			AlertDialog.Builder build = new AlertDialog.Builder(getActivity());
@@ -581,32 +579,32 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 			if (iNextClass == Reminders_BR_SleepDiary.class)
 			{
 				cData60a.iSDRmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tSleepDiaryReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
+				((Button) getView().findViewById(R.id.tSleepDiaryReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSDRmin));
 			}
 			else if (iNextClass == Reminders_BR_WindDown.class)
 			{
 				cData60a.iWDTmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
+				((Button) getView().findViewById(R.id.tWindDownTimeReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWDTmin));
 			}
 			else if (iNextClass == Reminders_BR_TakeAssessment.class)
 			{
 				cData60a.iTAmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
+				((Button) getView().findViewById(R.id.tTakeAssessmentTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iTAmin));
 			}
 			else if (iNextClass == Reminders_BR_StopCaffeine.class)
 			{
 				cData60a.iSCmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tStopCaffeineReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSCmin));
+				((Button) getView().findViewById(R.id.tStopCaffeineReminder)).setText(cData60a.formattedTimeFrom4pm(cData60a.iSCmin));
 			}
 			else if (iNextClass == Reminders_BR_WorryTime.class)
 			{
 				cData60a.iWTmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
+				((Button) getView().findViewById(R.id.tWorryTimeReminderTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iWTmin));
 			}
 			else if (iNextClass == Reminders_BR_UpdateSleepPrescription.class)
 			{
 				cData60a.iUSPmin = cData60a.timeTo4pm((hourOfDay * 60) + minute);
-				((TextView) getView().findViewById(R.id.tUpdateSleepPrescriptionTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iUSPmin));
+				((Button) getView().findViewById(R.id.tUpdateSleepPrescriptionTime)).setText(cData60a.formattedTimeFrom4pm(cData60a.iUSPmin));
 			}
 		}
 	};

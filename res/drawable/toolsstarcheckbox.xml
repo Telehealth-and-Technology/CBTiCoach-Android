@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/toolsstarfocused" android:state_checked="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/toolsstarhover" android:state_focused="true"/>
     <item android:drawable="@drawable/toolsstarunfocused" android:state_checked="false"/>
-    <item android:drawable="@drawable/toolsstarfocused"   android:state_checked="true"/>
-    <item android:drawable="@drawable/toolsstarunfocused"/>   <!-- default -->
+    <item android:drawable="@drawable/toolsstarfocused" android:state_checked="true"/>
+    <item android:drawable="@drawable/toolsstarunfocused"/>
+ <!-- default -->
+
 </selector>

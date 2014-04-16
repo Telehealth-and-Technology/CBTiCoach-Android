@@ -54,10 +54,11 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <Button
                         android:id="@+id/tWindDownTimeReminder"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/bg_whitebutton"
                         android:text="10:15"
                         android:textColor="#1c2739"
                         android:textSize="15sp" />
