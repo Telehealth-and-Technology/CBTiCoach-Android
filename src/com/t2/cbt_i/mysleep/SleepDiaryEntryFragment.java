@@ -371,6 +371,9 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		});
 	}
 
+	/**
+	 * Creates the times awake picker
+	 */
 	private void enableTimesAwakePicker()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sTimesAwake);
@@ -383,6 +386,9 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
+	/**
+	 * Creates the sleep quaility picker
+	 */
 	private void enableSleepQualityPicker()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sSleepQuality);
@@ -565,6 +571,9 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 	 * c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH)); break; } }
 	 */
 
+	/**
+	 * Creates and shows a dialog given the id
+	 */
 	private void showDialog(int id)
 	{
 		Builder builder;
@@ -939,6 +948,11 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		}
 	}
 
+	/**
+	 * Calculates the time from the given time to 4pm
+	 * @param iTime
+	 * @return the time period
+	 */
 	public int timeTo4pm(int iTime)
 	{ // we store the times as based off 4pm 24 hour clock
 		int iHour = iTime / 60 - 16; // so we can compare them
@@ -946,7 +960,11 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			iHour += 24;
 		return (iHour * 60) + (iTime % 60);
 	}
-
+	/**
+	 * Calculates the time from 4pm to the given time
+	 * @param iTime
+	 * @return the time period
+	 */
 	public int timeFrom4pm(int iTime)
 	{ // this will translate them for display
 		int iHour = (iTime / 60) + 16;
@@ -955,6 +973,11 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		return (iHour * 60) + (iTime % 60);
 	}
 
+	/**
+	 * Formats the time from 4pm value
+	 * @param iTime
+	 * @return Formated time string
+	 */
 	public String formattedTimeFrom4pm(int iTime)
 	{
 		if (iTime == -1)

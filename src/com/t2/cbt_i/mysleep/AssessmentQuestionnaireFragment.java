@@ -296,6 +296,10 @@ public class AssessmentQuestionnaireFragment extends CBTi_BaseFragment
 		this.goingToHelp = true;
 	}
 
+	/**
+	 * Returns whether any of the checkboxes are checked
+	 * @return True if any are checked
+	 */
 	private Boolean anyChecked()
 	{
 		return (((CheckBox) getView().findViewById(R.id.cbISIQ0)).isChecked() | ((CheckBox) getView().findViewById(R.id.cbISIQ1)).isChecked()
@@ -303,6 +307,10 @@ public class AssessmentQuestionnaireFragment extends CBTi_BaseFragment
 				.findViewById(R.id.cbISIQ4)).isChecked());
 	}
 
+	/**
+	 * Gets the score based off of what checkbox was checked
+	 * @return 0-4 score
+	 */
 	private int getScore()
 	{
 		int iScore;
@@ -320,6 +328,9 @@ public class AssessmentQuestionnaireFragment extends CBTi_BaseFragment
 		return iScore;
 	}
 
+	/**
+	 * Depending on what question stage, loads the next question
+	 */
 	private void fetchScreen()
 	{
 		// 1 screen for state -1 is ready to go

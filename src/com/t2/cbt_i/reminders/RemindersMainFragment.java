@@ -336,6 +336,9 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		});
 	}
 
+	/**
+	 * Creates the update sleep prescription days spinner
+	 */
 	private void enableUSPDayOfWeek()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sUpdateSleepPrescriptionDay);
@@ -347,6 +350,9 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
+	/**
+	 * Creates the take assessment days spinner
+	 */
 	private void enableTADayOfWeek()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sTakeAssessmentDay);
@@ -358,6 +364,9 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
+	/**
+	 * Creates the worry time days spinner
+	 */
 	private void enableWTDayOfWeek()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sWorryTimeDay);
@@ -369,6 +378,9 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
+	/**
+	 * Creates the take assessment repeat spinner
+	 */
 	private void enableTARepeat()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sTakeAssessmentRepeat);
@@ -428,6 +440,9 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 		super.onResume();
 	}
 
+	/**
+	 * Displays all reminder data
+	 */
 	private void renderData()
 	{
 		// sleep diary reminder time
@@ -533,7 +548,11 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	int iInitialHourOfDay; // if zero we default to current time
 	int iInitialMin = 0;
 
-	public Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog according to the id
+	 * @param id
+	 */
+	public void showDialog(int id)
 	{
 		switch (id)
 		{
@@ -568,7 +587,6 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 				.show();
 			break;
 		}
-		return null;
 	}
 
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()

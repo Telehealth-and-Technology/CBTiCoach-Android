@@ -67,6 +67,9 @@ public class QuiteMindWindingDownData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_35a1";
 
+	/**
+	 * Saves data to file
+	 */
 	public void saveData()
 	{
 		try
@@ -91,6 +94,9 @@ public class QuiteMindWindingDownData
 		}
 	}
 
+	/**
+	 * Loads data from file
+	 */
 	void loadData()
 	{
 		try
@@ -113,6 +119,9 @@ public class QuiteMindWindingDownData
 		}
 	}
 
+	/**
+	 * Displays the data in the checkboxes
+	 */
 	public void renderData()
 	{
 		reOrderMap();
@@ -165,6 +174,9 @@ public class QuiteMindWindingDownData
 
 	}
 
+	/**
+	 * Sorts the map where checked items are first in line
+	 */
 	private void reOrderMap()
 	{ // move checked items to top of list
 		int i, j;

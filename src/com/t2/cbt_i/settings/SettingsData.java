@@ -58,6 +58,9 @@ public class SettingsData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_50b";
 
+	/**
+	 * Saves data to file
+	 */
 	public void saveData()
 	{
 		try
@@ -84,6 +87,9 @@ public class SettingsData
 		}
 	}
 
+	/**
+	 * Load data from file
+	 */
 	void loadData()
 	{
 		try

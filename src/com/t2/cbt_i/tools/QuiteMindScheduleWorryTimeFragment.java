@@ -132,6 +132,9 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 		super.onPause();
 	}
 
+	/**
+	 * Creates the worry time days spinner
+	 */
 	private void enableWTDayOfWeek()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sWorryTimeDay);
@@ -143,6 +146,9 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
+	/**
+	 * Displays data in its associated view
+	 */
 	private void renderData()
 	{
 		// worry time reminder
@@ -167,7 +173,11 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 	int iInitialHourOfDay; // if zero we default to current time
 	int iInitialMin;
 
-	private Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog given the id
+	 * @param id
+	 */
+	private void showDialog(int id)
 	{
 		switch (id)
 		{
@@ -182,7 +192,6 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
-		return null;
 	}
 
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()

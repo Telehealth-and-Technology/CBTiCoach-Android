@@ -1,36 +1,36 @@
 /*
-* SleepDiaryMainFragment.java
-* Fragment used to display a list of all sleep diary entries and allow the user to setup a reminder to fill out sleep diary entries
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * SleepDiaryMainFragment.java
+ * Fragment used to display a list of all sleep diary entries and allow the user to setup a reminder to fill out sleep diary entries
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.mysleep;
 
 import java.util.Calendar;
@@ -78,7 +78,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_SleepDiary));
 		setHasOptionsMenu(true);
-		
+
 		cData60a = new RemindersData(getSherlockActivity());
 
 		// Reminder Toggle Button
@@ -125,18 +125,18 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 			public void onClick(View v)
 			{ // handle the about button
 				final FragmentManager fm = getFragmentManager();
-			    final FragmentTransaction ft = fm.beginTransaction();
-			    
-			    SleepDiaryEntryFragment frag = new SleepDiaryEntryFragment();
-				new SleepDiaryEntryData(getSherlockActivity()).deleteData();
-			    Bundle bun = new Bundle();
-			    bun.putBoolean("NEW", true);
-			    frag.setArguments(bun);
+				final FragmentTransaction ft = fm.beginTransaction();
 
-			    ft.addToBackStack(null);
-			    ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
-		        ft.replace(R.id.sleepdairyfragment, frag);
-			    ft.commit();
+				SleepDiaryEntryFragment frag = new SleepDiaryEntryFragment();
+				new SleepDiaryEntryData(getSherlockActivity()).deleteData();
+				Bundle bun = new Bundle();
+				bun.putBoolean("NEW", true);
+				frag.setArguments(bun);
+
+				ft.addToBackStack(null);
+				ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
+				ft.replace(R.id.sleepdairyfragment, frag);
+				ft.commit();
 			}
 		});
 	}
@@ -144,6 +144,11 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 	private static int iColorsID[] = { R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1,
 			R.drawable.pbprogress2, R.drawable.pbprogress2, R.drawable.pbprogress3 };
 
+	/**
+	 * Updates the progress bar with the given progress value
+	 * 
+	 * @param iProg
+	 */
 	private void updateProgressBar(int iProg)
 	{
 		ProgressBar pbWeek = (ProgressBar) getView().findViewById(R.id.progressBar);
@@ -164,7 +169,11 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 	int iInitialHourOfDay; // if zero we default to current time
 	int iInitialMin = 0;
 
-	private Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog according to the given id
+	 * @param id
+	 */
+	private void showDialog(int id)
 	{
 		switch (id)
 		{
@@ -175,10 +184,9 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 				Calendar onscene = Calendar.getInstance();
 				iInitialHourOfDay = onscene.get(Calendar.HOUR_OF_DAY);
 				iInitialMin = onscene.get(Calendar.MINUTE);
-			} 
-			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager()); 
+			}
+			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 		}
-		return null;
 	}
 
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()
@@ -238,18 +246,18 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id)
 			{
 				final FragmentManager fm = getFragmentManager();
-			    final FragmentTransaction ft = fm.beginTransaction();
-			    
-			    SleepDiaryEntryFragment frag = new SleepDiaryEntryFragment();
-			    Bundle bun = new Bundle();
-			    bun.putBoolean("NEW", false);
-			    bun.putInt("POS", position);
-			    frag.setArguments(bun);
-			    
-			    ft.addToBackStack(null);
-			    ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
-		        ft.replace(R.id.sleepdairyfragment, frag);
-			    ft.commit();
+				final FragmentTransaction ft = fm.beginTransaction();
+
+				SleepDiaryEntryFragment frag = new SleepDiaryEntryFragment();
+				Bundle bun = new Bundle();
+				bun.putBoolean("NEW", false);
+				bun.putInt("POS", position);
+				frag.setArguments(bun);
+
+				ft.addToBackStack(null);
+				ft.setCustomAnimations(R.anim.slide_left, R.anim.slide_left2, R.anim.slide_right, R.anim.slide_right2);
+				ft.replace(R.id.sleepdairyfragment, frag);
+				ft.commit();
 			}
 		});
 
@@ -261,7 +269,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 	{
 		final FragmentManager fm = getFragmentManager();
 		CBTi_BaseFragment current = (CBTi_BaseFragment) fm.findFragmentById(R.id.sleepdairyfragment);
-		if(!(current instanceof SleepDiaryMainFragment))
+		if (!(current instanceof SleepDiaryMainFragment))
 		{
 			this.goingToHelp = true;
 			current.getHelp();

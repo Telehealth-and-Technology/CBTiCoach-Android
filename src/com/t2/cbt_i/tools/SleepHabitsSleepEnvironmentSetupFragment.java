@@ -152,8 +152,11 @@ public class SleepHabitsSleepEnvironmentSetupFragment extends CBTi_BaseFragment
 	private static final int DIALOG_SIU = 44;
 	private static final int DIALOG_RSS = 45;
 
-	
-	private Dialog showDialog(int id)
+	/**
+	 * Creates and displays a dialog according to the given id
+	 * @param id
+	 */
+	private void showDialog(int id)
 	{
 		Builder builder = new AlertDialog.Builder(getSherlockActivity());
 		switch (id)
@@ -179,7 +182,6 @@ public class SleepHabitsSleepEnvironmentSetupFragment extends CBTi_BaseFragment
 			break;
 		}
 		builder.setPositiveButton("OK", null).create().show();
-		return null;
 	}
 
 	@Override

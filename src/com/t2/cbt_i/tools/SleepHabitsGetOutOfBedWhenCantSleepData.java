@@ -67,6 +67,9 @@ public class SleepHabitsGetOutOfBedWhenCantSleepData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_34c1";
 
+	/**
+	 * Saves data to file
+	 */
 	public void saveData()
 	{
 		try
@@ -91,6 +94,9 @@ public class SleepHabitsGetOutOfBedWhenCantSleepData
 		}
 	}
 
+	/**
+	 * Loads data from file
+	 */
 	void loadData()
 	{
 		try
@@ -115,6 +121,9 @@ public class SleepHabitsGetOutOfBedWhenCantSleepData
 		}
 	}
 
+	/**
+	 * Sorts and displays the data in their respective checkboxes
+	 */
 	public void renderData()
 	{
 		reOrderMap();
@@ -162,6 +171,9 @@ public class SleepHabitsGetOutOfBedWhenCantSleepData
 		((TextView) c.findViewById(R.id.tCantSleep20)).setText(iID[iMap[19]]);
 	}
 
+	/**
+	 * Sorts the data map
+	 */
 	private void reOrderMap()
 	{ // move checked items to top of list
 		int i, j;

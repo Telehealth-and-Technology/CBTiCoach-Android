@@ -58,6 +58,12 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 	private TimePickerDialog.OnTimeSetListener tListener;
 	private DatePickerDialog.OnDateSetListener dListener;
 
+	/**
+	 * Shows a time dialog with the given time
+	 * @param time
+	 * @param l
+	 * @param manager
+	 */
 	public void showTimeDialog(int time, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		convertTime = true;
@@ -66,6 +72,13 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		this.show(manager, "dialog");
 	}
 
+	/**
+	 * Shows a time dialog with the given hour and minute
+	 * @param hour
+	 * @param min
+	 * @param l
+	 * @param manager
+	 */
 	public void showTimeDialog(int hour, int min, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		tListener = l;
@@ -74,6 +87,13 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		this.show(manager, "dialog");
 	}
 
+	/**
+	 * Shows a time dialog with the given time and title
+	 * @param title
+	 * @param time
+	 * @param l
+	 * @param manager
+	 */
 	public void showTimeDialogWithTitle(String title, int time, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		convertTime = true;
@@ -84,6 +104,14 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		this.show(manager, "dialog");
 	}
 
+	/**
+	 * Shows a time dialog with the given hour and minute and title
+	 * @param title
+	 * @param hour
+	 * @param min
+	 * @param l
+	 * @param manager
+	 */
 	public void showTimeDialogWithTitle(String title, int hour, int min, TimePickerDialog.OnTimeSetListener l, FragmentManager manager)
 	{
 		writeTitle = true;
@@ -94,6 +122,14 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		this.show(manager, "dialog");
 	}
 
+	/**
+	 * Shows a date dialog with the given year, month, and day
+	 * @param year
+	 * @param month
+	 * @param day
+	 * @param l
+	 * @param manager
+	 */
 	public void showDateDialog(int year, int month, int day, OnDateSetListener l, FragmentManager manager)
 	{
 		showDateDialog = true;
@@ -104,6 +140,10 @@ public class CBTiDialogFragment extends SherlockDialogFragment
 		this.show(manager, "dialog");
 	}
 
+	/**
+	 * Sets 24hourMode to the given boolean value
+	 * @param isEnabled
+	 */
 	public void set24hourMode(boolean isEnabled)
 	{
 		is24hour = isEnabled;

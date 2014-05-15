@@ -1,36 +1,36 @@
 /*
-* QuiteMindWindingDownFragment.java
-* Fragment used to display all of the winding down activities along with highlighting the ones the user has chosen
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * QuiteMindWindingDownFragment.java
+ * Fragment used to display all of the winding down activities along with highlighting the ones the user has chosen
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.tools;
 
 import java.util.Calendar;
@@ -72,7 +72,7 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_WindingDown));
 		setHasOptionsMenu(true);
-		
+
 		// Wind Down Time Reminder Toggle Button
 		((Button) getView().findViewById(R.id.bWindDownTimeReminder)).setOnClickListener(new View.OnClickListener()
 		{
@@ -128,6 +128,9 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 	}
 
 	// On click listener for button1
+	/**
+	 * Toggled the checkbox state and records the change
+	 */
 	final OnClickListener WindOCL = new OnClickListener()
 	{
 		@Override
@@ -265,17 +268,17 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 			}
 			cData35a1.bWind[cData35a1.iMap[iStart]] = bState; // scrape new state to data store
 
-//			if (bState)
-//			{ // if checked then re order display
-//				if (iStart > 0)
-//				{
-//					int iHold = cData35a1.iMap[iStart];
-//					for (; iStart > 0; iStart--)
-//						cData35a1.iMap[iStart] = cData35a1.iMap[iStart - 1];
-//					cData35a1.iMap[0] = iHold;
-//				}
-//			}
-//			cData35a1.renderData();
+			// if (bState)
+			// { // if checked then re order display
+			// if (iStart > 0)
+			// {
+			// int iHold = cData35a1.iMap[iStart];
+			// for (; iStart > 0; iStart--)
+			// cData35a1.iMap[iStart] = cData35a1.iMap[iStart - 1];
+			// cData35a1.iMap[0] = iHold;
+			// }
+			// }
+			// cData35a1.renderData();
 		}
 	};
 
@@ -303,7 +306,7 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		}
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onPause()
 	{
@@ -313,13 +316,18 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		super.onPause();
 	}
 
-
 	static final int TIME_DIALOG_ID = 1;
 	int iPicker; // used to figure what to do with picked time
 	int iInitialHourOfDay; // if zero we default to current time
 	int iInitialMin;
 
-	private Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog given the id
+	 * 
+	 * @param id
+	 * @return
+	 */
+	private void showDialog(int id)
 	{
 		switch (id)
 		{
@@ -332,9 +340,8 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 				iInitialMin = onscene.get(Calendar.MINUTE);
 			}
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
-			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
+			// return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
-		return null;
 	}
 
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()
@@ -351,12 +358,11 @@ public class QuiteMindWindingDownFragment extends CBTi_BaseFragment
 		}
 	};
 
-	private Class<Reminders_BR_WindDown> iNextClass; // tells the alarm where to
-														// wake up
+	private Class<Reminders_BR_WindDown> iNextClass; // tells the alarm where to wake up
 
 	@Override
 	public void getHelp()
-	{ 
+	{
 		this.goingToHelp = true;
 		Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
 		i.putExtra("RID_Img", R.drawable.buddy_toolshelpwindingdown);

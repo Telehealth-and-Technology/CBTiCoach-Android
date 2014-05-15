@@ -136,6 +136,9 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 		super.onPause();
 	}
 
+	/**
+	 * Starts the video from the beginning
+	 */
 	private void videoPlay()
 	{
 //		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
@@ -157,6 +160,10 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 	};
 	
 	private static int iResLast;
+	
+	/**
+	 * Calculates the caption index using the video position
+	 */
 	private Runnable rSequencer = new Runnable()
 	{ // Do something to the UI thread here
 		@Override
@@ -176,6 +183,12 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Gets the closest caption index given the list of caption markers and the video position
+	 * @param iList
+	 * @param iVideoPos
+	 * @return
+	 */
 	private int getCurrentCaptionIndex(int[] iList, int iVideoPos)
 	{
 		int i = 0;

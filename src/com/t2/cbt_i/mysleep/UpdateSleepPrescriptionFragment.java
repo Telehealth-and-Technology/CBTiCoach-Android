@@ -48,7 +48,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.ToggleButton;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -253,6 +252,9 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 		});
 	}
 
+	/**
+	 * Creates the days spinner
+	 */
 	private void enableUSPDayOfWeek()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sAutoDay);
@@ -318,7 +320,11 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 	private static final int DIALOG_USP1 = 51;
 	private static final int DIALOG_USP2 = 52;
 
-	private Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog according to the given id
+	 * @param id
+	 */
+	private void showDialog(int id)
 	{
 		Builder builder = new AlertDialog.Builder(getSherlockActivity());
 		CBTiDialogFragment dia = new CBTiDialogFragment();
@@ -394,8 +400,6 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 			builder.create().show();
 			break;
 		}
-
-		return null;
 	}
 
 	private TimePickerDialog.OnTimeSetListener mBTTimePickerListener = new TimePickerDialog.OnTimeSetListener()

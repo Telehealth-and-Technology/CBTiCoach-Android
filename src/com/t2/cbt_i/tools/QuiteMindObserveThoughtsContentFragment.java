@@ -140,6 +140,9 @@ public class QuiteMindObserveThoughtsContentFragment extends CBTi_BaseFragment
 		this.goingToHelp = true;
 	}
 
+	/**
+	 * Starts the video
+	 */
 	private void videoPlay()
 	{
 		((VideoView) getView().findViewById(R.id.video)).start();

@@ -1,36 +1,36 @@
 /*
-* QuiteMindCountryRoadImageryFragment.java
-* Fragment that serves as gateway into the country road imagery video but also plays the beach imagery and manages the captions
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/package com.t2.cbt_i.tools;
+ * QuiteMindCountryRoadImageryFragment.java
+ * Fragment that serves as gateway into the country road imagery video but also plays the beach imagery and manages the captions
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */package com.t2.cbt_i.tools;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -74,7 +74,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GuidedImageryCountryRoad));
 		setHasOptionsMenu(true);
-		
+
 		// PLAY
 		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
 		{
@@ -85,7 +85,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 				videoPlay();
 			}
 		});
-		
+
 		// PAUSE
 		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
 		{
@@ -95,7 +95,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 				isPlaying = false;
 				((VideoView) getView().findViewById(R.id.video)).pause();
 				iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
-				sHandler.removeCallbacks(rSequencer);				
+				sHandler.removeCallbacks(rSequencer);
 			}
 		});
 
@@ -106,9 +106,12 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 		sHandler = new Handler();
 	}
 
+	/**
+	 * Plays the video from the beginning
+	 */
 	private void videoPlay()
 	{
-//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+		// ((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
 		((VideoView) getView().findViewById(R.id.video)).start();
 		rSequencer.run();
 		iResLast = -1;
@@ -127,7 +130,6 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 
 	private static int iVideoPos;
 
-
 	@Override
 	public void onResume()
 	{
@@ -138,7 +140,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 		}
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onPause()
 	{
@@ -158,6 +160,9 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 	}
 
 	private static int iResLast;
+	/**
+	 * Syncs the caption to the video
+	 */
 	private Runnable rSequencer = new Runnable()
 	{ // Do something to the UI thread here
 		@Override
@@ -177,6 +182,12 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Calculates the caption index given the caption position list and the video position
+	 * @param iList
+	 * @param iVideoPos
+	 * @return Current caption index
+	 */
 	private int getCurrentCaptionIndex(int[] iList, int iVideoPos)
 	{
 		int i = 0;
@@ -191,7 +202,7 @@ public class QuiteMindCountryRoadImageryFragment extends CBTi_BaseFragment
 
 	@Override
 	public void getHelp()
-	{ 
+	{
 		this.goingToHelp = true;
 		Intent i = new Intent(getSherlockActivity(), CBTi_Help.class);
 		i.putExtra("RID_Img", R.drawable.guidedimageryroad);

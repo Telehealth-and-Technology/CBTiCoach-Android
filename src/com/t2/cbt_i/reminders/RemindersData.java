@@ -101,6 +101,11 @@ public class RemindersData
 		loadData();
 	}
 
+	/**
+	 * Calculates the time to 4pm from the given time
+	 * @param iTime
+	 * @return
+	 */
 	public int timeTo4pm(int iTime)
 	{ // we store the times as based off 4pm 24 hour clock
 		int iHour = iTime / 60 - 16; // so we can compare them
@@ -109,6 +114,11 @@ public class RemindersData
 		return (iHour * 60) + (iTime % 60);
 	}
 
+	/**
+	 * Calculates the time from 4pm to the given time
+	 * @param iTime
+	 * @return
+	 */
 	public int timeFrom4pm(int iTime)
 	{ // this will translate them for display
 		int iHour = (iTime / 60) + 16;
@@ -117,6 +127,11 @@ public class RemindersData
 		return (iHour * 60) + (iTime % 60);
 	}
 
+	/**
+	 * Formats the time from 4pm using the given time into a string
+	 * @param iTime
+	 * @return Formatted string
+	 */
 	public String formattedTimeFrom4pm(int iTime)
 	{
 		if (iTime == -1)
@@ -139,6 +154,9 @@ public class RemindersData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_60a";
 
+	/**
+	 * Saves the data to file
+	 */
 	public void saveData()
 	{
 		try
@@ -186,6 +204,9 @@ public class RemindersData
 		}
 	}
 
+	/**
+	 * Loads data from file
+	 */
 	void loadData()
 	{
 		resetData();
@@ -232,6 +253,9 @@ public class RemindersData
 		}
 	}
 
+	/**
+	 * Resets all data to default values
+	 */
 	public void resetData()
 	{
 		UpdateSleepPrescriptionData cData22a = new UpdateSleepPrescriptionData(c);
@@ -271,6 +295,13 @@ public class RemindersData
 		iWTmin = 0;
 	}
 
+	/**
+	 * Creates and registers an alarm given the time, days and interval
+	 * @param iTimemin
+	 * @param cClass
+	 * @param lInterval
+	 * @param iDayOfWeek
+	 */
 	private void setAlarm2(int iTimemin, Class<?> cClass, long lInterval, int iDayOfWeek)
 	{
 		if ((iTimemin != -1) && (lInterval != NEVER))
@@ -320,6 +351,12 @@ public class RemindersData
 		}
 	}
 
+	/**
+	 * Creates and registers an alarm given the time and interval
+	 * @param iTimemin
+	 * @param cClass
+	 * @param lInterval
+	 */
 	private void setAlarm(int iTimemin, Class<?> cClass, long lInterval)
 	{
 		if (iTimemin != -1)
@@ -354,6 +391,10 @@ public class RemindersData
 		}
 	}
 
+	/**
+	 * Unregisters an alarm
+	 * @param i
+	 */
 	private void cancelAlarm(Intent i)
 	{
 		AlarmManager am = (AlarmManager) c.getSystemService(Context.ALARM_SERVICE);
@@ -361,11 +402,20 @@ public class RemindersData
 		am.cancel(pendingIntent); // get rid of any old alarms for this intent
 	}
 
+	/**
+	 * Alarm enum
+	 * @author braden.catlett
+	 *
+	 */
 	public enum ALARMS
 	{
 		SleepDiary, WindDownTime, PrescribedBedTime, PrescribedWakeTime, UpdateSleepPrescription, TakeAssessment, StopCaffeine, WorryTime
 	}
 
+	/**
+	 * Cancels an alarm according to the given enum value
+	 * @param alarmCode
+	 */
 	public void cancelAnAlarm(ALARMS alarmCode)
 	{
 
@@ -405,6 +455,9 @@ public class RemindersData
 		}
 	}
 
+	/**
+	 * Cancels all alarms
+	 */
 	public void cancelAllAlarms()
 	{
 		cancelAnAlarm(ALARMS.SleepDiary);
@@ -417,6 +470,9 @@ public class RemindersData
 		cancelAnAlarm(ALARMS.WorryTime);
 	}
 
+	/**
+	 * Sets all alarms
+	 */
 	public void setAllAlarms()
 	{
 
@@ -438,6 +494,10 @@ public class RemindersData
 			setAnAlarm(ALARMS.WorryTime);
 	}
 
+	/**
+	 * Sets an alarm according to the given enum value
+	 * @param alarmCode
+	 */
 	public void setAnAlarm(ALARMS alarmCode)
 	{
 		switch (alarmCode)

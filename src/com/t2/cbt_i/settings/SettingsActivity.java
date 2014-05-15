@@ -88,6 +88,9 @@ public class SettingsActivity extends CBTi_BaseActivity
 
 	private String sSubDir = "/CBTi_Data/";
 
+	/**
+	 * Deletes all user data files
+	 */
 	private void resetAllUserData()
 	{
 

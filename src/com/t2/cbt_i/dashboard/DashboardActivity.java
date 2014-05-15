@@ -65,7 +65,7 @@ public class DashboardActivity extends CBTi_BaseActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		getSupportActionBar().setTitle("Home");
+		getSupportActionBar().setTitle("Home");  
 		setContentView(R.layout.dashboard);
 		getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
@@ -96,11 +96,20 @@ public class DashboardActivity extends CBTi_BaseActivity
 		}
 	}
 
+	/**
+	 * Sets the current tab item to the given page
+	 * @param page
+	 */
 	public void setPage(int page)
 	{
 		mPager.setCurrentItem(page);
 	}
 
+	/**
+	 * TabAdapter used to manage the tabs with CBTi and the fragments associated with the tabs
+	 * @author braden.catlett
+	 *
+	 */
 	public static class TabsAdapter extends FragmentPagerAdapter implements ActionBar.TabListener, ViewPager.OnPageChangeListener
 	{
 		private final Context mContext;
@@ -121,6 +130,12 @@ public class DashboardActivity extends CBTi_BaseActivity
 			mViewPager.setOnPageChangeListener(this);
 		}
 
+		/**
+		 * Adds a tab to the tab collection and actionbar
+		 * @param tab
+		 * @param clss
+		 * @param args
+		 */
 		public void addTab(ActionBar.Tab tab, Class<?> clss, Bundle args)
 		{
 			final TabInfo info = new TabInfo(clss, args);
@@ -203,11 +218,21 @@ public class DashboardActivity extends CBTi_BaseActivity
 		{
 		}
 
+		/**
+		 * Selects a spinner item if its present
+		 * @param position
+		 * @param animate
+		 */
 		private void selectInSpinnerIfPresent(int position, boolean animate)
 		{
 			ActionBarUtils.selectSpinnerIfPresent((Activity) mContext, position, animate);
 		}
 
+		/**
+		 * Holds references to the class and bundle associated with a tab
+		 * @author braden.catlett
+		 *
+		 */
 		static final class TabInfo
 		{
 			private final Class<?> clss;

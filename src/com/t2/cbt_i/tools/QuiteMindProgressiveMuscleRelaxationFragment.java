@@ -73,6 +73,10 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 	private Handler sHandler;
 	private boolean isPlaying;
 
+	/**
+	 * Initializes the VideoView and the caption handler
+	 * @param initial
+	 */
 	private void setup(boolean initial)
 	{
 		if (!initial)
@@ -113,6 +117,9 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		});
 	}
 
+	/**
+	 * Switches layout to the video playing layout, setups the views and then starts the video
+	 */
 	private void videoPlay()
 	{
 		RelativeLayout main = (RelativeLayout) getView().findViewById(R.id.progressivemusclemainlayout);
@@ -178,6 +185,12 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		}
 	};
 
+	/**
+	 * Calculates the current caption index given the caption position list and the video position
+	 * @param iList
+	 * @param iVideoPos
+	 * @return
+	 */
 	private int getCurrentCaptionIndex(int[] iList, int iVideoPos)
 	{
 		int i = 0;
@@ -221,6 +234,9 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 	}
 
 	private static int iResLast, iResLast2;
+	/**
+	 * Synchronizes the captions with the video
+	 */
 	private Runnable rSequencer = new Runnable()
 	{ // Do something to the UI thread here
 		@Override

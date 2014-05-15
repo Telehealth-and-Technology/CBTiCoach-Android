@@ -35,7 +35,6 @@ package com.t2.cbt_i.mysleep;
 
 import java.util.Calendar;
 
-import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -46,7 +45,6 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.t2.cbt_i.R;
@@ -147,7 +145,11 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		this.goingToHelp = true;
 	}
 
-	public Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog depending on the given id
+	 * @param id
+	 */
+	public void showDialog(int id)
 	{
 		CBTiDialogFragment dia = new CBTiDialogFragment();
 		switch (id)
@@ -163,7 +165,6 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			break;
 		}
-		return null;
 	}
 
 	private TimePickerDialog.OnTimeSetListener mTimeSetListener = new TimePickerDialog.OnTimeSetListener()
@@ -176,6 +177,9 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Creates the days spinner
+	 */
 	private void enableTADayOfWeek()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sTakeAssessmentDay);
@@ -188,6 +192,9 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 		sSpin.setOnItemSelectedListener(spinnerListener);
 	}
 
+	/**
+	 * Creates the repeat period spinner
+	 */
 	private void enableTARepeat()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sTakeAssessmentRepeat);

@@ -1,36 +1,36 @@
 /*
-* QuiteMindBreathingToolFragment
-* Fragment that serves as the breathing tool, playing the guiding audio, managing the captions and display the breathing red, yellow and green visual aids
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * QuiteMindBreathingToolFragment
+ * Fragment that serves as the breathing tool, playing the guiding audio, managing the captions and display the breathing red, yellow and green visual aids
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.tools;
 
 import android.content.Intent;
@@ -149,6 +149,9 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 		sHandler = new Handler();
 	}
 
+	/**
+	 * Sets up the UI and plays the video
+	 */
 	private void videoPlay()
 	{
 		bPlayMe.setVisibility(View.GONE);
@@ -194,7 +197,7 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 		}
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onPause()
 	{
@@ -214,6 +217,13 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 		super.onPause();
 	}
 
+	/**
+	 * Gets the current caption index given the caption position array and the video position
+	 * 
+	 * @param iList
+	 * @param iVideoPos
+	 * @return Caption index
+	 */
 	private int getCurrentCaptionIndex(int[] iList, int iVideoPos)
 	{
 		int i = 0;
@@ -227,6 +237,9 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 	}
 
 	private static int iResLast, iResLast2, iResLast3;
+	/**
+	 * Syncs the animations and captions of the breathing tool
+	 */
 	private Runnable rSequencer = new Runnable()
 	{ // Do something to the UI thread here
 		@Override
@@ -266,10 +279,14 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 						}
 
 						@Override
-						public void onAnimationRepeat(Animation animation) { }
+						public void onAnimationRepeat(Animation animation)
+						{
+						}
 
 						@Override
-						public void onAnimationStart(Animation animation) { }
+						public void onAnimationStart(Animation animation)
+						{
+						}
 					});
 					tCaption2.setText(iCaptionId2[iCur2]);
 					tCaption2.setAnimation(asetOutt);
@@ -302,10 +319,14 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 							}
 
 							@Override
-							public void onAnimationRepeat(Animation animation) { }
+							public void onAnimationRepeat(Animation animation)
+							{
+							}
 
 							@Override
-							public void onAnimationStart(Animation animation) { }
+							public void onAnimationStart(Animation animation)
+							{
+							}
 						});
 						break;
 
@@ -334,10 +355,14 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 							}
 
 							@Override
-							public void onAnimationRepeat(Animation animation) { }
+							public void onAnimationRepeat(Animation animation)
+							{
+							}
 
 							@Override
-							public void onAnimationStart(Animation animation) { }
+							public void onAnimationStart(Animation animation)
+							{
+							}
 						});
 						break;
 					}

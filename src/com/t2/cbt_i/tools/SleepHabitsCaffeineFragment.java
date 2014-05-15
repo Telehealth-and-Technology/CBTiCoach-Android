@@ -43,8 +43,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -159,7 +157,11 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 	int iInitialHourOfDay; // if zero we default to current time
 	int iInitialMin;
 
-	private Dialog showDialog(int id)
+	/**
+	 * Creates and shows a dialog given the id
+	 * @param id
+	 */
+	private void showDialog(int id)
 	{
 		switch (id)
 		{
@@ -173,7 +175,6 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 			dia.showTimeDialog(iInitialHourOfDay, iInitialMin, mTimeSetListener, getFragmentManager());
 			//return new TimePickerDialog(getSherlockActivity(), mTimeSetListener, iInitialHourOfDay, iInitialMin, false);
 		}
-		return null;
 	}
 
 	private Class<Reminders_BR_StopCaffeine> iNextClass;
@@ -191,6 +192,9 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Creates the daily caffeine drink limit spinner
+	 */
 	private void enableDCDLPicker()
 	{
 		Spinner sSpin = (Spinner) getView().findViewById(R.id.sDailyCaffeineDrinkLimit);

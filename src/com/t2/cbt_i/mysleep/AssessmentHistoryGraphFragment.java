@@ -157,6 +157,9 @@ public class AssessmentHistoryGraphFragment extends CBTi_BaseFragment
 	private XYSeries mCurrentSeries;
 	private XYSeriesRenderer mCurrentRenderer;
 
+	/**
+	 * Initializes the X and Y axes for the graph view
+	 */
 	private void initChart()
 	{
 		mCurrentSeries = new XYSeries("");
@@ -195,6 +198,9 @@ public class AssessmentHistoryGraphFragment extends CBTi_BaseFragment
 		mCurrentRenderer.setColor(Color.rgb(204, 85, 0));
 	}
 
+	/**
+	 * Add all found assessment data to the graph series
+	 */
 	private void addData()
 	{
 

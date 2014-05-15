@@ -67,13 +67,14 @@ public class SleepHabitsGetOutOfBedOnTimeData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_34c2";
 
+	/**
+	 * Saves data to file
+	 */
 	public void saveData()
 	{
 		try
 		{
-			File dir = new File(c.getFilesDir(), sSubDir); // open the
-															// subdirectory if
-															// it exists
+			File dir = new File(c.getFilesDir(), sSubDir); // open the subdirectory if it exists
 			if (!dir.exists()) // create if necessary
 				dir.mkdir();
 			File file = new File(dir, sFilename);
@@ -93,6 +94,9 @@ public class SleepHabitsGetOutOfBedOnTimeData
 		}
 	}
 
+	/**
+	 * Loads data from file
+	 */
 	void loadData()
 	{
 		try
@@ -117,6 +121,9 @@ public class SleepHabitsGetOutOfBedOnTimeData
 		}
 	}
 
+	/**
+	 * Sorts the data and then displays the values with in respective checkbox
+	 */
 	public void renderData()
 	{
 		reOrderMap();
@@ -164,6 +171,9 @@ public class SleepHabitsGetOutOfBedOnTimeData
 		((TextView) c.findViewById(R.id.tGetOut20)).setText(iID[iMap[19]]);
 	}
 
+	/**
+	 * Sorts the data map
+	 */
 	private void reOrderMap()
 	{ // move checked items to top of list
 		int i, j;

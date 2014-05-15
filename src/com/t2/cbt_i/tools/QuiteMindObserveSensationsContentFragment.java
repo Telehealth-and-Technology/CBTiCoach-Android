@@ -168,6 +168,9 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 
 	private static int iResLast;
 
+	/**
+	 * Synchronizes the caption to the video
+	 */
 	private Runnable rSequencer = new Runnable()
 	{ // Do something to the UI thread here
 		@Override
@@ -188,6 +191,9 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Plays the video
+	 */
 	private void videoPlay()
 	{
 		((VideoView) getView().findViewById(R.id.video)).start();
@@ -204,6 +210,12 @@ public class QuiteMindObserveSensationsContentFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Calculates the current caption index given the caption position list and the video position
+	 * @param iList
+	 * @param iVideoPos
+	 * @return
+	 */
 	private int getCurrentCaptionIndex(int[] iList, int iVideoPos)
 	{
 		int i = 0;

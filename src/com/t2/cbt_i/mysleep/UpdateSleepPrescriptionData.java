@@ -51,7 +51,6 @@ import com.t2.cbt_i.R;
 
 public class UpdateSleepPrescriptionData
 {
-
 	public int iSP_PBTimemin = -1;
 	public int ii_PBTime = 0; // set to 1 any time this is set to keep count
 	public int iSP_PWTimemin = -1;
@@ -91,6 +90,11 @@ public class UpdateSleepPrescriptionData
 		}
 	}
 
+	/**
+	 * Reads data from the DataInputStream
+	 * @param dis
+	 * @throws IOException
+	 */
 	private void readData(DataInputStream dis) throws IOException
 	{
 		iSP_PBTimemin = dis.readInt();
@@ -104,6 +108,11 @@ public class UpdateSleepPrescriptionData
 		iUSPDayofWeek = dis.readInt();
 	}
 
+	/**
+	 * Writes data to the DataOutputStream
+	 * @param dos
+	 * @throws IOException
+	 */
 	public void writeData(DataOutputStream dos) throws IOException
 	{
 
@@ -121,6 +130,9 @@ public class UpdateSleepPrescriptionData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_22a";
 
+	/**
+	 * Saves data to file
+	 */
 	public void saveData()
 	{
 		try
@@ -143,6 +155,9 @@ public class UpdateSleepPrescriptionData
 		}
 	}
 
+	/**
+	 * Loads data from file
+	 */
 	void loadData()
 	{
 		try
@@ -164,6 +179,9 @@ public class UpdateSleepPrescriptionData
 		}
 	}
 
+	/**
+	 * Displays all Sleep prescription information
+	 */
 	public void displaySleepPrescription()
 	{
 		String efficiency = "";
@@ -189,7 +207,7 @@ public class UpdateSleepPrescriptionData
 				iTime -= 30;
 			formattedTimeFrom4pm2(iTime, R.id.tSPBedtime, R.id.tSPBedtimeAM);
 			formattedTimeFrom4pm2(iSP_PWTimemin, R.id.tSPWaketime, R.id.tSPWaketimeAM);
-			
+
 			if ((iSP_SleepEfficiency == -1) || (iSP_SleepEfficiency < 0) || (iSP_SleepEfficiency > 100))
 			{
 				efficiency = c.getResources().getString(R.string.s_NoData);
@@ -208,16 +226,20 @@ public class UpdateSleepPrescriptionData
 			((TextView) contentView.findViewById(R.id.tvSPNote2)).setVisibility(View.GONE);
 			((LinearLayout) contentView.findViewById(R.id.tvSP)).setVisibility(View.GONE);
 		}
-		RelativeLayout llbar = (RelativeLayout)contentView.findViewById(R.id.rlpb);
-		String bedtime = ((TextView)contentView.findViewById(R.id.tSPBedtime)).getText().toString();
-		String bedtimeAM = ((TextView)contentView.findViewById(R.id.tSPBedtimeAM)).getText().toString();
-		String waketime = ((TextView)contentView.findViewById(R.id.tSPWaketime)).getText().toString();
-		String waketimeAM = ((TextView)contentView.findViewById(R.id.tSPWaketimeAM)).getText().toString();
-		llbar.setContentDescription("Sleep Prescription Bedtime: " + bedtime + " " + bedtimeAM +
-													" Waketime: " + waketime + " " + waketimeAM +
-													" Sleep Efficiency " + efficiency);
+		RelativeLayout llbar = (RelativeLayout) contentView.findViewById(R.id.rlpb);
+		String bedtime = ((TextView) contentView.findViewById(R.id.tSPBedtime)).getText().toString();
+		String bedtimeAM = ((TextView) contentView.findViewById(R.id.tSPBedtimeAM)).getText().toString();
+		String waketime = ((TextView) contentView.findViewById(R.id.tSPWaketime)).getText().toString();
+		String waketimeAM = ((TextView) contentView.findViewById(R.id.tSPWaketimeAM)).getText().toString();
+		llbar.setContentDescription("Sleep Prescription Bedtime: " + bedtime + " " + bedtimeAM + " Waketime: " + waketime + " " + waketimeAM
+				+ " Sleep Efficiency " + efficiency);
 	}
 
+	/**
+	 * Calculates time from the given time to 4pm
+	 * @param iTime
+	 * @return
+	 */
 	public int timeTo4pm(int iTime)
 	{ // we store the times as based off 4pm 24 hour clock
 		int iHour = iTime / 60 - 16; // so we can compare them
@@ -226,6 +248,11 @@ public class UpdateSleepPrescriptionData
 		return (iHour * 60) + (iTime % 60);
 	}
 
+	/**
+	 * Calculates time from 4pm to the given time
+	 * @param iTime
+	 * @return
+	 */
 	public int timeFrom4pm(int iTime)
 	{ // this will translate them for display
 		int iHour = (iTime / 60) + 16;
@@ -234,6 +261,11 @@ public class UpdateSleepPrescriptionData
 		return (iHour * 60) + (iTime % 60);
 	}
 
+	/**
+	 * Formats the time from 4pm into a string
+	 * @param iTime
+	 * @return
+	 */
 	public String formattedTimeFrom4pm(int iTime)
 	{
 		iTime = timeFrom4pm(iTime);
@@ -248,6 +280,12 @@ public class UpdateSleepPrescriptionData
 		return (String.format("%d:%02d %s", iHour, iTime % 60, sAMPM));
 	}
 
+	/**
+	 * Formats the time from 4pm into a string and sets the time to iRid1 and whether its AM and PM to iRid2
+	 * @param iTime
+	 * @param iRid1
+	 * @param iRid2
+	 */
 	public void formattedTimeFrom4pm2(int iTime, int iRid1, int iRid2)
 	{
 		iTime = timeFrom4pm(iTime);

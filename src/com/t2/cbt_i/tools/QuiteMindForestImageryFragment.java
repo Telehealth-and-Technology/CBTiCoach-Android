@@ -1,36 +1,36 @@
 /*
-* QuiteMindForestImageryFragment.java
-* Fragment that serves as gateway into the forest imagery video but also plays the beach imagery and manages the captions
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/package com.t2.cbt_i.tools;
+ * QuiteMindForestImageryFragment.java
+ * Fragment that serves as gateway into the forest imagery video but also plays the beach imagery and manages the captions
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */package com.t2.cbt_i.tools;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -73,18 +73,18 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 		super.onActivityCreated(savedInstanceState);
 		getSherlockActivity().getSupportActionBar().setTitle(getString(R.string.s_GuidedImageryForest));
 		setHasOptionsMenu(true);
-		
+
 		// PLAY
 		((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
 			{
-				isPlaying  = true;
+				isPlaying = true;
 				videoPlay();
 			}
 		});
-		
+
 		// PAUSE
 		((Button) getView().findViewById(R.id.bPauseMe)).setOnClickListener(new View.OnClickListener()
 		{
@@ -94,7 +94,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 				isPlaying = false;
 				((VideoView) getView().findViewById(R.id.video)).pause();
 				iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
-				sHandler.removeCallbacks(rSequencer);				
+				sHandler.removeCallbacks(rSequencer);
 			}
 		});
 
@@ -104,7 +104,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 
 		sHandler = new Handler();
 	}
-	
+
 	private static int iVideoPos;
 
 	@Override
@@ -117,11 +117,11 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 		}
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onPause()
 	{
-		if(goingToHelp || isPlaying)
+		if (goingToHelp || isPlaying)
 		{
 			((VideoView) getView().findViewById(R.id.video)).pause();
 			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
@@ -129,16 +129,19 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 		}
 		else
 		{
-			((VideoView) getView().findViewById( R.id.video )).stopPlayback();
+			((VideoView) getView().findViewById(R.id.video)).stopPlayback();
 			sHandler.removeCallbacks(rSequencer);
-			iVideoPos = 0;	
+			iVideoPos = 0;
 		}
 		super.onPause();
 	}
 
+	/**
+	 * Starts the video
+	 */
 	private void videoPlay()
 	{
-//		((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
+		// ((Button) getView().findViewById(R.id.bPlayMe)).setVisibility(View.GONE);
 		((VideoView) getView().findViewById(R.id.video)).start();
 		rSequencer.run();
 		iResLast = -1;
@@ -154,9 +157,12 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 			// ((VideoView) getView().findViewById( R.id.video )).setVisibility(View.INVISIBLE);
 		}
 	};
-	
+
 	private static int iResLast;
-	
+
+	/**
+	 * Synchronizes the captions to the video
+	 */
 	private Runnable rSequencer = new Runnable()
 	{ // Do something to the UI thread here
 		@Override
@@ -176,6 +182,12 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 		}
 	};
 
+	/**
+	 * Calculates the current caption index given the caption position list and video position
+	 * @param iList
+	 * @param iVideoPos
+	 * @return
+	 */
 	private int getCurrentCaptionIndex(int[] iList, int iVideoPos)
 	{
 		int i = 0;

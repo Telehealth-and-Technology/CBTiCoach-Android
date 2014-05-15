@@ -1,36 +1,36 @@
 /*
-* SleepDiaryData.java
-* Class used to store all of the Sleep Diary entries
-*
-* Created by Brad Catlett on 10/21/13.
-*
-* CBT-i Coach
-*
-* Copyright © 2009-2014 United States Government as represented by
-* the Chief Information Officer of the National Center for Telehealth
-* and Technology. All Rights Reserved.
-*
-* Copyright © 2009-2014 Contributors. All Rights Reserved.
-*
-* THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
-* REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
-* COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
-* AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
-* THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
-* INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
-* REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
-* DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
-* HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
-* RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
-*
-* Government Agency: The National Center for Telehealth and Technology
-* Government Agency Original Software Designation: CBT-i Coach001
-* Government Agency Original Software Title: CBT-i Coach
-* User Registration Requested. Please send email
-* with your contact information to: robert.a.kayl.civ@mail.mil
-* Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
-*
-*/
+ * SleepDiaryData.java
+ * Class used to store all of the Sleep Diary entries
+ *
+ * Created by Brad Catlett on 10/21/13.
+ *
+ * CBT-i Coach
+ *
+ * Copyright © 2009-2014 United States Government as represented by
+ * the Chief Information Officer of the National Center for Telehealth
+ * and Technology. All Rights Reserved.
+ *
+ * Copyright © 2009-2014 Contributors. All Rights Reserved.
+ *
+ * THIS OPEN SOURCE AGREEMENT ("AGREEMENT") DEFINES THE RIGHTS OF USE,
+ * REPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN
+ * COMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT
+ * AS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW ("GOVERNMENT AGENCY").
+ * THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT AGENCY, IS AN
+ * INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT DISTRIBUTIONS OR
+ * REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO USES, REPRODUCES,
+ * DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT SOFTWARE, AS DEFINED
+ * HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION, ACCEPTING IN FULL THE
+ * RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS AGREEMENT.
+ *
+ * Government Agency: The National Center for Telehealth and Technology
+ * Government Agency Original Software Designation: CBT-i Coach001
+ * Government Agency Original Software Title: CBT-i Coach
+ * User Registration Requested. Please send email
+ * with your contact information to: robert.a.kayl.civ@mail.mil
+ * Government Agency Point of Contact for Original Software: robert.a.kayl.civ@mail.mil
+ *
+ */
 package com.t2.cbt_i.mysleep;
 
 import java.io.DataInputStream;
@@ -45,7 +45,6 @@ import android.app.Activity;
 
 public class SleepDiaryData
 {
-
 	int iPastWeek = 0;
 	int iTIBWeeklymin = -1; // these are in minutes
 	int iTSTWeeklymin = -1; // these are in minutes
@@ -64,6 +63,9 @@ public class SleepDiaryData
 	private String sSubDir = "/CBTi_Data/";
 	private String sFilename = "CBTi_Data_21a";
 
+	/**
+	 * Saves the data to file
+	 */
 	public void saveData()
 	{
 		try
@@ -94,6 +96,9 @@ public class SleepDiaryData
 		}
 	}
 
+	/**
+	 * Loads data from file
+	 */
 	void loadData()
 	{
 		alSleepDiary = new ArrayList<SleepDiaryEntryData>();
@@ -124,6 +129,9 @@ public class SleepDiaryData
 		}
 	}
 
+	/**
+	 * Updates iTIBWeeklymin, iTSTWeeklymin and iSEWeekly based off the last week
+	 */
 	private void updatePastWeek()
 	{
 		Calendar cc = Calendar.getInstance();
@@ -162,6 +170,9 @@ public class SleepDiaryData
 		}
 	}
 
+	/**
+	 * Sorts the sleep diaries based off of SDE time
+	 */
 	private void reorderSleepDiaries()
 	{
 		ArrayList<SleepDiaryEntryData> alSleepDiaryNew = new ArrayList<SleepDiaryEntryData>();
@@ -184,6 +195,11 @@ public class SleepDiaryData
 		alSleepDiary = alSleepDiaryNew;
 	}
 
+	/**
+	 * Checks to see if the date time already exists
+	 * @param lDateTime
+	 * @return True if it does
+	 */
 	public Boolean alreadyExists(long lDateTime)
 	{
 		for (int i = 0; i < alSleepDiary.size(); i++)
