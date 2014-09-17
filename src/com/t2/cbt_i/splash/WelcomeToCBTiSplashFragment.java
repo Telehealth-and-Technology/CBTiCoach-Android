@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.splash;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ import com.t2.cbt_i.R;
 
 public class WelcomeToCBTiSplashFragment extends SherlockFragment
 {
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

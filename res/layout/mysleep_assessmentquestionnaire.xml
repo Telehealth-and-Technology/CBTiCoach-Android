@@ -42,7 +42,7 @@
                         android:padding="10dp"
                         android:text="@string/s_ISIQ1"
                         android:textColor="#1c2739"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ10"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ1"
@@ -79,7 +79,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ11"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ2"
@@ -93,7 +93,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ12"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ3"
@@ -107,7 +107,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ13"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
 
                         <CheckBox
                             android:id="@+id/cbISIQ4"
@@ -120,7 +120,7 @@
                             android:paddingRight="20dp"
                             android:text="@string/s_ISIQ14"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end ISI screen 1 -->
                 </LinearLayout>

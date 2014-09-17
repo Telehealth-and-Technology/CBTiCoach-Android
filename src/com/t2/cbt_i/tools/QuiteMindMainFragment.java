@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -50,6 +51,7 @@ public class QuiteMindMainFragment extends CBTi_BaseFragment
 {
 	public boolean preventOptionsMenu = false;
 	
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

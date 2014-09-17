@@ -8,8 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rlpb"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_bggraystriped"
         android:orientation="vertical" >
 
@@ -52,7 +50,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshworryinginbed" />
+                            android:src="@drawable/buddy_learnshworryinginbed"
+                            android:contentDescription="@string/s_learnsh_01t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -61,7 +60,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_01t" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -96,7 +95,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshwatchingtheclock" />
+                            android:src="@drawable/buddy_learnshwatchingtheclock"
+                            android:contentDescription="@string/s_learnsh_02t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -105,7 +105,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_02t" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -140,7 +140,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshnapping" />
+                            android:src="@drawable/buddy_learnshnapping"
+                            android:contentDescription="@string/s_learnsh_03t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -149,7 +150,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_03t" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -184,7 +185,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshwindingdown" />
+                            android:src="@drawable/buddy_learnshwindingdown"
+                            android:contentDescription="@string/s_learnsh_04t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -193,7 +195,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_04t"  />
                     </LinearLayout>
                 </RelativeLayout>
@@ -228,7 +230,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshusingthebedroom" />
+                            android:src="@drawable/buddy_learnshusingthebedroom"
+                            android:contentDescription="@string/s_learnsh_05t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -237,7 +240,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_05t" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -272,7 +275,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnsheating" />
+                            android:src="@drawable/buddy_learnsheating"
+                            android:contentDescription="@string/s_learnsh_06t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -281,7 +285,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_06t"  />
                     </LinearLayout>
                 </RelativeLayout>
@@ -316,7 +320,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshcaffeineuse" />
+                            android:src="@drawable/buddy_learnshcaffeineuse"
+                            android:contentDescription="@string/s_learnsh_07t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -325,7 +330,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_07t" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -360,7 +365,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshexercise" />
+                            android:src="@drawable/buddy_learnshexercise"
+                            android:contentDescription="@string/s_learnsh_08t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -369,7 +375,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_08t" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -404,7 +410,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshalcoholuse" />
+                            android:src="@drawable/buddy_learnshalcoholuse"
+                            android:contentDescription="@string/s_learnsh_09t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -413,7 +420,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_09t"  />
                     </LinearLayout>
                 </RelativeLayout>
@@ -448,7 +455,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshnicotineuse" />
+                            android:src="@drawable/buddy_learnshnicotineuse"
+                            android:contentDescription="@string/s_learnsh_10t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -457,7 +465,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_10t"  />
                     </LinearLayout>
                 </RelativeLayout>
@@ -492,7 +500,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_learnshgettingcomfortable" />
+                            android:src="@drawable/buddy_learnshgettingcomfortable"
+                            android:contentDescription="@string/s_learnsh_11t" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -501,7 +510,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="3"
                             android:textStyle="bold" 
-                    		android:textSize="20dp" 
+                    		android:textSize="20sp" 
                             android:text="@string/s_learnsh_11t" />
                     </LinearLayout>
                 </RelativeLayout>

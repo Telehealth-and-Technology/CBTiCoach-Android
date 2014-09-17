@@ -41,6 +41,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import com.t2.cbt_i.R;
 
@@ -238,7 +239,7 @@ public class SleepDiaryEntryData
 	{
 		Calendar cc = Calendar.getInstance();
 		cc.setTimeInMillis(lSDETime);
-		SimpleDateFormat format = new SimpleDateFormat("MMMM d, yyyy, EEEE");
+		SimpleDateFormat format = new SimpleDateFormat("MMMM d, yyyy, EEEE", Locale.getDefault());
 		return (format.format(cc.getTime()));
 	}
 

@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -52,6 +53,7 @@ public class QuiteMindObserveThoughtsContentFragment extends CBTi_BaseFragment
 	private static int iVideoPos;
 	public static int iRid = 0;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

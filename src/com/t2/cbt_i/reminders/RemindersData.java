@@ -39,6 +39,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -147,7 +148,7 @@ public class RemindersData
 			;
 			if (iHour > 12)
 				iHour -= 12;
-			return (String.format("%d:%02d %s", iHour, iTime % 60, sAMPM));
+			return (String.format(Locale.getDefault(), "%d:%02d %s", iHour, iTime % 60, sAMPM));
 		}
 	}
 

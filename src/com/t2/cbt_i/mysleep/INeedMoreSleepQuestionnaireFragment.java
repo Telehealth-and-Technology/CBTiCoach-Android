@@ -35,6 +35,7 @@ package com.t2.cbt_i.mysleep;
 
 import java.util.Calendar;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,6 +53,7 @@ public class INeedMoreSleepQuestionnaireFragment extends CBTi_BaseFragment
 	private INeedMoreSleepQuestionnaireAnswersData cData23c;
 	private static boolean displayAddMinutes = false;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

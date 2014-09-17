@@ -13,6 +13,7 @@
         android:layout_weight="1"
         android:contentDescription="@string/blankcontentdescription"
         android:gravity="center_horizontal"
+        android:baselineAligned="false"
         android:padding="15dp" >
 
         <RelativeLayout
@@ -34,6 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
+                android:contentDescription="@string/s_MySleepButton"
                 android:gravity="center"
                 android:src="@drawable/buddy_homemysleep" />
 
@@ -68,7 +70,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:gravity="center"
-                android:src="@drawable/buddy_hometools" />
+                android:src="@drawable/buddy_hometools"
+                android:contentDescription="@string/s_ToolsButton"  />
 
             <TextView
                 android:id="@+id/t10tools"
@@ -88,6 +91,7 @@
         android:layout_weight="1"
         android:contentDescription="@string/blankcontentdescription"
         android:gravity="center_horizontal"
+        android:baselineAligned="false"
         android:padding="15dp" >
 
         <RelativeLayout
@@ -105,10 +109,11 @@
                 android:contentDescription="@string/s_LearnButton" />
 
             <ImageView
-                android:id="@+id/ivmysleep"
+                android:id="@+id/ivlearn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
+                android:contentDescription="@string/s_LearnButton"
                 android:gravity="center"
                 android:src="@drawable/buddy_homelearn" />
 
@@ -143,7 +148,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
                 android:gravity="center"
-                android:src="@drawable/buddy_homereminder" />
+                android:src="@drawable/buddy_homereminder"
+                android:contentDescription="@string/s_RemindersButton" />
 
             <TextView
                 android:id="@+id/t10reminders"
@@ -152,7 +158,7 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="bottom|center_horizontal"
                 android:text="@string/s_Reminders"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </RelativeLayout>
     </LinearLayout>

@@ -18,7 +18,7 @@
             android:gravity="center_vertical|center_horizontal"
             android:text="@string/title_10d"
             android:textColor="@color/tbText"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -34,7 +34,8 @@
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_weight="5"
-            android:src="@drawable/cbti_moon" />
+            android:src="@drawable/cbti_moon"
+            android:contentDescription="@string/welcome_10d" />
 
         <TextView
             android:layout_width="match_parent"
@@ -45,7 +46,7 @@
             android:gravity="center_vertical"
             android:paddingTop="10dp"
             android:text="@string/welcome_10d"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/iContinue"
@@ -57,9 +58,9 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="@string/s_Continue"
             android:onClick="onAcceptDisclaimerClick"
-            android:textSize="15dp" />
+            android:text="@string/s_Continue"
+            android:textSize="15sp" />
     </LinearLayout>
 
 </RelativeLayout>

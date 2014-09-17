@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -47,6 +48,7 @@ import com.t2.cbt_i.classes.CBTi_BaseFragment;
 
 public class PreventInsomniaResultFragment extends CBTi_BaseFragment
 {
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

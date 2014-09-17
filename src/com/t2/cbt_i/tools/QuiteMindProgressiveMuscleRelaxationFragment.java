@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -89,6 +90,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		}
 	}
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

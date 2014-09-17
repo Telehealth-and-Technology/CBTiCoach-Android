@@ -5,11 +5,10 @@
     android:orientation="vertical" >
 
     <!-- middle buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rlpb"
-        android:layout_below="@+id/rl1"
         android:background="@android:color/black"
         android:orientation="vertical" >
 
@@ -21,7 +20,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                
                 android:orientation="vertical" >
 
                 <LinearLayout
@@ -47,6 +45,7 @@
                         android:layout_marginRight="60dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ShowAssessmentDetailsButton"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingBottom="5dp"
@@ -54,8 +53,7 @@
                         android:paddingRight="10dp"
                         android:paddingTop="5dp"
                         android:text="@string/s_ShrowAssessmentDetails"
-                        android:textSize="15dp"
-                        android:contentDescription="@string/s_ShowAssessmentDetailsButton"  />
+                        android:textSize="15sp" />
 
                     <Button
                         android:id="@+id/bClearHistory"
@@ -65,6 +63,7 @@
                         android:layout_marginRight="60dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/bg_whitebutton"
+                        android:contentDescription="@string/s_ClearHistoryButton"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingBottom="5dp"
@@ -72,8 +71,7 @@
                         android:paddingRight="10dp"
                         android:paddingTop="5dp"
                         android:text="@string/s_ClearHistory"
-                        android:textSize="15dp"
-                        android:contentDescription="@string/s_ClearHistoryButton"  />
+                        android:textSize="15sp" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

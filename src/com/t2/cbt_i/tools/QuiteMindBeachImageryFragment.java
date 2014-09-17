@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -61,6 +62,7 @@ public class QuiteMindBeachImageryFragment extends CBTi_BaseFragment
 	private Handler sHandler;
 	private boolean isPlaying = false;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

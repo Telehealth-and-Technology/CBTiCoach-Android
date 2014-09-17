@@ -24,14 +24,14 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="2"
                     android:text="@string/s_34a"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <!-- each button 1 -->
 
@@ -63,7 +63,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="6dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsgotobedonlywhensleepy" />
+                            android:src="@drawable/buddy_toolsgotobedonlywhensleepy"
+                            android:contentDescription="@string/s_GotoBedOnlyWhenSleepy" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -72,7 +73,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_GotoBedOnlyWhenSleepy"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -108,7 +109,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsgetoutofbedwhenyoucantsleep" />
+                            android:src="@drawable/buddy_toolsgetoutofbedwhenyoucantsleep"
+                            android:contentDescription="@string/s_GetoutofBedWhenyoucantSleep" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -117,7 +119,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_GetoutofBedWhenyoucantSleep"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -153,7 +155,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsgetoutofbedatyourprescribedbedtime" />
+                            android:src="@drawable/buddy_toolsgetoutofbedatyourprescribedbedtime"
+                            android:contentDescription="@string/s_GetoutofBedatyourPrescribedTime" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -162,7 +165,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_GetoutofBedatyourPrescribedTime"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -198,7 +201,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolssetupyoursleepenvironment" />
+                            android:src="@drawable/buddy_toolssetupyoursleepenvironment"
+                            android:contentDescription="@string/s_SetUpYourSleepEnvironment" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -207,7 +211,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_SetUpYourSleepEnvironment"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -243,7 +247,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolssetcaffeineuse" />
+                            android:src="@drawable/buddy_toolssetcaffeineuse"
+                            android:contentDescription="@string/s_SetCaffeineGoals" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -252,7 +257,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_SetCaffeineGoals"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>

@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -50,6 +51,7 @@ public class SleepHabitsGetOutOfBedWhenCantSleepFragment extends CBTi_BaseFragme
 
 	SleepHabitsGetOutOfBedWhenCantSleepData cData34c1;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

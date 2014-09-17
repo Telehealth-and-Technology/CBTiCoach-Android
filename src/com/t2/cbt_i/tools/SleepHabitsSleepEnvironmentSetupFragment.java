@@ -34,9 +34,9 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -53,6 +53,7 @@ public class SleepHabitsSleepEnvironmentSetupFragment extends CBTi_BaseFragment
 {
 	SleepHabitsSleepEnvironmentData cData34f;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

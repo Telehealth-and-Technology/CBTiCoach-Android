@@ -27,7 +27,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:text="@string/s_ISIFeed3" />
 
                 <LinearLayout
@@ -41,7 +41,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:layout_gravity="center"
                         android:text="@string/s_ISI_Score" />
 
@@ -62,7 +62,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="01." />
 
                         <TextView
@@ -70,7 +70,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score01" />
                     </LinearLayout>
 
@@ -92,7 +92,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="02." />
 
                         <TextView
@@ -100,7 +100,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score02" />
                     </LinearLayout>
 
@@ -122,7 +122,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="03." />
 
                         <TextView
@@ -130,7 +130,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score03" />
                     </LinearLayout>
 
@@ -152,7 +152,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="04." />
 
                         <TextView
@@ -160,7 +160,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score04" />
                     </LinearLayout>
 
@@ -182,7 +182,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="05." />
 
                         <TextView
@@ -190,7 +190,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score05" />
                     </LinearLayout>
 
@@ -212,7 +212,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="06." />
 
                         <TextView
@@ -220,7 +220,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score06" />
                     </LinearLayout>
 
@@ -242,7 +242,7 @@
                             android:paddingBottom="10dp"
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="07." />
 
                         <TextView
@@ -250,7 +250,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:text="@string/s_ISI_Score07" />
                     </LinearLayout>
 
@@ -275,7 +275,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:text="@string/s_Done"
                     android:contentDescription="@string/s_DoneButton" />
 
@@ -293,7 +293,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingTop="5dp"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:text="@string/s_ScheduleNextAssessment"
                     android:contentDescription="@string/s_ScheduleNextAssessmentButton" />
 

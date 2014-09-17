@@ -24,6 +24,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_margin="5dp"
                 android:layout_weight="10" >
 
                 <Button
@@ -46,6 +47,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:layout_weight="2"
+                        android:contentDescription="@string/s_Sleep101"
                         android:src="@drawable/buddy_learnsleep101" />
 
                     <TextView
@@ -55,22 +57,19 @@
                         android:layout_marginRight="15dp"
                         android:layout_weight="3"
                         android:text="@string/s_Sleep101"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
             <!-- end each button 1 -->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <!-- each button 2 -->
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_margin="5dp"
                 android:layout_weight="10" >
 
                 <Button
@@ -92,6 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="2"
+                        android:contentDescription="@string/s_HealthySleepHabits"
                         android:src="@drawable/buddy_learnhealthysleephabits" />
 
                     <TextView
@@ -101,22 +101,19 @@
                         android:layout_marginRight="15dp"
                         android:layout_weight="3"
                         android:text="@string/s_HealthySleepHabits"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
             <!-- end each button 2 -->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <!-- each button 3 -->
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_margin="5dp"
                 android:layout_weight="10" >
 
                 <Button
@@ -138,6 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:layout_weight="2"
+                        android:contentDescription="@string/s_CBTiGlossary"
                         android:src="@drawable/buddy_learnglossary" />
 
                     <TextView
@@ -147,7 +145,7 @@
                         android:layout_marginRight="15dp"
                         android:layout_weight="3"
                         android:text="@string/s_CBTiGlossary"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>

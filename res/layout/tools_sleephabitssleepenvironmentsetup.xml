@@ -31,7 +31,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center_vertical"
                     android:text="@string/s_34f"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <!-- Low Noise level -->
 
@@ -63,7 +63,7 @@
                             android:textOn="Yes" />
 
                         <TextView
-                            android:id="@+id/tStopCaffeineReminder"
+                            android:id="@+id/tLownoiselevel"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -72,7 +72,7 @@
                             android:gravity="center_vertical"
                             android:text="@string/s_LowNoiseLevel"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Low Noise level -->
@@ -108,7 +108,7 @@
                             android:textOn="Yes" />
 
                         <TextView
-                            android:id="@+id/tStopCaffeineReminder"
+                            android:id="@+id/tRoomisdark"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -117,7 +117,7 @@
                             android:gravity="center_vertical"
                             android:text="@string/s_Roomisdark"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Room is dark -->
@@ -153,7 +153,7 @@
                             android:textOn="Yes" />
 
                         <TextView
-                            android:id="@+id/tStopCaffeineReminder"
+                            android:id="@+id/tTemperatureiscomfortable"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -162,7 +162,7 @@
                             android:gravity="center_vertical"
                             android:text="@string/s_Temperatureiscomfortable"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Temperature is comfortable -->
@@ -198,7 +198,7 @@
                             android:textOn="Yes" />
 
                         <TextView
-                            android:id="@+id/tStopCaffeineReminder"
+                            android:id="@+id/tSleepisundisturbedbyothers"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -207,7 +207,7 @@
                             android:gravity="center_vertical"
                             android:text="@string/s_Sleepisundisturbedbyothers"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Sleep is undisturbed by others -->
@@ -243,7 +243,7 @@
                             android:textOn="Yes" />
 
                         <TextView
-                            android:id="@+id/tStopCaffeineReminder"
+                            android:id="@+id/tReservemybedforsleepsex"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -252,7 +252,7 @@
                             android:gravity="center_vertical"
                             android:text="@string/s_Reservemybedforsleepsex"
                             android:textColor="#1c2739"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </RelativeLayout>
                 </LinearLayout>
                 <!-- End Reserve my bed for sleep/sex -->

@@ -44,6 +44,7 @@ import org.achartengine.model.XYSeries;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
 import org.achartengine.renderer.XYSeriesRenderer;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -64,6 +65,7 @@ import com.t2.cbt_i.classes.CBTi_Help;
 
 public class AssessmentHistoryGraphFragment extends CBTi_BaseFragment
 {
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
@@ -160,6 +162,7 @@ public class AssessmentHistoryGraphFragment extends CBTi_BaseFragment
 	/**
 	 * Initializes the X and Y axes for the graph view
 	 */
+	@SuppressWarnings("deprecation")
 	private void initChart()
 	{
 		mCurrentSeries = new XYSeries("");

@@ -35,7 +35,7 @@ package com.t2.cbt_i.tools;
 
 import java.util.Calendar;
 
-import android.app.Dialog;
+import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,6 +62,7 @@ public class QuiteMindScheduleWorryTimeFragment extends CBTi_BaseFragment
 {
 	RemindersData cData60a;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl1"
         android:background="@drawable/bg_mysleepcreambackground"
         android:orientation="vertical" >
 
@@ -37,7 +36,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textColor="#008ac2"
                         android:text="@string/s_36c1" />
 
@@ -63,7 +62,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent01"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item1 -->
                     
@@ -89,7 +88,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent02"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item2 -->
                     
@@ -115,7 +114,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent03"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item3 -->
                     
@@ -141,7 +140,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent04"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item4 -->
                     
@@ -167,7 +166,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent05"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item5 -->
                     
@@ -193,7 +192,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent06"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item6 -->
                     
@@ -219,7 +218,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent07"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item7 -->
                     
@@ -245,7 +244,7 @@
                             android:paddingBottom="7dp"
                             android:paddingTop="7dp"
                             android:text="@string/s_Prevent08"
-                            android:textSize="15dp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
                     <!-- end top item8 -->
                     
@@ -265,7 +264,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textColor="#008ac2"
                         android:text="@string/s_36c2" />
 
@@ -295,7 +294,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR01"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_GetOutOfBedAtYourPrescribedTimeButton" />
                     </LinearLayout>
                     <!-- mid item1 -->
@@ -326,7 +325,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR02"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_GoToBedOnlyWhenSleepyButton" />
                     </LinearLayout>
                     <!-- mid item2 -->
@@ -357,7 +356,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR03"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_GetOutOfBedWhenYouCantSleepButton" />
                     </LinearLayout>
                     <!-- mid item3 -->
@@ -388,7 +387,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR04"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_WindingDownButton" />
                     </LinearLayout>
                     <!-- mid item4 -->
@@ -419,7 +418,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR05"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_ScheduleWorryTimeButton" />
                     </LinearLayout>
                     <!-- mid item5 -->
@@ -450,7 +449,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR06"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_SetCaffeineGoalsButton" />
                     </LinearLayout>
                     <!-- mid item6 -->
@@ -481,7 +480,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR07"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_SetUpYourSleepEnvironmentButton" />
                     </LinearLayout>
                     <!-- mid item7 -->
@@ -512,7 +511,7 @@
                             android:paddingBottom="15dp"
                             android:paddingTop="15dp"
                             android:text="@string/s_ToolR08"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_QuietYourMindButton" />
                     </LinearLayout>
                     <!-- mid item8 -->
@@ -533,7 +532,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textColor="#008ac2"
                         android:text="@string/s_36c3" />
                 </LinearLayout>

@@ -57,7 +57,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="@string/s_ScheduleNextAssessment"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:contentDescription="@string/s_ScheduleNextAssessmentButton"  />
 
             <Button
@@ -76,7 +76,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="@string/s_TakeAssessmentNow"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:contentDescription="@string/s_TakeAssessmentNowButton"  />
         </LinearLayout>
     </LinearLayout>

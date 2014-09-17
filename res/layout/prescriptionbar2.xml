@@ -35,7 +35,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/sleepprescriptionnote"
                 android:textColor="#1d2739"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:visibility="gone" />
 
             <TextView
@@ -45,7 +45,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/s_SeeaProvider"
                 android:textColor="#1d2739"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:visibility="gone" />
 
             <LinearLayout
@@ -74,7 +74,7 @@
                             android:layout_height="wrap_content"
                             android:text="10:15"
                             android:textColor="#1d2739"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -83,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:text="PM"
                             android:textColor="#1d2739"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <TextView
@@ -92,7 +92,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/sleeppbedtime"
                         android:textColor="#7777c7"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <View
@@ -119,7 +119,7 @@
                             android:layout_height="wrap_content"
                             android:text="6:15"
                             android:textColor="#1d2739"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -128,7 +128,7 @@
                             android:layout_height="wrap_content"
                             android:text="AM"
                             android:textColor="#1d2739"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <TextView
@@ -137,7 +137,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/sleeppwaketime"
                         android:textColor="#7777c7"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <View
@@ -164,7 +164,7 @@
                             android:layout_height="wrap_content"
                             android:text="47"
                             android:textColor="#1d2739"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -172,7 +172,7 @@
                             android:layout_height="wrap_content"
                             android:text="%"
                             android:textColor="#1d2739"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <TextView
@@ -181,7 +181,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/sleeppefficiency"
                         android:textColor="#7777c7"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

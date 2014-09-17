@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.mysleep;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -50,6 +51,7 @@ public class AssessmentQuestionnaireFragment extends CBTi_BaseFragment
 {
 	AssessmentQuestionnaireData cData31c;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

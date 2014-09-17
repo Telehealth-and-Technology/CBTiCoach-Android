@@ -35,8 +35,8 @@ package com.t2.cbt_i.tools;
 
 import java.util.Calendar;
 
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
-import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -62,6 +62,7 @@ public class SleepHabitsCaffeineFragment extends CBTi_BaseFragment
 	RemindersData cData60a;
 	AlarmManager alarmManager;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

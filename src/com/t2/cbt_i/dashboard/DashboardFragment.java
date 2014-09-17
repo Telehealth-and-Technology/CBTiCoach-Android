@@ -33,6 +33,7 @@
  */
 package com.t2.cbt_i.dashboard;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -49,6 +50,7 @@ import com.t2.cbt_i.mysleep.UpdateSleepPrescriptionData;
 public class DashboardFragment extends CBTi_BaseFragment
 {
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

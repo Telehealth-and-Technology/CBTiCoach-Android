@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -78,6 +79,7 @@ public class SleepHabitsGoToBedOnlyWhenSleepyFragment extends CBTi_BaseFragment
 		((CheckBox) getView().findViewById(R.id.cbAwake20)).setOnClickListener(awakeOCL);
 	}
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

@@ -35,8 +35,8 @@ package com.t2.cbt_i.reminders;
 
 import java.util.Calendar;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -64,6 +64,7 @@ public class RemindersMainFragment extends CBTi_BaseFragment
 	RemindersData cData60a;
 	UpdateSleepPrescriptionData cData22a;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

@@ -33,6 +33,7 @@
 */
 package com.t2.cbt_i.mysleep;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -48,6 +49,7 @@ import com.t2.cbt_i.classes.CBTi_Help;
 
 public class INeedMoreSleepMainFragment extends CBTi_BaseFragment
 {
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

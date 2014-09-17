@@ -44,7 +44,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="2"
-                        android:src="@drawable/buddy_toolstakeassessment" />
+                        android:src="@drawable/buddy_toolstakeassessment"
+                        android:contentDescription="@string/s_TakeAssessment" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -52,7 +53,7 @@
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="@string/s_TakeAssessment"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
@@ -86,7 +87,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="2"
-                        android:src="@drawable/buddy_toolsresultshistory" />
+                        android:src="@drawable/buddy_toolsresultshistory"
+                        android:contentDescription="@string/s_ResultsHistory" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -94,7 +96,7 @@
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="@string/s_ResultsHistory"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
@@ -128,7 +130,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
                         android:layout_weight="2"
-                        android:src="@drawable/buddy_toolsscheduleassessments" />
+                        android:src="@drawable/buddy_toolsscheduleassessments"
+                        android:contentDescription="@string/s_ScheduleAssessments" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -136,7 +139,7 @@
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="@string/s_ScheduleAssessments"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>

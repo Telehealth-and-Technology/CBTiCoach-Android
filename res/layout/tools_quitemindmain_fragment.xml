@@ -24,14 +24,14 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="2"
                     android:text="@string/s_35a"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <!-- each button 1 -->
 
@@ -63,7 +63,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsgetoutofbedwhenyoucantsleep" />
+                            android:src="@drawable/buddy_toolsgetoutofbedwhenyoucantsleep"
+                            android:contentDescription="@string/s_WindingDown" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -72,7 +73,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_WindingDown"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -108,7 +109,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsgetoutofbedatyourprescribedbedtime" />
+                            android:src="@drawable/buddy_toolsgetoutofbedatyourprescribedbedtime"
+                            android:contentDescription="@string/s_ScheduleWorryTime" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -117,7 +119,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_ScheduleWorryTime"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -153,7 +155,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolschangeyourperspective" />
+                            android:src="@drawable/buddy_toolschangeyourperspective"
+                            android:contentDescription="@string/s_ChangeYourPerspective" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -162,7 +165,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_ChangeYourPerspective"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -198,7 +201,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsbreathingtool" />
+                            android:src="@drawable/buddy_toolsbreathingtool"
+                            android:contentDescription="@string/s_BreathingTool" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -207,7 +211,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_BreathingTool"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -243,7 +247,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsprogressivemusclerelaxation" />
+                            android:src="@drawable/buddy_toolsprogressivemusclerelaxation"
+                            android:contentDescription="@string/s_ProgressiveMuscleRelaxation" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -252,7 +257,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_ProgressiveMuscleRelaxation"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -288,7 +293,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/guidedimageryforest" />
+                            android:src="@drawable/guidedimageryforest"
+                            android:contentDescription="@string/s_GuidedImageryForest" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -297,7 +303,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_GuidedImageryForest"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -333,7 +339,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/guidedimageryroad" />
+                            android:src="@drawable/guidedimageryroad"
+                            android:contentDescription="@string/s_GuidedImageryCountryRoad" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -342,7 +349,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_GuidedImageryCountryRoad"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -378,6 +385,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
+                            android:contentDescription="@string/s_GuidedImageryBeach"
                             android:src="@drawable/guidedimagerybeach" />
 
                         <TextView
@@ -387,7 +395,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_GuidedImageryBeach"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -423,7 +431,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsobservethoughtscloudsinthesky" />
+                            android:src="@drawable/buddy_toolsobservethoughtscloudsinthesky"
+                            android:contentDescription="@string/s_ObserveThoughtsCloudsintheSky" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -432,7 +441,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_ObserveThoughtsCloudsintheSky"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -468,7 +477,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:layout_weight="2"
-                            android:src="@drawable/buddy_toolsobservesensationsbodyscan" />
+                            android:src="@drawable/buddy_toolsobservesensationsbodyscan"
+                            android:contentDescription="@string/s_ObserveSensationsBodyScan" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -477,7 +487,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_weight="4"
                             android:text="@string/s_ObserveSensationsBodyScan"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </RelativeLayout>

@@ -130,7 +130,7 @@
                     android:paddingTop="0dp"
                     android:text="@string/s_remSleepDiaryReminderHint"
                     android:textColor="#1c2739"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <!-- End Sleep Diary Reminder Time -->
 

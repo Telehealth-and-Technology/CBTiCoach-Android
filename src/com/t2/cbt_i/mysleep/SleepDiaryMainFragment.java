@@ -35,7 +35,7 @@ package com.t2.cbt_i.mysleep;
 
 import java.util.Calendar;
 
-import android.app.Dialog;
+import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.graphics.Rect;
@@ -66,6 +66,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 	SleepDiaryData cData21a;
 	ArrayAdapter<SleepDiaryEntryData> aa;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

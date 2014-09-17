@@ -33,6 +33,7 @@
  */
 package com.t2.cbt_i.mysleep;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +46,7 @@ import com.t2.cbt_i.classes.CBTi_BaseFragment;
 
 public class SleepDiaryEntryResultsFragment extends CBTi_BaseFragment
 {
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

@@ -35,6 +35,7 @@ package com.t2.cbt_i.mysleep;
 
 import java.util.Calendar;
 
+import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -60,6 +61,7 @@ public class AssessmentScheduleReminderFragment extends CBTi_BaseFragment
 	RemindersData cData60a;
 	static final int TIME_DIALOG_ID = 1;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

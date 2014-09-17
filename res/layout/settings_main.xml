@@ -33,7 +33,7 @@
                     android:contentDescription="@string/s_ResetAllUserDataButton"
                     android:gravity="center"
                     android:text="@string/s_ResetAllUserData"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -42,7 +42,7 @@
                     android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="@string/s_50b"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:visibility="gone" />
             </LinearLayout>
             <!-- end each button 1 -->

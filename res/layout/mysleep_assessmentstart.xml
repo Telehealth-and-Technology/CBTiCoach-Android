@@ -34,7 +34,7 @@
                     android:paddingBottom="10dp"
                     android:text="@string/s_ISI1"
                     android:textColor="#1c2739"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                         android:padding="10dp"
                         android:text="@string/s_ISI2"
                         android:textColor="#1c2739"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                         <ToggleButton
                             android:id="@+id/bProvider"
@@ -64,7 +64,7 @@
                             android:gravity="center"
                             android:textOff="@string/s_No"
                             android:textOn="@string/s_Yes"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:contentDescription="@string/s_HealthcareProviderCheckbox"  />
                     
                 </LinearLayout>

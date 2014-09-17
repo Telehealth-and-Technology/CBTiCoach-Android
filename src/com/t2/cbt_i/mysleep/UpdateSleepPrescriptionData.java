@@ -39,6 +39,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.content.Context;
@@ -277,7 +278,7 @@ public class UpdateSleepPrescriptionData
 			sAMPM = "PM";
 			iHour -= 12;
 		}
-		return (String.format("%d:%02d %s", iHour, iTime % 60, sAMPM));
+		return (String.format(Locale.getDefault(), "%d:%02d %s", iHour, iTime % 60, sAMPM));
 	}
 
 	/**

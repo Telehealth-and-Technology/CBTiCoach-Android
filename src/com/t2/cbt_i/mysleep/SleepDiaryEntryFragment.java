@@ -35,7 +35,9 @@ package com.t2.cbt_i.mysleep;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.DatePickerDialog;
@@ -70,6 +72,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 	Boolean bNew;
 	int iPos;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
@@ -482,7 +485,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 			cData21c = cData21a.alSleepDiary.get(iPos);
 		}
 
-		SimpleDateFormat format = new SimpleDateFormat("EEEE, MMMM d, yyyy");
+		SimpleDateFormat format = new SimpleDateFormat("EEEE, MMMM d, yyyy", Locale.getDefault());
 		Calendar cc = Calendar.getInstance();
 		cc.setTimeInMillis(cData21c.lSDETime);
 		((Button) getView().findViewById(R.id.bSleepDiaryEntryTime)).setText(format.format(cc.getTime()));
@@ -808,7 +811,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				else
 				{
 					cData21c.lSDETime = cc.getTimeInMillis();
-					SimpleDateFormat format = new SimpleDateFormat("EEEE, MMMM d, yyyy");
+					SimpleDateFormat format = new SimpleDateFormat("EEEE, MMMM d, yyyy", Locale.getDefault());
 					((Button) getView().findViewById(R.id.bSleepDiaryEntryTime)).setText(format.format(cc.getTime()));
 					if (cc.getTimeInMillis() < lToday)
 						showDialog(DIALOG_SDETimeWarn);
@@ -998,7 +1001,7 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		if (iHour == 0)
 			iHour = 12;
 
-		return (String.format("%d:%02d %s", iHour, iTime % 60, sAMPM));
+		return (String.format(Locale.getDefault(), "%d:%02d %s", iHour, iTime % 60, sAMPM));
 	}
 
 	@Override

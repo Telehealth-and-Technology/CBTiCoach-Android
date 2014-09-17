@@ -33,6 +33,7 @@
  */
 package com.t2.cbt_i.tools;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -110,6 +111,7 @@ public class QuiteMindBreathingToolFragment extends CBTi_BaseFragment
 	Button bPlayMe;
 	VideoView vVideo;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

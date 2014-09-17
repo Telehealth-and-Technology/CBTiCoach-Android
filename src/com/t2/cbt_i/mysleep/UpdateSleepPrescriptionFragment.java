@@ -33,8 +33,8 @@
 */
 package com.t2.cbt_i.mysleep;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Intent;
@@ -61,6 +61,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 {
 	UpdateSleepPrescriptionData cData22a;
 
+	@SuppressLint("InflateParams")
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{

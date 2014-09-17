@@ -18,7 +18,7 @@
             android:gravity="center_vertical|center_horizontal"
             android:text="@string/title_10b"
             android:textColor="@color/tbText"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,7 +43,8 @@
                     android:layout_height="180dp"
                     android:layout_gravity="center_horizontal"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/logo_va" />
+                    android:src="@drawable/logo_va"
+                    android:contentDescription="@string/s_dva" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -53,7 +54,7 @@
                     android:gravity="center"
                     android:paddingBottom="10dp"
                     android:text="@string/s_dva"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -62,7 +63,7 @@
                     android:layout_marginRight="10dp"
                     android:paddingTop="10dp"
                     android:text="@string/s_eula10b"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/iAccept"
@@ -73,9 +74,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
+                    android:onClick="onAcceptEulaClick"
                     android:text="@string/s_IAccept"
-            		android:onClick="onAcceptEulaClick"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

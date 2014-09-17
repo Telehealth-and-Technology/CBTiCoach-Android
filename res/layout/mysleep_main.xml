@@ -43,7 +43,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="6dp"
                     android:layout_weight="2"
-                    android:src="@drawable/buddy_mysleepsleepdiary" />
+                    android:src="@drawable/buddy_mysleepsleepdiary"
+                    android:contentDescription="@string/s_SleepDiary" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -51,7 +52,7 @@
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="@string/s_SleepDiary"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
@@ -88,7 +89,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="6dp"
                     android:layout_weight="2"
-                    android:src="@drawable/buddy_mysleepupdatesleepprescription" />
+                    android:src="@drawable/buddy_mysleepupdatesleepprescription"
+                    android:contentDescription="@string/s_UpdateSleepPrescription" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -96,7 +98,7 @@
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="@string/s_UpdateSleepPrescription"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
@@ -133,7 +135,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="6dp"
                     android:layout_weight="2"
-                    android:src="@drawable/buddy_mysleepineedmoresleep" />
+                    android:src="@drawable/buddy_mysleepineedmoresleep"
+                    android:contentDescription="@string/s_INeedMoreSleep" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -141,7 +144,7 @@
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="@string/s_INeedMoreSleep"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>
@@ -178,7 +181,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="6dp"
                     android:layout_weight="2"
-                    android:src="@drawable/buddy_mysleepassessment" />
+                    android:src="@drawable/buddy_mysleepassessment"
+                    android:contentDescription="@string/s_Assessment" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -186,7 +190,7 @@
                     android:layout_weight="4"
                     android:gravity="center_vertical"
                     android:text="@string/s_Assessment"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </RelativeLayout>

@@ -24,7 +24,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="5"
                 android:paddingTop="10dp"
-                android:src="@drawable/buddy_mysleeptaketooearly" />
+                android:src="@drawable/buddy_mysleeptaketooearly"
+                android:contentDescription="@string/s_31g" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -56,7 +57,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="@string/s_ScheduleNextAssessment"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:contentDescription="@string/s_ScheduleNextAssessmentButton"  />
 
             <Button
@@ -75,7 +76,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
                 android:text="@string/s_TakeAssessmentNow"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:contentDescription="@string/s_TakeAssessmentNowButton"  />
         </LinearLayout>
     </LinearLayout>

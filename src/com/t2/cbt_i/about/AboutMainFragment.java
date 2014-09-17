@@ -49,7 +49,7 @@ public class AboutMainFragment extends CBTi_BaseFragment
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-		return inflater.inflate(R.layout.about_main_fragment, null);
+		return inflater.inflate(R.layout.about_main_fragment, container);
 	}
 
 	@Override

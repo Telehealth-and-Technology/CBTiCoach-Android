@@ -40,6 +40,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.app.Activity;
 
@@ -184,7 +185,7 @@ public class AssessmentQuestionnaireData
 	{
 		Calendar cc = Calendar.getInstance();
 		cc.setTimeInMillis(lDate);
-		SimpleDateFormat format = new SimpleDateFormat("MMMM d, yyyy, EEEE");
+		SimpleDateFormat format = new SimpleDateFormat("MMMM d, yyyy, EEEE", Locale.getDefault());
 		return (format.format(cc.getTime()) + "    " + c.getString(R.string.s_Score) + iCumScore);
 	}
 
