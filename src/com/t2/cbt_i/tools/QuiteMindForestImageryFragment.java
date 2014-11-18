@@ -60,7 +60,7 @@ public class QuiteMindForestImageryFragment extends CBTi_BaseFragment
 	private int[] iCaptionStart = { 1, 8, 14, 20, 24, 32, 44, 46, 52, 57, 64, 75, 86, 98, 110, 120, 136, 147, 151, 158, 163, 177, 187, 197, 203, 211, 226, 242,
 			256, 266, 278 };
 	private Handler sHandler;
-	private boolean isPlaying = false;
+	private static boolean isPlaying = false;
 
 	@SuppressLint("InflateParams")
 	@Override

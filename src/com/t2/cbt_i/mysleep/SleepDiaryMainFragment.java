@@ -142,7 +142,7 @@ public class SleepDiaryMainFragment extends CBTi_BaseFragment
 		});
 	}
 
-	private static int iColorsID[] = { R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1,
+	private int iColorsID[] = { R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1, R.drawable.pbprogress1,
 			R.drawable.pbprogress2, R.drawable.pbprogress2, R.drawable.pbprogress3 };
 
 	/**

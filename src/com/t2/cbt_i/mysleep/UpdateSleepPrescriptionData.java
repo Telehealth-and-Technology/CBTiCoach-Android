@@ -216,7 +216,7 @@ public class UpdateSleepPrescriptionData
 			}
 			else
 			{
-				efficiency = String.format("%d", iSP_SleepEfficiency) + "%";
+				efficiency = String.format("%d", iSP_SleepEfficiency);
 				((TextView) contentView.findViewById(R.id.tSPEfficiency)).setText(efficiency);
 			}
 
