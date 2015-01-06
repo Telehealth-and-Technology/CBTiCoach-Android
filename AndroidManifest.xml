@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.t2.cbt_i"
+    package="com.t2.cbti"
     android:versionCode="2"
     android:versionName="1.1" >
 
@@ -19,7 +19,7 @@
         android:allowBackup="false"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.t2.cbt_i.splash.SplashActivity"
+            android:name="com.t2.cbti.splash.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,43 +30,43 @@
           
         <activity android:name="org.achartengine.GraphicalActivity" />
         
-        <activity android:label="@string/s_Home"   				android:name="com.t2.cbt_i.dashboard.DashboardActivity" > </activity>
-        <activity android:label="@string/app_name" 				android:name="com.t2.cbt_i.dashboard.ThoughtActivity" > </activity>       
-        <activity android:label="@string/s_Help"   				android:name="com.t2.cbt_i.dashboard.DashboardHelpActivity" > </activity>
+        <activity android:label="@string/s_Home"   				android:name="com.t2.cbti.dashboard.DashboardActivity" > </activity>
+        <activity android:label="@string/app_name" 				android:name="com.t2.cbti.dashboard.ThoughtActivity" > </activity>       
+        <activity android:label="@string/s_Help"   				android:name="com.t2.cbti.dashboard.DashboardHelpActivity" > </activity>
         
-		<activity android:label="@string/s_Help"   				android:name="com.t2.cbt_i.classes.CBTi_Help"> </activity> 
+		<activity android:label="@string/s_Help"   				android:name="com.t2.cbti.classes.CBTi_Help"> </activity> 
 		
-        <activity android:label="@string/s_About"  				android:name="com.t2.cbt_i.about.AboutMainActivity" > </activity>
-        <activity android:label="@string/app_name"  			android:name="com.t2.cbt_i.about.AboutCBTiActivity" > </activity>
-        <activity android:label="@string/s_ProjectTeam"  		android:name="com.t2.cbt_i.about.AboutProjectTeamActivity" > </activity>
-        <activity android:label="@string/s_ProjectPartners"  	android:name="com.t2.cbt_i.about.AboutProjectPartnersActivity" > </activity>
+        <activity android:label="@string/s_About"  				android:name="com.t2.cbti.about.AboutMainActivity" > </activity>
+        <activity android:label="@string/app_name"  			android:name="com.t2.cbti.about.AboutCBTiActivity" > </activity>
+        <activity android:label="@string/s_ProjectTeam"  		android:name="com.t2.cbti.about.AboutProjectTeamActivity" > </activity>
+        <activity android:label="@string/s_ProjectPartners"  	android:name="com.t2.cbti.about.AboutProjectPartnersActivity" > </activity>
         
-        <activity android:label="@string/s_Settings"  			android:name="com.t2.cbt_i.settings.SettingsActivity" > </activity>
+        <activity android:label="@string/s_Settings"  			android:name="com.t2.cbti.settings.SettingsActivity" > </activity>
         
-        <activity android:label="@string/s_Sleep101"  			android:name="com.t2.cbt_i.learn.LearnSleep101Activity"   > </activity>
-        <activity android:label="@string/s_SleepHabits"  		android:name="com.t2.cbt_i.learn.LearnHealthySleepHabitsActivity"  > </activity>
-        <activity android:label="@string/s_CBTiGlossary"  		android:name="com.t2.cbt_i.learn.LearnCBTiGlossaryActivity"   > </activity>
+        <activity android:label="@string/s_Sleep101"  			android:name="com.t2.cbti.learn.LearnSleep101Activity"   > </activity>
+        <activity android:label="@string/s_SleepHabits"  		android:name="com.t2.cbti.learn.LearnHealthySleepHabitsActivity"  > </activity>
+        <activity android:label="@string/s_CBTiGlossary"  		android:name="com.t2.cbti.learn.LearnCBTiGlossaryActivity"   > </activity>
         
-        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbt_i.mysleep.AssessmentMainActivity" > </activity>
-        <activity android:label="@string/s_NeedSleep"  			android:name="com.t2.cbt_i.mysleep.INeedMoreSleepMainActivity" > </activity>
-        <activity android:label="@string/s_SleepDiary"  		android:name="com.t2.cbt_i.mysleep.SleepDiaryMainActivity" > </activity>
-        <activity android:label="@string/s_UpdateSleep"  		android:name="com.t2.cbt_i.mysleep.UpdateSleepPrescriptionActivity"> </activity>
-        <activity android:label="@string/s_Help"    			android:name="com.t2.cbt_i.mysleep.SleepDiaryHelpActivity" > </activity>
+        <activity android:label="@string/s_Assessment"  		android:name="com.t2.cbti.mysleep.AssessmentMainActivity" > </activity>
+        <activity android:label="@string/s_NeedSleep"  			android:name="com.t2.cbti.mysleep.INeedMoreSleepMainActivity" > </activity>
+        <activity android:label="@string/s_SleepDiary"  		android:name="com.t2.cbti.mysleep.SleepDiaryMainActivity" > </activity>
+        <activity android:label="@string/s_UpdateSleep"  		android:name="com.t2.cbti.mysleep.UpdateSleepPrescriptionActivity"> </activity>
+        <activity android:label="@string/s_Help"    			android:name="com.t2.cbti.mysleep.SleepDiaryHelpActivity" > </activity>
         
-        <activity android:label="@string/s_PreventInsomnia"  	android:name="com.t2.cbt_i.tools.PreventInsomniaActivity" > </activity>
-        <activity android:label="@string/s_QuietYourMind"  		android:name="com.t2.cbt_i.tools.QuiteMindMainActivity" > </activity>
-        <activity android:label="@string/s_NewSleepHabits"  	android:name="com.t2.cbt_i.tools.SleepHabitsMainActivity" > </activity>
+        <activity android:label="@string/s_PreventInsomnia"  	android:name="com.t2.cbti.tools.PreventInsomniaActivity" > </activity>
+        <activity android:label="@string/s_QuietYourMind"  		android:name="com.t2.cbti.tools.QuiteMindMainActivity" > </activity>
+        <activity android:label="@string/s_NewSleepHabits"  	android:name="com.t2.cbti.tools.SleepHabitsMainActivity" > </activity>
         
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_WindDown" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_SleepDiary" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_PrescribedWakeTime" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_PrescribedBedTime" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_StopCaffeine" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_TakeAssessment" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_UpdateSleepPrescription" />
-        <receiver android:process=":remote" android:name="com.t2.cbt_i.reminders.Reminders_BR_WorryTime" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_WindDown" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_SleepDiary" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_PrescribedWakeTime" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_PrescribedBedTime" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_StopCaffeine" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_TakeAssessment" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_UpdateSleepPrescription" />
+        <receiver android:process=":remote" android:name="com.t2.cbti.reminders.Reminders_BR_WorryTime" />
         
-		<receiver android:name="com.t2.cbt_i.reminders.Reminders_BR_BootLoader"
+		<receiver android:name="com.t2.cbti.reminders.Reminders_BR_BootLoader"
         	android:enabled="true"
         	android:exported="true"
         	android:label="@string/app_name">

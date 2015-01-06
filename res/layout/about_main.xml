@@ -6,7 +6,7 @@
     
     <fragment 
         android:id="@+id/aboutmainfragment"
-        android:name="com.t2.cbt_i.about.AboutMainFragment"
+        android:name="com.t2.cbti.about.AboutMainFragment"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent" />
 </RelativeLayout>
