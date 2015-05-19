@@ -85,6 +85,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 				((ToggleButton) getView().findViewById(R.id.bManMan)).setChecked(true);
 				((LinearLayout) getView().findViewById(R.id.llManUpdate)).setVisibility(View.VISIBLE);
 				((LinearLayout) getView().findViewById(R.id.llAutoUpdate)).setVisibility(View.GONE);
+				cData22a.bManUpdate = true;
 				cData22a.displaySleepPrescription();
 			}
 		});
@@ -102,6 +103,7 @@ public class UpdateSleepPrescriptionFragment extends CBTi_BaseFragment
 				enableUSPDayOfWeek();
 				cData22a.iSP_PBTimemin = 480;
 				cData22a.iSP_PWTimemin = 480;
+				cData22a.bManUpdate = false;
 				cData22a.displaySleepPrescription();
 			}
 		});
