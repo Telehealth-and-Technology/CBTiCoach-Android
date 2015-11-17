@@ -182,8 +182,19 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 			main.addView(View.inflate(getSherlockActivity(), R.layout.tools_quitemindprogressivemusclerelaxation, null));
 
 			iVideoPos = 0;
-			setup(false);
+			sHandler.removeCallbacks(rSequencer);
 			((TextView) getView().findViewById(R.id.caption)).setText(R.string.s_35a11);
+			
+			// PLAY
+			((Button) getView().findViewById(R.id.bPlayMe)).setOnClickListener(new View.OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					isPlaying = true;
+					videoPlay();
+				}
+			});
 		}
 	};
 
