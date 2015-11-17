@@ -56,8 +56,7 @@
                 android:id="@+id/mediacontrol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="10dp" >
+                android:layout_alignParentBottom="true" >
 
                 <Button
                     android:id="@+id/bPlayMe"
@@ -109,7 +108,7 @@
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/blankcontentdescription"
                 android:gravity="bottom|center_horizontal"
-                android:padding="18dp"
+                android:padding="10dp"
                 android:textColor="@android:color/white" />
         </RelativeLayout>
     </LinearLayout>
