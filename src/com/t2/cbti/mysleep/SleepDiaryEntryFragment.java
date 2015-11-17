@@ -812,7 +812,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				{
 					cData21c.lSDETime = cc.getTimeInMillis();
 					SimpleDateFormat format = new SimpleDateFormat("EEEE, MMMM d, yyyy", Locale.getDefault());
-					((Button) getView().findViewById(R.id.bSleepDiaryEntryTime)).setText(format.format(cc.getTime()));
+					if(getView() != null)
+						((Button) getView().findViewById(R.id.bSleepDiaryEntryTime)).setText(format.format(cc.getTime()));
 					if (cc.getTimeInMillis() < lToday)
 						showDialog(DIALOG_SDETimeWarn);
 				}
@@ -826,7 +827,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iTNTmin = (hourOfDay * 60) + minute;
-			((Button) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", hourOfDay, minute));
+			if(getView() != null)
+				((Button) (getView().findViewById(R.id.tTNT))).setText(String.format("%d hours: %d minutes", hourOfDay, minute));
 		}
 	};
 
@@ -836,7 +838,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iBTmin = timeTo4pm((hourOfDay * 60) + minute);
-			((Button) (getView().findViewById(R.id.tBT))).setText(formattedTimeFrom4pm(cData21c.iBTmin));
+			if(getView() != null)
+				((Button) (getView().findViewById(R.id.tBT))).setText(formattedTimeFrom4pm(cData21c.iBTmin));
 		}
 	};
 
@@ -853,7 +856,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				else
 				{
 					cData21c.iSIATmin = timeTo4pm((hourOfDay * 60) + minute);
-					((Button) (getView().findViewById(R.id.tSIAT))).setText(formattedTimeFrom4pm(cData21c.iSIATmin));
+					if(getView() != null)
+						((Button) (getView().findViewById(R.id.tSIAT))).setText(formattedTimeFrom4pm(cData21c.iSIATmin));
 				}
 			}
 		}
@@ -865,7 +869,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iTTSmin = (hourOfDay * 60) + minute;
-			((Button) (getView().findViewById(R.id.tTTS))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
+			if(getView() != null)
+				((Button) (getView().findViewById(R.id.tTTS))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
 		}
 	};
 
@@ -875,7 +880,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 		public void onTimeSet(android.widget.TimePicker view, int hourOfDay, int minute)
 		{
 			cData21c.iTAmin = hourOfDay * 60 + minute;
-			((Button) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
+			if(getView() != null)
+				((Button) (getView().findViewById(R.id.tTA))).setText((String.format("%d hours: %d minutes", hourOfDay, minute)));
 		}
 	};
 
@@ -921,7 +927,8 @@ public class SleepDiaryEntryFragment extends CBTi_BaseFragment
 				else
 				{
 					cData21c.iWTmin = iTime;
-					((Button) (getView().findViewById(R.id.tWT))).setText(formattedTimeFrom4pm(cData21c.iWTmin));
+					if(getView() != null)
+						((Button) (getView().findViewById(R.id.tWT))).setText(formattedTimeFrom4pm(cData21c.iWTmin));
 				}
 			}
 		}
