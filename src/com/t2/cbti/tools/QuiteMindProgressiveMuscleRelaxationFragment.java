@@ -113,7 +113,6 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 			@Override
 			public void onClick(View v)
 			{
-				isPlaying = true;
 				videoPlay();
 			}
 		});
@@ -124,6 +123,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 	 */
 	private void videoPlay()
 	{
+		isPlaying = true;
 		RelativeLayout main = (RelativeLayout) getView().findViewById(R.id.progressivemusclemainlayout);
 		main.removeAllViews();
 		main.addView(View.inflate(getSherlockActivity(), R.layout.tools_quitemindprogressivemusclerelaxationvideoplaying, null));
@@ -166,6 +166,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		
 		//Start the video and seek to location
 		((VideoView) getView().findViewById(R.id.video)).start();
+		((VideoView) getView().findViewById(R.id.video)).seekTo(iVideoPos);
 
 		iResLast = iResLast2 = -1;
 		rSequencer.run();
@@ -173,7 +174,6 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 
 	MediaPlayer.OnCompletionListener onComplete = new MediaPlayer.OnCompletionListener()
 	{
-
 		@Override
 		public void onCompletion(MediaPlayer arg0)
 		{
@@ -191,7 +191,6 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 				@Override
 				public void onClick(View v)
 				{
-					isPlaying = true;
 					videoPlay();
 				}
 			});
@@ -221,7 +220,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 	@Override
 	public void onResume()
 	{
-		if (iVideoPos > 0 && (VideoView) getView().findViewById(R.id.video) != null)
+		if (iVideoPos > 0)
 		{
 			videoPlay();
 		}
@@ -256,6 +255,7 @@ public class QuiteMindProgressiveMuscleRelaxationFragment extends CBTi_BaseFragm
 		public void run()
 		{ // This method runs in the same thread as the UI.
 			int iVideoCur = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition() / 1000;
+			iVideoPos = ((VideoView) getView().findViewById(R.id.video)).getCurrentPosition();
 			if (iVideoCur > 0)
 			{
 				int iCur = getCurrentCaptionIndex(iCaptionStart, iVideoCur);
